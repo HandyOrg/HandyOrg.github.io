@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="theme-next gemini" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#f06632">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="/css/main.css?v=7.1.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-HandyOrg.png?v=7.1.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-HandyOrg.png?v=7.1.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-HandyOrg.png?v=7.1.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.1.0" color="#f06632">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.1.0',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: true,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="Welcome to HandyControlWe’re all here Special thanks to UsageStep 1：Add a reference to HandyControl or search for HandyControl on the nuget;  HandyControl```1234567891011Step 2：Add code in App.xaml as">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Welcome to HandyControl">
+<meta property="og:url" content="http://yoursite.com/2019/04/01/home/index.html">
+<meta property="og:site_name" content="HandyOrg">
+<meta property="og:description" content="Welcome to HandyControlWe’re all here Special thanks to UsageStep 1：Add a reference to HandyControl or search for HandyControl on the nuget;  HandyControl```1234567891011Step 2：Add code in App.xaml as">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/qq-group.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/resharper_logo.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/NotifyIcon.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Dialog.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/WaveProgressBar.gif">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Badge.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Gravatar.gif">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/GoToTop.gif">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/ChatBubble.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Label.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Transfer.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/ProgressButton.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/CoverFlow.gif">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/CoverView.gif">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/MessageBox.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/WaterfallPanel.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Rate.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/BlurWindow.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/FlipClock.gif">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Shield.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/OutlineText.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Tag.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/ToolBar.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Slider.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/CircleProgressBar.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Button.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/ToggleButton.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/RadioButton.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/CheckBox.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/ListBox.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/TreeView.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/ListView.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/DataGrid.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/DarkTheme.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/ColorPicker.gif">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Loading.gif">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Carousel.gif">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Pagination.gif">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Expander.gif">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/TimeBar.gif">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/ImageBrowser.gif">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/PreviewSlider.gif">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/CompareSlider-h.gif">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/CompareSlider-v.gif">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Growl.gif">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/AnimationPath.gif">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/ProgressBar.gif">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/TabControl.gif">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/TabControl.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/GroupBox.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/StepBar.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/GifImage.gif">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/ContextMenu.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Calendar.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Clock.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/CalendarWithClock.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/TextBlock.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/RichTextBox.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/TextBox.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/ComboBox.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/NumericUpDown.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/SearchBar.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/PasswordBox.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/DataPicker.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/TimePicker.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/DateTimePicker.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/ScrollViewer.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/CirclePanel.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Border.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Brush.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/SwitchConfig.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/qrcode.png">
+<meta property="og:updated_time" content="2019-04-02T14:14:33.958Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Welcome to HandyControl">
+<meta name="twitter:description" content="Welcome to HandyControlWe’re all here Special thanks to UsageStep 1：Add a reference to HandyControl or search for HandyControl on the nuget;  HandyControl```1234567891011Step 2：Add code in App.xaml as">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/qq-group.png">
+
+
+
+
+
+  
+  
+  <link rel="canonical" href="http://yoursite.com/2019/04/01/home/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Welcome to HandyControl | HandyOrg</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">HandyOrg</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">everything can be handy</p>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+
+    
+      
+    
+
+    <a href="/" rel="section">首页</a>
+
+  </li>
+        
+        
+        
+          
+            
+            
+            
+              
+              
+
+  
+  
+    
+  
+  <li class="menu-item menu-item-handycontrol">
+
+    
+    
+    
+
+    
+      
+    
+
+    <a href="/handycontrol/" rel="section">HandyControl</a>
+
+  </li>
+
+
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+        
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+  
+  
+
+  
+
+  <a href="https://github.com/HandyOrg" class="github-corner" title="Follow us on GitHub" aria-label="Follow us on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewbox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a>
+
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/01/home/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="HandyOrg">
+      <meta itemprop="description" content="everything can be handy">
+      <meta itemprop="image" content="https://avatars2.githubusercontent.com/u/17383395?s=460&v=4">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HandyOrg">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Welcome to HandyControl
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-04-01 22:32:26" itemprop="dateCreated datePublished" datetime="2019-04-01T22:32:26+08:00">2019-04-01</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-04-02 22:14:33" itemprop="dateModified" datetime="2019-04-02T22:14:33+08:00">2019-04-02</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="Welcome-to-HandyControl"><a href="#Welcome-to-HandyControl" class="headerlink" title="Welcome to HandyControl"></a>Welcome to HandyControl</h1><h2 id="We’re-all-here"><a href="#We’re-all-here" class="headerlink" title="We’re all here"></a>We’re all here</h2><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/qq-group.png" alt="qq-group"></p>
+<h2 id="Special-thanks-to"><a href="#Special-thanks-to" class="headerlink" title="Special thanks to"></a>Special thanks to</h2><p><a href="https://www.jetbrains.com/?from=HandyControl" target="_blank" rel="noopener"><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/resharper_logo.png" alt="JetBrains"></a></p>
+<h2 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h2><p>Step 1：Add a reference to HandyControl or search for HandyControl on the nuget; </p>
+<figure class="highlight plain"><figcaption><span>HandyControl```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">Step 2：Add code in App.xaml as follows:</span><br><span class="line">```XML</span><br><span class="line">&lt;Application.Resources&gt;</span><br><span class="line">    &lt;ResourceDictionary&gt;</span><br><span class="line">        &lt;ResourceDictionary.MergedDictionaries&gt;</span><br><span class="line">            &lt;ResourceDictionary Source=&quot;pack://application:,,,/HandyControl;component/Themes/SkinDefault.xaml&quot;/&gt;</span><br><span class="line">            &lt;ResourceDictionary Source=&quot;pack://application:,,,/HandyControl;component/Themes/Theme.xaml&quot;/&gt;</span><br><span class="line">        &lt;/ResourceDictionary.MergedDictionaries&gt;</span><br><span class="line">    &lt;/ResourceDictionary&gt;</span><br><span class="line">&lt;/Application.Resources&gt;</span><br></pre></td></tr></table></figure>
+<p>Step 3：enjoy coding</p>
+<h2 id="Latest-examples"><a href="#Latest-examples" class="headerlink" title="Latest examples"></a>Latest examples</h2><h3 id="NotifyIcon"><a href="#NotifyIcon" class="headerlink" title="NotifyIcon"></a>NotifyIcon</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/NotifyIcon.png" alt="NotifyIcon"></p>
+<h3 id="Dialog"><a href="#Dialog" class="headerlink" title="Dialog"></a>Dialog</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Dialog.png" alt="Dialog"></p>
+<h3 id="WaveProgressBar"><a href="#WaveProgressBar" class="headerlink" title="WaveProgressBar"></a>WaveProgressBar</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/WaveProgressBar.gif" alt="WaveProgressBar"></p>
+<h3 id="Badge"><a href="#Badge" class="headerlink" title="Badge"></a>Badge</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Badge.png" alt="Badge"></p>
+<h3 id="Gravatar"><a href="#Gravatar" class="headerlink" title="Gravatar"></a>Gravatar</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Gravatar.gif" alt="Gravatar"></p>
+<h2 id="History-publication"><a href="#History-publication" class="headerlink" title="History publication"></a>History publication</h2><h3 id="GoToTop"><a href="#GoToTop" class="headerlink" title="GoToTop"></a>GoToTop</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/GoToTop.gif" alt="GoToTop"></p>
+<h3 id="ChatBubble"><a href="#ChatBubble" class="headerlink" title="ChatBubble"></a>ChatBubble</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/ChatBubble.png" alt="ChatBubble"></p>
+<h3 id="Label"><a href="#Label" class="headerlink" title="Label"></a>Label</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Label.png" alt="Label"></p>
+<h3 id="Transfer"><a href="#Transfer" class="headerlink" title="Transfer"></a>Transfer</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Transfer.png" alt="Transfer"></p>
+<h3 id="ProgressButton"><a href="#ProgressButton" class="headerlink" title="ProgressButton"></a>ProgressButton</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/ProgressButton.png" alt="ProgressButton"></p>
+<h3 id="CoverFlow"><a href="#CoverFlow" class="headerlink" title="CoverFlow"></a>CoverFlow</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/CoverFlow.gif" alt="CoverFlow"></p>
+<h3 id="CoverView"><a href="#CoverView" class="headerlink" title="CoverView"></a>CoverView</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/CoverView.gif" alt="CoverView"></p>
+<h3 id="MessageBox"><a href="#MessageBox" class="headerlink" title="MessageBox"></a>MessageBox</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/MessageBox.png" alt="MessageBox"></p>
+<h3 id="WaterfallPanel"><a href="#WaterfallPanel" class="headerlink" title="WaterfallPanel"></a>WaterfallPanel</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/WaterfallPanel.png" alt="WaterfallPanel"></p>
+<h3 id="Rate"><a href="#Rate" class="headerlink" title="Rate"></a>Rate</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Rate.png" alt="Rate"></p>
+<h3 id="BlurWindow"><a href="#BlurWindow" class="headerlink" title="BlurWindow"></a>BlurWindow</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/BlurWindow.png" alt="BlurWindow"></p>
+<h3 id="FlipClock"><a href="#FlipClock" class="headerlink" title="FlipClock"></a>FlipClock</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/FlipClock.gif" alt="FlipClock"></p>
+<h3 id="Shield"><a href="#Shield" class="headerlink" title="Shield"></a>Shield</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Shield.png" alt="Shield"></p>
+<h3 id="OutlineText"><a href="#OutlineText" class="headerlink" title="OutlineText"></a>OutlineText</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/OutlineText.png" alt="OutlineText"></p>
+<h3 id="Tag"><a href="#Tag" class="headerlink" title="Tag"></a>Tag</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Tag.png" alt="Tag"></p>
+<h3 id="ToolBar"><a href="#ToolBar" class="headerlink" title="ToolBar"></a>ToolBar</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/ToolBar.png" alt="ToolBar"></p>
+<h3 id="Slider"><a href="#Slider" class="headerlink" title="Slider"></a>Slider</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Slider.png" alt="Slider"></p>
+<h3 id="CircleProgressBar"><a href="#CircleProgressBar" class="headerlink" title="CircleProgressBar"></a>CircleProgressBar</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/CircleProgressBar.png" alt="CircleProgressBar"></p>
+<h3 id="ButtonStyle"><a href="#ButtonStyle" class="headerlink" title="ButtonStyle"></a>ButtonStyle</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Button.png" alt="ButtonStyle"></p>
+<h3 id="ToggleButtonStyle"><a href="#ToggleButtonStyle" class="headerlink" title="ToggleButtonStyle"></a>ToggleButtonStyle</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/ToggleButton.png" alt="ToggleButtonStyle"></p>
+<h3 id="RadioButtonStyle"><a href="#RadioButtonStyle" class="headerlink" title="RadioButtonStyle"></a>RadioButtonStyle</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/RadioButton.png" alt="RadioButtonStyle"></p>
+<h3 id="CheckBoxStyle"><a href="#CheckBoxStyle" class="headerlink" title="CheckBoxStyle"></a>CheckBoxStyle</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/CheckBox.png" alt="CheckBoxStyle"></p>
+<h3 id="ListBoxStyle"><a href="#ListBoxStyle" class="headerlink" title="ListBoxStyle"></a>ListBoxStyle</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/ListBox.png" alt="ListBoxStyle"></p>
+<h3 id="TreeViewStyle"><a href="#TreeViewStyle" class="headerlink" title="TreeViewStyle"></a>TreeViewStyle</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/TreeView.png" alt="TreeViewStyle"></p>
+<h3 id="ListViewStyle"><a href="#ListViewStyle" class="headerlink" title="ListViewStyle"></a>ListViewStyle</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/ListView.png" alt="ListViewStyle"></p>
+<h3 id="DataGrid"><a href="#DataGrid" class="headerlink" title="DataGrid"></a>DataGrid</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/DataGrid.png" alt="DataGrid"></p>
+<h3 id="Now-you-can-switch-to-dark-theme"><a href="#Now-you-can-switch-to-dark-theme" class="headerlink" title="Now you can switch to dark theme"></a>Now you can switch to dark theme</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/DarkTheme.png" alt="dark theme"></p>
+<h3 id="ColorPicker"><a href="#ColorPicker" class="headerlink" title="ColorPicker"></a>ColorPicker</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/ColorPicker.gif" alt="ColorPicker"></p>
+<h3 id="Loading"><a href="#Loading" class="headerlink" title="Loading"></a>Loading</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Loading.gif" alt="Loading"></p>
+<h3 id="Carousel"><a href="#Carousel" class="headerlink" title="Carousel"></a>Carousel</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Carousel.gif" alt="Carousel"></p>
+<h3 id="Pagination"><a href="#Pagination" class="headerlink" title="Pagination"></a>Pagination</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Pagination.gif" alt="Pagination"></p>
+<h3 id="Expander"><a href="#Expander" class="headerlink" title="Expander"></a>Expander</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Expander.gif" alt="Expander"></p>
+<h3 id="TimeBar"><a href="#TimeBar" class="headerlink" title="TimeBar"></a>TimeBar</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/TimeBar.gif" alt="TimeBar"></p>
+<h3 id="ImageBrowser"><a href="#ImageBrowser" class="headerlink" title="ImageBrowser"></a>ImageBrowser</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/ImageBrowser.gif" alt="ImageBrowser"></p>
+<h3 id="PreviewSlider"><a href="#PreviewSlider" class="headerlink" title="PreviewSlider"></a>PreviewSlider</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/PreviewSlider.gif" alt="PreviewSlider"></p>
+<h3 id="CompareSlider"><a href="#CompareSlider" class="headerlink" title="CompareSlider"></a>CompareSlider</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/CompareSlider-h.gif" alt="CompareSlider"></p>
+<p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/CompareSlider-v.gif" alt="CompareSlider"></p>
+<h3 id="Growl"><a href="#Growl" class="headerlink" title="Growl"></a>Growl</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Growl.gif" alt="Growl"></p>
+<h3 id="AnimationPath"><a href="#AnimationPath" class="headerlink" title="AnimationPath"></a>AnimationPath</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/AnimationPath.gif" alt="AnimationPath"></p>
+<h3 id="ProgressBar"><a href="#ProgressBar" class="headerlink" title="ProgressBar"></a>ProgressBar</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/ProgressBar.gif" alt="ProgressBar"></p>
+<h3 id="TabControl"><a href="#TabControl" class="headerlink" title="TabControl"></a>TabControl</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/TabControl.gif" alt="TabControl"></p>
+<h3 id="TabControlStyle"><a href="#TabControlStyle" class="headerlink" title="TabControlStyle"></a>TabControlStyle</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/TabControl.png" alt="TabControlStyle"></p>
+<h3 id="GroupBox"><a href="#GroupBox" class="headerlink" title="GroupBox"></a>GroupBox</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/GroupBox.png" alt="GroupBox"></p>
+<h3 id="StepBar"><a href="#StepBar" class="headerlink" title="StepBar"></a>StepBar</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/StepBar.png" alt="StepBar"></p>
+<h3 id="GifImage"><a href="#GifImage" class="headerlink" title="GifImage"></a>GifImage</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/GifImage.gif" alt="GifImage"></p>
+<h3 id="ContextMenu"><a href="#ContextMenu" class="headerlink" title="ContextMenu"></a>ContextMenu</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/ContextMenu.png" alt="ContextMenu"></p>
+<h3 id="Calendar"><a href="#Calendar" class="headerlink" title="Calendar"></a>Calendar</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Calendar.jpg" alt="Calendar"></p>
+<h3 id="Clock"><a href="#Clock" class="headerlink" title="Clock"></a>Clock</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Clock.jpg" alt="Clock"></p>
+<h3 id="CalendarWithClock"><a href="#CalendarWithClock" class="headerlink" title="CalendarWithClock"></a>CalendarWithClock</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/CalendarWithClock.png" alt="CalendarWithClock"></p>
+<h3 id="TextBlock"><a href="#TextBlock" class="headerlink" title="TextBlock"></a>TextBlock</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/TextBlock.jpg" alt="TextBlock"></p>
+<h3 id="RichTextBoxStyle"><a href="#RichTextBoxStyle" class="headerlink" title="RichTextBoxStyle"></a>RichTextBoxStyle</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/RichTextBox.png" alt="RichTextBoxStyle"></p>
+<h3 id="TextBox"><a href="#TextBox" class="headerlink" title="TextBox"></a>TextBox</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/TextBox.jpg" alt="TextBox"></p>
+<h3 id="ComboBox"><a href="#ComboBox" class="headerlink" title="ComboBox"></a>ComboBox</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/ComboBox.jpg" alt="ComboBox"></p>
+<h3 id="NumericUpDown"><a href="#NumericUpDown" class="headerlink" title="NumericUpDown"></a>NumericUpDown</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/NumericUpDown.png" alt="NumericUpDown"></p>
+<h3 id="SearchBar"><a href="#SearchBar" class="headerlink" title="SearchBar"></a>SearchBar</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/SearchBar.png" alt="SearchBar"></p>
+<h3 id="PasswordBox"><a href="#PasswordBox" class="headerlink" title="PasswordBox"></a>PasswordBox</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/PasswordBox.jpg" alt="PasswordBox"></p>
+<h3 id="DataPicker"><a href="#DataPicker" class="headerlink" title="DataPicker"></a>DataPicker</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/DataPicker.jpg" alt="DataPicker"></p>
+<h3 id="TimePicker"><a href="#TimePicker" class="headerlink" title="TimePicker"></a>TimePicker</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/TimePicker.jpg" alt="TimePicker"></p>
+<h3 id="DateTimePicker"><a href="#DateTimePicker" class="headerlink" title="DateTimePicker"></a>DateTimePicker</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/DateTimePicker.png" alt="DateTimePicker"></p>
+<h3 id="ScrollViewer"><a href="#ScrollViewer" class="headerlink" title="ScrollViewer"></a>ScrollViewer</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/ScrollViewer.png" alt="ScrollViewer"></p>
+<h3 id="CirclePanel"><a href="#CirclePanel" class="headerlink" title="CirclePanel"></a>CirclePanel</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/CirclePanel.jpg" alt="CirclePanel"></p>
+<h3 id="BorderStyle"><a href="#BorderStyle" class="headerlink" title="BorderStyle"></a>BorderStyle</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Border.png" alt="BorderStyle"></p>
+<h3 id="Brush"><a href="#Brush" class="headerlink" title="Brush"></a>Brush</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Brush.png" alt="Brush"></p>
+<h2 id="Switching-configuration"><a href="#Switching-configuration" class="headerlink" title="Switching configuration"></a>Switching configuration</h2><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/SwitchConfig.png" alt="Switching configuration"></p>
+<h1 id="捐赠（面向中国）"><a href="#捐赠（面向中国）" class="headerlink" title="捐赠（面向中国）"></a>捐赠（面向中国）</h1><p>如果您觉得HandyControl还不错，并且刚好有些闲钱，那么可以选择以下两种方式来捐赠：</p>
+<ul>
+<li><p><a href="http://www.chinacharityfederation.org/ConfirmDonation/0.html?zhijie=3" target="_blank" rel="noopener">以HandyControl的名义为慈善事业做贡献</a>  </p>
+</li>
+<li><p>为我们购买防脱洗发水<br><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/qrcode.png" alt="qrcode"></p>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="https://avatars2.githubusercontent.com/u/17383395?s=460&v=4" alt="HandyOrg">
+            
+              <p class="site-author-name" itemprop="name">HandyOrg</p>
+              <div class="site-description motion-element" itemprop="description">everything can be handy</div>
+          </div>
+
+          
+
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/HandyOrg" title="GitHub &rarr; https://github.com/HandyOrg" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="mailto:handycontrol@qq.com" title="E-Mail &rarr; mailto:handycontrol@qq.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="//shang.qq.com/wpa/qunwpa?idkey=a571e5553c9d41e49c4f22f3a8b2865451497a795ff281fedf3285def247efc1" title="QQ &rarr; //shang.qq.com/wpa/qunwpa?idkey=a571e5553c9d41e49c4f22f3a8b2865451497a795ff281fedf3285def247efc1"><i class="fa fa-fw fa-qq"></i>QQ</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://www.nuget.org/packages/HandyControl" title="Nuget &rarr; https://www.nuget.org/packages/HandyControl" rel="noopener" target="_blank"><i class="fa fa-fw fa-code"></i>Nuget</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://gitter.im/HandyControl/Lobby" title="Gitter &rarr; https://gitter.im/HandyControl/Lobby" rel="noopener" target="_blank"><i class="fa fa-fw fa-commenting"></i>Gitter</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/ghost1372/HandyControl/wiki" title="Wiki-en &rarr; https://github.com/ghost1372/HandyControl/wiki" rel="noopener" target="_blank"><i class="fa fa-fw fa-book"></i>Wiki-en</a>
+                </span>
+              
+            </div>
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Welcome-to-HandyControl"><span class="nav-number">1.</span> <span class="nav-text">Welcome to HandyControl</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#We’re-all-here"><span class="nav-number">1.1.</span> <span class="nav-text">We’re all here</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Special-thanks-to"><span class="nav-number">1.2.</span> <span class="nav-text">Special thanks to</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Usage"><span class="nav-number">1.3.</span> <span class="nav-text">Usage</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Latest-examples"><span class="nav-number">1.4.</span> <span class="nav-text">Latest examples</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#NotifyIcon"><span class="nav-number">1.4.1.</span> <span class="nav-text">NotifyIcon</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Dialog"><span class="nav-number">1.4.2.</span> <span class="nav-text">Dialog</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#WaveProgressBar"><span class="nav-number">1.4.3.</span> <span class="nav-text">WaveProgressBar</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Badge"><span class="nav-number">1.4.4.</span> <span class="nav-text">Badge</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Gravatar"><span class="nav-number">1.4.5.</span> <span class="nav-text">Gravatar</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#History-publication"><span class="nav-number">1.5.</span> <span class="nav-text">History publication</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#GoToTop"><span class="nav-number">1.5.1.</span> <span class="nav-text">GoToTop</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ChatBubble"><span class="nav-number">1.5.2.</span> <span class="nav-text">ChatBubble</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Label"><span class="nav-number">1.5.3.</span> <span class="nav-text">Label</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Transfer"><span class="nav-number">1.5.4.</span> <span class="nav-text">Transfer</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ProgressButton"><span class="nav-number">1.5.5.</span> <span class="nav-text">ProgressButton</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CoverFlow"><span class="nav-number">1.5.6.</span> <span class="nav-text">CoverFlow</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CoverView"><span class="nav-number">1.5.7.</span> <span class="nav-text">CoverView</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MessageBox"><span class="nav-number">1.5.8.</span> <span class="nav-text">MessageBox</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#WaterfallPanel"><span class="nav-number">1.5.9.</span> <span class="nav-text">WaterfallPanel</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Rate"><span class="nav-number">1.5.10.</span> <span class="nav-text">Rate</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#BlurWindow"><span class="nav-number">1.5.11.</span> <span class="nav-text">BlurWindow</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#FlipClock"><span class="nav-number">1.5.12.</span> <span class="nav-text">FlipClock</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Shield"><span class="nav-number">1.5.13.</span> <span class="nav-text">Shield</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#OutlineText"><span class="nav-number">1.5.14.</span> <span class="nav-text">OutlineText</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Tag"><span class="nav-number">1.5.15.</span> <span class="nav-text">Tag</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ToolBar"><span class="nav-number">1.5.16.</span> <span class="nav-text">ToolBar</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Slider"><span class="nav-number">1.5.17.</span> <span class="nav-text">Slider</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CircleProgressBar"><span class="nav-number">1.5.18.</span> <span class="nav-text">CircleProgressBar</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ButtonStyle"><span class="nav-number">1.5.19.</span> <span class="nav-text">ButtonStyle</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ToggleButtonStyle"><span class="nav-number">1.5.20.</span> <span class="nav-text">ToggleButtonStyle</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#RadioButtonStyle"><span class="nav-number">1.5.21.</span> <span class="nav-text">RadioButtonStyle</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CheckBoxStyle"><span class="nav-number">1.5.22.</span> <span class="nav-text">CheckBoxStyle</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ListBoxStyle"><span class="nav-number">1.5.23.</span> <span class="nav-text">ListBoxStyle</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#TreeViewStyle"><span class="nav-number">1.5.24.</span> <span class="nav-text">TreeViewStyle</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ListViewStyle"><span class="nav-number">1.5.25.</span> <span class="nav-text">ListViewStyle</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#DataGrid"><span class="nav-number">1.5.26.</span> <span class="nav-text">DataGrid</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Now-you-can-switch-to-dark-theme"><span class="nav-number">1.5.27.</span> <span class="nav-text">Now you can switch to dark theme</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ColorPicker"><span class="nav-number">1.5.28.</span> <span class="nav-text">ColorPicker</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Loading"><span class="nav-number">1.5.29.</span> <span class="nav-text">Loading</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Carousel"><span class="nav-number">1.5.30.</span> <span class="nav-text">Carousel</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Pagination"><span class="nav-number">1.5.31.</span> <span class="nav-text">Pagination</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Expander"><span class="nav-number">1.5.32.</span> <span class="nav-text">Expander</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#TimeBar"><span class="nav-number">1.5.33.</span> <span class="nav-text">TimeBar</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ImageBrowser"><span class="nav-number">1.5.34.</span> <span class="nav-text">ImageBrowser</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#PreviewSlider"><span class="nav-number">1.5.35.</span> <span class="nav-text">PreviewSlider</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CompareSlider"><span class="nav-number">1.5.36.</span> <span class="nav-text">CompareSlider</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Growl"><span class="nav-number">1.5.37.</span> <span class="nav-text">Growl</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#AnimationPath"><span class="nav-number">1.5.38.</span> <span class="nav-text">AnimationPath</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ProgressBar"><span class="nav-number">1.5.39.</span> <span class="nav-text">ProgressBar</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#TabControl"><span class="nav-number">1.5.40.</span> <span class="nav-text">TabControl</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#TabControlStyle"><span class="nav-number">1.5.41.</span> <span class="nav-text">TabControlStyle</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GroupBox"><span class="nav-number">1.5.42.</span> <span class="nav-text">GroupBox</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#StepBar"><span class="nav-number">1.5.43.</span> <span class="nav-text">StepBar</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GifImage"><span class="nav-number">1.5.44.</span> <span class="nav-text">GifImage</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ContextMenu"><span class="nav-number">1.5.45.</span> <span class="nav-text">ContextMenu</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Calendar"><span class="nav-number">1.5.46.</span> <span class="nav-text">Calendar</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Clock"><span class="nav-number">1.5.47.</span> <span class="nav-text">Clock</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CalendarWithClock"><span class="nav-number">1.5.48.</span> <span class="nav-text">CalendarWithClock</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#TextBlock"><span class="nav-number">1.5.49.</span> <span class="nav-text">TextBlock</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#RichTextBoxStyle"><span class="nav-number">1.5.50.</span> <span class="nav-text">RichTextBoxStyle</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#TextBox"><span class="nav-number">1.5.51.</span> <span class="nav-text">TextBox</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ComboBox"><span class="nav-number">1.5.52.</span> <span class="nav-text">ComboBox</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#NumericUpDown"><span class="nav-number">1.5.53.</span> <span class="nav-text">NumericUpDown</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SearchBar"><span class="nav-number">1.5.54.</span> <span class="nav-text">SearchBar</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#PasswordBox"><span class="nav-number">1.5.55.</span> <span class="nav-text">PasswordBox</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#DataPicker"><span class="nav-number">1.5.56.</span> <span class="nav-text">DataPicker</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#TimePicker"><span class="nav-number">1.5.57.</span> <span class="nav-text">TimePicker</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#DateTimePicker"><span class="nav-number">1.5.58.</span> <span class="nav-text">DateTimePicker</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ScrollViewer"><span class="nav-number">1.5.59.</span> <span class="nav-text">ScrollViewer</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CirclePanel"><span class="nav-number">1.5.60.</span> <span class="nav-text">CirclePanel</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#BorderStyle"><span class="nav-number">1.5.61.</span> <span class="nav-text">BorderStyle</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Brush"><span class="nav-number">1.5.62.</span> <span class="nav-text">Brush</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Switching-configuration"><span class="nav-number">1.6.</span> <span class="nav-text">Switching configuration</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#捐赠（面向中国）"><span class="nav-number">2.</span> <span class="nav-text">捐赠（面向中国）</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
+
+    </div>
+  </aside>
+  
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-HandyOrg"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">HandyOrg</span>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.1.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/js/utils.js?v=7.1.0"></script>
+
+  <script src="/js/motion.js?v=7.1.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/affix.js?v=7.1.0"></script>
+
+  <script src="/js/schemes/pisces.js?v=7.1.0"></script>
+
+
+
+
+  
+  <script src="/js/scrollspy.js?v=7.1.0"></script>
+<script src="/js/post-details.js?v=7.1.0"></script>
+
+
+
+  
+
+
+  <script src="/js/next-boot.js?v=7.1.0"></script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
