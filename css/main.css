@@ -1859,7 +1859,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffd7e7;
+  background: #44be3c;
 }
 .feed-link,
 .chat {
@@ -3003,4 +3003,7 @@ ul.breadcrumb li+li:last-child {
   .pagination {
     margin: 8px 0 0;
   }
+}
+.posts-expand .post-body img {
+  margin: 0 0 25px;
 }

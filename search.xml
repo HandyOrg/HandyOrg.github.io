@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[欢迎使用HandyControl]]></title>
+    <url>%2Fhandycontrol%2Findex.html</url>
+    <content type="text"><![CDATA[HandyControl是一款WPF控件库，它几乎重写了所有原生样式，同时包含50多个额外的控件（正逐步增加）。 使用要求 .Net &gt;= 4.0 OS &gt;= win7 IDE &gt;= vs2017 C# &gt;= 7.0 下载NugetNuget上是编译好的发布版本，地址为：HandyControl-Nuget Nuget上一般至少一个月发布一次，所以有很大的可能和本文档有出入，有出入的地方一切以本文档为准。 GithubGithub上是最新的源代码，地址为：HandyControl-Github Github上一般每天都有更新，相对而言不适合用于生产。 文档的更新速度必然跟不上最新的Github源码，有出入的地方一切以本文档为准，因为文档是相对稳定的。 项目结构介绍整体结构从Github上克隆好源码后，进入src文件夹，该文件夹结构如下： 这里一共有三个解决方案sln文件，需要注意的是HandyControl_Core30.sln需要用VS2019打开，其它两个用VS2017即可。 Net_GE45的意思是.Net版本大于等于4.5 Shared文件夹用于存放共享项目的代码 图中五个文件夹内部各包含两个子文件夹，例如在Shared中还包含两个子文件夹： 它们分别存放控件源码和控件示例源码。 源码结构我们以HandyControl_Net_GE45.sln为示例进行说明，使用VS2017打开该解决方案： 如果要启动示例，查看控件效果，请将HandyControlDemo_[指定的项目类型]作为启动项。 如图，已将HandyControlDemo_Net_GE45作为启动项。 大部分公共的源码都在Shared文件夹中，部分需要为特定项目类型定制的代码则被提出来放到各自的文件夹中。 HandyControl源码（主要在HandyControl_Shared中）主要包含7个文件夹，对它们的描述如下表所示： 名称 用途 Controls 包含所有控件的后台交互逻辑 Data 控件库所需的基本数据定义 Expression 抽取自Microsoft.Expression.Drawing Interactivity 抽取自Microsoft.Expression.Interactions &amp; System.Windows.Interactivity，并做了部分修改 Properties 包含控件库属性和语言包 Themes 包含控件库所有的xaml定义 Tools 主要包含控件库所需的帮助方法和扩展方法 Controls中的每个控件一般都能在Themes中找到对应的xaml定义。 编译源码 编译前请确认你的开发环境是否符合使用要求。 HandyControl_Net_GE45.sln解决方案中包含了3个项目类型，分别是.Net 4.5、.Net 4.6.2和.Net 4.7，请在解决方案配置下拉框中进行选择：]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[handykeras]]></title>
+    <url>%2Fhandykeras%2Findex.html</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[基础xaml定义]]></title>
+    <url>%2Fhandycontrol%2Fbasic_xaml%2Findex.html</url>
+    <content type="text"><![CDATA[基础xaml定义都在Basic文件夹中，其内部结构如下： 对它们的描述如下表所示： 名称 用途 Colors 包含内置的3个颜色定义文件 Basic.xaml 包装好的基础xaml定义 Behaviors.xaml 包含所有的行为定义 Brushes.xaml 包含所有的画刷定义 Converters.xaml 包含所有的转换器定义 Effects.xaml 包含所有的效果定义 Fonts.xaml 包含所有的字体大小定义 Geometries.xaml 包含所有的几何形状定义，多用于Path Paths.xaml 包含所有的Path路径定义 Sizes.xaml 包含所有的尺寸定义]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fdata%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Flangs%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Ftools%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fbasic_xaml%2Fbehaviors%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fbasic_xaml%2Fbrushes%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fbasic_xaml%2Fcolors%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fbasic_xaml%2Fconverters%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fbasic_xaml%2Feffects%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fbasic_xaml%2Fgeometries%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fbasic_xaml%2Ffonts%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fbasic_xaml%2Fpaths%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fbasic_xaml%2Fsizes%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[GrowlInfo]]></title>
+    <url>%2Fhandycontrol%2Fdata%2FGrowlInfo%2Findex.html</url>
+    <content type="text"><![CDATA[class Growl消息初始化模型 成员名 类型 说明 默认值 Message string 通知内容 - ShowDateTime bool 是否显示通知时间 true WaitTime int 等待自动关闭时间 6 CancelStr string 取消字符串 Lang.Cancel ConfirmStr string 确认字符串 Lang.Confirm ActionBeforeClose Func&lt;bool, bool&gt; 关闭前的委托 - StaysOpen bool 保持打开 false IsCustom bool 是否自定义行为 false Type InfoType 消息类型 InfoType.Success IconKey string 图标键名 - IconBrushKey string 图标画刷键名 - ShowCloseButton bool 是否显示关闭按钮 true Token string 消息标记 - FAQ 这里的IconKey和IconBrushKey我该填什么啊？ IconKey必须填资源类型为Geometry的Key名，例如以下的资源，它的Key名GitterGeometry就可以作为IconKey：1&lt;Geometry x:Key="GitterGeometry"&gt;M260.8 645H160V0h100.8v645zM461.8 152.2h-100.8V1024h100.8V152.2z m201.2 0h-100.8V1024h100.8V152.2zM864 152h-100.8v494H864V152z&lt;/Geometry&gt; IconBrushKey必须填资源类型为Brush的Key名，例如以下的资源，它的Key名ToolBarBackground就可以作为IconBrushKey：1234&lt;LinearGradientBrush x:Key="ToolBarBackground" EndPoint="0.5,1" StartPoint="0.5,0"&gt; &lt;GradientStop Color="#F5F4F5" Offset="0"/&gt; &lt;GradientStop Color="#D1CFD1" Offset="1"/&gt;&lt;/LinearGradientBrush&gt;]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[InfoType]]></title>
+    <url>%2Fhandycontrol%2Fdata%2FInfoType%2Findex.html</url>
+    <content type="text"><![CDATA[enum(int) 消息类型 成员名 值 说明 Success 0 成功 Info 1 信息 Warning 2 警告 Error 3 错误 Fatal 4 严重 Ask 5 询问]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[原生控件]]></title>
+    <url>%2Fhandycontrol%2Fnative_controls%2Findex.html</url>
+    <content type="text"><![CDATA[原生控件是指WPF框架自带的控件，除此之外，通过附加属性实现简单的功能扩展。]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fextend_controls%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[Growl 信息通知]]></title>
+    <url>%2Fhandycontrol%2Fextend_controls%2Fgrowl%2Findex.html</url>
+    <content type="text"><![CDATA[当需要在窗口的右侧区域，以从上到下排列通知信息时可以使用本控件。 控件效果 准备工作在指定的窗口右侧区域添加StackPanel容器123&lt;ScrollViewer VerticalScrollBarVisibility="Hidden" HorizontalAlignment="Right"&gt; &lt;StackPanel VerticalAlignment="Top" Margin="0,10,10,10"/&gt;&lt;/ScrollViewer&gt; 为了方便滚动，一般会在外层包一个ScrollViewer，同时为了美观，我们设置ScrollViewer的VerticalScrollBarVisibility=&quot;Hidden&quot;，最好给StackPanel添加一个合适的Margin，也是为了美观。 基础用法第一步：将StackPanel设置为Growl的容器 123&lt;ScrollViewer VerticalScrollBarVisibility="Hidden" HorizontalAlignment="Right"&gt; &lt;StackPanel controls:Growl.GrowlParent="True" VerticalAlignment="Top" Margin="0,10,10,10"/&gt;&lt;/ScrollViewer&gt; 注意代码中的controls:Growl.GrowlParent=&quot;True&quot;。 第二步：调用Growl的相关接口来显示指定的消息 例如：Growl.Success(&quot;文件保存成功！&quot;); 只在激活中的窗口显示信息通知为需要显示信息通知的窗口重写OnActivated和OnDeactivated方法，在OnActivated中调用Growl.SetGrowlParent(GrowlPanel, true);，在OnDeactivated中调用Growl.SetGrowlParent(GrowlPanel, false); 其中GrowlPanel是信息通知容器，类型推荐是StackPanel 这里需要说明一下，一个窗口对应一个StackPanel容器，Growl内部会维护一个变量用以存储这个容器，在每次通知触发时，会向这个容器中插入Growl的实例，也就是说，每次调用Growl.SetGrowlParent(GrowlPanel, true);时，GrowlPanel会成为内部的那个变量。 这种情况下就不需要在xaml中设置controls:Growl.GrowlParent=&quot;True&quot;了。 在任意的StackPanel容器中显示信息通知第一步：为StackPanel容器赋予消息标记：SuccessMsg123&lt;ScrollViewer VerticalScrollBarVisibility="Hidden" HorizontalAlignment="Right"&gt; &lt;StackPanel controls:Growl.Token="SuccessMsg" VerticalAlignment="Top" Margin="0,10,10,10"/&gt;&lt;/ScrollViewer&gt; 注意代码中的controls:Growl.Token=&quot;SuccessMsg&quot;。 第二步：使用消息标记：SuccessMsg，并调用Growl的相关接口来显示指定的消息 例如：Growl.Success(&quot;文件保存成功！&quot;, &quot;SuccessMsg&quot;); 现在”文件保存成功！”这则消息只会发送到拥有”SuccessMsg”消息标记的StackPanel容器中。 属性 名称 说明 GrowlPanel 当前使用的消息容器 附加属性 名称 说明 Token 用于设置消息标记 GrowlParent 用于设置消息容器 方法 名称 说明 Success(string) 显示一则成功通知 Success(string, string) 使用指定的消息标记显示一则成功通知 Success(GrowlInfo) 使用完整的消息初始化模型显示一则成功通知 Info(string) 显示一则消息通知 Info(string, string) 使用指定的消息标记显示一则消息通知 Info(GrowlInfo) 使用完整的消息初始化模型显示一则消息通知 Warning(string) 显示一则警告通知 Warning(string, string) 使用指定的消息标记显示一则警告通知 Warning(GrowlInfo) 使用完整的消息初始化模型显示一则警告通知 Error(string) 显示一则错误通知 Error(string, string) 使用指定的消息标记显示一则错误通知 Error(GrowlInfo) 使用完整的消息初始化模型显示一则错误通知 Fatal(string) 显示一则严重通知 Fatal(string, string) 使用指定的消息标记显示一则严重通知 Fatal(GrowlInfo) 使用完整的消息初始化模型显示一则严重通知 Ask(string, Func&lt;bool, bool&gt;) 显示一则询问通知 Ask(string, Func&lt;bool, bool&gt;, string) 使用指定的消息标记显示一则询问通知 Ask(GrowlInfo) 使用完整的消息初始化模型显示一则询问通知 Register(string, Panel) 为指定的容器注册消息标记 Unregister(string, Panel) 为指定的容器取消消息标记的注册 Unregister(Panel) 如果该容器注册了消息标记则取消注册 Clear( ) 清空当前使用的消息容器中的消息 Clear(string) 清空含有指定消息标记的消息容器中的消息 FAQ Ask比较特殊，咋用？ Ask方法主要的焦点为第二个参数，它的类型是Func&lt;bool, bool&gt;，我们先看示例代码：12345Growl.Ask(Properties.Langs.Lang.GrowlAsk, isConfirmed =&gt;&#123; Growl.Info(isConfirmed.ToString()); return true;&#125;); 使用Ask方法默认会显示“确认”和“取消”按钮，当点击“确认”时，上述代码中的isConfirmed的值为true，点击“取消”则为false，可以根据isConfirmed的值来采取相应操作，最后如果返回true则会关闭Growl通知，返回false则不关闭。]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fattach%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fnative_controls%2Fcalendar%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fnative_controls%2Fborder%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fnative_controls%2Fbutton%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fnative_controls%2FcheckBox%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fnative_controls%2FcontentControl%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fnative_controls%2FcontextMenu%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fnative_controls%2FdataGrid%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fnative_controls%2FdatePicker%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fnative_controls%2Fexpander%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fnative_controls%2FgroupBox%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fnative_controls%2Fimage%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fnative_controls%2Flabel%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fnative_controls%2FlistView%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fnative_controls%2FlistBox%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fnative_controls%2Fmenu%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fnative_controls%2FradioButton%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fnative_controls%2FpasswordBox%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fnative_controls%2FprogressBar%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fnative_controls%2FrichTextBox%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fnative_controls%2FscrollViewer%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fnative_controls%2Fslider%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fnative_controls%2FtabControl%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fnative_controls%2FtextBlock%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fnative_controls%2FtextBox%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fnative_controls%2FtoolBar%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fnative_controls%2FtoggleButton%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fnative_controls%2FtreeView%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fnative_controls%2FtoolTip%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fnative_controls%2Fwindow%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fnative_controls%2FcomboBox%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fextend_controls%2FanimationPath%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fextend_controls%2Fbadge%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fextend_controls%2FcalendarWithClock%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fextend_controls%2Fcarousel%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fextend_controls%2FchatBubble%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fextend_controls%2FcirclePanel%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fextend_controls%2Fclock%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fextend_controls%2FcolorPicker%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fextend_controls%2FcomboBox%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fextend_controls%2FcompareSlider%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fextend_controls%2FcoverFlow%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fextend_controls%2FcoverView%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fextend_controls%2FdatePicker%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fextend_controls%2FdateTimePicker%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fextend_controls%2Fdialog%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fextend_controls%2FflipClock%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fextend_controls%2FgifImage%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fextend_controls%2FgotoTop%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fextend_controls%2Fgravatar%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fextend_controls%2FimageBrowser%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fextend_controls%2FimageViewer%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fextend_controls%2Floading%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fextend_controls%2FmessageBox%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fextend_controls%2FnotifyIcon%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fextend_controls%2FnumericUpDown%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fextend_controls%2FoutlineText%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fextend_controls%2Fpagination%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fextend_controls%2FpasswordBox%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fextend_controls%2FpopupWindow%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fextend_controls%2FpreviewSlider%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fextend_controls%2FprogressButton%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fextend_controls%2FradioGroup%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fextend_controls%2Frate%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fextend_controls%2FscrollViewer%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fextend_controls%2FsearchBar%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fextend_controls%2Fshield%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fextend_controls%2FsimpleItemsControl%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fextend_controls%2FsimplePanel%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fextend_controls%2FstepBar%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fextend_controls%2FtabControl%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fextend_controls%2Ftag%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fextend_controls%2FtextBox%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fextend_controls%2FtimeBar%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fextend_controls%2FtimePicker%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fextend_controls%2Ftransfer%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fextend_controls%2FtransitioningContentControl%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fextend_controls%2FwaterfallPanel%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fextend_controls%2Fwindow%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fattach%2FbackgroundSwitchElement%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fattach%2FborderElement%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fattach%2FdataGridAttach%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fattach%2FedgeElement%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fattach%2FiconElement%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fattach%2FiconSwitchElement%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fattach%2FinfoElement%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fattach%2FlinkElement%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fattach%2FpanelElement%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fattach%2FpasswordBoxMonitor%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fattach%2FstatusSwitchElement%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fattach%2FtipElement%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fattach%2FtitleElement%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fattach%2FvisualElement%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fattach%2FwindowAttach%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+</search>

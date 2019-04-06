@@ -212,7 +212,7 @@
         
         
           
-          <li class="menu-item menu-item-home menu-item-active">
+          <li class="menu-item menu-item-主页 menu-item-active">
 
     
     
@@ -222,7 +222,7 @@
       
     
 
-    <a href="/" rel="section">首页</a>
+    <a href="/" rel="section">主页</a>
 
   </li>
         
@@ -276,15 +276,51 @@
             
             
           
+            
+            
+            
+          
+            
+            
+            
+          
         
 
       
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            搜索</a>
+        </li>
       
     </ul>
   
 
   
 
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
   
 </nav>
 
@@ -353,7 +389,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2019/04/01/home/" class="post-title-link" itemprop="url">Welcome to HandyControl</a>
+                <a href="/2019/04/01/home/" class="post-title-link" itemprop="url">欢迎来到HandyOrg</a>
               
             
           </h1>
@@ -395,7 +431,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-04-02 22:14:33" itemprop="dateModified" datetime="2019-04-02T22:14:33+08:00">2019-04-02</time>
+                <time title="修改时间：2019-04-03 00:11:16" itemprop="dateModified" datetime="2019-04-03T00:11:16+08:00">2019-04-03</time>
               
             
           </span>
@@ -431,87 +467,17 @@
       
         
           
-            <h1 id="Welcome-to-HandyControl"><a href="#Welcome-to-HandyControl" class="headerlink" title="Welcome to HandyControl"></a>Welcome to HandyControl</h1><h2 id="We’re-all-here"><a href="#We’re-all-here" class="headerlink" title="We’re all here"></a>We’re all here</h2><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/qq-group.png" alt="qq-group"></p>
-<h2 id="Special-thanks-to"><a href="#Special-thanks-to" class="headerlink" title="Special thanks to"></a>Special thanks to</h2><p><a href="https://www.jetbrains.com/?from=HandyControl" target="_blank" rel="noopener"><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/resharper_logo.png" alt="JetBrains"></a></p>
-<h2 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h2><p>Step 1：Add a reference to HandyControl or search for HandyControl on the nuget; </p>
-<figure class="highlight plain"><figcaption><span>HandyControl```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">Step 2：Add code in App.xaml as follows:</span><br><span class="line">```XML</span><br><span class="line">&lt;Application.Resources&gt;</span><br><span class="line">    &lt;ResourceDictionary&gt;</span><br><span class="line">        &lt;ResourceDictionary.MergedDictionaries&gt;</span><br><span class="line">            &lt;ResourceDictionary Source=&quot;pack://application:,,,/HandyControl;component/Themes/SkinDefault.xaml&quot;/&gt;</span><br><span class="line">            &lt;ResourceDictionary Source=&quot;pack://application:,,,/HandyControl;component/Themes/Theme.xaml&quot;/&gt;</span><br><span class="line">        &lt;/ResourceDictionary.MergedDictionaries&gt;</span><br><span class="line">    &lt;/ResourceDictionary&gt;</span><br><span class="line">&lt;/Application.Resources&gt;</span><br></pre></td></tr></table></figure>
-<p>Step 3：enjoy coding</p>
-<h2 id="Latest-examples"><a href="#Latest-examples" class="headerlink" title="Latest examples"></a>Latest examples</h2><h3 id="NotifyIcon"><a href="#NotifyIcon" class="headerlink" title="NotifyIcon"></a>NotifyIcon</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/NotifyIcon.png" alt="NotifyIcon"></p>
-<h3 id="Dialog"><a href="#Dialog" class="headerlink" title="Dialog"></a>Dialog</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Dialog.png" alt="Dialog"></p>
-<h3 id="WaveProgressBar"><a href="#WaveProgressBar" class="headerlink" title="WaveProgressBar"></a>WaveProgressBar</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/WaveProgressBar.gif" alt="WaveProgressBar"></p>
-<h3 id="Badge"><a href="#Badge" class="headerlink" title="Badge"></a>Badge</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Badge.png" alt="Badge"></p>
-<h3 id="Gravatar"><a href="#Gravatar" class="headerlink" title="Gravatar"></a>Gravatar</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Gravatar.gif" alt="Gravatar"></p>
-<h2 id="History-publication"><a href="#History-publication" class="headerlink" title="History publication"></a>History publication</h2><h3 id="GoToTop"><a href="#GoToTop" class="headerlink" title="GoToTop"></a>GoToTop</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/GoToTop.gif" alt="GoToTop"></p>
-<h3 id="ChatBubble"><a href="#ChatBubble" class="headerlink" title="ChatBubble"></a>ChatBubble</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/ChatBubble.png" alt="ChatBubble"></p>
-<h3 id="Label"><a href="#Label" class="headerlink" title="Label"></a>Label</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Label.png" alt="Label"></p>
-<h3 id="Transfer"><a href="#Transfer" class="headerlink" title="Transfer"></a>Transfer</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Transfer.png" alt="Transfer"></p>
-<h3 id="ProgressButton"><a href="#ProgressButton" class="headerlink" title="ProgressButton"></a>ProgressButton</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/ProgressButton.png" alt="ProgressButton"></p>
-<h3 id="CoverFlow"><a href="#CoverFlow" class="headerlink" title="CoverFlow"></a>CoverFlow</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/CoverFlow.gif" alt="CoverFlow"></p>
-<h3 id="CoverView"><a href="#CoverView" class="headerlink" title="CoverView"></a>CoverView</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/CoverView.gif" alt="CoverView"></p>
-<h3 id="MessageBox"><a href="#MessageBox" class="headerlink" title="MessageBox"></a>MessageBox</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/MessageBox.png" alt="MessageBox"></p>
-<h3 id="WaterfallPanel"><a href="#WaterfallPanel" class="headerlink" title="WaterfallPanel"></a>WaterfallPanel</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/WaterfallPanel.png" alt="WaterfallPanel"></p>
-<h3 id="Rate"><a href="#Rate" class="headerlink" title="Rate"></a>Rate</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Rate.png" alt="Rate"></p>
-<h3 id="BlurWindow"><a href="#BlurWindow" class="headerlink" title="BlurWindow"></a>BlurWindow</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/BlurWindow.png" alt="BlurWindow"></p>
-<h3 id="FlipClock"><a href="#FlipClock" class="headerlink" title="FlipClock"></a>FlipClock</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/FlipClock.gif" alt="FlipClock"></p>
-<h3 id="Shield"><a href="#Shield" class="headerlink" title="Shield"></a>Shield</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Shield.png" alt="Shield"></p>
-<h3 id="OutlineText"><a href="#OutlineText" class="headerlink" title="OutlineText"></a>OutlineText</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/OutlineText.png" alt="OutlineText"></p>
-<h3 id="Tag"><a href="#Tag" class="headerlink" title="Tag"></a>Tag</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Tag.png" alt="Tag"></p>
-<h3 id="ToolBar"><a href="#ToolBar" class="headerlink" title="ToolBar"></a>ToolBar</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/ToolBar.png" alt="ToolBar"></p>
-<h3 id="Slider"><a href="#Slider" class="headerlink" title="Slider"></a>Slider</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Slider.png" alt="Slider"></p>
-<h3 id="CircleProgressBar"><a href="#CircleProgressBar" class="headerlink" title="CircleProgressBar"></a>CircleProgressBar</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/CircleProgressBar.png" alt="CircleProgressBar"></p>
-<h3 id="ButtonStyle"><a href="#ButtonStyle" class="headerlink" title="ButtonStyle"></a>ButtonStyle</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Button.png" alt="ButtonStyle"></p>
-<h3 id="ToggleButtonStyle"><a href="#ToggleButtonStyle" class="headerlink" title="ToggleButtonStyle"></a>ToggleButtonStyle</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/ToggleButton.png" alt="ToggleButtonStyle"></p>
-<h3 id="RadioButtonStyle"><a href="#RadioButtonStyle" class="headerlink" title="RadioButtonStyle"></a>RadioButtonStyle</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/RadioButton.png" alt="RadioButtonStyle"></p>
-<h3 id="CheckBoxStyle"><a href="#CheckBoxStyle" class="headerlink" title="CheckBoxStyle"></a>CheckBoxStyle</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/CheckBox.png" alt="CheckBoxStyle"></p>
-<h3 id="ListBoxStyle"><a href="#ListBoxStyle" class="headerlink" title="ListBoxStyle"></a>ListBoxStyle</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/ListBox.png" alt="ListBoxStyle"></p>
-<h3 id="TreeViewStyle"><a href="#TreeViewStyle" class="headerlink" title="TreeViewStyle"></a>TreeViewStyle</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/TreeView.png" alt="TreeViewStyle"></p>
-<h3 id="ListViewStyle"><a href="#ListViewStyle" class="headerlink" title="ListViewStyle"></a>ListViewStyle</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/ListView.png" alt="ListViewStyle"></p>
-<h3 id="DataGrid"><a href="#DataGrid" class="headerlink" title="DataGrid"></a>DataGrid</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/DataGrid.png" alt="DataGrid"></p>
-<h3 id="Now-you-can-switch-to-dark-theme"><a href="#Now-you-can-switch-to-dark-theme" class="headerlink" title="Now you can switch to dark theme"></a>Now you can switch to dark theme</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/DarkTheme.png" alt="dark theme"></p>
-<h3 id="ColorPicker"><a href="#ColorPicker" class="headerlink" title="ColorPicker"></a>ColorPicker</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/ColorPicker.gif" alt="ColorPicker"></p>
-<h3 id="Loading"><a href="#Loading" class="headerlink" title="Loading"></a>Loading</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Loading.gif" alt="Loading"></p>
-<h3 id="Carousel"><a href="#Carousel" class="headerlink" title="Carousel"></a>Carousel</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Carousel.gif" alt="Carousel"></p>
-<h3 id="Pagination"><a href="#Pagination" class="headerlink" title="Pagination"></a>Pagination</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Pagination.gif" alt="Pagination"></p>
-<h3 id="Expander"><a href="#Expander" class="headerlink" title="Expander"></a>Expander</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Expander.gif" alt="Expander"></p>
-<h3 id="TimeBar"><a href="#TimeBar" class="headerlink" title="TimeBar"></a>TimeBar</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/TimeBar.gif" alt="TimeBar"></p>
-<h3 id="ImageBrowser"><a href="#ImageBrowser" class="headerlink" title="ImageBrowser"></a>ImageBrowser</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/ImageBrowser.gif" alt="ImageBrowser"></p>
-<h3 id="PreviewSlider"><a href="#PreviewSlider" class="headerlink" title="PreviewSlider"></a>PreviewSlider</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/PreviewSlider.gif" alt="PreviewSlider"></p>
-<h3 id="CompareSlider"><a href="#CompareSlider" class="headerlink" title="CompareSlider"></a>CompareSlider</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/CompareSlider-h.gif" alt="CompareSlider"></p>
-<p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/CompareSlider-v.gif" alt="CompareSlider"></p>
-<h3 id="Growl"><a href="#Growl" class="headerlink" title="Growl"></a>Growl</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Growl.gif" alt="Growl"></p>
-<h3 id="AnimationPath"><a href="#AnimationPath" class="headerlink" title="AnimationPath"></a>AnimationPath</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/AnimationPath.gif" alt="AnimationPath"></p>
-<h3 id="ProgressBar"><a href="#ProgressBar" class="headerlink" title="ProgressBar"></a>ProgressBar</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/ProgressBar.gif" alt="ProgressBar"></p>
-<h3 id="TabControl"><a href="#TabControl" class="headerlink" title="TabControl"></a>TabControl</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/TabControl.gif" alt="TabControl"></p>
-<h3 id="TabControlStyle"><a href="#TabControlStyle" class="headerlink" title="TabControlStyle"></a>TabControlStyle</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/TabControl.png" alt="TabControlStyle"></p>
-<h3 id="GroupBox"><a href="#GroupBox" class="headerlink" title="GroupBox"></a>GroupBox</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/GroupBox.png" alt="GroupBox"></p>
-<h3 id="StepBar"><a href="#StepBar" class="headerlink" title="StepBar"></a>StepBar</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/StepBar.png" alt="StepBar"></p>
-<h3 id="GifImage"><a href="#GifImage" class="headerlink" title="GifImage"></a>GifImage</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/GifImage.gif" alt="GifImage"></p>
-<h3 id="ContextMenu"><a href="#ContextMenu" class="headerlink" title="ContextMenu"></a>ContextMenu</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/ContextMenu.png" alt="ContextMenu"></p>
-<h3 id="Calendar"><a href="#Calendar" class="headerlink" title="Calendar"></a>Calendar</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Calendar.jpg" alt="Calendar"></p>
-<h3 id="Clock"><a href="#Clock" class="headerlink" title="Clock"></a>Clock</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Clock.jpg" alt="Clock"></p>
-<h3 id="CalendarWithClock"><a href="#CalendarWithClock" class="headerlink" title="CalendarWithClock"></a>CalendarWithClock</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/CalendarWithClock.png" alt="CalendarWithClock"></p>
-<h3 id="TextBlock"><a href="#TextBlock" class="headerlink" title="TextBlock"></a>TextBlock</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/TextBlock.jpg" alt="TextBlock"></p>
-<h3 id="RichTextBoxStyle"><a href="#RichTextBoxStyle" class="headerlink" title="RichTextBoxStyle"></a>RichTextBoxStyle</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/RichTextBox.png" alt="RichTextBoxStyle"></p>
-<h3 id="TextBox"><a href="#TextBox" class="headerlink" title="TextBox"></a>TextBox</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/TextBox.jpg" alt="TextBox"></p>
-<h3 id="ComboBox"><a href="#ComboBox" class="headerlink" title="ComboBox"></a>ComboBox</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/ComboBox.jpg" alt="ComboBox"></p>
-<h3 id="NumericUpDown"><a href="#NumericUpDown" class="headerlink" title="NumericUpDown"></a>NumericUpDown</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/NumericUpDown.png" alt="NumericUpDown"></p>
-<h3 id="SearchBar"><a href="#SearchBar" class="headerlink" title="SearchBar"></a>SearchBar</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/SearchBar.png" alt="SearchBar"></p>
-<h3 id="PasswordBox"><a href="#PasswordBox" class="headerlink" title="PasswordBox"></a>PasswordBox</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/PasswordBox.jpg" alt="PasswordBox"></p>
-<h3 id="DataPicker"><a href="#DataPicker" class="headerlink" title="DataPicker"></a>DataPicker</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/DataPicker.jpg" alt="DataPicker"></p>
-<h3 id="TimePicker"><a href="#TimePicker" class="headerlink" title="TimePicker"></a>TimePicker</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/TimePicker.jpg" alt="TimePicker"></p>
-<h3 id="DateTimePicker"><a href="#DateTimePicker" class="headerlink" title="DateTimePicker"></a>DateTimePicker</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/DateTimePicker.png" alt="DateTimePicker"></p>
-<h3 id="ScrollViewer"><a href="#ScrollViewer" class="headerlink" title="ScrollViewer"></a>ScrollViewer</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/ScrollViewer.png" alt="ScrollViewer"></p>
-<h3 id="CirclePanel"><a href="#CirclePanel" class="headerlink" title="CirclePanel"></a>CirclePanel</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/CirclePanel.jpg" alt="CirclePanel"></p>
-<h3 id="BorderStyle"><a href="#BorderStyle" class="headerlink" title="BorderStyle"></a>BorderStyle</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Border.png" alt="BorderStyle"></p>
-<h3 id="Brush"><a href="#Brush" class="headerlink" title="Brush"></a>Brush</h3><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Brush.png" alt="Brush"></p>
-<h2 id="Switching-configuration"><a href="#Switching-configuration" class="headerlink" title="Switching configuration"></a>Switching configuration</h2><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/SwitchConfig.png" alt="Switching configuration"></p>
-<h1 id="捐赠（面向中国）"><a href="#捐赠（面向中国）" class="headerlink" title="捐赠（面向中国）"></a>捐赠（面向中国）</h1><p>如果您觉得HandyControl还不错，并且刚好有些闲钱，那么可以选择以下两种方式来捐赠：</p>
+            <p>HandyOrg的宗旨是为用户提供最简单的API。</p>
+<p>目前组织成员只有一人。</p>
+<p>我们一直期待着有更多的同学加入。</p>
+<p>我们的入坑要求：</p>
 <ul>
-<li><p><a href="http://www.chinacharityfederation.org/ConfirmDonation/0.html?zhijie=3" target="_blank" rel="noopener">以HandyControl的名义为慈善事业做贡献</a>  </p>
-</li>
-<li><p>为我们购买防脱洗发水<br><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/qrcode.png" alt="qrcode"></p>
-</li>
+<li>热爱编码</li>
+<li>接受目前Handy的代码风格，并尽量遵守</li>
+<li>项目名必须以Handy为前缀</li>
+<li>活着</li>
 </ul>
+<p>我们的QQ群：714704041</p>
 
           
         
@@ -828,6 +794,326 @@
 
 
   
+  <script>
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url).replace(/\/{2,}/g, '/');
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x"></i></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x"></i></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
 
 
 
