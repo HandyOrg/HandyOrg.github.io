@@ -31,24 +31,24 @@
     <content type="text"><![CDATA[建设中]]></content>
   </entry>
   <entry>
-    <title><![CDATA[建设中]]></title>
+    <title><![CDATA[行为]]></title>
     <url>%2Fhandycontrol%2Fbasic_xaml%2Fbehaviors%2Findex.html</url>
-    <content type="text"><![CDATA[建设中]]></content>
+    <content type="text"><![CDATA[名称 用途 BehaviorXY200 流体移动行为，x、y轴运动，200毫秒结束动画 BehaviorX200 流体移动行为，x轴运动，200毫秒结束动画 BehaviorY200 流体移动行为，y轴运动，200毫秒结束动画 BehaviorXY400 流体移动行为，x、y轴运动，400毫秒结束动画 BehaviorX400 流体移动行为，x轴运动，400毫秒结束动画 BehaviorY400 流体移动行为，y轴运动，400毫秒结束动画]]></content>
   </entry>
   <entry>
-    <title><![CDATA[建设中]]></title>
+    <title><![CDATA[画刷]]></title>
     <url>%2Fhandycontrol%2Fbasic_xaml%2Fbrushes%2Findex.html</url>
-    <content type="text"><![CDATA[建设中]]></content>
+    <content type="text"><![CDATA[画刷基于颜色，现有的画刷定义如下： 名称 用途 PrimaryBrush 主色调 DarkPrimaryBrush 主色调（深色） DangerBrush 错误、危险 DarkDangerBrush 错误、危险（深色） WarningBrush 警告 DarkWarningBrush 警告（深色） InfoBrush 信息 DarkInfoBrush 信息（深色） SuccessBrush 成功 DarkSuccessBrush 成功（深色） PrimaryTextBrush 主文本 SecondaryTextBrush 次级文本 ThirdlyTextBrush 末级文本 ReverseTextBrush 反色文本 TextIconBrush 一般用于深色背景下的文字或图标 BorderBrush 边框 SecondaryBorderBrush 次级边框 BackgroundBrush 主背景色 RegionBrush 区域块背景 SecondaryRegionBrush 次级区域块背景 ThirdlyRegionBrush 末级区域块背景 TitleBrush 标题背景 DefaultBrush 默认颜色 DarkDefaultBrush 次级默认颜色 AccentBrush 提醒 DarkAccentBrush 提醒（深色） DarkMaskBrush 作为遮罩使用 DarkOpacityBrush 半透明背景]]></content>
   </entry>
   <entry>
-    <title><![CDATA[建设中]]></title>
+    <title><![CDATA[颜色]]></title>
     <url>%2Fhandycontrol%2Fbasic_xaml%2Fcolors%2Findex.html</url>
-    <content type="text"><![CDATA[建设中]]></content>
+    <content type="text"><![CDATA[内置的颜色xaml定义有3个，对它们的描述如下表所示： 名称 用途 Colors.xaml 默认配置 ColorsDark.xaml 暗色配置 ColorsViolet.xaml 紫色配置 每个文件中定义了相同的颜色名称，只是颜色值不同，对颜色名称的描述如下表所示： 名称 用途 PrimaryColor 主色调 DarkPrimaryColor 主色调（深色） DangerColor 错误、危险 DarkDangerColor 错误、危险（深色） WarningColor 警告 DarkWarningColor 警告（深色） InfoColor 信息 DarkInfoColor 信息（深色） SuccessColor 成功 DarkSuccessColor 成功（深色） PrimaryTextColor 主文本 SecondaryTextColor 次级文本 ThirdlyTextColor 末级文本 ReverseTextColor 反色文本 TextIconColor 一般用于深色背景下的文字或图标 BorderColor 边框 SecondaryBorderColor 次级边框 BackgroundColor 主背景色 RegionColor 区域块背景 SecondaryRegionColor 次级区域块背景 ThirdlyRegionColor 末级区域块背景 TitleColor 标题背景 SecondaryTitleColor 次级标题背景 DefaultColor 默认颜色 DarkDefaultColor 次级默认颜色 AccentColor 提醒 DarkAccentColor 提醒（深色） DarkMaskColor 作为遮罩使用 DarkOpacityColor 半透明背景 BlurGradientValue 仅用于模糊窗口的背景]]></content>
   </entry>
   <entry>
-    <title><![CDATA[建设中]]></title>
+    <title><![CDATA[转换器]]></title>
     <url>%2Fhandycontrol%2Fbasic_xaml%2Fconverters%2Findex.html</url>
-    <content type="text"><![CDATA[建设中]]></content>
+    <content type="text"><![CDATA[Boolean2BooleanReConverter该转换器用于反转布尔类型 Boolean2StrConverter该转换器需要提供一个字符串作为参数，该字符串的一般形式为：[字符串0];[字符串1]，当转换器获取的值为true时，会返回[字符串0]，否则返回[字符串1]。 Boolean2VisibilityConverter该转换器会将true转换为Visible，会将false转换为Collapse Boolean2VisibilityReConverter该转换器情况与Boolean2VisibilityConverter相反。 BooleanArr2VisibilityConverter该转换器会将布尔数组转换为Visibility，当数组内全部为true时，返回Visible，否则返回Collapse。 BorderCircularConverter该转换器为Border专用，接受Border的长和宽合成的一个整型数组，返回它们中最小值的一半，作为圆形Border的半径。 BorderClipConverter该转换器为Border专用，接受一个object数组，该数组长度为3，分别对应Border的长、宽和圆角半径，它会返回一个圆形几何形状作为Clip来剪裁Border。 Color2ChannelAConverter（内部使用）该转换器会提取SolidColorBrush.Color的透明通道（A）的值。 Color2HexStrConverter该转换器会将SolidColorBrush转换为16进制字符串形式（带“#”）。 Int2StrConverter该转换器需要提供一个字符串作为参数，该字符串的一般形式为：[字符串0];[字符串1];...[字符串n]，转换器会将一个整型的值作为索引，来获取指定位置的字符串并返回。 Long2FileSizeConverter该转换器会将长整型转换为文件大小的字符串。 Object2BooleanConverter如果该转换器获取到的值为null则返回false，否则返回true。 String2VisibilityConverter该转换器接受一个字符串，如果该字符串为空或者为null，则返回Collapse，否则返回Visible。 String2VisibilityReConverter该转换器情况与String2VisibilityConverter相反。 TreeViewItemMarginConverter（内部使用）该转换器用于为TreeViewItem提供适当的左边距。]]></content>
   </entry>
   <entry>
     <title><![CDATA[建设中]]></title>
@@ -111,9 +111,9 @@
     <content type="text"><![CDATA[建设中]]></content>
   </entry>
   <entry>
-    <title><![CDATA[建设中]]></title>
+    <title><![CDATA[Border 边框]]></title>
     <url>%2Fhandycontrol%2Fnative_controls%2Fborder%2Findex.html</url>
-    <content type="text"><![CDATA[建设中]]></content>
+    <content type="text"><![CDATA[BorderRegionStyle此样式用于包裹一个控件区域，配合基础xaml定义中的几个DropShadowEffect资源可制作如下效果： 以上效果的xaml代码如下： 1234567891011121314151617181920212223242526272829303132&lt;UniformGrid Margin="32,32,0,0" Columns="3" Rows="2"&gt; &lt;Border Style="&#123;StaticResource BorderRegionStyle&#125;" Width="200" Height="200" Margin="0,0,32,32"&gt; &lt;Border Background="&#123;DynamicResource PrimaryBrush&#125;"&gt; &lt;TextBlock Text="&#123;x:Static langs:Lang.ContentDemoStr&#125;" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White"/&gt; &lt;/Border&gt; &lt;/Border&gt; &lt;Border Style="&#123;StaticResource BorderRegionStyle&#125;" Width="200" Height="200" Margin="0,0,32,32" Effect="&#123;StaticResource EffectShadow1&#125;"&gt; &lt;Border Background="&#123;DynamicResource InfoBrush&#125;"&gt; &lt;TextBlock Text="&#123;x:Static langs:Lang.ContentDemoStr&#125;" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White"/&gt; &lt;/Border&gt; &lt;/Border&gt; &lt;Border Style="&#123;StaticResource BorderRegionStyle&#125;" Width="200" Height="200" Margin="0,0,32,32" Effect="&#123;StaticResource EffectShadow2&#125;"&gt; &lt;Border Background="&#123;DynamicResource WarningBrush&#125;"&gt; &lt;TextBlock Text="&#123;x:Static langs:Lang.ContentDemoStr&#125;" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White"/&gt; &lt;/Border&gt; &lt;/Border&gt; &lt;Border Style="&#123;StaticResource BorderRegionStyle&#125;" Width="200" Height="200" Margin="0,0,32,32" Effect="&#123;StaticResource EffectShadow3&#125;"&gt; &lt;Border Background="&#123;DynamicResource DangerBrush&#125;"&gt; &lt;TextBlock Text="&#123;x:Static langs:Lang.ContentDemoStr&#125;" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White"/&gt; &lt;/Border&gt; &lt;/Border&gt; &lt;Border Style="&#123;StaticResource BorderRegionStyle&#125;" Width="200" Height="200" Margin="0,0,32,32" Effect="&#123;StaticResource EffectShadow4&#125;"&gt; &lt;Border Background="&#123;DynamicResource AccentBrush&#125;"&gt; &lt;TextBlock Text="&#123;x:Static langs:Lang.ContentDemoStr&#125;" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White"/&gt; &lt;/Border&gt; &lt;/Border&gt; &lt;Border Style="&#123;StaticResource BorderRegionStyle&#125;" Width="200" Height="200" Margin="0,0,32,32" Effect="&#123;StaticResource EffectShadow5&#125;"&gt; &lt;Border Background="&#123;DynamicResource BorderBrush&#125;"&gt; &lt;TextBlock Text="&#123;x:Static langs:Lang.ContentDemoStr&#125;" VerticalAlignment="Center" HorizontalAlignment="Center"/&gt; &lt;/Border&gt; &lt;/Border&gt;&lt;/UniformGrid&gt; BorderVerticallySplitter此样式使用1单位宽度的Border来分割横向排列的控件。 BorderHorizontallySplitter此样式使用1单位高度的Border来分割纵向排列的控件。 BorderCircular此样式借助BorderElement.Circular附加属性可实现圆形Border。 BorderClip此样式在BorderCircular基础上添加了裁剪功能，常用于显示圆形Image。]]></content>
   </entry>
   <entry>
     <title><![CDATA[建设中]]></title>

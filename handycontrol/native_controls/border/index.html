@@ -94,17 +94,19 @@
 
 
 
-  <meta name="description" content="建设中">
+  <meta name="description" content="BorderRegionStyle此样式用于包裹一个控件区域，配合基础xaml定义中的几个DropShadowEffect资源可制作如下效果：  以上效果的xaml代码如下： 1234567891011121314151617181920212223242526272829303132&amp;lt;UniformGrid Margin=&quot;32,32,0,0&quot; Columns=&quot;3&quot; Rows=&quot;2&quot;&amp;g">
 <meta property="og:type" content="website">
-<meta property="og:title" content="建设中">
+<meta property="og:title" content="Border 边框">
 <meta property="og:url" content="http://yoursite.com/handycontrol/native_controls/border/index.html">
 <meta property="og:site_name" content="HandyOrg">
-<meta property="og:description" content="建设中">
+<meta property="og:description" content="BorderRegionStyle此样式用于包裹一个控件区域，配合基础xaml定义中的几个DropShadowEffect资源可制作如下效果：  以上效果的xaml代码如下： 1234567891011121314151617181920212223242526272829303132&amp;lt;UniformGrid Margin=&quot;32,32,0,0&quot; Columns=&quot;3&quot; Rows=&quot;2&quot;&amp;g">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-06T11:52:20.678Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Border.png">
+<meta property="og:updated_time" content="2019-04-06T13:10:30.118Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="建设中">
-<meta name="twitter:description" content="建设中">
+<meta name="twitter:title" content="Border 边框">
+<meta name="twitter:description" content="BorderRegionStyle此样式用于包裹一个控件区域，配合基础xaml定义中的几个DropShadowEffect资源可制作如下效果：  以上效果的xaml代码如下： 1234567891011121314151617181920212223242526272829303132&amp;lt;UniformGrid Margin=&quot;32,32,0,0&quot; Columns=&quot;3&quot; Rows=&quot;2&quot;&amp;g">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Border.png">
 
 
 
@@ -122,7 +124,7 @@
   };
 </script>
 
-  <title>建设中 | HandyOrg</title>
+  <title>Border 边框 | HandyOrg</title>
   
 
 
@@ -1825,7 +1827,7 @@
     <div class="post-block page">
       <header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">建设中
+<h1 class="post-title" itemprop="name headline">Border 边框
 
 </h1>
 
@@ -1885,7 +1887,14 @@
       <div class="post-body">
         
         
-          <p>建设中</p>
+          <h1 id="BorderRegionStyle"><a href="#BorderRegionStyle" class="headerlink" title="BorderRegionStyle"></a>BorderRegionStyle</h1><p>此样式用于包裹一个控件区域，配合基础xaml定义中的几个DropShadowEffect资源可制作如下效果：</p>
+<p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Border.png" alt="Border"></p>
+<p>以上效果的xaml代码如下：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">UniformGrid</span> <span class="attr">Margin</span>=<span class="string">"32,32,0,0"</span> <span class="attr">Columns</span>=<span class="string">"3"</span> <span class="attr">Rows</span>=<span class="string">"2"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Border</span> <span class="attr">Style</span>=<span class="string">"&#123;StaticResource BorderRegionStyle&#125;"</span> <span class="attr">Width</span>=<span class="string">"200"</span> <span class="attr">Height</span>=<span class="string">"200"</span> <span class="attr">Margin</span>=<span class="string">"0,0,32,32"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">Border</span> <span class="attr">Background</span>=<span class="string">"&#123;DynamicResource PrimaryBrush&#125;"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">Text</span>=<span class="string">"&#123;x:Static langs:Lang.ContentDemoStr&#125;"</span> <span class="attr">VerticalAlignment</span>=<span class="string">"Center"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Center"</span> <span class="attr">Foreground</span>=<span class="string">"White"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">Border</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">Border</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Border</span> <span class="attr">Style</span>=<span class="string">"&#123;StaticResource BorderRegionStyle&#125;"</span> <span class="attr">Width</span>=<span class="string">"200"</span> <span class="attr">Height</span>=<span class="string">"200"</span> <span class="attr">Margin</span>=<span class="string">"0,0,32,32"</span> <span class="attr">Effect</span>=<span class="string">"&#123;StaticResource EffectShadow1&#125;"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">Border</span> <span class="attr">Background</span>=<span class="string">"&#123;DynamicResource InfoBrush&#125;"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">Text</span>=<span class="string">"&#123;x:Static langs:Lang.ContentDemoStr&#125;"</span> <span class="attr">VerticalAlignment</span>=<span class="string">"Center"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Center"</span> <span class="attr">Foreground</span>=<span class="string">"White"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">Border</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">Border</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Border</span> <span class="attr">Style</span>=<span class="string">"&#123;StaticResource BorderRegionStyle&#125;"</span> <span class="attr">Width</span>=<span class="string">"200"</span> <span class="attr">Height</span>=<span class="string">"200"</span> <span class="attr">Margin</span>=<span class="string">"0,0,32,32"</span> <span class="attr">Effect</span>=<span class="string">"&#123;StaticResource EffectShadow2&#125;"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">Border</span> <span class="attr">Background</span>=<span class="string">"&#123;DynamicResource WarningBrush&#125;"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">Text</span>=<span class="string">"&#123;x:Static langs:Lang.ContentDemoStr&#125;"</span> <span class="attr">VerticalAlignment</span>=<span class="string">"Center"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Center"</span> <span class="attr">Foreground</span>=<span class="string">"White"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">Border</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">Border</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Border</span> <span class="attr">Style</span>=<span class="string">"&#123;StaticResource BorderRegionStyle&#125;"</span> <span class="attr">Width</span>=<span class="string">"200"</span> <span class="attr">Height</span>=<span class="string">"200"</span>  <span class="attr">Margin</span>=<span class="string">"0,0,32,32"</span> <span class="attr">Effect</span>=<span class="string">"&#123;StaticResource EffectShadow3&#125;"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">Border</span> <span class="attr">Background</span>=<span class="string">"&#123;DynamicResource DangerBrush&#125;"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">Text</span>=<span class="string">"&#123;x:Static langs:Lang.ContentDemoStr&#125;"</span> <span class="attr">VerticalAlignment</span>=<span class="string">"Center"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Center"</span> <span class="attr">Foreground</span>=<span class="string">"White"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">Border</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">Border</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Border</span> <span class="attr">Style</span>=<span class="string">"&#123;StaticResource BorderRegionStyle&#125;"</span> <span class="attr">Width</span>=<span class="string">"200"</span> <span class="attr">Height</span>=<span class="string">"200"</span>  <span class="attr">Margin</span>=<span class="string">"0,0,32,32"</span> <span class="attr">Effect</span>=<span class="string">"&#123;StaticResource EffectShadow4&#125;"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">Border</span> <span class="attr">Background</span>=<span class="string">"&#123;DynamicResource AccentBrush&#125;"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">Text</span>=<span class="string">"&#123;x:Static langs:Lang.ContentDemoStr&#125;"</span> <span class="attr">VerticalAlignment</span>=<span class="string">"Center"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Center"</span> <span class="attr">Foreground</span>=<span class="string">"White"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">Border</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">Border</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Border</span> <span class="attr">Style</span>=<span class="string">"&#123;StaticResource BorderRegionStyle&#125;"</span> <span class="attr">Width</span>=<span class="string">"200"</span> <span class="attr">Height</span>=<span class="string">"200"</span>  <span class="attr">Margin</span>=<span class="string">"0,0,32,32"</span> <span class="attr">Effect</span>=<span class="string">"&#123;StaticResource EffectShadow5&#125;"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">Border</span> <span class="attr">Background</span>=<span class="string">"&#123;DynamicResource BorderBrush&#125;"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">Text</span>=<span class="string">"&#123;x:Static langs:Lang.ContentDemoStr&#125;"</span> <span class="attr">VerticalAlignment</span>=<span class="string">"Center"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Center"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">Border</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">Border</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">UniformGrid</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h1 id="BorderVerticallySplitter"><a href="#BorderVerticallySplitter" class="headerlink" title="BorderVerticallySplitter"></a>BorderVerticallySplitter</h1><p>此样式使用1单位宽度的Border来分割横向排列的控件。</p>
+<h1 id="BorderHorizontallySplitter"><a href="#BorderHorizontallySplitter" class="headerlink" title="BorderHorizontallySplitter"></a>BorderHorizontallySplitter</h1><p>此样式使用1单位高度的Border来分割纵向排列的控件。</p>
+<h1 id="BorderCircular"><a href="#BorderCircular" class="headerlink" title="BorderCircular"></a>BorderCircular</h1><p>此样式借助<code>BorderElement.Circular</code>附加属性可实现圆形Border。</p>
+<h1 id="BorderClip"><a href="#BorderClip" class="headerlink" title="BorderClip"></a>BorderClip</h1><p>此样式在<code>BorderCircular</code>基础上添加了裁剪功能，常用于显示圆形Image。</p>
 
         
       </div>
@@ -1968,8 +1977,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -2070,6 +2088,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#BorderRegionStyle"><span class="nav-number">1.</span> <span class="nav-text">BorderRegionStyle</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#BorderVerticallySplitter"><span class="nav-number">2.</span> <span class="nav-text">BorderVerticallySplitter</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#BorderHorizontallySplitter"><span class="nav-number">3.</span> <span class="nav-text">BorderHorizontallySplitter</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#BorderCircular"><span class="nav-number">4.</span> <span class="nav-text">BorderCircular</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#BorderClip"><span class="nav-number">5.</span> <span class="nav-text">BorderClip</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
@@ -2433,7 +2468,7 @@
 
                   // select top N slices in content
 
-                  var upperBound = parseInt('1');
+                  var upperBound = parseInt('-1');
                   if (upperBound >= 0) {
                     slicesOfContent = slicesOfContent.slice(0, upperBound);
                   }
