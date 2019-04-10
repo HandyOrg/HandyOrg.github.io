@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[欢迎使用HandyControl]]></title>
     <url>%2Fhandycontrol%2Findex.html</url>
-    <content type="text"><![CDATA[HandyControl是一款WPF控件库，它几乎重写了所有原生样式，同时包含50多个额外的控件（正逐步增加）。 使用要求 .Net &gt;= 4.0 OS &gt;= win7 IDE &gt;= vs2017 C# &gt;= 7.0 下载NugetNuget上是编译好的发布版本，地址为：HandyControl-Nuget Nuget上一般至少一个月发布一次，所以有很大的可能和本文档有出入，有出入的地方一切以本文档为准。 GithubGithub上是最新的源代码，地址为：HandyControl-Github Github上一般每天都有更新，相对而言不适合用于生产。 文档的更新速度必然跟不上最新的Github源码，有出入的地方一切以本文档为准，因为文档是相对稳定的。 项目结构介绍整体结构从Github上克隆好源码后，进入src文件夹，该文件夹结构如下： 这里一共有三个解决方案sln文件，需要注意的是HandyControl_Core30.sln需要用VS2019打开，其它两个用VS2017即可。 Net_GE45的意思是.Net版本大于等于4.5 Shared文件夹用于存放共享项目的代码 图中五个文件夹内部各包含两个子文件夹，例如在Shared中还包含两个子文件夹： 它们分别存放控件源码和控件示例源码。 源码结构我们以HandyControl_Net_GE45.sln为示例进行说明，使用VS2017打开该解决方案： 如果要启动示例，查看控件效果，请将HandyControlDemo_[指定的项目类型]作为启动项。 如图，已将HandyControlDemo_Net_GE45作为启动项。 大部分公共的源码都在Shared文件夹中，部分需要为特定项目类型定制的代码则被提出来放到各自的文件夹中。 HandyControl源码（主要在HandyControl_Shared中）主要包含7个文件夹，对它们的描述如下表所示： 名称 用途 Controls 包含所有控件的后台交互逻辑 Data 控件库所需的基本数据定义 Expression 抽取自Microsoft.Expression.Drawing Interactivity 抽取自Microsoft.Expression.Interactions &amp; System.Windows.Interactivity，并做了部分修改 Properties 包含控件库属性和语言包 Themes 包含控件库所有的xaml定义 Tools 主要包含控件库所需的帮助方法和扩展方法 Controls中的每个控件一般都能在Themes中找到对应的xaml定义。 编译源码 编译前请确认你的开发环境是否符合使用要求。 HandyControl_Net_GE45.sln解决方案中包含了3个项目类型，分别是.Net 4.5、.Net 4.6.2和.Net 4.7，请在解决方案配置下拉框中进行选择：]]></content>
+    <content type="text"><![CDATA[HandyControl是一套WPF控件库，它几乎重写了所有原生样式，同时包含50多款额外的控件（正逐步增加）。 使用要求 .Net &gt;= 4.0 OS &gt;= win7 IDE &gt;= vs2017 C# &gt;= 7.0 下载NugetNuget上是编译好的发布版本，地址为：HandyControl-Nuget Nuget上一般至少一个月发布一次，所以有很大的可能和本文档有出入，有出入的地方一切以本文档为准。 GithubGithub上是最新的源代码，地址为：HandyControl-Github Github上一般每天都有更新，相对而言不适合用于生产。 文档的更新速度必然跟不上最新的Github源码，有出入的地方一切以本文档为准，因为文档是相对稳定的。 项目结构介绍整体结构从Github上克隆好源码后，进入src文件夹，该文件夹结构如下： 这里一共有三个解决方案sln文件，需要注意的是HandyControl_Core30.sln需要用VS2019打开，其它两个用VS2017即可。 Net_GE45的意思是.Net版本大于等于4.5 Shared文件夹用于存放共享项目的代码 图中五个文件夹内部各包含两个子文件夹，例如在Shared中还包含两个子文件夹： 它们分别存放控件源码和控件示例源码。 源码结构我们以HandyControl_Net_GE45.sln为示例进行说明，使用VS2017打开该解决方案： 如果要启动示例，查看控件效果，请将HandyControlDemo_[指定的项目类型]作为启动项。 如图，已将HandyControlDemo_Net_GE45作为启动项。 大部分公共的源码都在Shared文件夹中，部分需要为特定项目类型定制的代码则被提出来放到各自的文件夹中。 HandyControl源码（主要在HandyControl_Shared中）主要包含7个文件夹，对它们的描述如下表所示： 名称 用途 Controls 包含所有控件的后台交互逻辑 Data 控件库所需的基本数据定义 Expression 抽取自Microsoft.Expression.Drawing Interactivity 抽取自Microsoft.Expression.Interactions &amp; System.Windows.Interactivity，并做了部分修改 Properties 包含控件库属性和语言包 Themes 包含控件库所有的xaml定义 Tools 主要包含控件库所需的帮助方法和扩展方法 Controls中的每个控件一般都能在Themes中找到对应的xaml定义。 编译源码 编译前请确认你的开发环境是否符合使用要求。 HandyControl_Net_GE45.sln解决方案中包含了3个项目类型，分别是.Net 4.5、.Net 4.6.2和.Net 4.7，请在解决方案配置下拉框中进行选择：]]></content>
   </entry>
   <entry>
     <title><![CDATA[handykeras]]></title>
@@ -568,6 +568,31 @@
   <entry>
     <title><![CDATA[建设中]]></title>
     <url>%2Fhandycontrol%2Fattach%2FwindowAttach%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[鸣谢]]></title>
+    <url>%2Fhandycontrol%2Ftnx%2Findex.html</url>
+    <content type="text"><![CDATA[感谢以下Coder提供代码贡献 感谢以下User提供使用建议 感谢以下组织机构提供开源许可]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[总览]]></title>
+    <url>%2Fhandycontrol%2Foverview%2Findex.html</url>
+    <content type="text"><![CDATA[最新示例托盘图标 对话框 波形进度条 标记 头像 历史发布回到顶部 对话气泡 标签 穿梭框 进度按钮 封面流 封面视图 消息对话框 瀑布流 评分 背景模糊窗口 翻页时钟 徽章 轮廓文本 标签 工具条 滑块 圆形进度条 按钮 切换按钮 单选按钮 复选框 列表框 树视图 列表视图 数据表格 现在你可以切换到黑色主题了 颜色拾取器 加载条 轮播 页码条 展开框 时间条 图片浏览器 预览滑块 对比滑块 信息通知 动画路径 进度条 选项卡控件 选项卡控件 分组框 步骤条 Gif图片 上下文菜单 日历 时钟 带有时钟的日历 文本块 富文本框 文本框 组合框 数值选择控件 步骤条 密码框 日期选择器 时间选择器 日期时间选择器 滚动视图 圆形布局 边框 画刷 配置切换]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fextend_controls%2FwaveProgressBar%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fextend_controls%2FblurWindow%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fextend_controls%2FcircleProgressBar%2Findex.html</url>
     <content type="text"><![CDATA[建设中]]></content>
   </entry>
 </search>
