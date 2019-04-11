@@ -33,47 +33,47 @@
   <entry>
     <title><![CDATA[行为]]></title>
     <url>%2Fhandycontrol%2Fbasic_xaml%2Fbehaviors%2Findex.html</url>
-    <content type="text"><![CDATA[名称 用途 BehaviorXY200 流体移动行为，x、y轴运动，200毫秒结束动画 BehaviorX200 流体移动行为，x轴运动，200毫秒结束动画 BehaviorY200 流体移动行为，y轴运动，200毫秒结束动画 BehaviorXY400 流体移动行为，x、y轴运动，400毫秒结束动画 BehaviorX400 流体移动行为，x轴运动，400毫秒结束动画 BehaviorY400 流体移动行为，y轴运动，400毫秒结束动画]]></content>
+    <content type="text"><![CDATA[流体移动 名称 用途 BehaviorXY200 流体移动行为，x、y轴运动，200毫秒结束动画 BehaviorX200 流体移动行为，x轴运动，200毫秒结束动画 BehaviorY200 流体移动行为，y轴运动，200毫秒结束动画 BehaviorXY400 流体移动行为，x、y轴运动，400毫秒结束动画 BehaviorX400 流体移动行为，x轴运动，400毫秒结束动画 BehaviorY400 流体移动行为，y轴运动，400毫秒结束动画 用例：controls:PanelElement.FluidMoveBehavior=&quot;{StaticResource BehaviorXY200}&quot;]]></content>
   </entry>
   <entry>
     <title><![CDATA[画刷]]></title>
     <url>%2Fhandycontrol%2Fbasic_xaml%2Fbrushes%2Findex.html</url>
-    <content type="text"><![CDATA[画刷基于颜色，现有的画刷定义如下： 名称 用途 PrimaryBrush 主色调 DarkPrimaryBrush 主色调（深色） DangerBrush 错误、危险 DarkDangerBrush 错误、危险（深色） WarningBrush 警告 DarkWarningBrush 警告（深色） InfoBrush 信息 DarkInfoBrush 信息（深色） SuccessBrush 成功 DarkSuccessBrush 成功（深色） PrimaryTextBrush 主文本 SecondaryTextBrush 次级文本 ThirdlyTextBrush 末级文本 ReverseTextBrush 反色文本 TextIconBrush 一般用于深色背景下的文字或图标 BorderBrush 边框 SecondaryBorderBrush 次级边框 BackgroundBrush 主背景色 RegionBrush 区域块背景 SecondaryRegionBrush 次级区域块背景 ThirdlyRegionBrush 末级区域块背景 TitleBrush 标题背景 DefaultBrush 默认颜色 DarkDefaultBrush 次级默认颜色 AccentBrush 提醒 DarkAccentBrush 提醒（深色） DarkMaskBrush 作为遮罩使用 DarkOpacityBrush 半透明背景]]></content>
+    <content type="text"><![CDATA[画刷基于颜色，现有的画刷定义如下： 名称 用途 PrimaryBrush 主色调 DarkPrimaryBrush 主色调（深色） DangerBrush 错误、危险 DarkDangerBrush 错误、危险（深色） WarningBrush 警告 DarkWarningBrush 警告（深色） InfoBrush 信息 DarkInfoBrush 信息（深色） SuccessBrush 成功 DarkSuccessBrush 成功（深色） PrimaryTextBrush 主文本 SecondaryTextBrush 次级文本 ThirdlyTextBrush 末级文本 ReverseTextBrush 反色文本 TextIconBrush 一般用于深色背景下的文字或图标 BorderBrush 边框 SecondaryBorderBrush 次级边框 BackgroundBrush 主背景色 RegionBrush 区域块背景 SecondaryRegionBrush 次级区域块背景 ThirdlyRegionBrush 末级区域块背景 TitleBrush 标题背景 DefaultBrush 默认颜色 DarkDefaultBrush 次级默认颜色 AccentBrush 提醒 DarkAccentBrush 提醒（深色） DarkMaskBrush 作为遮罩使用 DarkOpacityBrush 半透明背景 用例：Foreground=&quot;{DynamicResource PrimaryBrush}&quot;]]></content>
   </entry>
   <entry>
     <title><![CDATA[颜色]]></title>
     <url>%2Fhandycontrol%2Fbasic_xaml%2Fcolors%2Findex.html</url>
-    <content type="text"><![CDATA[内置的颜色xaml定义有3个，对它们的描述如下表所示： 名称 用途 Colors.xaml 默认配置 ColorsDark.xaml 暗色配置 ColorsViolet.xaml 紫色配置 每个文件中定义了相同的颜色名称，只是颜色值不同，对颜色名称的描述如下表所示： 名称 用途 PrimaryColor 主色调 DarkPrimaryColor 主色调（深色） DangerColor 错误、危险 DarkDangerColor 错误、危险（深色） WarningColor 警告 DarkWarningColor 警告（深色） InfoColor 信息 DarkInfoColor 信息（深色） SuccessColor 成功 DarkSuccessColor 成功（深色） PrimaryTextColor 主文本 SecondaryTextColor 次级文本 ThirdlyTextColor 末级文本 ReverseTextColor 反色文本 TextIconColor 一般用于深色背景下的文字或图标 BorderColor 边框 SecondaryBorderColor 次级边框 BackgroundColor 主背景色 RegionColor 区域块背景 SecondaryRegionColor 次级区域块背景 ThirdlyRegionColor 末级区域块背景 TitleColor 标题背景 SecondaryTitleColor 次级标题背景 DefaultColor 默认颜色 DarkDefaultColor 次级默认颜色 AccentColor 提醒 DarkAccentColor 提醒（深色） DarkMaskColor 作为遮罩使用 DarkOpacityColor 半透明背景 BlurGradientValue 仅用于模糊窗口的背景]]></content>
+    <content type="text"><![CDATA[内置的颜色xaml定义有3个，对它们的描述如下表所示： 名称 用途 Colors.xaml 默认配置 ColorsDark.xaml 暗色配置 ColorsViolet.xaml 紫色配置 每个文件中定义了相同的颜色名称，只是颜色值不同，对颜色名称的描述如下表所示： 名称 用途 PrimaryColor 主色调 DarkPrimaryColor 主色调（深色） DangerColor 错误、危险 DarkDangerColor 错误、危险（深色） WarningColor 警告 DarkWarningColor 警告（深色） InfoColor 信息 DarkInfoColor 信息（深色） SuccessColor 成功 DarkSuccessColor 成功（深色） PrimaryTextColor 主文本 SecondaryTextColor 次级文本 ThirdlyTextColor 末级文本 ReverseTextColor 反色文本 TextIconColor 一般用于深色背景下的文字或图标 BorderColor 边框 SecondaryBorderColor 次级边框 BackgroundColor 主背景色 RegionColor 区域块背景 SecondaryRegionColor 次级区域块背景 ThirdlyRegionColor 末级区域块背景 TitleColor 标题背景 SecondaryTitleColor 次级标题背景 DefaultColor 默认颜色 DarkDefaultColor 次级默认颜色 AccentColor 提醒 DarkAccentColor 提醒（深色） DarkMaskColor 作为遮罩使用 DarkOpacityColor 半透明背景 BlurGradientValue 仅用于模糊窗口的背景 用例：Color=&quot;{DynamicResource PrimaryColor}&quot;]]></content>
   </entry>
   <entry>
     <title><![CDATA[转换器]]></title>
     <url>%2Fhandycontrol%2Fbasic_xaml%2Fconverters%2Findex.html</url>
-    <content type="text"><![CDATA[Boolean2BooleanReConverter该转换器用于反转布尔类型 Boolean2StrConverter该转换器需要提供一个字符串作为参数，该字符串的一般形式为：[字符串0];[字符串1]，当转换器获取的值为true时，会返回[字符串0]，否则返回[字符串1]。 Boolean2VisibilityConverter该转换器会将true转换为Visible，会将false转换为Collapse Boolean2VisibilityReConverter该转换器情况与Boolean2VisibilityConverter相反。 BooleanArr2VisibilityConverter该转换器会将布尔数组转换为Visibility，当数组内全部为true时，返回Visible，否则返回Collapse。 BorderCircularConverter该转换器为Border专用，接受Border的长和宽合成的一个整型数组，返回它们中最小值的一半，作为圆形Border的半径。 BorderClipConverter该转换器为Border专用，接受一个object数组，该数组长度为3，分别对应Border的长、宽和圆角半径，它会返回一个圆形几何形状作为Clip来剪裁Border。 Color2ChannelAConverter（内部使用）该转换器会提取SolidColorBrush.Color的透明通道（A）的值。 Color2HexStrConverter该转换器会将SolidColorBrush转换为16进制字符串形式（带“#”）。 Int2StrConverter该转换器需要提供一个字符串作为参数，该字符串的一般形式为：[字符串0];[字符串1];...[字符串n]，转换器会将一个整型的值作为索引，来获取指定位置的字符串并返回。 Long2FileSizeConverter该转换器会将长整型转换为文件大小的字符串。 Object2BooleanConverter如果该转换器获取到的值为null则返回false，否则返回true。 String2VisibilityConverter该转换器接受一个字符串，如果该字符串为空或者为null，则返回Collapse，否则返回Visible。 String2VisibilityReConverter该转换器情况与String2VisibilityConverter相反。 TreeViewItemMarginConverter（内部使用）该转换器用于为TreeViewItem提供适当的左边距。]]></content>
+    <content type="text"><![CDATA[Boolean2BooleanReConverter该转换器用于反转布尔类型 Boolean2StrConverter该转换器需要提供一个字符串作为参数，该字符串的一般形式为：[字符串0];[字符串1]，当转换器获取的值为true时，会返回[字符串0]，否则返回[字符串1]。 Boolean2VisibilityConverter该转换器会将true转换为Visible，会将false转换为Collapse Boolean2VisibilityReConverter该转换器情况与Boolean2VisibilityConverter相反。 BooleanArr2VisibilityConverter该转换器会将布尔数组转换为Visibility，当数组内全部为true时，返回Visible，否则返回Collapse。 BorderCircularConverter该转换器为Border专用，接受Border的长和宽合成的一个整型数组，返回它们中最小值的一半，作为圆形Border的半径。 BorderClipConverter该转换器为Border专用，接受一个object数组，该数组长度为3，分别对应Border的长、宽和圆角半径，它会返回一个圆形几何形状作为Clip来剪裁Border。 Color2ChannelAConverter（内部使用）该转换器会提取SolidColorBrush.Color的透明通道（A）的值。 Color2HexStrConverter该转换器会将SolidColorBrush转换为16进制字符串形式（带“#”）。 Int2StrConverter该转换器需要提供一个字符串作为参数，该字符串的一般形式为：[字符串0];[字符串1];...[字符串n]，转换器会将一个整型的值作为索引，来获取指定位置的字符串并返回。 Long2FileSizeConverter该转换器会将长整型转换为文件大小的字符串。 Object2BooleanConverter如果该转换器获取到的值为null则返回false，否则返回true。 String2VisibilityConverter该转换器接受一个字符串，如果该字符串为空或者为null，则返回Collapse，否则返回Visible。 String2VisibilityReConverter该转换器情况与String2VisibilityConverter相反。 TreeViewItemMarginConverter（内部使用）该转换器用于为TreeViewItem提供适当的左边距。 用例：1Visibility=&quot;&#123;Binding ShowButton,Converter=&#123;StaticResource Boolean2VisibilityConverter&#125;&#125;&quot;]]></content>
   </entry>
   <entry>
-    <title><![CDATA[建设中]]></title>
+    <title><![CDATA[效果]]></title>
     <url>%2Fhandycontrol%2Fbasic_xaml%2Feffects%2Findex.html</url>
-    <content type="text"><![CDATA[建设中]]></content>
+    <content type="text"><![CDATA[阴影目前只包含5个级别的阴影效果： 名称 半径 EffectShadow1 5 EffectShadow2 8 EffectShadow3 14 EffectShadow4 25 EffectShadow5 35 用例：Effect=&quot;{StaticResource EffectShadow5}&quot;]]></content>
   </entry>
   <entry>
-    <title><![CDATA[建设中]]></title>
+    <title><![CDATA[几何形状]]></title>
     <url>%2Fhandycontrol%2Fbasic_xaml%2Fgeometries%2Findex.html</url>
-    <content type="text"><![CDATA[建设中]]></content>
+    <content type="text"><![CDATA[HandyControl中自带了一些几何形状定义，但要应用于生产中显然不够。我们不准备包罗万象，这永远没有底，所以我们就反其道而行，只包含了控件库自己要用的（当然用户也可使用），其余请自行扩展。下表中列出了控件库中所有的形状定义： 名称 描述 CalendarGeometry 日历 DeleteGeometry 删除 DeleteFillCircleGeometry 删除（圆形填充） CloseGeometry 关闭 DownGeometry 下 UpGeometry 上 ClockGeometry 时钟 LeftGeometry 左 RightGeometry 右 RotateLeftGeometry 向左旋转 EnlargeGeometry 放大 ReduceGeometry 缩小 DownloadGeometry 下载 SaveGeometry 保存 WindowsGeometry 窗口 FullScreenGeometry 全屏 FullScreenReturnGeometry 全屏返回 SearchGeometry 搜索 UpDownGeometry 上和下的组合 WindowMinGeometry 窗口最小化 WindowRestoreGeometry 窗口还原 WindowMaxGeometry 窗口最大化 AudioGeometry 声音 BubbleTailGeometry 气泡的尾巴 StarGeometry 爱心 AddGeometry 加 SubGeometry 减 WarningGeometry 警告 InfoGeometry 信息 ErrorGeometry 错误 SuccessGeometry 成功 FatalGeometry 严重 AskGeometry 询问 AllGeometry 所有 DragGeometry 拖拽（用于工具条） 用例：Data=&quot;{StaticResource DragGeometry}&quot;]]></content>
   </entry>
   <entry>
-    <title><![CDATA[建设中]]></title>
+    <title><![CDATA[字体大小]]></title>
     <url>%2Fhandycontrol%2Fbasic_xaml%2Ffonts%2Findex.html</url>
-    <content type="text"><![CDATA[建设中]]></content>
+    <content type="text"><![CDATA[名称 大小 用途 LargeFontSize 24 页面标题 HeadFontSize 20 功能标题 SubHeadFontSize 16 子功能标题 TextFontSize 12 文本 用例：FontSize=&quot;{StaticResource LargeFontSize}&quot;]]></content>
   </entry>
   <entry>
-    <title><![CDATA[建设中]]></title>
+    <title><![CDATA[Path路径]]></title>
     <url>%2Fhandycontrol%2Fbasic_xaml%2Fpaths%2Findex.html</url>
-    <content type="text"><![CDATA[建设中]]></content>
+    <content type="text"><![CDATA[和几何形状一样，我们不准备包罗万象，只求所需。下表中列出了控件库中所有的Path路径： 名称 描述 PathBaseStyle Path路径基样式 SearchPathStyle 搜索 FullScreenReturnPathStyle 全屏返回 FullScreenPathStyle 全屏 WindowsPathStyle 窗口 SavePathStyle 保存 DownloadPathStyle 下载 EnlargePathStyle 放大 ReducePathStyle 缩小 RotatePathStyle 向左旋转（默认） CalendarPathStyle 日历 DeletePathStyle 删除 ClosePathStyle 关闭 DownPathStyle 下 ClockPathStyle 时钟 LeftPathStyle 向左 RightPathStyle 向右 UpDownPathStyle 上和下的组合 用例：Style=&quot;{StaticResource SearchPathStyle}&quot;]]></content>
   </entry>
   <entry>
-    <title><![CDATA[建设中]]></title>
+    <title><![CDATA[尺寸]]></title>
     <url>%2Fhandycontrol%2Fbasic_xaml%2Fsizes%2Findex.html</url>
-    <content type="text"><![CDATA[建设中]]></content>
+    <content type="text"><![CDATA[名称 类型 值 描述 DefaultControlHeight System.Double 30 默认控件高度 DefaultControlPadding System.Windows.Thickness 12,6 默认控件内边距 DefaultInputPadding System.Windows.Thickness 8,6 默认输入控件内边距 DefaultCornerRadius System.Windows.CornerRadius 4 默认圆角 用例：CornerRadius=&quot;{StaticResource DefaultCornerRadius}&quot;]]></content>
   </entry>
   <entry>
     <title><![CDATA[GrowlInfo]]></title>

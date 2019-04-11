@@ -101,7 +101,7 @@
 <meta property="og:site_name" content="HandyOrg">
 <meta property="og:description" content="Boolean2BooleanReConverter该转换器用于反转布尔类型 Boolean2StrConverter该转换器需要提供一个字符串作为参数，该字符串的一般形式为：[字符串0];[字符串1]，当转换器获取的值为true时，会返回[字符串0]，否则返回[字符串1]。 Boolean2VisibilityConverter该转换器会将true转换为Visible，会将false转换为Col">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-06T14:54:57.425Z">
+<meta property="og:updated_time" content="2019-04-11T15:02:22.756Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="转换器">
 <meta name="twitter:description" content="Boolean2BooleanReConverter该转换器用于反转布尔类型 Boolean2StrConverter该转换器需要提供一个字符串作为参数，该字符串的一般形式为：[字符串0];[字符串1]，当转换器获取的值为true时，会返回[字符串0]，否则返回[字符串1]。 Boolean2VisibilityConverter该转换器会将true转换为Visible，会将false转换为Col">
@@ -1375,7 +1375,9 @@
 <h1 id="String2VisibilityConverter"><a href="#String2VisibilityConverter" class="headerlink" title="String2VisibilityConverter"></a>String2VisibilityConverter</h1><p>该转换器接受一个字符串，如果该字符串为空或者为null，则返回<code>Collapse</code>，否则返回<code>Visible</code>。</p>
 <h1 id="String2VisibilityReConverter"><a href="#String2VisibilityReConverter" class="headerlink" title="String2VisibilityReConverter"></a>String2VisibilityReConverter</h1><p>该转换器情况与<code>String2VisibilityConverter</code>相反。</p>
 <h1 id="TreeViewItemMarginConverter（内部使用）"><a href="#TreeViewItemMarginConverter（内部使用）" class="headerlink" title="TreeViewItemMarginConverter（内部使用）"></a>TreeViewItemMarginConverter（内部使用）</h1><p>该转换器用于为TreeViewItem提供适当的左边距。</p>
-
+<div class="note info">
+            <p>用例：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Visibility=&quot;&#123;Binding ShowButton,Converter=&#123;StaticResource Boolean2VisibilityConverter&#125;&#125;&quot;</span><br></pre></td></tr></table></figure>
+          </div>
         
       </div>
       
