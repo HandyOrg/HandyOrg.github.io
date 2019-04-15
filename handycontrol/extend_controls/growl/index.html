@@ -102,7 +102,7 @@
 <meta property="og:description" content="当需要在窗口的右侧区域，以从上到下排列通知信息时可以使用本控件。 控件效果 准备工作在指定的窗口右侧区域添加StackPanel容器123&amp;lt;ScrollViewer VerticalScrollBarVisibility=&quot;Hidden&quot; HorizontalAlignment=&quot;Right&quot;&amp;gt;    &amp;lt;StackPanel VerticalAlignment=&quot;Top&quot; Mar">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Growl.gif">
-<meta property="og:updated_time" content="2019-04-02T15:12:59.617Z">
+<meta property="og:updated_time" content="2019-04-15T14:05:56.380Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Growl 信息通知">
 <meta name="twitter:description" content="当需要在窗口的右侧区域，以从上到下排列通知信息时可以使用本控件。 控件效果 准备工作在指定的窗口右侧区域添加StackPanel容器123&amp;lt;ScrollViewer VerticalScrollBarVisibility=&quot;Hidden&quot; HorizontalAlignment=&quot;Right&quot;&amp;gt;    &amp;lt;StackPanel VerticalAlignment=&quot;Top&quot; Mar">
@@ -2610,10 +2610,10 @@
         
         
           <p>当需要在窗口的右侧区域，以从上到下排列通知信息时可以使用本控件。</p>
-<h2 id="控件效果"><a href="#控件效果" class="headerlink" title="控件效果"></a>控件效果</h2><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Growl.gif" alt="Growl"></p>
-<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>在指定的窗口右侧区域添加<code>StackPanel</code>容器<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ScrollViewer</span> <span class="attr">VerticalScrollBarVisibility</span>=<span class="string">"Hidden"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Right"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">VerticalAlignment</span>=<span class="string">"Top"</span> <span class="attr">Margin</span>=<span class="string">"0,10,10,10"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ScrollViewer</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h1 id="控件效果"><a href="#控件效果" class="headerlink" title="控件效果"></a>控件效果</h1><p><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Growl.gif" alt="Growl"></p>
+<h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><p>在指定的窗口右侧区域添加<code>StackPanel</code>容器<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ScrollViewer</span> <span class="attr">VerticalScrollBarVisibility</span>=<span class="string">"Hidden"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Right"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">VerticalAlignment</span>=<span class="string">"Top"</span> <span class="attr">Margin</span>=<span class="string">"0,10,10,10"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ScrollViewer</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
 <p>为了方便滚动，一般会在外层包一个<code>ScrollViewer</code>，同时为了美观，我们设置<code>ScrollViewer</code>的<code>VerticalScrollBarVisibility=&quot;Hidden&quot;</code>，最好给<code>StackPanel</code>添加一个合适的<code>Margin</code>，也是为了美观。</p>
-<h2 id="基础用法"><a href="#基础用法" class="headerlink" title="基础用法"></a>基础用法</h2><p>第一步：将<code>StackPanel</code>设置为<code>Growl</code>的容器</p>
+<h1 id="基础用法"><a href="#基础用法" class="headerlink" title="基础用法"></a>基础用法</h1><p>第一步：将<code>StackPanel</code>设置为<code>Growl</code>的容器</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ScrollViewer</span> <span class="attr">VerticalScrollBarVisibility</span>=<span class="string">"Hidden"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Right"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">controls:Growl.GrowlParent</span>=<span class="string">"True"</span> <span class="attr">VerticalAlignment</span>=<span class="string">"Top"</span> <span class="attr">Margin</span>=<span class="string">"0,10,10,10"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ScrollViewer</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <div class="note warning">
             <p>注意代码中的<code>controls:Growl.GrowlParent=&quot;True&quot;</code>。</p>
@@ -2622,7 +2622,7 @@
 <div class="note info">
             <p>例如：<code>Growl.Success(&quot;文件保存成功！&quot;);</code></p>
           </div>
-<h2 id="只在激活中的窗口显示信息通知"><a href="#只在激活中的窗口显示信息通知" class="headerlink" title="只在激活中的窗口显示信息通知"></a>只在激活中的窗口显示信息通知</h2><p>为需要显示信息通知的窗口重写<code>OnActivated</code>和<code>OnDeactivated</code>方法，在<code>OnActivated</code>中调用<code>Growl.SetGrowlParent(GrowlPanel, true);</code>，在<code>OnDeactivated</code>中调用<code>Growl.SetGrowlParent(GrowlPanel, false);</code></p>
+<h1 id="只在激活中的窗口显示信息通知"><a href="#只在激活中的窗口显示信息通知" class="headerlink" title="只在激活中的窗口显示信息通知"></a>只在激活中的窗口显示信息通知</h1><p>为需要显示信息通知的窗口重写<code>OnActivated</code>和<code>OnDeactivated</code>方法，在<code>OnActivated</code>中调用<code>Growl.SetGrowlParent(GrowlPanel, true);</code>，在<code>OnDeactivated</code>中调用<code>Growl.SetGrowlParent(GrowlPanel, false);</code></p>
 <div class="note warning">
             <p>其中<code>GrowlPanel</code>是信息通知容器，类型推荐是<code>StackPanel</code></p>
           </div>
@@ -2632,7 +2632,7 @@
 <div class="note warning">
             <p>这种情况下就不需要在xaml中设置<code>controls:Growl.GrowlParent=&quot;True&quot;</code>了。</p>
           </div>
-<h2 id="在任意的StackPanel容器中显示信息通知"><a href="#在任意的StackPanel容器中显示信息通知" class="headerlink" title="在任意的StackPanel容器中显示信息通知"></a>在任意的<code>StackPanel</code>容器中显示信息通知</h2><p>第一步：为<code>StackPanel</code>容器赋予消息标记：SuccessMsg<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ScrollViewer</span> <span class="attr">VerticalScrollBarVisibility</span>=<span class="string">"Hidden"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Right"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">controls:Growl.Token</span>=<span class="string">"SuccessMsg"</span> <span class="attr">VerticalAlignment</span>=<span class="string">"Top"</span> <span class="attr">Margin</span>=<span class="string">"0,10,10,10"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ScrollViewer</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h1 id="在任意的StackPanel容器中显示信息通知"><a href="#在任意的StackPanel容器中显示信息通知" class="headerlink" title="在任意的StackPanel容器中显示信息通知"></a>在任意的<code>StackPanel</code>容器中显示信息通知</h1><p>第一步：为<code>StackPanel</code>容器赋予消息标记：SuccessMsg<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ScrollViewer</span> <span class="attr">VerticalScrollBarVisibility</span>=<span class="string">"Hidden"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Right"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">controls:Growl.Token</span>=<span class="string">"SuccessMsg"</span> <span class="attr">VerticalAlignment</span>=<span class="string">"Top"</span> <span class="attr">Margin</span>=<span class="string">"0,10,10,10"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ScrollViewer</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
 <div class="note warning">
             <p>注意代码中的<code>controls:Growl.Token=&quot;SuccessMsg&quot;</code>。</p>
           </div>
@@ -2643,7 +2643,7 @@
 <div class="note warning">
             <p>现在”文件保存成功！”这则消息只会发送到拥有”SuccessMsg”消息标记的<code>StackPanel</code>容器中。</p>
           </div>
-<h2 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h2><table>
+<h1 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h1><table>
 <thead>
 <tr>
 <th>名称</th>
@@ -2657,7 +2657,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="附加属性"><a href="#附加属性" class="headerlink" title="附加属性"></a>附加属性</h2><table>
+<h1 id="附加属性"><a href="#附加属性" class="headerlink" title="附加属性"></a>附加属性</h1><table>
 <thead>
 <tr>
 <th>名称</th>
@@ -2675,7 +2675,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h2><table>
+<h1 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h1><table>
 <thead>
 <tr>
 <th>名称</th>
@@ -2777,7 +2777,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="FAQ"><a href="#FAQ" class="headerlink" title="FAQ"></a>FAQ</h2><div class="note info no-icon">
+<h1 id="FAQ"><a href="#FAQ" class="headerlink" title="FAQ"></a>FAQ</h1><div class="note info no-icon">
             <p>Ask比较特殊，咋用？</p>
           </div>
 <p>Ask方法主要的焦点为第二个参数，它的类型是<code>Func&lt;bool, bool&gt;</code>，我们先看示例代码：<br><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Growl.Ask(Properties.Langs.Lang.GrowlAsk, isConfirmed =&gt;</span><br><span class="line">&#123;</span><br><span class="line">    Growl.Info(isConfirmed.ToString());</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
@@ -2986,7 +2986,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#控件效果"><span class="nav-number">1.</span> <span class="nav-text">控件效果</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#准备工作"><span class="nav-number">2.</span> <span class="nav-text">准备工作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#基础用法"><span class="nav-number">3.</span> <span class="nav-text">基础用法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#只在激活中的窗口显示信息通知"><span class="nav-number">4.</span> <span class="nav-text">只在激活中的窗口显示信息通知</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在任意的StackPanel容器中显示信息通知"><span class="nav-number">5.</span> <span class="nav-text">在任意的StackPanel容器中显示信息通知</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#属性"><span class="nav-number">6.</span> <span class="nav-text">属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#附加属性"><span class="nav-number">7.</span> <span class="nav-text">附加属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#方法"><span class="nav-number">8.</span> <span class="nav-text">方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#FAQ"><span class="nav-number">9.</span> <span class="nav-text">FAQ</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#控件效果"><span class="nav-number">1.</span> <span class="nav-text">控件效果</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#准备工作"><span class="nav-number">2.</span> <span class="nav-text">准备工作</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#基础用法"><span class="nav-number">3.</span> <span class="nav-text">基础用法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#只在激活中的窗口显示信息通知"><span class="nav-number">4.</span> <span class="nav-text">只在激活中的窗口显示信息通知</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#在任意的StackPanel容器中显示信息通知"><span class="nav-number">5.</span> <span class="nav-text">在任意的StackPanel容器中显示信息通知</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#属性"><span class="nav-number">6.</span> <span class="nav-text">属性</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#附加属性"><span class="nav-number">7.</span> <span class="nav-text">附加属性</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#方法"><span class="nav-number">8.</span> <span class="nav-text">方法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#FAQ"><span class="nav-number">9.</span> <span class="nav-text">FAQ</span></a></li></ol></div>
             
 
           </div>
