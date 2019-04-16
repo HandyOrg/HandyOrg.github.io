@@ -102,7 +102,7 @@
 <meta property="og:description" content="当需要在窗口的右侧区域，以从上到下排列通知信息时可以使用本控件。 控件效果 准备工作在指定的窗口右侧区域添加StackPanel容器123&amp;lt;ScrollViewer VerticalScrollBarVisibility=&quot;Hidden&quot; HorizontalAlignment=&quot;Right&quot;&amp;gt;    &amp;lt;StackPanel VerticalAlignment=&quot;Top&quot; Mar">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/Growl.gif">
-<meta property="og:updated_time" content="2019-04-15T14:05:56.380Z">
+<meta property="og:updated_time" content="2019-04-16T15:14:13.723Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Growl 信息通知">
 <meta name="twitter:description" content="当需要在窗口的右侧区域，以从上到下排列通知信息时可以使用本控件。 控件效果 准备工作在指定的窗口右侧区域添加StackPanel容器123&amp;lt;ScrollViewer VerticalScrollBarVisibility=&quot;Hidden&quot; HorizontalAlignment=&quot;Right&quot;&amp;gt;    &amp;lt;StackPanel VerticalAlignment=&quot;Top&quot; Mar">
@@ -294,6 +294,10 @@
             
             
           
+            
+            
+            
+          
         
 
       
@@ -437,6 +441,37 @@
     
 
     <a href="/handycontrol/overview/" rel="section">总览</a>
+
+  </li>
+
+
+              
+            
+          
+            
+            
+              
+              
+                
+                  
+                
+                
+
+  
+  
+    
+  
+  <li class="menu-item menu-item-规范">
+
+    
+    
+    
+
+    
+      
+    
+
+    <a href="/handycontrol/specifications/" rel="section">规范</a>
 
   </li>
 
@@ -899,6 +934,10 @@
                 
                 
                   
+                
+                
+              
+                
                 
                 
               
@@ -2619,8 +2658,8 @@
             <p>注意代码中的<code>controls:Growl.GrowlParent=&quot;True&quot;</code>。</p>
           </div>
 <p>第二步：调用<code>Growl</code>的相关接口来显示指定的消息</p>
-<div class="note info">
-            <p>例如：<code>Growl.Success(&quot;文件保存成功！&quot;);</code></p>
+<div class="note info no-icon">
+            <p>用例：<code>Growl.Success(&quot;文件保存成功！&quot;);</code></p>
           </div>
 <h1 id="只在激活中的窗口显示信息通知"><a href="#只在激活中的窗口显示信息通知" class="headerlink" title="只在激活中的窗口显示信息通知"></a>只在激活中的窗口显示信息通知</h1><p>为需要显示信息通知的窗口重写<code>OnActivated</code>和<code>OnDeactivated</code>方法，在<code>OnActivated</code>中调用<code>Growl.SetGrowlParent(GrowlPanel, true);</code>，在<code>OnDeactivated</code>中调用<code>Growl.SetGrowlParent(GrowlPanel, false);</code></p>
 <div class="note warning">
@@ -2637,8 +2676,8 @@
             <p>注意代码中的<code>controls:Growl.Token=&quot;SuccessMsg&quot;</code>。</p>
           </div>
 <p>第二步：使用消息标记：SuccessMsg，并调用<code>Growl</code>的相关接口来显示指定的消息</p>
-<div class="note info">
-            <p>例如：<code>Growl.Success(&quot;文件保存成功！&quot;, &quot;SuccessMsg&quot;);</code></p>
+<div class="note info no-icon">
+            <p>用例：<code>Growl.Success(&quot;文件保存成功！&quot;, &quot;SuccessMsg&quot;);</code></p>
           </div>
 <div class="note warning">
             <p>现在”文件保存成功！”这则消息只会发送到拥有”SuccessMsg”消息标记的<code>StackPanel</code>容器中。</p>
