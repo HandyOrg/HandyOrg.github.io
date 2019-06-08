@@ -94,17 +94,19 @@
 
 
 
-  <meta name="description" content="建设中">
+  <meta name="description" content="用例：123456789101112131415161718192021&amp;lt;DataGrid HeadersVisibility=&amp;quot;All&amp;quot; RowHeaderWidth=&amp;quot;60&amp;quot; AutoGenerateColumns=&amp;quot;False&amp;quot; ItemsSource=&amp;quot;&amp;#123;Binding Data">
 <meta property="og:type" content="website">
-<meta property="og:title" content="建设中">
+<meta property="og:title" content="DataGrid 数据表格">
 <meta property="og:url" content="http://yoursite.com/handycontrol/native_controls/dataGrid/index.html">
 <meta property="og:site_name" content="HandyOrg">
-<meta property="og:description" content="建设中">
+<meta property="og:description" content="用例：123456789101112131415161718192021&amp;lt;DataGrid HeadersVisibility=&amp;quot;All&amp;quot; RowHeaderWidth=&amp;quot;60&amp;quot; AutoGenerateColumns=&amp;quot;False&amp;quot; ItemsSource=&amp;quot;&amp;#123;Binding Data">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-11T16:16:13.674Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/DataGrid.png">
+<meta property="og:updated_time" content="2019-06-08T08:56:16.782Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="建设中">
-<meta name="twitter:description" content="建设中">
+<meta name="twitter:title" content="DataGrid 数据表格">
+<meta name="twitter:description" content="用例：123456789101112131415161718192021&amp;lt;DataGrid HeadersVisibility=&amp;quot;All&amp;quot; RowHeaderWidth=&amp;quot;60&amp;quot; AutoGenerateColumns=&amp;quot;False&amp;quot; ItemsSource=&amp;quot;&amp;#123;Binding Data">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/DataGrid.png">
 
 
 
@@ -122,7 +124,7 @@
   };
 </script>
 
-  <title>建设中 | HandyOrg</title>
+  <title>DataGrid 数据表格 | HandyOrg</title>
   
 
 
@@ -288,6 +290,10 @@
             
             
           
+            
+            
+            
+          
         
 
       
@@ -400,6 +406,37 @@
     
 
     <a href="/handycontrol/tnx/" rel="section">鸣谢</a>
+
+  </li>
+
+
+              
+            
+          
+            
+            
+              
+              
+                
+                  
+                
+                
+
+  
+  
+    
+  
+  <li class="menu-item menu-item-快速开始">
+
+    
+    
+    
+
+    
+      
+    
+
+    <a href="/handycontrol/quick_start/" rel="section">快速开始</a>
 
   </li>
 
@@ -860,6 +897,10 @@
                 
                 
                   
+                
+                
+              
+                
                 
                 
               
@@ -1868,7 +1909,7 @@
     <div class="post-block page">
       <header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">建设中
+<h1 class="post-title" itemprop="name headline">DataGrid 数据表格
 
 </h1>
 
@@ -1928,8 +1969,9 @@
       <div class="post-body">
         
         
-          <p>建设中</p>
-
+          <div class="note info no-icon">
+            <p>用例：</p><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">&lt;DataGrid HeadersVisibility=&quot;All&quot; RowHeaderWidth=&quot;60&quot; AutoGenerateColumns=&quot;False&quot; ItemsSource=&quot;&#123;Binding DataList&#125;&quot;&gt;</span><br><span class="line">    &lt;DataGrid.RowHeaderTemplate&gt;</span><br><span class="line">        &lt;DataTemplate&gt;</span><br><span class="line">            &lt;CheckBox IsChecked=&quot;&#123;Binding IsSelected,RelativeSource=&#123;RelativeSource AncestorType=DataGridRow&#125;&#125;&quot;/&gt;</span><br><span class="line">        &lt;/DataTemplate&gt;</span><br><span class="line">    &lt;/DataGrid.RowHeaderTemplate&gt;</span><br><span class="line">    &lt;DataGrid.Columns&gt;</span><br><span class="line">        &lt;DataGridTextColumn IsReadOnly=&quot;True&quot; Width=&quot;80&quot; CanUserResize=&quot;False&quot; Binding=&quot;&#123;Binding Index&#125;&quot; Header=&quot;&#123;x:Static langs:Lang.Index&#125;&quot;/&gt;</span><br><span class="line">        &lt;DataGridTemplateColumn Width=&quot;60&quot; CanUserResize=&quot;False&quot;&gt;</span><br><span class="line">            &lt;DataGridTemplateColumn.CellTemplate&gt;</span><br><span class="line">                &lt;DataTemplate&gt;</span><br><span class="line">                    &lt;Image Source=&quot;&#123;Binding ImgPath&#125;&quot; Width=&quot;32&quot; Height=&quot;32&quot; Stretch=&quot;Uniform&quot;/&gt;</span><br><span class="line">                &lt;/DataTemplate&gt;</span><br><span class="line">            &lt;/DataGridTemplateColumn.CellTemplate&gt;</span><br><span class="line">        &lt;/DataGridTemplateColumn&gt;</span><br><span class="line">        &lt;DataGridTextColumn Width=&quot;1<em>&quot; Binding=&quot;&#123;Binding Name&#125;&quot; Header=&quot;&#123;x:Static langs:Lang.Name&#125;&quot;/&gt;</em></span><br><span class="line">        &lt;DataGridCheckBoxColumn Width=&quot;100&quot; CanUserResize=&quot;False&quot; Binding=&quot;&#123;Binding IsSelected&#125;&quot; Header=&quot;&#123;x:Static langs:Lang.Selected&#125;&quot;/&gt;</span><br><span class="line">        &lt;DataGridComboBoxColumn ItemsSource=&quot;&#123;Binding Source=&#123;StaticResource DemoTypes&#125;&#125;&quot; Width=&quot;100&quot; CanUserResize=&quot;False&quot; SelectedValueBinding=&quot;&#123;Binding Type&#125;&quot; Header=&quot;&#123;x:Static langs:Lang.Type&#125;&quot;/&gt;</span><br><span class="line">        &lt;DataGridTextColumn Width=&quot;1&quot; Binding=&quot;&#123;Binding Remark&#125;&quot; Header=&quot;&#123;x:Static langs:Lang.Remark&#125;&quot;/&gt;</span><br><span class="line">    &lt;/DataGrid.Columns&gt;</span><br><span class="line">&lt;/DataGrid&gt;</span><br></pre></td></tr></table></figure><br><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/DataGrid.png" alt="ContextMenu"></p>
+          </div>
         
       </div>
       

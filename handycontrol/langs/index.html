@@ -94,17 +94,19 @@
 
 
 
-  <meta name="description" content="建设中">
+  <meta name="description" content="使用方式可通过ConfigHelper.Instance.SetLang(string lang)指定需要使用的语言包，默认使用zh-cn。 控件库自带的语言包一般为控件库内部使用，但用户也可以通过以下两种方式使用：  xaml第一步，引入命名空间：xmlns:hc=&amp;quot;https://handyorg.github.io/handycontrol&amp;quot;第二步，使用语言包：&amp;lt;T">
 <meta property="og:type" content="website">
-<meta property="og:title" content="建设中">
+<meta property="og:title" content="国际化">
 <meta property="og:url" content="http://yoursite.com/handycontrol/langs/index.html">
 <meta property="og:site_name" content="HandyOrg">
-<meta property="og:description" content="建设中">
+<meta property="og:description" content="使用方式可通过ConfigHelper.Instance.SetLang(string lang)指定需要使用的语言包，默认使用zh-cn。 控件库自带的语言包一般为控件库内部使用，但用户也可以通过以下两种方式使用：  xaml第一步，引入命名空间：xmlns:hc=&amp;quot;https://handyorg.github.io/handycontrol&amp;quot;第二步，使用语言包：&amp;lt;T">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-11T16:16:13.671Z">
+<meta property="og:image" content="http://yoursite.com/handycontrol/langs/images/Langs.png">
+<meta property="og:updated_time" content="2019-06-08T06:38:02.236Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="建设中">
-<meta name="twitter:description" content="建设中">
+<meta name="twitter:title" content="国际化">
+<meta name="twitter:description" content="使用方式可通过ConfigHelper.Instance.SetLang(string lang)指定需要使用的语言包，默认使用zh-cn。 控件库自带的语言包一般为控件库内部使用，但用户也可以通过以下两种方式使用：  xaml第一步，引入命名空间：xmlns:hc=&amp;quot;https://handyorg.github.io/handycontrol&amp;quot;第二步，使用语言包：&amp;lt;T">
+<meta name="twitter:image" content="http://yoursite.com/handycontrol/langs/images/Langs.png">
 
 
 
@@ -122,7 +124,7 @@
   };
 </script>
 
-  <title>建设中 | HandyOrg</title>
+  <title>国际化 | HandyOrg</title>
   
 
 
@@ -288,6 +290,10 @@
             
             
           
+            
+            
+            
+          
         
 
       
@@ -400,6 +406,37 @@
     
 
     <a href="/handycontrol/tnx/" rel="section">鸣谢</a>
+
+  </li>
+
+
+              
+            
+          
+            
+            
+              
+              
+                
+                  
+                
+                
+
+  
+  
+    
+  
+  <li class="menu-item menu-item-快速开始">
+
+    
+    
+    
+
+    
+      
+    
+
+    <a href="/handycontrol/quick_start/" rel="section">快速开始</a>
 
   </li>
 
@@ -870,6 +907,10 @@
                 
                 
                 
+              
+                
+                
+                
 
                   
                   
@@ -998,7 +1039,7 @@
     <div class="post-block page">
       <header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">建设中
+<h1 class="post-title" itemprop="name headline">国际化
 
 </h1>
 
@@ -1046,7 +1087,21 @@
       <div class="post-body">
         
         
-          <p>建设中</p>
+          <h1 id="使用方式"><a href="#使用方式" class="headerlink" title="使用方式"></a>使用方式</h1><p>可通过<code>ConfigHelper.Instance.SetLang(string lang)</code>指定需要使用的语言包，默认使用zh-cn。</p>
+<p>控件库自带的语言包一般为控件库内部使用，但用户也可以通过以下两种方式使用：</p>
+<ul>
+<li><p>xaml<br>第一步，引入命名空间：<code>xmlns:hc=&quot;https://handyorg.github.io/handycontrol&quot;</code><br>第二步，使用语言包：<code>&lt;TextBlock Text=&quot;{x:Static hc:Lang.Cancel}&quot;/&gt;</code></p>
+</li>
+<li><p>C#<br><code>HandyControl.Properties.Langs.Lang.Cancel</code></p>
+</li>
+</ul>
+<div class="note warning">
+            <p>控件库不支持动态语言包切换，未来也不会有支持。</p>
+          </div>
+<h1 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h1><p>控件库自带zh-cn和en两份语言包，默认为zh-cn：</p>
+<p><img src="images/Langs.png" alt="Langs"></p>
+<p>如果需要可自行扩展，这里推荐使用开源插件：<a href="https://marketplace.visualstudio.com/items?itemName=TomEnglert.ResXManager" target="_blank" rel="noopener">ResXManager</a>，来维护所有的语言包。</p>
+<p>引用控件库后，会在运行目录生成语言包文件夹，其命名方式形如zh-cn、en等。</p>
 
         
       </div>
@@ -1117,8 +1172,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -1219,6 +1283,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#使用方式"><span class="nav-number">1.</span> <span class="nav-text">使用方式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#扩展"><span class="nav-number">2.</span> <span class="nav-text">扩展</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
