@@ -94,18 +94,19 @@
 
 
 
-  <meta name="description" content="用例：123456789101112131415161718192021&amp;lt;DataGrid HeadersVisibility=&amp;quot;All&amp;quot; RowHeaderWidth=&amp;quot;60&amp;quot; AutoGenerateColumns=&amp;quot;False&amp;quot; ItemsSource=&amp;quot;&amp;#123;Binding Data">
+  <meta name="description" content="相关样式   style名称 所属类型 用途描述     RowHeaderGripperStyle Thumb 行标题拖拽条样式   ColumnHeaderGripperStyle Thumb 列标题拖拽条样式   DataGridCellStyle DataGridCell 单元格样式   DataGridRowStyle DataGridRow 行样式   DataGridColumnHe">
 <meta property="og:type" content="website">
 <meta property="og:title" content="DataGrid 数据表格">
 <meta property="og:url" content="http://yoursite.com/handycontrol/native_controls/dataGrid/index.html">
 <meta property="og:site_name" content="HandyOrg">
-<meta property="og:description" content="用例：123456789101112131415161718192021&amp;lt;DataGrid HeadersVisibility=&amp;quot;All&amp;quot; RowHeaderWidth=&amp;quot;60&amp;quot; AutoGenerateColumns=&amp;quot;False&amp;quot; ItemsSource=&amp;quot;&amp;#123;Binding Data">
+<meta property="og:description" content="相关样式   style名称 所属类型 用途描述     RowHeaderGripperStyle Thumb 行标题拖拽条样式   ColumnHeaderGripperStyle Thumb 列标题拖拽条样式   DataGridCellStyle DataGridCell 单元格样式   DataGridRowStyle DataGridRow 行样式   DataGridColumnHe">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/DataGrid.png">
-<meta property="og:updated_time" content="2019-06-09T06:36:22.407Z">
+<meta property="og:image" content="http://yoursite.com/handycontrol/native_controls/images/DataGrid-Warning01.png">
+<meta property="og:updated_time" content="2019-08-07T13:34:17.907Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="DataGrid 数据表格">
-<meta name="twitter:description" content="用例：123456789101112131415161718192021&amp;lt;DataGrid HeadersVisibility=&amp;quot;All&amp;quot; RowHeaderWidth=&amp;quot;60&amp;quot; AutoGenerateColumns=&amp;quot;False&amp;quot; ItemsSource=&amp;quot;&amp;#123;Binding Data">
+<meta name="twitter:description" content="相关样式   style名称 所属类型 用途描述     RowHeaderGripperStyle Thumb 行标题拖拽条样式   ColumnHeaderGripperStyle Thumb 列标题拖拽条样式   DataGridCellStyle DataGridCell 单元格样式   DataGridRowStyle DataGridRow 行样式   DataGridColumnHe">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/DataGrid.png">
 
 
@@ -1969,9 +1970,68 @@
       <div class="post-body">
         
         
-          <div class="note info no-icon">
+          <h1 id="相关样式"><a href="#相关样式" class="headerlink" title="相关样式"></a>相关样式</h1><table>
+<thead>
+<tr>
+<th>style名称</th>
+<th>所属类型</th>
+<th>用途描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RowHeaderGripperStyle</td>
+<td>Thumb</td>
+<td>行标题拖拽条样式</td>
+</tr>
+<tr>
+<td>ColumnHeaderGripperStyle</td>
+<td>Thumb</td>
+<td>列标题拖拽条样式</td>
+</tr>
+<tr>
+<td>DataGridCellStyle</td>
+<td>DataGridCell</td>
+<td>单元格样式</td>
+</tr>
+<tr>
+<td>DataGridRowStyle</td>
+<td>DataGridRow</td>
+<td>行样式</td>
+</tr>
+<tr>
+<td>DataGridColumnHeaderStyle</td>
+<td>DataGridColumnHeader</td>
+<td>列标题样式</td>
+</tr>
+<tr>
+<td>DataGridRowHeaderStyle</td>
+<td>DataGridRowHeader</td>
+<td>行标题样式</td>
+</tr>
+<tr>
+<td>TextBlockComboBoxStyle</td>
+<td>ComboBox</td>
+<td>ComboBox非编辑模式样式</td>
+</tr>
+<tr>
+<td>DataGridTextColumnStyle</td>
+<td>TextBlock</td>
+<td>默认文本样式</td>
+</tr>
+</tbody>
+</table>
+<div class="note info no-icon">
             <p>用例：</p><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">&lt;DataGrid HeadersVisibility=&quot;All&quot; RowHeaderWidth=&quot;60&quot; AutoGenerateColumns=&quot;False&quot; ItemsSource=&quot;&#123;Binding DataList&#125;&quot;&gt;</span><br><span class="line">    &lt;DataGrid.RowHeaderTemplate&gt;</span><br><span class="line">        &lt;DataTemplate&gt;</span><br><span class="line">            &lt;CheckBox IsChecked=&quot;&#123;Binding IsSelected,RelativeSource=&#123;RelativeSource AncestorType=DataGridRow&#125;&#125;&quot;/&gt;</span><br><span class="line">        &lt;/DataTemplate&gt;</span><br><span class="line">    &lt;/DataGrid.RowHeaderTemplate&gt;</span><br><span class="line">    &lt;DataGrid.Columns&gt;</span><br><span class="line">        &lt;DataGridTextColumn IsReadOnly=&quot;True&quot; Width=&quot;80&quot; CanUserResize=&quot;False&quot; Binding=&quot;&#123;Binding Index&#125;&quot; Header=&quot;&#123;x:Static langs:Lang.Index&#125;&quot;/&gt;</span><br><span class="line">        &lt;DataGridTemplateColumn Width=&quot;60&quot; CanUserResize=&quot;False&quot;&gt;</span><br><span class="line">            &lt;DataGridTemplateColumn.CellTemplate&gt;</span><br><span class="line">                &lt;DataTemplate&gt;</span><br><span class="line">                    &lt;Image Source=&quot;&#123;Binding ImgPath&#125;&quot; Width=&quot;32&quot; Height=&quot;32&quot; Stretch=&quot;Uniform&quot;/&gt;</span><br><span class="line">                &lt;/DataTemplate&gt;</span><br><span class="line">            &lt;/DataGridTemplateColumn.CellTemplate&gt;</span><br><span class="line">        &lt;/DataGridTemplateColumn&gt;</span><br><span class="line">        &lt;DataGridTextColumn Width=&quot;1<em>&quot; Binding=&quot;&#123;Binding Name&#125;&quot; Header=&quot;&#123;x:Static langs:Lang.Name&#125;&quot;/&gt;</em></span><br><span class="line">        &lt;DataGridCheckBoxColumn Width=&quot;100&quot; CanUserResize=&quot;False&quot; Binding=&quot;&#123;Binding IsSelected&#125;&quot; Header=&quot;&#123;x:Static langs:Lang.Selected&#125;&quot;/&gt;</span><br><span class="line">        &lt;DataGridComboBoxColumn ItemsSource=&quot;&#123;Binding Source=&#123;StaticResource DemoTypes&#125;&#125;&quot; Width=&quot;100&quot; CanUserResize=&quot;False&quot; SelectedValueBinding=&quot;&#123;Binding Type&#125;&quot; Header=&quot;&#123;x:Static langs:Lang.Type&#125;&quot;/&gt;</span><br><span class="line">        &lt;DataGridTextColumn Width=&quot;1&quot; Binding=&quot;&#123;Binding Remark&#125;&quot; Header=&quot;&#123;x:Static langs:Lang.Remark&#125;&quot;/&gt;</span><br><span class="line">    &lt;/DataGrid.Columns&gt;</span><br><span class="line">&lt;/DataGrid&gt;</span><br></pre></td></tr></table></figure><br><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/DataGrid.png" alt="ContextMenu"></p>
           </div>
+<h1 id="FAQ"><a href="#FAQ" class="headerlink" title="FAQ"></a>FAQ</h1><div class="note warning no-icon">
+            <p>对于文本显示列<code>DataGridTextColumn</code>需要设定文本内容<code>水平居中</code>或者<code>水平居右</code>，而不是HandyControl中设定的样式默认显示为<code>居左</code>时，需要继承<code>DataGridCellStyle</code>重写<code>HorizontalContentAlignment</code> 属性为<code>Center</code> 或<code>Right</code> 需要注意的是，此方式仅仅适用于引入了HandControl资源样式的项目，普通原生DataGrid使用该方式无效。</p>
+          </div>
+<p>用例如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">样式：</span><br><span class="line"></span><br><span class="line">&lt;Style x:Key=&quot;DataGridTextCenterColumnStyle&quot; TargetType=&quot;DataGridCell&quot; BasedOn=&quot;&#123;StaticResource DataGridCellStyle&#125;&quot;&gt;</span><br><span class="line">    &lt;Setter Property=&quot;HorizontalContentAlignment&quot; Value=&quot;Center&quot;/&gt;</span><br><span class="line">&lt;/Style&gt;</span><br><span class="line"></span><br><span class="line">xaml中的使用：</span><br><span class="line"></span><br><span class="line">&lt;DataGrid ItemsSource=&quot;&#123;Binding Datas&#125;&quot; AutoGenerateColumns=&quot;False&quot;&gt;</span><br><span class="line">    &lt;DataGrid.Columns&gt;</span><br><span class="line">        &lt;DataGridTextColumn Header=&quot;居左&quot; Binding=&quot;&#123;Binding Name&#125;&quot; Width=&quot;*&quot;/&gt;</span><br><span class="line">        &lt;DataGridTextColumn Header=&quot;居中&quot; CellStyle=&quot;&#123;StaticResource DataGridTextCenterColumnStyle&#125;&quot; Width=&quot;*&quot; Binding=&quot;&#123;Binding Name&#125;&quot;/&gt;</span><br><span class="line">​    &lt;/DataGrid.Columns&gt;</span><br><span class="line">&lt;/DataGrid&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>效果如下：</p>
+<p><img src="../images/DataGrid-Warning01.png" alt="DataGridWarning01"></p>
+
         
       </div>
       
@@ -2053,8 +2113,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -2155,6 +2224,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#相关样式"><span class="nav-number">1.</span> <span class="nav-text">相关样式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#FAQ"><span class="nav-number">2.</span> <span class="nav-text">FAQ</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       

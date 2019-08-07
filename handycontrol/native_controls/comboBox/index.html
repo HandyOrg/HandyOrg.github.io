@@ -104,10 +104,12 @@
 <meta property="og:image" content="http://yoursite.com/handycontrol/native_controls/images/ComboBoxBaseStyle.png">
 <meta property="og:image" content="http://yoursite.com/handycontrol/native_controls/images/ComboBoxExtend_1.png">
 <meta property="og:image" content="http://yoursite.com/handycontrol/native_controls/images/ComboBoxExtend_2.png">
+<meta property="og:image" content="http://yoursite.com/handycontrol/native_controls/images/ComboBoxExtend_2_Error1.png">
+<meta property="og:image" content="http://yoursite.com/handycontrol/native_controls/images/ComboBoxExtend_2_Ok1.png">
 <meta property="og:image" content="http://yoursite.com/handycontrol/native_controls/images/ComboBoxExtend_3.png">
 <meta property="og:image" content="http://yoursite.com/handycontrol/native_controls/images/ComboBoxExtend_4.png">
 <meta property="og:image" content="http://yoursite.com/handycontrol/native_controls/images/ComboBoxExtend_5.png">
-<meta property="og:updated_time" content="2019-06-09T06:36:22.404Z">
+<meta property="og:updated_time" content="2019-08-07T13:33:55.324Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ComboBox 组合框">
 <meta name="twitter:description" content="ComboBoxBaseStyle原生组合框默认样式，不推荐直接使用，应该始终被其它样式以BasedOn的方式使用。原生组合框如果未设置任何样式，则默认使用该样式：  默认样式&amp;lt;ComboBox ItemsSource=&amp;quot;{Binding DataList}&amp;quot; SelectedIndex=&amp;quot;0&amp;quot;/&amp;gt;  ComboBoxExtendBaseStyl">
@@ -1988,6 +1990,9 @@
 </ul>
 <div class="note warning">
             <p>标题在左时，为了多个输入框左侧对齐，需要设置标题宽度，标题宽度无需逐个设置，可在外部容器上统一设置。</p>
+          </div>
+<div class="note warning">
+            <p>常见问题：<br>Combobox的字体比原有默认字体大，同时设定标题在左，标题因字体过大显示不全<br><img src="../images/ComboBoxExtend_2_Error1.png" alt="ComboBoxExtend_2_Error1"><br>解决方案：<br>在该Combobox中添加附加属性<code>hc:InfoElement.ContentHeight</code>，默认值为30，默认字体号为12，变更后可根据新的字体大小设定该附加属性的数值，如上图，字体大小为18，则设定<code>hc:InfoElement.ContentHeight</code>为38，结果如下：<img src="../images/ComboBoxExtend_2_Ok1.png" alt="ComboBoxExtend_2_Ok1"></p>
           </div>
 <ul>
 <li><p>标题在上，带有水印<br><code>&lt;ComboBox ItemsSource=&quot;{Binding DataList}&quot; hc:InfoElement.Placeholder=&quot;请输入内容&quot; hc:InfoElement.Title=&quot;此项必填&quot; Style=&quot;{StaticResource ComboBoxExtend}&quot;/&gt;</code><br><img src="../images/ComboBoxExtend_3.png" alt="ComboBoxExtend_3"></p>
