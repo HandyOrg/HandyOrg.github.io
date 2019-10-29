@@ -94,17 +94,17 @@
 
 
 
-  <meta name="description" content="准备工作添加HandyControl命名空间1xmlns:hc=&amp;quot;https://handyorg.github.io/handycontrol&amp;quot; MouseHoverBackground 鼠标悬浮背景色该附加属性常用于设置控件在鼠标悬浮时的背景色，在控件的样式或者模板中我们添加如下的触发器代码： 123&amp;lt;Trigger Property=&amp;quot;IsMouseOve">
+  <meta name="description" content="属性   名称 用途     MouseHoverBackground 设置鼠标悬浮背景色   MouseDownBackground 设置鼠标按下背景色    使用案例MouseHoverBackground 设置鼠标悬浮背景色在样式或模板中我们添加如下的触发器代码： 123&amp;lt;Trigger Property=&quot;IsMouseOver&quot; Value=&quot;True&quot;&amp;gt;    &amp;lt;Se">
 <meta property="og:type" content="website">
 <meta property="og:title" content="BackgroundSwitchElement 可切换背景的元素">
 <meta property="og:url" content="http://yoursite.com/handycontrol/attach/backgroundSwitchElement/index.html">
 <meta property="og:site_name" content="HandyOrg">
-<meta property="og:description" content="准备工作添加HandyControl命名空间1xmlns:hc=&amp;quot;https://handyorg.github.io/handycontrol&amp;quot; MouseHoverBackground 鼠标悬浮背景色该附加属性常用于设置控件在鼠标悬浮时的背景色，在控件的样式或者模板中我们添加如下的触发器代码： 123&amp;lt;Trigger Property=&amp;quot;IsMouseOve">
+<meta property="og:description" content="属性   名称 用途     MouseHoverBackground 设置鼠标悬浮背景色   MouseDownBackground 设置鼠标按下背景色    使用案例MouseHoverBackground 设置鼠标悬浮背景色在样式或模板中我们添加如下的触发器代码： 123&amp;lt;Trigger Property=&quot;IsMouseOver&quot; Value=&quot;True&quot;&amp;gt;    &amp;lt;Se">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-06-17T14:07:38.752Z">
+<meta property="og:updated_time" content="2019-10-29T13:15:45.583Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="BackgroundSwitchElement 可切换背景的元素">
-<meta name="twitter:description" content="准备工作添加HandyControl命名空间1xmlns:hc=&amp;quot;https://handyorg.github.io/handycontrol&amp;quot; MouseHoverBackground 鼠标悬浮背景色该附加属性常用于设置控件在鼠标悬浮时的背景色，在控件的样式或者模板中我们添加如下的触发器代码： 123&amp;lt;Trigger Property=&amp;quot;IsMouseOve">
+<meta name="twitter:description" content="属性   名称 用途     MouseHoverBackground 设置鼠标悬浮背景色   MouseDownBackground 设置鼠标按下背景色    使用案例MouseHoverBackground 设置鼠标悬浮背景色在样式或模板中我们添加如下的触发器代码： 123&amp;lt;Trigger Property=&quot;IsMouseOver&quot; Value=&quot;True&quot;&amp;gt;    &amp;lt;Se">
 
 
 
@@ -1036,7 +1036,7 @@
   
     
   
-  <li class="menu-item menu-item-edgeelement">
+  <li class="menu-item menu-item-edgeelement-具有边界内容的元素">
 
     
     
@@ -1046,7 +1046,7 @@
       
     
 
-    <a href="/handycontrol/attach/edgeElement/" rel="section">EdgeElement</a>
+    <a href="/handycontrol/attach/edgeElement/" rel="section">EdgeElement 具有边界内容的元素</a>
 
   </li>
 
@@ -1503,15 +1503,32 @@
       <div class="post-body">
         
         
-          <h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><p>添加<code>HandyControl</code>命名空间<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xmlns:hc=&quot;https://handyorg.github.io/handycontrol&quot;</span><br></pre></td></tr></table></figure></p>
-<h2 id="MouseHoverBackground-鼠标悬浮背景色"><a href="#MouseHoverBackground-鼠标悬浮背景色" class="headerlink" title="MouseHoverBackground 鼠标悬浮背景色"></a>MouseHoverBackground <code>鼠标悬浮背景色</code></h2><p>该附加属性常用于设置控件在鼠标悬浮时的背景色，在控件的样式或者模板中我们添加如下的触发器代码：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;Trigger Property=&quot;IsMouseOver&quot; Value=&quot;True&quot;&gt;</span><br><span class="line">    &lt;Setter Property=&quot;Background&quot; TargetName=&quot;Chrome&quot; Value=&quot;&#123;Binding Path=(controls:BackgroundSwitchElement.MouseHoverBackground),RelativeSource=&#123;RelativeSource TemplatedParent&#125;&#125;&quot;/&gt;</span><br><span class="line">&lt;/Trigger&gt;</span><br></pre></td></tr></table></figure>
-<p>随后我们就可以使用该属性了：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;目标控件  controls:BackgroundSwitchElement.MouseHoverBackground =&quot;Blue&quot;/&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="MouseDownBackground-鼠标按下背景色"><a href="#MouseDownBackground-鼠标按下背景色" class="headerlink" title="MouseDownBackground  鼠标按下背景色"></a>MouseDownBackground  <code>鼠标按下背景色</code></h2><p>该附加属性常用于设置控件在鼠标按下时的背景色，在控件的样式或者模板中我们添加如下的触发器代码：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;Trigger Property=&quot;IsPressed&quot; Value=&quot;True&quot;&gt;</span><br><span class="line">    &lt;Setter Property=&quot;Background&quot; TargetName=&quot;Chrome&quot; </span><br><span class="line">    Value=&quot;&#123;Binding Path=(controls:BackgroundSwitchElement.MouseHoverBackground),RelativeSource=&#123;RelativeSource TemplatedParent&#125;&#125;&quot;/&gt;</span><br><span class="line">&lt;/Trigger&gt;</span><br></pre></td></tr></table></figure>
-<p>随后我们就可以使用该属性了：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;目标控件 controls:BackgroundSwitchElement.MouseDownBackground =&quot;Yellow&quot;/&gt;</span><br></pre></td></tr></table></figure>
+          <h1 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h1><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MouseHoverBackground</td>
+<td>设置鼠标悬浮背景色</td>
+</tr>
+<tr>
+<td>MouseDownBackground</td>
+<td>设置鼠标按下背景色</td>
+</tr>
+</tbody>
+</table>
+<h1 id="使用案例"><a href="#使用案例" class="headerlink" title="使用案例"></a>使用案例</h1><h2 id="MouseHoverBackground-设置鼠标悬浮背景色"><a href="#MouseHoverBackground-设置鼠标悬浮背景色" class="headerlink" title="MouseHoverBackground 设置鼠标悬浮背景色"></a>MouseHoverBackground 设置鼠标悬浮背景色</h2><p>在样式或模板中我们添加如下的触发器代码：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Trigger</span> <span class="attr">Property</span>=<span class="string">"IsMouseOver"</span> <span class="attr">Value</span>=<span class="string">"True"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Setter</span> <span class="attr">Property</span>=<span class="string">"Background"</span> <span class="attr">TargetName</span>=<span class="string">"Chrome"</span> <span class="attr">Value</span>=<span class="string">"&#123;Binding Path=(hc:BackgroundSwitchElement.MouseHoverBackground),RelativeSource=&#123;RelativeSource TemplatedParent&#125;&#125;"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">Trigger</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>前台使用方式：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">目标控件</span>  <span class="attr">hc:BackgroundSwitchElement.MouseHoverBackground</span> =<span class="string">"Blue"</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="MouseDownBackground-设置鼠标按下背景色"><a href="#MouseDownBackground-设置鼠标按下背景色" class="headerlink" title="MouseDownBackground  设置鼠标按下背景色"></a>MouseDownBackground  设置鼠标按下背景色</h2><p>在样式或模板中我们添加如下的触发器代码：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Trigger</span> <span class="attr">Property</span>=<span class="string">"IsPressed"</span> <span class="attr">Value</span>=<span class="string">"True"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Setter</span> <span class="attr">Property</span>=<span class="string">"Background"</span> <span class="attr">TargetName</span>=<span class="string">"Chrome"</span> <span class="attr">Value</span>=<span class="string">"&#123;Binding Path=(hc:BackgroundSwitchElement.MouseDownBackground),RelativeSource=&#123;RelativeSource TemplatedParent&#125;&#125;"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">Trigger</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>前台使用方式：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">目标控件</span> <span class="attr">hc:BackgroundSwitchElement.MouseDownBackground</span> =<span class="string">"Yellow"</span>/&gt;</span></span><br></pre></td></tr></table></figure>
         
       </div>
       
@@ -1652,7 +1669,18 @@
                   
                     
                   
-                  <a href="//shang.qq.com/wpa/qunwpa?idkey=a571e5553c9d41e49c4f22f3a8b2865451497a795ff281fedf3285def247efc1" title="QQ &rarr; //shang.qq.com/wpa/qunwpa?idkey=a571e5553c9d41e49c4f22f3a8b2865451497a795ff281fedf3285def247efc1"><i class="fa fa-fw fa-qq"></i>QQ</a>
+                  <a href="//shang.qq.com/wpa/qunwpa?idkey=a571e5553c9d41e49c4f22f3a8b2865451497a795ff281fedf3285def247efc1" title="QQ群1 &rarr; //shang.qq.com/wpa/qunwpa?idkey=a571e5553c9d41e49c4f22f3a8b2865451497a795ff281fedf3285def247efc1"><i class="fa fa-fw fa-qq"></i>QQ群1</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="//shang.qq.com/wpa/qunwpa?idkey=5c18622a0f6ee07a6f33afa8cdb85b1f72ea50e878271dfcec919c76b55afee7" title="QQ群2 &rarr; //shang.qq.com/wpa/qunwpa?idkey=5c18622a0f6ee07a6f33afa8cdb85b1f72ea50e878271dfcec919c76b55afee7"><i class="fa fa-fw fa-qq"></i>QQ群2</a>
                 </span>
               
                 <span class="links-of-author-item">
@@ -1688,6 +1716,17 @@
                   <a href="https://github.com/ghost1372/HandyControl/wiki" title="Wiki-en &rarr; https://github.com/ghost1372/HandyControl/wiki" rel="noopener" target="_blank"><i class="fa fa-fw fa-book"></i>Wiki-en</a>
                 </span>
               
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/TheKeytrap/HandyControl/wiki" title="Wiki-fr &rarr; https://github.com/TheKeytrap/HandyControl/wiki" rel="noopener" target="_blank"><i class="fa fa-fw fa-book"></i>Wiki-fr</a>
+                </span>
+              
             </div>
           
 
@@ -1715,7 +1754,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#准备工作"><span class="nav-number">1.</span> <span class="nav-text">准备工作</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#MouseHoverBackground-鼠标悬浮背景色"><span class="nav-number">1.1.</span> <span class="nav-text">MouseHoverBackground 鼠标悬浮背景色</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MouseDownBackground-鼠标按下背景色"><span class="nav-number">1.2.</span> <span class="nav-text">MouseDownBackground  鼠标按下背景色</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#属性"><span class="nav-number">1.</span> <span class="nav-text">属性</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#使用案例"><span class="nav-number">2.</span> <span class="nav-text">使用案例</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#MouseHoverBackground-设置鼠标悬浮背景色"><span class="nav-number">2.1.</span> <span class="nav-text">MouseHoverBackground 设置鼠标悬浮背景色</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MouseDownBackground-设置鼠标按下背景色"><span class="nav-number">2.2.</span> <span class="nav-text">MouseDownBackground  设置鼠标按下背景色</span></a></li></ol></li></ol></div>
             
 
           </div>

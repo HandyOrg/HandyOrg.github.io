@@ -94,19 +94,19 @@
 
 
 
-  <meta name="description" content="使用方式可通过ConfigHelper.Instance.SetLang(string lang)指定需要使用的语言包，默认使用zh-cn。 控件库自带的语言包一般为控件库内部使用，但用户也可以通过以下两种方式使用：  xaml第一步，引入命名空间：xmlns:hc=&amp;quot;https://handyorg.github.io/handycontrol&amp;quot;第二步，使用语言包：&amp;lt;T">
+  <meta name="description" content="使用方式可通过ConfigHelper.Instance.SetLang(string lang)指定需要使用的语言包，默认使用简体中文（zh-cn）。 控件库自带的语言包一般为控件库内部使用，但用户也可以通过以下两种方式使用：  xaml第一步，引入命名空间：xmlns:hc=&amp;quot;https://handyorg.github.io/handycontrol&amp;quot;第二步，使用语言包">
 <meta property="og:type" content="website">
 <meta property="og:title" content="国际化">
 <meta property="og:url" content="http://yoursite.com/handycontrol/langs/index.html">
 <meta property="og:site_name" content="HandyOrg">
-<meta property="og:description" content="使用方式可通过ConfigHelper.Instance.SetLang(string lang)指定需要使用的语言包，默认使用zh-cn。 控件库自带的语言包一般为控件库内部使用，但用户也可以通过以下两种方式使用：  xaml第一步，引入命名空间：xmlns:hc=&amp;quot;https://handyorg.github.io/handycontrol&amp;quot;第二步，使用语言包：&amp;lt;T">
+<meta property="og:description" content="使用方式可通过ConfigHelper.Instance.SetLang(string lang)指定需要使用的语言包，默认使用简体中文（zh-cn）。 控件库自带的语言包一般为控件库内部使用，但用户也可以通过以下两种方式使用：  xaml第一步，引入命名空间：xmlns:hc=&amp;quot;https://handyorg.github.io/handycontrol&amp;quot;第二步，使用语言包">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yoursite.com/handycontrol/langs/images/Langs.png">
-<meta property="og:updated_time" content="2019-06-09T06:36:22.403Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/langs/Langs.png">
+<meta property="og:updated_time" content="2019-10-29T13:53:36.564Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="国际化">
-<meta name="twitter:description" content="使用方式可通过ConfigHelper.Instance.SetLang(string lang)指定需要使用的语言包，默认使用zh-cn。 控件库自带的语言包一般为控件库内部使用，但用户也可以通过以下两种方式使用：  xaml第一步，引入命名空间：xmlns:hc=&amp;quot;https://handyorg.github.io/handycontrol&amp;quot;第二步，使用语言包：&amp;lt;T">
-<meta name="twitter:image" content="http://yoursite.com/handycontrol/langs/images/Langs.png">
+<meta name="twitter:description" content="使用方式可通过ConfigHelper.Instance.SetLang(string lang)指定需要使用的语言包，默认使用简体中文（zh-cn）。 控件库自带的语言包一般为控件库内部使用，但用户也可以通过以下两种方式使用：  xaml第一步，引入命名空间：xmlns:hc=&amp;quot;https://handyorg.github.io/handycontrol&amp;quot;第二步，使用语言包">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/langs/Langs.png">
 
 
 
@@ -1087,7 +1087,7 @@
       <div class="post-body">
         
         
-          <h1 id="使用方式"><a href="#使用方式" class="headerlink" title="使用方式"></a>使用方式</h1><p>可通过<code>ConfigHelper.Instance.SetLang(string lang)</code>指定需要使用的语言包，默认使用zh-cn。</p>
+          <h1 id="使用方式"><a href="#使用方式" class="headerlink" title="使用方式"></a>使用方式</h1><p>可通过<code>ConfigHelper.Instance.SetLang(string lang)</code>指定需要使用的语言包，默认使用简体中文（zh-cn）。</p>
 <p>控件库自带的语言包一般为控件库内部使用，但用户也可以通过以下两种方式使用：</p>
 <ul>
 <li><p>xaml<br>第一步，引入命名空间：<code>xmlns:hc=&quot;https://handyorg.github.io/handycontrol&quot;</code><br>第二步，使用语言包：<code>&lt;TextBlock Text=&quot;{x:Static hc:Lang.Cancel}&quot;/&gt;</code></p>
@@ -1098,8 +1098,8 @@
 <div class="note warning">
             <p>控件库不支持动态语言包切换，未来也不会有支持。</p>
           </div>
-<h1 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h1><p>控件库自带zh-cn和en两份语言包，默认为zh-cn：</p>
-<p><img src="images/Langs.png" alt="Langs"></p>
+<h1 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h1><p>控件库自带的语言包包括简体中文（zh-cn）、英文（en）、波斯语（fa）、法语（fr），默认为简体中文（zh-cn）：</p>
+<p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/langs/Langs.png" alt="Langs"></p>
 <p>如果需要可自行扩展，这里推荐使用开源插件：<a href="https://marketplace.visualstudio.com/items?itemName=TomEnglert.ResXManager" target="_blank" rel="noopener">ResXManager</a>，来维护所有的语言包。</p>
 <p>引用控件库后，会在运行目录生成语言包文件夹，其命名方式形如zh-cn、en等。</p>
 
@@ -1231,7 +1231,18 @@
                   
                     
                   
-                  <a href="//shang.qq.com/wpa/qunwpa?idkey=a571e5553c9d41e49c4f22f3a8b2865451497a795ff281fedf3285def247efc1" title="QQ &rarr; //shang.qq.com/wpa/qunwpa?idkey=a571e5553c9d41e49c4f22f3a8b2865451497a795ff281fedf3285def247efc1"><i class="fa fa-fw fa-qq"></i>QQ</a>
+                  <a href="//shang.qq.com/wpa/qunwpa?idkey=a571e5553c9d41e49c4f22f3a8b2865451497a795ff281fedf3285def247efc1" title="QQ群1 &rarr; //shang.qq.com/wpa/qunwpa?idkey=a571e5553c9d41e49c4f22f3a8b2865451497a795ff281fedf3285def247efc1"><i class="fa fa-fw fa-qq"></i>QQ群1</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="//shang.qq.com/wpa/qunwpa?idkey=5c18622a0f6ee07a6f33afa8cdb85b1f72ea50e878271dfcec919c76b55afee7" title="QQ群2 &rarr; //shang.qq.com/wpa/qunwpa?idkey=5c18622a0f6ee07a6f33afa8cdb85b1f72ea50e878271dfcec919c76b55afee7"><i class="fa fa-fw fa-qq"></i>QQ群2</a>
                 </span>
               
                 <span class="links-of-author-item">
@@ -1265,6 +1276,17 @@
                     
                   
                   <a href="https://github.com/ghost1372/HandyControl/wiki" title="Wiki-en &rarr; https://github.com/ghost1372/HandyControl/wiki" rel="noopener" target="_blank"><i class="fa fa-fw fa-book"></i>Wiki-en</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/TheKeytrap/HandyControl/wiki" title="Wiki-fr &rarr; https://github.com/TheKeytrap/HandyControl/wiki" rel="noopener" target="_blank"><i class="fa fa-fw fa-book"></i>Wiki-fr</a>
                 </span>
               
             </div>

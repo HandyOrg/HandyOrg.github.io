@@ -101,13 +101,13 @@
 <meta property="og:site_name" content="HandyOrg">
 <meta property="og:description" content="相关样式   style名称 所属类型 用途描述     RowHeaderGripperStyle Thumb 行标题拖拽条样式   ColumnHeaderGripperStyle Thumb 列标题拖拽条样式   DataGridCellStyle DataGridCell 单元格样式   DataGridRowStyle DataGridRow 行样式   DataGridColumnHe">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/DataGrid.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/DataGrid.png">
 <meta property="og:image" content="http://yoursite.com/handycontrol/native_controls/images/DataGrid-Warning01.png">
-<meta property="og:updated_time" content="2019-08-07T13:34:17.907Z">
+<meta property="og:updated_time" content="2019-10-28T17:11:23.418Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="DataGrid 数据表格">
 <meta name="twitter:description" content="相关样式   style名称 所属类型 用途描述     RowHeaderGripperStyle Thumb 行标题拖拽条样式   ColumnHeaderGripperStyle Thumb 列标题拖拽条样式   DataGridCellStyle DataGridCell 单元格样式   DataGridRowStyle DataGridRow 行样式   DataGridColumnHe">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/DataGrid.png">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/DataGrid.png">
 
 
 
@@ -2022,7 +2022,7 @@
 </tbody>
 </table>
 <div class="note info no-icon">
-            <p>用例：</p><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">&lt;DataGrid HeadersVisibility=&quot;All&quot; RowHeaderWidth=&quot;60&quot; AutoGenerateColumns=&quot;False&quot; ItemsSource=&quot;&#123;Binding DataList&#125;&quot;&gt;</span><br><span class="line">    &lt;DataGrid.RowHeaderTemplate&gt;</span><br><span class="line">        &lt;DataTemplate&gt;</span><br><span class="line">            &lt;CheckBox IsChecked=&quot;&#123;Binding IsSelected,RelativeSource=&#123;RelativeSource AncestorType=DataGridRow&#125;&#125;&quot;/&gt;</span><br><span class="line">        &lt;/DataTemplate&gt;</span><br><span class="line">    &lt;/DataGrid.RowHeaderTemplate&gt;</span><br><span class="line">    &lt;DataGrid.Columns&gt;</span><br><span class="line">        &lt;DataGridTextColumn IsReadOnly=&quot;True&quot; Width=&quot;80&quot; CanUserResize=&quot;False&quot; Binding=&quot;&#123;Binding Index&#125;&quot; Header=&quot;&#123;x:Static langs:Lang.Index&#125;&quot;/&gt;</span><br><span class="line">        &lt;DataGridTemplateColumn Width=&quot;60&quot; CanUserResize=&quot;False&quot;&gt;</span><br><span class="line">            &lt;DataGridTemplateColumn.CellTemplate&gt;</span><br><span class="line">                &lt;DataTemplate&gt;</span><br><span class="line">                    &lt;Image Source=&quot;&#123;Binding ImgPath&#125;&quot; Width=&quot;32&quot; Height=&quot;32&quot; Stretch=&quot;Uniform&quot;/&gt;</span><br><span class="line">                &lt;/DataTemplate&gt;</span><br><span class="line">            &lt;/DataGridTemplateColumn.CellTemplate&gt;</span><br><span class="line">        &lt;/DataGridTemplateColumn&gt;</span><br><span class="line">        &lt;DataGridTextColumn Width=&quot;1<em>&quot; Binding=&quot;&#123;Binding Name&#125;&quot; Header=&quot;&#123;x:Static langs:Lang.Name&#125;&quot;/&gt;</em></span><br><span class="line">        &lt;DataGridCheckBoxColumn Width=&quot;100&quot; CanUserResize=&quot;False&quot; Binding=&quot;&#123;Binding IsSelected&#125;&quot; Header=&quot;&#123;x:Static langs:Lang.Selected&#125;&quot;/&gt;</span><br><span class="line">        &lt;DataGridComboBoxColumn ItemsSource=&quot;&#123;Binding Source=&#123;StaticResource DemoTypes&#125;&#125;&quot; Width=&quot;100&quot; CanUserResize=&quot;False&quot; SelectedValueBinding=&quot;&#123;Binding Type&#125;&quot; Header=&quot;&#123;x:Static langs:Lang.Type&#125;&quot;/&gt;</span><br><span class="line">        &lt;DataGridTextColumn Width=&quot;1&quot; Binding=&quot;&#123;Binding Remark&#125;&quot; Header=&quot;&#123;x:Static langs:Lang.Remark&#125;&quot;/&gt;</span><br><span class="line">    &lt;/DataGrid.Columns&gt;</span><br><span class="line">&lt;/DataGrid&gt;</span><br></pre></td></tr></table></figure><br><img src="https://raw.githubusercontent.com/NaBian/HandyControl/master/Resources/DataGrid.png" alt="ContextMenu"></p>
+            <p>用例：</p><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">&lt;DataGrid HeadersVisibility=&quot;All&quot; RowHeaderWidth=&quot;60&quot; AutoGenerateColumns=&quot;False&quot; ItemsSource=&quot;&#123;Binding DataList&#125;&quot;&gt;</span><br><span class="line">    &lt;DataGrid.RowHeaderTemplate&gt;</span><br><span class="line">        &lt;DataTemplate&gt;</span><br><span class="line">            &lt;CheckBox IsChecked=&quot;&#123;Binding IsSelected,RelativeSource=&#123;RelativeSource AncestorType=DataGridRow&#125;&#125;&quot;/&gt;</span><br><span class="line">        &lt;/DataTemplate&gt;</span><br><span class="line">    &lt;/DataGrid.RowHeaderTemplate&gt;</span><br><span class="line">    &lt;DataGrid.Columns&gt;</span><br><span class="line">        &lt;DataGridTextColumn IsReadOnly=&quot;True&quot; Width=&quot;80&quot; CanUserResize=&quot;False&quot; Binding=&quot;&#123;Binding Index&#125;&quot; Header=&quot;&#123;x:Static langs:Lang.Index&#125;&quot;/&gt;</span><br><span class="line">        &lt;DataGridTemplateColumn Width=&quot;60&quot; CanUserResize=&quot;False&quot;&gt;</span><br><span class="line">            &lt;DataGridTemplateColumn.CellTemplate&gt;</span><br><span class="line">                &lt;DataTemplate&gt;</span><br><span class="line">                    &lt;Image Source=&quot;&#123;Binding ImgPath&#125;&quot; Width=&quot;32&quot; Height=&quot;32&quot; Stretch=&quot;Uniform&quot;/&gt;</span><br><span class="line">                &lt;/DataTemplate&gt;</span><br><span class="line">            &lt;/DataGridTemplateColumn.CellTemplate&gt;</span><br><span class="line">        &lt;/DataGridTemplateColumn&gt;</span><br><span class="line">        &lt;DataGridTextColumn Width=&quot;1<em>&quot; Binding=&quot;&#123;Binding Name&#125;&quot; Header=&quot;&#123;x:Static langs:Lang.Name&#125;&quot;/&gt;</em></span><br><span class="line">        &lt;DataGridCheckBoxColumn Width=&quot;100&quot; CanUserResize=&quot;False&quot; Binding=&quot;&#123;Binding IsSelected&#125;&quot; Header=&quot;&#123;x:Static langs:Lang.Selected&#125;&quot;/&gt;</span><br><span class="line">        &lt;DataGridComboBoxColumn ItemsSource=&quot;&#123;Binding Source=&#123;StaticResource DemoTypes&#125;&#125;&quot; Width=&quot;100&quot; CanUserResize=&quot;False&quot; SelectedValueBinding=&quot;&#123;Binding Type&#125;&quot; Header=&quot;&#123;x:Static langs:Lang.Type&#125;&quot;/&gt;</span><br><span class="line">        &lt;DataGridTextColumn Width=&quot;1&quot; Binding=&quot;&#123;Binding Remark&#125;&quot; Header=&quot;&#123;x:Static langs:Lang.Remark&#125;&quot;/&gt;</span><br><span class="line">    &lt;/DataGrid.Columns&gt;</span><br><span class="line">&lt;/DataGrid&gt;</span><br></pre></td></tr></table></figure><br><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/DataGrid.png" alt="DataGrid"></p>
           </div>
 <h1 id="FAQ"><a href="#FAQ" class="headerlink" title="FAQ"></a>FAQ</h1><div class="note warning no-icon">
             <p>对于文本显示列<code>DataGridTextColumn</code>需要设定文本内容<code>水平居中</code>或者<code>水平居右</code>，而不是HandyControl中设定的样式默认显示为<code>居左</code>时，需要继承<code>DataGridCellStyle</code>重写<code>HorizontalContentAlignment</code> 属性为<code>Center</code> 或<code>Right</code> 需要注意的是，此方式仅仅适用于引入了HandControl资源样式的项目，普通原生DataGrid使用该方式无效。</p>
@@ -2172,7 +2172,18 @@
                   
                     
                   
-                  <a href="//shang.qq.com/wpa/qunwpa?idkey=a571e5553c9d41e49c4f22f3a8b2865451497a795ff281fedf3285def247efc1" title="QQ &rarr; //shang.qq.com/wpa/qunwpa?idkey=a571e5553c9d41e49c4f22f3a8b2865451497a795ff281fedf3285def247efc1"><i class="fa fa-fw fa-qq"></i>QQ</a>
+                  <a href="//shang.qq.com/wpa/qunwpa?idkey=a571e5553c9d41e49c4f22f3a8b2865451497a795ff281fedf3285def247efc1" title="QQ群1 &rarr; //shang.qq.com/wpa/qunwpa?idkey=a571e5553c9d41e49c4f22f3a8b2865451497a795ff281fedf3285def247efc1"><i class="fa fa-fw fa-qq"></i>QQ群1</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="//shang.qq.com/wpa/qunwpa?idkey=5c18622a0f6ee07a6f33afa8cdb85b1f72ea50e878271dfcec919c76b55afee7" title="QQ群2 &rarr; //shang.qq.com/wpa/qunwpa?idkey=5c18622a0f6ee07a6f33afa8cdb85b1f72ea50e878271dfcec919c76b55afee7"><i class="fa fa-fw fa-qq"></i>QQ群2</a>
                 </span>
               
                 <span class="links-of-author-item">
@@ -2206,6 +2217,17 @@
                     
                   
                   <a href="https://github.com/ghost1372/HandyControl/wiki" title="Wiki-en &rarr; https://github.com/ghost1372/HandyControl/wiki" rel="noopener" target="_blank"><i class="fa fa-fw fa-book"></i>Wiki-en</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/TheKeytrap/HandyControl/wiki" title="Wiki-fr &rarr; https://github.com/TheKeytrap/HandyControl/wiki" rel="noopener" target="_blank"><i class="fa fa-fw fa-book"></i>Wiki-fr</a>
                 </span>
               
             </div>

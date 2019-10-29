@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[欢迎使用HandyControl]]></title>
     <url>%2Fhandycontrol%2Findex.html</url>
-    <content type="text"><![CDATA[HandyControl是一套WPF控件库，它几乎重写了所有原生样式，同时包含50多款额外的控件（正逐步增加）。 要求 使用要求.Net &gt;= 4.0OS &gt;= win7 编译要求IDE &gt;= vs2019C# &gt;= 7.3 下载NugetNuget上是编译好的发布版本，地址为：HandyControl-Nuget Nuget上一般至少一个月发布一次，所以有很大的可能和本文档有出入，有出入的地方一切以本文档为准。 GithubGithub上是最新的源代码，地址为：HandyControl-Github Github上一般每天都有更新，相对而言不适合用于生产。 文档的更新速度必然跟不上最新的Github源码，有出入的地方一切以Github上Demo示例为准。 项目结构介绍整体结构从Github上克隆好源码后，进入src文件夹，该文件夹结构如下： 这里一共有4个解决方案sln文件。 Net_GE45的意思是.Net版本大于等于4.5 Shared文件夹用于存放共享项目的代码 图中五个文件夹内部各包含两个子文件夹，例如在Shared中还包含两个子文件夹： 它们分别存放控件源码和控件示例源码。 源码结构我们以HandyControl_Net_GE45.sln为示例进行说明，使用VS2017打开该解决方案： 如果要启动示例，查看控件效果，请将HandyControlDemo_[指定的项目类型]作为启动项。 如图，已将HandyControlDemo_Net_GE45作为启动项。 大部分公共的源码都在Shared文件夹中，部分需要为特定项目类型定制的代码则被提出来放到各自的文件夹中。 HandyControl源码（主要在HandyControl_Shared中）主要包含7个文件夹，对它们的描述如下表所示： 名称 用途 Controls 包含所有控件的后台交互逻辑 Data 控件库所需的基本数据定义 Expression 抽取自Microsoft.Expression.Drawing Interactivity 抽取自Microsoft.Expression.Interactions &amp; System.Windows.Interactivity，并做了部分修改 Properties 包含控件库属性和语言包 Themes 包含控件库所有的xaml定义 Tools 主要包含控件库所需的帮助方法和扩展方法 Controls中的每个控件一般都能在Themes中找到对应的xaml定义。 编译源码 编译前请确认你的开发环境是否符合使用要求。 打开HandyControl.sln，在解决方案配置下拉框中选择指定的环境进行编译：]]></content>
+    <content type="text"><![CDATA[HandyControl是一套WPF控件库，它几乎重写了所有原生样式，同时包含60余款自定义控件（正逐步增加）。 要求 下载NugetNuget上是编译好的发布版本，地址为：HandyControl-Nuget Nuget上一般至少一个月发布一次，所以有很大的可能和本文档有出入，有出入的地方一切以本文档为准。 GithubGithub上是最新的源代码，地址为：HandyControl-Github Github上一般每天都有更新，相对而言不适合用于生产。 文档的更新速度必然跟不上最新的Github源码，有出入的地方一切以Github上Demo示例为准。 项目结构介绍整体结构从Github上克隆好源码后，进入src文件夹，该文件夹结构如下： 这里一共有4个解决方案sln文件。 Net_GE45的意思是.Net版本大于等于4.5 Shared文件夹用于存放共享项目的代码 图中五个文件夹内部各包含两个子文件夹，例如在Shared中还包含两个子文件夹： 它们分别存放控件源码和控件示例源码。 源码结构我们以HandyControl.sln为示例进行说明，使用VS2019打开该解决方案： 如果要启动示例，查看控件效果，请将HandyControlDemo_[指定的项目类型]作为启动项。 如图，已将HandyControlDemo_Net_GE45作为启动项。 大部分公共的源码都在Shared文件夹中，部分需要为特定项目类型定制的代码则被提出来放到各自的文件夹中。 HandyControl源码（主要在HandyControl_Shared中）主要包含7个文件夹，对它们的描述如下表所示： 名称 用途 Controls 包含所有控件的后台交互逻辑 Data 控件库所需的基本数据定义 Expression 抽取自Microsoft.Expression.Drawing Interactivity 抽取自Microsoft.Expression.Interactions &amp; System.Windows.Interactivity，并做了部分修改 Properties 包含控件库属性和语言包 Themes 包含控件库所有的xaml定义 Tools 主要包含控件库所需的帮助方法和扩展方法 Controls中的每个控件一般都能在Themes中找到对应的xaml定义。 编译源码 编译前请确认你的开发环境是否符合要求。 打开HandyControl.sln，在解决方案配置下拉框中选择指定的环境进行编译：]]></content>
   </entry>
   <entry>
     <title><![CDATA[handykeras]]></title>
@@ -48,12 +48,12 @@
   <entry>
     <title><![CDATA[国际化]]></title>
     <url>%2Fhandycontrol%2Flangs%2Findex.html</url>
-    <content type="text"><![CDATA[使用方式可通过ConfigHelper.Instance.SetLang(string lang)指定需要使用的语言包，默认使用zh-cn。 控件库自带的语言包一般为控件库内部使用，但用户也可以通过以下两种方式使用： xaml第一步，引入命名空间：xmlns:hc=&quot;https://handyorg.github.io/handycontrol&quot;第二步，使用语言包：&lt;TextBlock Text=&quot;{x:Static hc:Lang.Cancel}&quot;/&gt; C#HandyControl.Properties.Langs.Lang.Cancel 控件库不支持动态语言包切换，未来也不会有支持。 扩展控件库自带zh-cn和en两份语言包，默认为zh-cn： 如果需要可自行扩展，这里推荐使用开源插件：ResXManager，来维护所有的语言包。 引用控件库后，会在运行目录生成语言包文件夹，其命名方式形如zh-cn、en等。]]></content>
+    <content type="text"><![CDATA[使用方式可通过ConfigHelper.Instance.SetLang(string lang)指定需要使用的语言包，默认使用简体中文（zh-cn）。 控件库自带的语言包一般为控件库内部使用，但用户也可以通过以下两种方式使用： xaml第一步，引入命名空间：xmlns:hc=&quot;https://handyorg.github.io/handycontrol&quot;第二步，使用语言包：&lt;TextBlock Text=&quot;{x:Static hc:Lang.Cancel}&quot;/&gt; C#HandyControl.Properties.Langs.Lang.Cancel 控件库不支持动态语言包切换，未来也不会有支持。 扩展控件库自带的语言包包括简体中文（zh-cn）、英文（en）、波斯语（fa）、法语（fr），默认为简体中文（zh-cn）： 如果需要可自行扩展，这里推荐使用开源插件：ResXManager，来维护所有的语言包。 引用控件库后，会在运行目录生成语言包文件夹，其命名方式形如zh-cn、en等。]]></content>
   </entry>
   <entry>
     <title><![CDATA[鸣谢]]></title>
     <url>%2Fhandycontrol%2Ftnx%2Findex.html</url>
-    <content type="text"><![CDATA[感谢以下Coder提供代码贡献 感谢以下User提供使用建议 感谢以下组织机构提供开源许可 感谢以下捐赠者]]></content>
+    <content type="text"><![CDATA[感谢以下Coder提供代码贡献 感谢以下组织机构提供开源许可 感谢以下捐赠者]]></content>
   </entry>
   <entry>
     <title><![CDATA[总览]]></title>
@@ -61,19 +61,19 @@
     <content type="text"><![CDATA[最新示例托盘图标 对话框 波形进度条 标记 头像 历史发布回到顶部 对话气泡 标签 穿梭框 进度按钮 封面流 封面视图 消息对话框 瀑布流 评分 背景模糊窗口 翻页时钟 徽章 轮廓文本 标签 工具条 滑块 圆形进度条 按钮 切换按钮 单选按钮 复选框 列表框 树视图 列表视图 数据表格 现在你可以切换到黑色主题了 颜色拾取器 加载条 轮播 页码条 展开框 时间条 图片浏览器 预览滑块 对比滑块 信息通知 动画路径 进度条 选项卡控件 选项卡控件 分组框 步骤条 Gif图片 上下文菜单 日历 时钟 带有时钟的日历 文本块 富文本框 文本框 组合框 数值选择控件 步骤条 密码框 日期选择器 时间选择器 日期时间选择器 滚动视图 圆形布局 边框 画刷 配置切换]]></content>
   </entry>
   <entry>
-    <title><![CDATA[建设中]]></title>
+    <title><![CDATA[DataGridAttach DataGrid专用]]></title>
     <url>%2Fhandycontrol%2Fattach%2FdataGridAttach%2Findex.html</url>
-    <content type="text"><![CDATA[建设中]]></content>
+    <content type="text"><![CDATA[属性 名称 用途 ApplyDefaultStyle 是否应用默认样式 TextColumnStyle 文本列样式 EditingTextColumnStyle 编辑时文本列样式 ComboBoxColumnStyle 组合框列样式 EditingComboBoxColumnStyle 编辑时组合框列样式 CheckBoxColumnStyle 复选框列样式 EditingCheckBoxColumnStyle 编辑时复选框列样式 ShowRowNumber 是否显示行号]]></content>
   </entry>
   <entry>
     <title><![CDATA[BackgroundSwitchElement 可切换背景的元素]]></title>
     <url>%2Fhandycontrol%2Fattach%2FbackgroundSwitchElement%2Findex.html</url>
-    <content type="text"><![CDATA[准备工作添加HandyControl命名空间1xmlns:hc=&quot;https://handyorg.github.io/handycontrol&quot; MouseHoverBackground 鼠标悬浮背景色该附加属性常用于设置控件在鼠标悬浮时的背景色，在控件的样式或者模板中我们添加如下的触发器代码： 123&lt;Trigger Property=&quot;IsMouseOver&quot; Value=&quot;True&quot;&gt; &lt;Setter Property=&quot;Background&quot; TargetName=&quot;Chrome&quot; Value=&quot;&#123;Binding Path=(controls:BackgroundSwitchElement.MouseHoverBackground),RelativeSource=&#123;RelativeSource TemplatedParent&#125;&#125;&quot;/&gt;&lt;/Trigger&gt; 随后我们就可以使用该属性了： 1&lt;目标控件 controls:BackgroundSwitchElement.MouseHoverBackground =&quot;Blue&quot;/&gt; MouseDownBackground 鼠标按下背景色该附加属性常用于设置控件在鼠标按下时的背景色，在控件的样式或者模板中我们添加如下的触发器代码： 1234&lt;Trigger Property=&quot;IsPressed&quot; Value=&quot;True&quot;&gt; &lt;Setter Property=&quot;Background&quot; TargetName=&quot;Chrome&quot; Value=&quot;&#123;Binding Path=(controls:BackgroundSwitchElement.MouseHoverBackground),RelativeSource=&#123;RelativeSource TemplatedParent&#125;&#125;&quot;/&gt;&lt;/Trigger&gt; 随后我们就可以使用该属性了： 1&lt;目标控件 controls:BackgroundSwitchElement.MouseDownBackground =&quot;Yellow&quot;/&gt;]]></content>
+    <content type="text"><![CDATA[属性 名称 用途 MouseHoverBackground 设置鼠标悬浮背景色 MouseDownBackground 设置鼠标按下背景色 使用案例MouseHoverBackground 设置鼠标悬浮背景色在样式或模板中我们添加如下的触发器代码： 123&lt;Trigger Property="IsMouseOver" Value="True"&gt; &lt;Setter Property="Background" TargetName="Chrome" Value="&#123;Binding Path=(hc:BackgroundSwitchElement.MouseHoverBackground),RelativeSource=&#123;RelativeSource TemplatedParent&#125;&#125;"/&gt;&lt;/Trigger&gt; 前台使用方式： 1&lt;目标控件 hc:BackgroundSwitchElement.MouseHoverBackground ="Blue"/&gt; MouseDownBackground 设置鼠标按下背景色在样式或模板中我们添加如下的触发器代码： 123&lt;Trigger Property="IsPressed" Value="True"&gt; &lt;Setter Property="Background" TargetName="Chrome" Value="&#123;Binding Path=(hc:BackgroundSwitchElement.MouseDownBackground),RelativeSource=&#123;RelativeSource TemplatedParent&#125;&#125;"/&gt;&lt;/Trigger&gt; 前台使用方式： 1&lt;目标控件 hc:BackgroundSwitchElement.MouseDownBackground ="Yellow"/&gt;]]></content>
   </entry>
   <entry>
-    <title><![CDATA[建设中]]></title>
+    <title><![CDATA[BorderElement 具有边框的元素]]></title>
     <url>%2Fhandycontrol%2Fattach%2FborderElement%2Findex.html</url>
-    <content type="text"><![CDATA[建设中]]></content>
+    <content type="text"><![CDATA[属性 名称 用途 CornerRadius 设置边框圆角值 Circular 是否呈现为圆形 True为是、False为否 使用案例CornerRadius 设置边框圆角值1234&lt;StackPanel Width="200" VerticalAlignment="Center"&gt; &lt;Button Content="Button" hc:BorderElement.CornerRadius="15" HorizontalAlignment="Stretch"/&gt; &lt;TextBox Text="TextBox" hc:BorderElement.CornerRadius="15" Margin="0,10,0,0"/&gt;&lt;/StackPanel&gt; Circular 是否呈现为圆形借助BorderElement.Circular附加属性实现圆形Border1&lt;Border Style="&#123;StaticResource BorderCircular&#125;" Background="OrangeRed" Width="100" Height="100"/&gt;]]></content>
   </entry>
   <entry>
     <title><![CDATA[建设中]]></title>
@@ -81,14 +81,14 @@
     <content type="text"><![CDATA[建设中]]></content>
   </entry>
   <entry>
-    <title><![CDATA[建设中]]></title>
+    <title><![CDATA[IconElement 具有图标的元素]]></title>
     <url>%2Fhandycontrol%2Fattach%2FiconElement%2Findex.html</url>
-    <content type="text"><![CDATA[建设中]]></content>
+    <content type="text"><![CDATA[属性 名称 用途 Geometry 几何形状 Width 图标宽度 Height 图标高度 使用案例Geometry 几何形状1234&lt;StackPanel Width="200" VerticalAlignment="Center"&gt; &lt;Button Content="Button" HorizontalAlignment="Stretch"/&gt; &lt;Button Content="Button" hc:IconElement.Geometry="&#123;StaticResource CalendarGeometry&#125;" HorizontalAlignment="Stretch" Margin="0,10,0,0"/&gt;&lt;/StackPanel&gt;]]></content>
   </entry>
   <entry>
-    <title><![CDATA[建设中]]></title>
+    <title><![CDATA[EdgeElement 具有边界内容的元素]]></title>
     <url>%2Fhandycontrol%2Fattach%2FedgeElement%2Findex.html</url>
-    <content type="text"><![CDATA[建设中]]></content>
+    <content type="text"><![CDATA[属性 名称 用途 LeftContent 左侧边界内容 TopContent 顶部边界内容 RightContent 右侧边界内容 BottomContent 底部边界内容 ShowEdgeContent 是否显示边界内容]]></content>
   </entry>
   <entry>
     <title><![CDATA[建设中]]></title>
@@ -153,7 +153,7 @@
   <entry>
     <title><![CDATA[转换器]]></title>
     <url>%2Fhandycontrol%2Fbasic_xaml%2Fconverters%2Findex.html</url>
-    <content type="text"><![CDATA[Boolean2BooleanReConverter该转换器用于反转布尔类型 Boolean2StrConverter该转换器需要提供一个字符串作为参数，该字符串的一般形式为：[字符串0];[字符串1]，当转换器获取的值为true时，会返回[字符串0]，否则返回[字符串1]。 Boolean2VisibilityConverter该转换器会将true转换为Visible，会将false转换为Collapse Boolean2VisibilityReConverter该转换器情况与Boolean2VisibilityConverter相反。 BooleanArr2VisibilityConverter该转换器会将布尔数组转换为Visibility，当数组内全部为true时，返回Visible，否则返回Collapse。 BorderCircularConverter该转换器为Border专用，接受Border的长和宽合成的一个整型数组，返回它们中最小值的一半，作为圆形Border的半径。 BorderClipConverter该转换器为Border专用，接受一个object数组，该数组长度为3，分别对应Border的长、宽和圆角半径，它会返回一个圆形几何形状作为Clip来剪裁Border。 Color2ChannelAConverter（内部使用）该转换器会提取SolidColorBrush.Color的透明通道（A）的值。 Color2HexStrConverter该转换器会将SolidColorBrush转换为16进制字符串形式（带“#”）。 Int2StrConverter该转换器需要提供一个字符串作为参数，该字符串的一般形式为：[字符串0];[字符串1];...[字符串n]，转换器会将一个整型的值作为索引，来获取指定位置的字符串并返回。 Long2FileSizeConverter该转换器会将长整型转换为文件大小的字符串。 Object2BooleanConverter如果该转换器获取到的值为null则返回false，否则返回true。 Object2VisibilityConverter如果该转换器获取到的值为null则返回Collapsed，否则返回Visible。 String2VisibilityConverter该转换器接受一个字符串，如果该字符串为空或者为null，则返回Collapse，否则返回Visible。 String2VisibilityReConverter该转换器情况与String2VisibilityConverter相反。 TreeViewItemMarginConverter（内部使用）该转换器用于为TreeViewItem提供适当的左边距。 用例：1Visibility=&quot;&#123;Binding ShowButton,Converter=&#123;StaticResource Boolean2VisibilityConverter&#125;&#125;&quot;]]></content>
+    <content type="text"><![CDATA[Boolean2BooleanReConverter该转换器用于反转布尔类型 Boolean2StrConverter该转换器需要提供一个字符串作为参数，该字符串的一般形式为：[字符串0];[字符串1]，当转换器获取的值为true时，会返回[字符串0]，否则返回[字符串1]。 Boolean2VisibilityConverter该转换器会将true转换为Visible，会将false转换为Collapse Boolean2VisibilityReConverter该转换器情况与Boolean2VisibilityConverter相反。 BooleanArr2VisibilityConverter该转换器会将布尔数组转换为Visibility，当数组内全部为true时，返回Visible，否则返回Collapse。 BorderCircularClipConverter该转换器为Border专用，接受一个object数组，该数组长度为3，分别对应Border的长、宽和圆角半径，它会返回一个圆形几何形状作为Clip来剪裁Border。 BorderCircularConverter该转换器为Border专用，接受Border的长和宽合成的一个整型数组，返回它们中最小值的一半，作为圆形Border的半径。 BorderClipConverter该转换器为Border专用，接受一个object数组，该数组长度为3，分别对应Border的长、宽和圆角半径，它会返回一个圆角矩形作为Clip来剪裁Border。 ColLayoutConverter该转换器用于xaml设计时，主要功能是将字符串转换为有效的ColLayout值。 Color2ChannelAConverter（内部使用）该转换器会提取SolidColorBrush.Color的透明通道（A）的值。 Color2HexStrConverter该转换器会将SolidColorBrush转换为16进制字符串形式（带“#”）。 CornerRadiusSplitConverter该转换器需要提供一个字符串作为参数，该字符串的一般形式为：[0/1],[0/1],[0/1],[0/1]，4个以逗号分隔的值分别对应CornerRadius的Left、Top，Right，Bottom属性，当值为1则返回对应属性的值，否则返回0。 Int2StrConverter该转换器需要提供一个字符串作为参数，该字符串的一般形式为：[字符串0];[字符串1];...[字符串n]，转换器会将一个整型的值作为索引，来获取指定位置的字符串并返回。 Long2FileSizeConverter该转换器会将长整型转换为文件大小的字符串。 Number2PercentageConverter该转换器接受一个长度为2的数字数组，返回两数的百分比值。 Object2BooleanConverter如果该转换器获取到的值为null则返回false，否则返回true。 Object2VisibilityConverter如果该转换器获取到的值为null则返回Collapsed，否则返回Visible。 RectangleCircularConverter该转换器为Rectangle专用，接受Rectangle的长和宽合成的一个整型数组，返回它们中最小值的一半，作为圆形Rectangle的半径。 String2VisibilityConverter该转换器接受一个字符串，如果该字符串为空或者为null，则返回Collapse，否则返回Visible。 String2VisibilityReConverter该转换器情况与String2VisibilityConverter相反。 ThicknessSplitConverter该转换器需要提供一个字符串作为参数，该字符串的一般形式为：[0/1],[0/1],[0/1],[0/1]，4个以逗号分隔的值分别对应Thickness的Left、Top，Right，Bottom属性，当值为1则返回对应属性的值，否则返回0。 TreeViewItemMarginConverter（内部使用）该转换器用于为TreeViewItem提供适当的左边距。 用例：1Visibility=&quot;&#123;Binding ShowButton,Converter=&#123;StaticResource Boolean2VisibilityConverter&#125;&#125;&quot;]]></content>
   </entry>
   <entry>
     <title><![CDATA[画刷]]></title>
