@@ -1859,7 +1859,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #fb2458;
+  background: #823412;
 }
 .feed-link,
 .chat {
@@ -3008,4 +3008,20 @@ ul.breadcrumb li+li:last-child {
   margin: 3px;
   display: inline;
   padding: 3px !important;
+}
+.post-body h2 {
+  font-size: 1.45em;
+  border-bottom: 0px solid #eee;
+}
+a,
+span.exturl {
+  overflow-wrap: break-word;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  background-color: transparent;
+  color: #555;
+  text-decoration: none;
+  outline: none;
+  border-bottom: 0px solid #999;
+  cursor: pointer;
 }
