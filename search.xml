@@ -11,19 +11,19 @@
     <content type="text"></content>
   </entry>
   <entry>
-    <title><![CDATA[基础xaml定义]]></title>
-    <url>%2Fhandycontrol%2Fbasic_xaml%2Findex.html</url>
-    <content type="text"><![CDATA[基础xaml定义都在Basic文件夹中，其内部结构如下： 对它们的描述如下表所示： 名称 用途 Colors 包含内置的3个颜色定义文件 Basic.xaml 包装好的基础xaml定义 Behaviors.xaml 包含所有的行为定义 Brushes.xaml 包含所有的画刷定义 Converters.xaml 包含所有的转换器定义 Effects.xaml 包含所有的效果定义 Fonts.xaml 包含所有的字体大小定义 Geometries.xaml 包含所有的几何形状定义，多用于Path Paths.xaml 包含所有的Path路径定义 Sizes.xaml 包含所有的尺寸定义]]></content>
-  </entry>
-  <entry>
     <title><![CDATA[附加属性]]></title>
     <url>%2Fhandycontrol%2Fattach%2Findex.html</url>
     <content type="text"><![CDATA[附加属性源码在Controls / Attach文件夹中： 以Element结尾的类，可以为所有的控件设置一些共有的属性，以Attach结尾的类，只能为一种控件设置相关的属性。]]></content>
   </entry>
   <entry>
-    <title><![CDATA[国际化]]></title>
-    <url>%2Fhandycontrol%2Flangs%2Findex.html</url>
-    <content type="text"><![CDATA[使用方式可通过ConfigHelper.Instance.SetLang(string lang)指定需要使用的语言包，默认使用简体中文（zh-cn）。 控件库自带的语言包一般为控件库内部使用，但用户也可以通过以下两种方式使用： xaml第一步，引入命名空间：xmlns:hc=&quot;https://handyorg.github.io/handycontrol&quot;第二步，使用语言包：&lt;TextBlock Text=&quot;{x:Static hc:Lang.Cancel}&quot;/&gt; C#HandyControl.Properties.Langs.Lang.Cancel 控件库不支持动态语言包切换，未来也不会有支持。 扩展控件库自带的语言包包括简体中文（zh-cn）、英文（en）、波斯语（fa）、法语（fr），默认为简体中文（zh-cn）： 如果需要可自行扩展，这里推荐使用开源插件：ResXManager，来维护所有的语言包。 引用控件库后，会在运行目录生成语言包文件夹，其命名方式形如zh-cn、en等。]]></content>
+    <title><![CDATA[基础xaml定义]]></title>
+    <url>%2Fhandycontrol%2Fbasic_xaml%2Findex.html</url>
+    <content type="text"><![CDATA[基础xaml定义都在Basic文件夹中，其内部结构如下： 对它们的描述如下表所示： 名称 用途 Colors 包含内置的3个颜色定义文件 Basic.xaml 包装好的基础xaml定义 Behaviors.xaml 包含所有的行为定义 Brushes.xaml 包含所有的画刷定义 Converters.xaml 包含所有的转换器定义 Effects.xaml 包含所有的效果定义 Fonts.xaml 包含所有的字体大小定义 Geometries.xaml 包含所有的几何形状定义，多用于Path Paths.xaml 包含所有的Path路径定义 Sizes.xaml 包含所有的尺寸定义]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fdata%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
   </entry>
   <entry>
     <title><![CDATA[建设中]]></title>
@@ -36,9 +36,9 @@
     <content type="text"><![CDATA[原生控件是指WPF框架自带的控件，除此之外，通过附加属性实现简单的功能扩展。 HandyControl中，几乎所有的原生控件都有默认实现的基样式（即定义样式的时候，没有显示给定Key值）。 基样式一般带有“Base”字样，不推荐用户直接在视图层中使用，合适的使用场景是资源文件。 FAQ 我该怎么覆盖样式的默认实现呢？没有Key可以给我BasedOn啊？ 可以使用这种语法：BasedOn=&quot;{StaticResource {x:Type Button}}&quot;来覆盖Button的默认样式。]]></content>
   </entry>
   <entry>
-    <title><![CDATA[建设中]]></title>
-    <url>%2Fhandycontrol%2Fdata%2Findex.html</url>
-    <content type="text"><![CDATA[建设中]]></content>
+    <title><![CDATA[国际化]]></title>
+    <url>%2Fhandycontrol%2Flangs%2Findex.html</url>
+    <content type="text"><![CDATA[使用方式可通过ConfigHelper.Instance.SetLang(string lang)指定需要使用的语言包，默认使用简体中文（zh-cn）。 控件库自带的语言包一般为控件库内部使用，但用户也可以通过以下两种方式使用： xaml第一步，引入命名空间：xmlns:hc=&quot;https://handyorg.github.io/handycontrol&quot;第二步，使用语言包：&lt;TextBlock Text=&quot;{x:Static hc:Lang.Cancel}&quot;/&gt; C#HandyControl.Properties.Langs.Lang.Cancel 控件库不支持动态语言包切换，未来也不会有支持。 扩展控件库自带的语言包包括简体中文（zh-cn）、英文（en）、波斯语（fa）、法语（fr），默认为简体中文（zh-cn）： 如果需要可自行扩展，这里推荐使用开源插件：ResXManager，来维护所有的语言包。 引用控件库后，会在运行目录生成语言包文件夹，其命名方式形如zh-cn、en等。]]></content>
   </entry>
   <entry>
     <title><![CDATA[快速开始]]></title>
@@ -46,9 +46,9 @@
     <content type="text"><![CDATA[第一步下载源码或者以Nuget的方式引用控件库。源码链接：HandyControl-GithubNuget链接：HandyControl-Nuget 第二步在App.xaml中添加以下代码： 12345678&lt;Application.Resources&gt; &lt;ResourceDictionary&gt; &lt;ResourceDictionary.MergedDictionaries&gt; &lt;ResourceDictionary Source="pack://application:,,,/HandyControl;component/Themes/SkinDefault.xaml"/&gt; &lt;ResourceDictionary Source="pack://application:,,,/HandyControl;component/Themes/Theme.xaml"/&gt; &lt;/ResourceDictionary.MergedDictionaries&gt; &lt;/ResourceDictionary&gt;&lt;/Application.Resources&gt; 第三步添加命名空间：xmlns:hc=&quot;https://handyorg.github.io/handycontrol&quot;]]></content>
   </entry>
   <entry>
-    <title><![CDATA[规范]]></title>
-    <url>%2Fhandycontrol%2Fspecifications%2Findex.html</url>
-    <content type="text"><![CDATA[HandyControl中有一些贯穿全部生命周期的规范，此文档将逐条列举。 样式命名规范 带有BaseStyle后缀的样式，不推荐在视图层使用，而适合于扩展。 例如ButtonBaseStyle、ComboBoxBaseStyle。 带有Extend字样的样式，为原生控件样式的扩展模式，它比没有该字样的样式多一些功能。 例如ComboBoxExtendBaseStyle、TextBoxExtendBaseStyle。 带有Plus字样的样式，为扩展控件的默认样式，它比Extend样式多一些功能。 例如ComboBoxPlusBaseStyle、TextBoxPlusBaseStyle。 如果一个控件拥有Plus样式，说明在原生库中存在与其同名的控件。 控件命名规范 功能和原生控件相似的扩展控件一般名称和原生控件一致。 例如Window、TabControl、ScrollViewer,原生库中有这三个控件，但是HandyControl中也有，且名称一致。]]></content>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Ftools%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
   </entry>
   <entry>
     <title><![CDATA[鸣谢]]></title>
@@ -56,9 +56,9 @@
     <content type="text"><![CDATA[感谢以下Coder提供代码贡献 感谢以下组织机构提供开源许可 感谢以下捐赠者]]></content>
   </entry>
   <entry>
-    <title><![CDATA[建设中]]></title>
-    <url>%2Fhandycontrol%2Ftools%2Findex.html</url>
-    <content type="text"><![CDATA[建设中]]></content>
+    <title><![CDATA[规范]]></title>
+    <url>%2Fhandycontrol%2Fspecifications%2Findex.html</url>
+    <content type="text"><![CDATA[HandyControl中有一些贯穿全部生命周期的规范，此文档将逐条列举。 样式命名规范 带有BaseStyle后缀的样式，不推荐在视图层使用，而适合于扩展。 例如ButtonBaseStyle、ComboBoxBaseStyle。 带有Extend字样的样式，为原生控件样式的扩展模式，它比没有该字样的样式多一些功能。 例如ComboBoxExtendBaseStyle、TextBoxExtendBaseStyle。 带有Plus字样的样式，为扩展控件的默认样式，它比Extend样式多一些功能。 例如ComboBoxPlusBaseStyle、TextBoxPlusBaseStyle。 如果一个控件拥有Plus样式，说明在原生库中存在与其同名的控件。 控件命名规范 功能和原生控件相似的扩展控件一般名称和原生控件一致。 例如Window、TabControl、ScrollViewer,原生库中有这三个控件，但是HandyControl中也有，且名称一致。]]></content>
   </entry>
   <entry>
     <title><![CDATA[总览]]></title>
@@ -71,23 +71,18 @@
     <content type="text"><![CDATA[属性 名称 用途 CornerRadius 设置边框圆角值 Circular 是否呈现为圆形 True为是、False为否 使用案例CornerRadius 设置边框圆角值1234&lt;StackPanel Width="200" VerticalAlignment="Center"&gt; &lt;Button Content="Button" hc:BorderElement.CornerRadius="15" HorizontalAlignment="Stretch"/&gt; &lt;TextBox Text="TextBox" hc:BorderElement.CornerRadius="15" Margin="0,10,0,0"/&gt;&lt;/StackPanel&gt; Circular 是否呈现为圆形借助BorderElement.Circular附加属性实现圆形Border1&lt;Border Style="&#123;StaticResource BorderCircular&#125;" Background="OrangeRed" Width="100" Height="100"/&gt;]]></content>
   </entry>
   <entry>
-    <title><![CDATA[DataGridAttach DataGrid专用]]></title>
-    <url>%2Fhandycontrol%2Fattach%2FdataGridAttach%2Findex.html</url>
-    <content type="text"><![CDATA[属性 名称 用途 ApplyDefaultStyle 是否应用默认样式 TextColumnStyle 文本列样式 EditingTextColumnStyle 编辑时文本列样式 ComboBoxColumnStyle 组合框列样式 EditingComboBoxColumnStyle 编辑时组合框列样式 CheckBoxColumnStyle 复选框列样式 EditingCheckBoxColumnStyle 编辑时复选框列样式 ShowRowNumber 是否显示行号]]></content>
-  </entry>
-  <entry>
     <title><![CDATA[BackgroundSwitchElement 可切换背景的元素]]></title>
     <url>%2Fhandycontrol%2Fattach%2FbackgroundSwitchElement%2Findex.html</url>
     <content type="text"><![CDATA[属性 名称 用途 MouseHoverBackground 设置鼠标悬浮背景色 MouseDownBackground 设置鼠标按下背景色 使用案例MouseHoverBackground 设置鼠标悬浮背景色在样式或模板中我们添加如下的触发器代码： 123&lt;Trigger Property="IsMouseOver" Value="True"&gt; &lt;Setter Property="Background" TargetName="Chrome" Value="&#123;Binding Path=(hc:BackgroundSwitchElement.MouseHoverBackground),RelativeSource=&#123;RelativeSource TemplatedParent&#125;&#125;"/&gt;&lt;/Trigger&gt; 前台使用方式： 1&lt;目标控件 hc:BackgroundSwitchElement.MouseHoverBackground ="Blue"/&gt; MouseDownBackground 设置鼠标按下背景色在样式或模板中我们添加如下的触发器代码： 123&lt;Trigger Property="IsPressed" Value="True"&gt; &lt;Setter Property="Background" TargetName="Chrome" Value="&#123;Binding Path=(hc:BackgroundSwitchElement.MouseDownBackground),RelativeSource=&#123;RelativeSource TemplatedParent&#125;&#125;"/&gt;&lt;/Trigger&gt; 前台使用方式： 1&lt;目标控件 hc:BackgroundSwitchElement.MouseDownBackground ="Yellow"/&gt;]]></content>
   </entry>
   <entry>
-    <title><![CDATA[EdgeElement 具有边界内容的元素]]></title>
-    <url>%2Fhandycontrol%2Fattach%2FedgeElement%2Findex.html</url>
-    <content type="text"><![CDATA[属性 名称 用途 LeftContent 左侧边界内容 TopContent 顶部边界内容 RightContent 右侧边界内容 BottomContent 底部边界内容 ShowEdgeContent 是否显示边界内容]]></content>
+    <title><![CDATA[DataGridAttach DataGrid专用]]></title>
+    <url>%2Fhandycontrol%2Fattach%2FdataGridAttach%2Findex.html</url>
+    <content type="text"><![CDATA[属性 名称 用途 ApplyDefaultStyle 是否应用默认样式 TextColumnStyle 文本列样式 EditingTextColumnStyle 编辑时文本列样式 ComboBoxColumnStyle 组合框列样式 EditingComboBoxColumnStyle 编辑时组合框列样式 CheckBoxColumnStyle 复选框列样式 EditingCheckBoxColumnStyle 编辑时复选框列样式 ShowRowNumber 是否显示行号]]></content>
   </entry>
   <entry>
     <title><![CDATA[建设中]]></title>
-    <url>%2Fhandycontrol%2Fattach%2FinfoElement%2Findex.html</url>
+    <url>%2Fhandycontrol%2Fattach%2FpanelElement%2Findex.html</url>
     <content type="text"><![CDATA[建设中]]></content>
   </entry>
   <entry>
@@ -96,9 +91,9 @@
     <content type="text"><![CDATA[属性 名称 用途 Geometry 几何形状 Width 图标宽度 Height 图标高度 使用案例Geometry 几何形状1234&lt;StackPanel Width="200" VerticalAlignment="Center"&gt; &lt;Button Content="Button" HorizontalAlignment="Stretch"/&gt; &lt;Button Content="Button" hc:IconElement.Geometry="&#123;StaticResource CalendarGeometry&#125;" HorizontalAlignment="Stretch" Margin="0,10,0,0"/&gt;&lt;/StackPanel&gt;]]></content>
   </entry>
   <entry>
-    <title><![CDATA[建设中]]></title>
-    <url>%2Fhandycontrol%2Fattach%2FpasswordBoxAttach%2Findex.html</url>
-    <content type="text"><![CDATA[建设中]]></content>
+    <title><![CDATA[EdgeElement 具有边界内容的元素]]></title>
+    <url>%2Fhandycontrol%2Fattach%2FedgeElement%2Findex.html</url>
+    <content type="text"><![CDATA[属性 名称 用途 LeftContent 左侧边界内容 TopContent 顶部边界内容 RightContent 右侧边界内容 BottomContent 底部边界内容 ShowEdgeContent 是否显示边界内容]]></content>
   </entry>
   <entry>
     <title><![CDATA[IconSwitchElement 可切换图标的元素]]></title>
@@ -106,13 +101,13 @@
     <content type="text"><![CDATA[继承自 IconElement 属性 名称 用途 GeometrySelected 选中时的几何形状]]></content>
   </entry>
   <entry>
-    <title><![CDATA[建设中]]></title>
-    <url>%2Fhandycontrol%2Fattach%2FpanelElement%2Findex.html</url>
-    <content type="text"><![CDATA[建设中]]></content>
+    <title><![CDATA[InfoElement 信息元素]]></title>
+    <url>%2Fhandycontrol%2Fattach%2FinfoElement%2Findex.html</url>
+    <content type="text"><![CDATA[继承自 TitleElement 属性 名称 用途 Placeholder 占位符（输入提示） Necessary 是否必填 Symbol 标记信息 ContentHeight 内容高度 MinContentHeight 最小内容高度 MaxContentHeight 最大内容高度 使用案例Placeholder 占位符1234&lt;StackPanel Width="200" VerticalAlignment="Center"&gt; &lt;hc:SearchBar/&gt; &lt;hc:SearchBar hc:InfoElement.Placeholder="请输入查询条件" Style="&#123;StaticResource SearchBarExtend&#125;" Margin="0,16,0,0"/&gt;&lt;/StackPanel&gt; Necessary 是否必填1234&lt;hc:SearchBar hc:InfoElement.Placeholder="请输入查询条件" hc:InfoElement.Title="查询条件" Margin="10,10" hc:InfoElement.Necessary="True" Style="&#123;StaticResource SearchBarExtend&#125;"/&gt; 其中hc:InfoElement.Title=&quot;查询条件&quot;继承自父类 Symbol 标记信息1234&lt;hc:SearchBar hc:InfoElement.Placeholder="请输入内容" hc:InfoElement.Title="此项必填" Style="&#123;StaticResource SearchBarExtend&#125;" Margin="10,10" hc:InfoElement.Necessary="True" hc:InfoElement.Symbol="x"/&gt; ContentHeight 内容高度12345&lt;hc:SearchBar hc:InfoElement.Placeholder="请输入查询条件" hc:InfoElement.ContentHeight="50" hc:InfoElement.Title="查询条件" Margin="10,10" hc:InfoElement.Necessary="True" Style="&#123;StaticResource SearchBarExtend&#125;"/&gt;]]></content>
   </entry>
   <entry>
     <title><![CDATA[建设中]]></title>
-    <url>%2Fhandycontrol%2Fattach%2FtipElement%2Findex.html</url>
+    <url>%2Fhandycontrol%2Fattach%2FpasswordBoxAttach%2Findex.html</url>
     <content type="text"><![CDATA[建设中]]></content>
   </entry>
   <entry>
@@ -122,8 +117,13 @@
   </entry>
   <entry>
     <title><![CDATA[建设中]]></title>
-    <url>%2Fhandycontrol%2Fattach%2FtitleElement%2Findex.html</url>
+    <url>%2Fhandycontrol%2Fattach%2FtipElement%2Findex.html</url>
     <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[TitleElement 标题元素]]></title>
+    <url>%2Fhandycontrol%2Fattach%2FtitleElement%2Findex.html</url>
+    <content type="text"><![CDATA[属性 名称 用途 Title 标题信息 Background 标题背景色 Foreground 标题字体色 BorderBrush 标题边框色 TitleAlignment 标题对齐方式 TitleWidth 标题宽度 使用案例Title 标题信息12&lt;hc:TextBox hc:TitleElement.Title="标题信息" Margin="10,10"&gt;&lt;/hc:TextBox&gt; TitleAlignment 标题对齐方式12345678&lt;!--标题居于顶侧--&gt;&lt;hc:TextBox hc:TitleElement.Title="标题信息" hc:TitleElement.TitleAlignment="Top" Margin="10,10"&gt;&lt;/hc:TextBox&gt;&lt;!--标题居于左侧--&gt;&lt;hc:TextBox hc:TitleElement.Title="标题信息" hc:TitleElement.TitleAlignment="Left" Margin="10,10"&gt;&lt;/hc:TextBox&gt; TitleWidth 标题宽度12345678910&lt;!--设定TitleWidth为Auto--&gt;&lt;hc:TextBox hc:TitleElement.Title="标题信息" hc:TitleElement.TitleAlignment="Left" hc:TitleElement.TitleWidth="Auto" Margin="10,10"&gt;&lt;/hc:TextBox&gt;&lt;!--设定TitleWidth为具体数值--&gt;&lt;hc:TextBox hc:TitleElement.Title="标题信息" hc:TitleElement.TitleAlignment="Left" hc:TitleElement.TitleWidth="60" Margin="10,10"&gt;&lt;/hc:TextBox&gt;]]></content>
   </entry>
   <entry>
     <title><![CDATA[建设中]]></title>
@@ -161,11 +161,6 @@
     <content type="text"><![CDATA[名称 大小 用途 LargeFontSize 24 页面标题 HeadFontSize 20 功能标题 SubHeadFontSize 16 子功能标题 TextFontSize 12 文本 用例：FontSize=&quot;{StaticResource LargeFontSize}&quot;]]></content>
   </entry>
   <entry>
-    <title><![CDATA[Path路径]]></title>
-    <url>%2Fhandycontrol%2Fbasic_xaml%2Fpaths%2Findex.html</url>
-    <content type="text"><![CDATA[和几何形状一样，我们不准备包罗万象，只求所需。下表中列出了控件库中所有的Path路径： 名称 描述 PathBaseStyle Path路径基样式 SearchPathStyle 搜索 FullScreenReturnPathStyle 全屏返回 FullScreenPathStyle 全屏 WindowsPathStyle 窗口 SavePathStyle 保存 DownloadPathStyle 下载 EnlargePathStyle 放大 ReducePathStyle 缩小 RotatePathStyle 向左旋转（默认） CalendarPathStyle 日历 DeletePathStyle 删除 ClosePathStyle 关闭 DownPathStyle 下 ClockPathStyle 时钟 LeftPathStyle 向左 RightPathStyle 向右 UpDownPathStyle 上和下的组合 用例：Style=&quot;{StaticResource SearchPathStyle}&quot;]]></content>
-  </entry>
-  <entry>
     <title><![CDATA[效果]]></title>
     <url>%2Fhandycontrol%2Fbasic_xaml%2Feffects%2Findex.html</url>
     <content type="text"><![CDATA[阴影目前只包含5个级别的阴影效果： 名称 半径 EffectShadow1 5 EffectShadow2 8 EffectShadow3 14 EffectShadow4 25 EffectShadow5 35 用例：Effect=&quot;{StaticResource EffectShadow5}&quot;]]></content>
@@ -174,6 +169,11 @@
     <title><![CDATA[几何形状]]></title>
     <url>%2Fhandycontrol%2Fbasic_xaml%2Fgeometries%2Findex.html</url>
     <content type="text"><![CDATA[HandyControl中自带了一些几何形状定义，但要应用于生产中显然不够。我们不准备包罗万象，这永远没有底，所以我们就反其道而行，只包含了控件库自己要用的（当然用户也可使用），其余请自行扩展。下表中列出了控件库中所有的形状定义： 名称 描述 CalendarGeometry 日历 DeleteGeometry 删除 DeleteFillCircleGeometry 删除（圆形填充） CloseGeometry 关闭 DownGeometry 下 UpGeometry 上 ClockGeometry 时钟 LeftGeometry 左 RightGeometry 右 RotateLeftGeometry 向左旋转 EnlargeGeometry 放大 ReduceGeometry 缩小 DownloadGeometry 下载 SaveGeometry 保存 WindowsGeometry 窗口 FullScreenGeometry 全屏 FullScreenReturnGeometry 全屏返回 SearchGeometry 搜索 UpDownGeometry 上和下的组合 WindowMinGeometry 窗口最小化 WindowRestoreGeometry 窗口还原 WindowMaxGeometry 窗口最大化 AudioGeometry 声音 BubbleTailGeometry 气泡的尾巴 StarGeometry 爱心 AddGeometry 加 SubGeometry 减 WarningGeometry 警告 InfoGeometry 信息 ErrorGeometry 错误 SuccessGeometry 成功 FatalGeometry 严重 AskGeometry 询问 AllGeometry 所有 DragGeometry 拖拽（用于工具条） 用例：Data=&quot;{StaticResource DragGeometry}&quot;]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[Path路径]]></title>
+    <url>%2Fhandycontrol%2Fbasic_xaml%2Fpaths%2Findex.html</url>
+    <content type="text"><![CDATA[和几何形状一样，我们不准备包罗万象，只求所需。下表中列出了控件库中所有的Path路径： 名称 描述 PathBaseStyle Path路径基样式 SearchPathStyle 搜索 FullScreenReturnPathStyle 全屏返回 FullScreenPathStyle 全屏 WindowsPathStyle 窗口 SavePathStyle 保存 DownloadPathStyle 下载 EnlargePathStyle 放大 ReducePathStyle 缩小 RotatePathStyle 向左旋转（默认） CalendarPathStyle 日历 DeletePathStyle 删除 ClosePathStyle 关闭 DownPathStyle 下 ClockPathStyle 时钟 LeftPathStyle 向左 RightPathStyle 向右 UpDownPathStyle 上和下的组合 用例：Style=&quot;{StaticResource SearchPathStyle}&quot;]]></content>
   </entry>
   <entry>
     <title><![CDATA[尺寸]]></title>
@@ -192,12 +192,12 @@
   </entry>
   <entry>
     <title><![CDATA[建设中]]></title>
-    <url>%2Fhandycontrol%2Fextend_controls%2Fbadge%2Findex.html</url>
+    <url>%2Fhandycontrol%2Fextend_controls%2FanimationPath%2Findex.html</url>
     <content type="text"><![CDATA[建设中]]></content>
   </entry>
   <entry>
     <title><![CDATA[建设中]]></title>
-    <url>%2Fhandycontrol%2Fextend_controls%2FanimationPath%2Findex.html</url>
+    <url>%2Fhandycontrol%2Fextend_controls%2Fbadge%2Findex.html</url>
     <content type="text"><![CDATA[建设中]]></content>
   </entry>
   <entry>
@@ -207,12 +207,17 @@
   </entry>
   <entry>
     <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fextend_controls%2FcalendarWithClock%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
     <url>%2Fhandycontrol%2Fextend_controls%2Fcarousel%2Findex.html</url>
     <content type="text"><![CDATA[建设中]]></content>
   </entry>
   <entry>
     <title><![CDATA[建设中]]></title>
-    <url>%2Fhandycontrol%2Fextend_controls%2FcalendarWithClock%2Findex.html</url>
+    <url>%2Fhandycontrol%2Fextend_controls%2FcircleProgressBar%2Findex.html</url>
     <content type="text"><![CDATA[建设中]]></content>
   </entry>
   <entry>
@@ -227,7 +232,7 @@
   </entry>
   <entry>
     <title><![CDATA[建设中]]></title>
-    <url>%2Fhandycontrol%2Fextend_controls%2FcircleProgressBar%2Findex.html</url>
+    <url>%2Fhandycontrol%2Fextend_controls%2Fclock%2Findex.html</url>
     <content type="text"><![CDATA[建设中]]></content>
   </entry>
   <entry>
@@ -242,7 +247,7 @@
   </entry>
   <entry>
     <title><![CDATA[建设中]]></title>
-    <url>%2Fhandycontrol%2Fextend_controls%2Fclock%2Findex.html</url>
+    <url>%2Fhandycontrol%2Fextend_controls%2FcompareSlider%2Findex.html</url>
     <content type="text"><![CDATA[建设中]]></content>
   </entry>
   <entry>
@@ -252,17 +257,12 @@
   </entry>
   <entry>
     <title><![CDATA[建设中]]></title>
-    <url>%2Fhandycontrol%2Fextend_controls%2FcompareSlider%2Findex.html</url>
+    <url>%2Fhandycontrol%2Fextend_controls%2FcoverView%2Findex.html</url>
     <content type="text"><![CDATA[建设中]]></content>
   </entry>
   <entry>
     <title><![CDATA[建设中]]></title>
     <url>%2Fhandycontrol%2Fextend_controls%2FdatePicker%2Findex.html</url>
-    <content type="text"><![CDATA[建设中]]></content>
-  </entry>
-  <entry>
-    <title><![CDATA[建设中]]></title>
-    <url>%2Fhandycontrol%2Fextend_controls%2FcoverView%2Findex.html</url>
     <content type="text"><![CDATA[建设中]]></content>
   </entry>
   <entry>
@@ -307,12 +307,12 @@
   </entry>
   <entry>
     <title><![CDATA[建设中]]></title>
-    <url>%2Fhandycontrol%2Fextend_controls%2Floading%2Findex.html</url>
+    <url>%2Fhandycontrol%2Fextend_controls%2FimageViewer%2Findex.html</url>
     <content type="text"><![CDATA[建设中]]></content>
   </entry>
   <entry>
     <title><![CDATA[建设中]]></title>
-    <url>%2Fhandycontrol%2Fextend_controls%2FimageViewer%2Findex.html</url>
+    <url>%2Fhandycontrol%2Fextend_controls%2Floading%2Findex.html</url>
     <content type="text"><![CDATA[建设中]]></content>
   </entry>
   <entry>
@@ -332,22 +332,17 @@
   </entry>
   <entry>
     <title><![CDATA[建设中]]></title>
-    <url>%2Fhandycontrol%2Fextend_controls%2Fpagination%2Findex.html</url>
-    <content type="text"><![CDATA[建设中]]></content>
-  </entry>
-  <entry>
-    <title><![CDATA[建设中]]></title>
     <url>%2Fhandycontrol%2Fextend_controls%2FoutlineText%2Findex.html</url>
     <content type="text"><![CDATA[建设中]]></content>
   </entry>
   <entry>
     <title><![CDATA[建设中]]></title>
-    <url>%2Fhandycontrol%2Fextend_controls%2FpasswordBox%2Findex.html</url>
+    <url>%2Fhandycontrol%2Fextend_controls%2Fpagination%2Findex.html</url>
     <content type="text"><![CDATA[建设中]]></content>
   </entry>
   <entry>
     <title><![CDATA[建设中]]></title>
-    <url>%2Fhandycontrol%2Fextend_controls%2FprogressButton%2Findex.html</url>
+    <url>%2Fhandycontrol%2Fextend_controls%2FpasswordBox%2Findex.html</url>
     <content type="text"><![CDATA[建设中]]></content>
   </entry>
   <entry>
@@ -358,6 +353,11 @@
   <entry>
     <title><![CDATA[建设中]]></title>
     <url>%2Fhandycontrol%2Fextend_controls%2FpreviewSlider%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fextend_controls%2FprogressButton%2Findex.html</url>
     <content type="text"><![CDATA[建设中]]></content>
   </entry>
   <entry>
@@ -382,7 +382,17 @@
   </entry>
   <entry>
     <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fextend_controls%2Fshield%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
     <url>%2Fhandycontrol%2Fextend_controls%2FsimpleItemsControl%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fextend_controls%2FstepBar%2Findex.html</url>
     <content type="text"><![CDATA[建设中]]></content>
   </entry>
   <entry>
@@ -392,22 +402,12 @@
   </entry>
   <entry>
     <title><![CDATA[建设中]]></title>
-    <url>%2Fhandycontrol%2Fextend_controls%2Fshield%2Findex.html</url>
-    <content type="text"><![CDATA[建设中]]></content>
-  </entry>
-  <entry>
-    <title><![CDATA[建设中]]></title>
-    <url>%2Fhandycontrol%2Fextend_controls%2Ftag%2Findex.html</url>
-    <content type="text"><![CDATA[建设中]]></content>
-  </entry>
-  <entry>
-    <title><![CDATA[建设中]]></title>
     <url>%2Fhandycontrol%2Fextend_controls%2FtabControl%2Findex.html</url>
     <content type="text"><![CDATA[建设中]]></content>
   </entry>
   <entry>
     <title><![CDATA[建设中]]></title>
-    <url>%2Fhandycontrol%2Fextend_controls%2FstepBar%2Findex.html</url>
+    <url>%2Fhandycontrol%2Fextend_controls%2Ftag%2Findex.html</url>
     <content type="text"><![CDATA[建设中]]></content>
   </entry>
   <entry>
@@ -432,17 +432,12 @@
   </entry>
   <entry>
     <title><![CDATA[建设中]]></title>
-    <url>%2Fhandycontrol%2Fextend_controls%2FwaterfallPanel%2Findex.html</url>
-    <content type="text"><![CDATA[建设中]]></content>
-  </entry>
-  <entry>
-    <title><![CDATA[建设中]]></title>
     <url>%2Fhandycontrol%2Fextend_controls%2FtransitioningContentControl%2Findex.html</url>
     <content type="text"><![CDATA[建设中]]></content>
   </entry>
   <entry>
     <title><![CDATA[建设中]]></title>
-    <url>%2Fhandycontrol%2Fextend_controls%2Fwindow%2Findex.html</url>
+    <url>%2Fhandycontrol%2Fextend_controls%2FwaterfallPanel%2Findex.html</url>
     <content type="text"><![CDATA[建设中]]></content>
   </entry>
   <entry>
@@ -451,19 +446,24 @@
     <content type="text"><![CDATA[建设中]]></content>
   </entry>
   <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fextend_controls%2Fwindow%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[Border 边框]]></title>
     <url>%2Fhandycontrol%2Fnative_controls%2Fborder%2Findex.html</url>
     <content type="text"><![CDATA[BorderRegionStyle此样式用于包裹一个控件区域，配合基础xaml定义中的几个DropShadowEffect资源可制作如下效果： 以上效果的xaml代码如下： 1234567891011121314151617181920212223242526272829303132&lt;UniformGrid Margin="32,32,0,0" Columns="3" Rows="2"&gt; &lt;Border Style="&#123;StaticResource BorderRegionStyle&#125;" Width="200" Height="200" Margin="0,0,32,32"&gt; &lt;Border Background="&#123;DynamicResource PrimaryBrush&#125;"&gt; &lt;TextBlock Text="&#123;x:Static langs:Lang.ContentDemoStr&#125;" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White"/&gt; &lt;/Border&gt; &lt;/Border&gt; &lt;Border Style="&#123;StaticResource BorderRegionStyle&#125;" Width="200" Height="200" Margin="0,0,32,32" Effect="&#123;StaticResource EffectShadow1&#125;"&gt; &lt;Border Background="&#123;DynamicResource InfoBrush&#125;"&gt; &lt;TextBlock Text="&#123;x:Static langs:Lang.ContentDemoStr&#125;" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White"/&gt; &lt;/Border&gt; &lt;/Border&gt; &lt;Border Style="&#123;StaticResource BorderRegionStyle&#125;" Width="200" Height="200" Margin="0,0,32,32" Effect="&#123;StaticResource EffectShadow2&#125;"&gt; &lt;Border Background="&#123;DynamicResource WarningBrush&#125;"&gt; &lt;TextBlock Text="&#123;x:Static langs:Lang.ContentDemoStr&#125;" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White"/&gt; &lt;/Border&gt; &lt;/Border&gt; &lt;Border Style="&#123;StaticResource BorderRegionStyle&#125;" Width="200" Height="200" Margin="0,0,32,32" Effect="&#123;StaticResource EffectShadow3&#125;"&gt; &lt;Border Background="&#123;DynamicResource DangerBrush&#125;"&gt; &lt;TextBlock Text="&#123;x:Static langs:Lang.ContentDemoStr&#125;" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White"/&gt; &lt;/Border&gt; &lt;/Border&gt; &lt;Border Style="&#123;StaticResource BorderRegionStyle&#125;" Width="200" Height="200" Margin="0,0,32,32" Effect="&#123;StaticResource EffectShadow4&#125;"&gt; &lt;Border Background="&#123;DynamicResource AccentBrush&#125;"&gt; &lt;TextBlock Text="&#123;x:Static langs:Lang.ContentDemoStr&#125;" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White"/&gt; &lt;/Border&gt; &lt;/Border&gt; &lt;Border Style="&#123;StaticResource BorderRegionStyle&#125;" Width="200" Height="200" Margin="0,0,32,32" Effect="&#123;StaticResource EffectShadow5&#125;"&gt; &lt;Border Background="&#123;DynamicResource BorderBrush&#125;"&gt; &lt;TextBlock Text="&#123;x:Static langs:Lang.ContentDemoStr&#125;" VerticalAlignment="Center" HorizontalAlignment="Center"/&gt; &lt;/Border&gt; &lt;/Border&gt;&lt;/UniformGrid&gt; BorderVerticallySplitter此样式使用1单位宽度的Border来分割横向排列的控件。 用例：1234567891011&lt;StackPanel Height=&quot;20&quot; Orientation=&quot;Horizontal&quot;&gt; &lt;Ellipse Margin=&quot;5,0&quot; Fill=&quot;OrangeRed&quot; Width=&quot;20&quot; Height=&quot;20&quot;/&gt; &lt;Border Style=&quot;&#123;StaticResource BorderVerticallySplitter&#125;&quot;/&gt; &lt;Ellipse Margin=&quot;5,0&quot; Fill=&quot;OrangeRed&quot; Width=&quot;20&quot; Height=&quot;20&quot;/&gt; &lt;Border Style=&quot;&#123;StaticResource BorderVerticallySplitter&#125;&quot;/&gt; &lt;Ellipse Margin=&quot;5,0&quot; Fill=&quot;OrangeRed&quot; Width=&quot;20&quot; Height=&quot;20&quot;/&gt; &lt;Border Style=&quot;&#123;StaticResource BorderVerticallySplitter&#125;&quot;/&gt; &lt;Ellipse Margin=&quot;5,0&quot; Fill=&quot;OrangeRed&quot; Width=&quot;20&quot; Height=&quot;20&quot;/&gt; &lt;Border Style=&quot;&#123;StaticResource BorderVerticallySplitter&#125;&quot;/&gt; &lt;Ellipse Margin=&quot;5,0&quot; Fill=&quot;OrangeRed&quot; Width=&quot;20&quot; Height=&quot;20&quot;/&gt;&lt;/StackPanel&gt; BorderHorizontallySplitter此样式使用1单位高度的Border来分割纵向排列的控件。 用例：1234567891011&lt;StackPanel Width=&quot;20&quot;&gt; &lt;Ellipse Margin=&quot;0,5&quot; Fill=&quot;OrangeRed&quot; Width=&quot;20&quot; Height=&quot;20&quot;/&gt; &lt;Border Style=&quot;&#123;StaticResource BorderHorizontallySplitter&#125;&quot;/&gt; &lt;Ellipse Margin=&quot;0,5&quot; Fill=&quot;OrangeRed&quot; Width=&quot;20&quot; Height=&quot;20&quot;/&gt; &lt;Border Style=&quot;&#123;StaticResource BorderHorizontallySplitter&#125;&quot;/&gt; &lt;Ellipse Margin=&quot;0,5&quot; Fill=&quot;OrangeRed&quot; Width=&quot;20&quot; Height=&quot;20&quot;/&gt; &lt;Border Style=&quot;&#123;StaticResource BorderHorizontallySplitter&#125;&quot;/&gt; &lt;Ellipse Margin=&quot;0,5&quot; Fill=&quot;OrangeRed&quot; Width=&quot;20&quot; Height=&quot;20&quot;/&gt; &lt;Border Style=&quot;&#123;StaticResource BorderHorizontallySplitter&#125;&quot;/&gt; &lt;Ellipse Margin=&quot;0,5&quot; Fill=&quot;OrangeRed&quot; Width=&quot;20&quot; Height=&quot;20&quot;/&gt;&lt;/StackPanel&gt; BorderCircular此样式借助BorderElement.Circular附加属性可实现圆形Border。 用例：1&lt;Border Style=&quot;&#123;StaticResource BorderCircular&#125;&quot; Background=&quot;OrangeRed&quot; Width=&quot;100&quot; Height=&quot;100&quot;/&gt; BorderClip此样式在BorderCircular基础上添加了裁剪功能，常用于显示圆形Image。 用例：123&lt;Border Style=&quot;&#123;StaticResource BorderClip&#125;&quot; Width=&quot;100&quot; Height=&quot;100&quot;&gt; &lt;Image Source=&quot;/HandyControlDemo;component/Resources/Img/Album/2.jpg&quot;/&gt;&lt;/Border&gt;]]></content>
   </entry>
   <entry>
-    <title><![CDATA[CheckBox 复选框]]></title>
-    <url>%2Fhandycontrol%2Fnative_controls%2FcheckBox%2Findex.html</url>
-    <content type="text"><![CDATA[CheckBoxBaseStyle复选框默认样式，不推荐直接使用，应该始终被其它样式以BasedOn的方式使用。 用例：12345678&lt;StackPanel&gt; &lt;CheckBox Content=&quot;CheckBox&quot; IsChecked=&quot;True&quot;/&gt; &lt;CheckBox Margin=&quot;0,16,0,0&quot; Content=&quot;CheckBox&quot; IsChecked=&quot;True&quot; IsEnabled=&quot;False&quot;/&gt; &lt;CheckBox Margin=&quot;0,16,0,0&quot; Content=&quot;CheckBox&quot;/&gt; &lt;CheckBox Margin=&quot;0,16,0,0&quot; Content=&quot;CheckBox&quot; IsEnabled=&quot;False&quot;/&gt; &lt;CheckBox Margin=&quot;0,16,0,0&quot; Content=&quot;CheckBox&quot; IsChecked=&quot;&#123;x:Null&#125;&quot;/&gt; &lt;CheckBox Margin=&quot;0,16,0,0&quot; Content=&quot;CheckBox&quot; IsChecked=&quot;&#123;x:Null&#125;&quot; IsEnabled=&quot;False&quot;/&gt;&lt;/StackPanel&gt;]]></content>
-  </entry>
-  <entry>
     <title><![CDATA[Button 按钮]]></title>
     <url>%2Fhandycontrol%2Fnative_controls%2Fbutton%2Findex.html</url>
     <content type="text"><![CDATA[ButtonBaseStyle : ButtonBaseBaseStyle按钮默认样式，不推荐直接使用，应该始终被其它样式以BasedOn的方式使用。 所有继承此样式的按钮都可以使用IconElement中定义的附加属性来控制按钮中几何图形的属性。 所有继承此样式的按钮都可以使用BorderElement.CornerRadius附加属性来控制按钮的圆角大小。 用例：12345&lt;StackPanel Orientation=&quot;Horizontal&quot;&gt; &lt;Button Content=&quot;这是一个按钮&quot;/&gt; &lt;Button Content=&quot;这是一个按钮&quot; Margin=&quot;10,0,0,0&quot; controls:BorderElement.CornerRadius=&quot;15&quot;/&gt; &lt;Button Content=&quot;这是一个按钮&quot; Margin=&quot;10,0,0,0&quot; controls:IconElement.Geometry=&quot;&#123;StaticResource GithubGeometry&#125;&quot;/&gt;&lt;/StackPanel&gt; ButtonPrimary : ButtonBaseStyle主要按钮 用例：12345&lt;StackPanel Orientation=&quot;Horizontal&quot;&gt; &lt;Button Style=&quot;&#123;StaticResource ButtonPrimary&#125;&quot; Content=&quot;这是一个按钮&quot;/&gt; &lt;Button Style=&quot;&#123;StaticResource ButtonPrimary&#125;&quot; Content=&quot;这是一个按钮&quot; Margin=&quot;10,0,0,0&quot; controls:BorderElement.CornerRadius=&quot;15&quot;/&gt; &lt;Button Style=&quot;&#123;StaticResource ButtonPrimary&#125;&quot; Content=&quot;这是一个按钮&quot; Margin=&quot;10,0,0,0&quot; controls:IconElement.Geometry=&quot;&#123;StaticResource GithubGeometry&#125;&quot;/&gt;&lt;/StackPanel&gt; ButtonSuccess : ButtonBaseStyle成功按钮 用例：12345&lt;StackPanel Orientation=&quot;Horizontal&quot;&gt; &lt;Button Style=&quot;&#123;StaticResource ButtonSuccess&#125;&quot; Content=&quot;这是一个按钮&quot;/&gt; &lt;Button Style=&quot;&#123;StaticResource ButtonSuccess&#125;&quot; Content=&quot;这是一个按钮&quot; Margin=&quot;10,0,0,0&quot; controls:BorderElement.CornerRadius=&quot;15&quot;/&gt; &lt;Button Style=&quot;&#123;StaticResource ButtonSuccess&#125;&quot; Content=&quot;这是一个按钮&quot; Margin=&quot;10,0,0,0&quot; controls:IconElement.Geometry=&quot;&#123;StaticResource GithubGeometry&#125;&quot;/&gt;&lt;/StackPanel&gt; ButtonInfo : ButtonBaseStyle信息按钮 用例：12345&lt;StackPanel Orientation=&quot;Horizontal&quot;&gt; &lt;Button Style=&quot;&#123;StaticResource ButtonInfo&#125;&quot; Content=&quot;这是一个按钮&quot;/&gt; &lt;Button Style=&quot;&#123;StaticResource ButtonInfo&#125;&quot; Content=&quot;这是一个按钮&quot; Margin=&quot;10,0,0,0&quot; controls:BorderElement.CornerRadius=&quot;15&quot;/&gt; &lt;Button Style=&quot;&#123;StaticResource ButtonInfo&#125;&quot; Content=&quot;这是一个按钮&quot; Margin=&quot;10,0,0,0&quot; controls:IconElement.Geometry=&quot;&#123;StaticResource GithubGeometry&#125;&quot;/&gt;&lt;/StackPanel&gt; ButtonWarning : ButtonBaseStyle警告按钮 用例：12345&lt;StackPanel Orientation=&quot;Horizontal&quot;&gt; &lt;Button Style=&quot;&#123;StaticResource ButtonWarning&#125;&quot; Content=&quot;这是一个按钮&quot;/&gt; &lt;Button Style=&quot;&#123;StaticResource ButtonWarning&#125;&quot; Content=&quot;这是一个按钮&quot; Margin=&quot;10,0,0,0&quot; controls:BorderElement.CornerRadius=&quot;15&quot;/&gt; &lt;Button Style=&quot;&#123;StaticResource ButtonWarning&#125;&quot; Content=&quot;这是一个按钮&quot; Margin=&quot;10,0,0,0&quot; controls:IconElement.Geometry=&quot;&#123;StaticResource GithubGeometry&#125;&quot;/&gt;&lt;/StackPanel&gt; ButtonDanger : ButtonBaseStyle危险操作按钮 用例：12345&lt;StackPanel Orientation=&quot;Horizontal&quot;&gt; &lt;Button Style=&quot;&#123;StaticResource ButtonDanger&#125;&quot; Content=&quot;这是一个按钮&quot;/&gt; &lt;Button Style=&quot;&#123;StaticResource ButtonDanger&#125;&quot; Content=&quot;这是一个按钮&quot; Margin=&quot;10,0,0,0&quot; controls:BorderElement.CornerRadius=&quot;15&quot;/&gt; &lt;Button Style=&quot;&#123;StaticResource ButtonDanger&#125;&quot; Content=&quot;这是一个按钮&quot; Margin=&quot;10,0,0,0&quot; controls:IconElement.Geometry=&quot;&#123;StaticResource GithubGeometry&#125;&quot;/&gt;&lt;/StackPanel&gt; ButtonIcon : ButtonBaseStyle如果只想显示几何图形按钮，则推荐使用此样式。 用例：12345&lt;StackPanel Orientation=&quot;Horizontal&quot;&gt; &lt;Button Style=&quot;&#123;StaticResource ButtonIcon&#125;&quot; Foreground=&quot;Black&quot; controls:IconElement.Geometry=&quot;&#123;StaticResource UpDownGeometry&#125;&quot;/&gt; &lt;Button Style=&quot;&#123;StaticResource ButtonIcon&#125;&quot; Background=&quot;Black&quot; Foreground=&quot;White&quot; controls:BorderElement.CornerRadius=&quot;15&quot; controls:IconElement.Geometry=&quot;&#123;StaticResource UpDownGeometry&#125;&quot; Margin=&quot;10,0,0,0&quot;/&gt; &lt;Button Style=&quot;&#123;StaticResource ButtonIcon&#125;&quot; BorderThickness=&quot;1&quot; BorderBrush=&quot;Black&quot; Foreground=&quot;Black&quot; controls:IconElement.Geometry=&quot;&#123;StaticResource UpDownGeometry&#125;&quot; Margin=&quot;10,0,0,0&quot;/&gt;&lt;/StackPanel&gt; ButtonCustom如果想完全自定义按钮的内容，则推荐使用此样式。ButtonCustom中的内容完全由你自己决定，另外，可以通过BackgroundSwitchElement中的附加属性切换背景： 用例：1&lt;Button Height=&quot;30&quot; Padding=&quot;10,0&quot; Background=&quot;Black&quot; Foreground=&quot;White&quot; Content=&quot;这是一个按钮&quot; Style=&quot;&#123;StaticResource ButtonCustom&#125;&quot; controls:BackgroundSwitchElement.MouseHoverBackground=&quot;Red&quot; controls:BackgroundSwitchElement.MouseDownBackground=&quot;PaleVioletRed&quot;/&gt;]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[CheckBox 复选框]]></title>
+    <url>%2Fhandycontrol%2Fnative_controls%2FcheckBox%2Findex.html</url>
+    <content type="text"><![CDATA[CheckBoxBaseStyle复选框默认样式，不推荐直接使用，应该始终被其它样式以BasedOn的方式使用。 用例：12345678&lt;StackPanel&gt; &lt;CheckBox Content=&quot;CheckBox&quot; IsChecked=&quot;True&quot;/&gt; &lt;CheckBox Margin=&quot;0,16,0,0&quot; Content=&quot;CheckBox&quot; IsChecked=&quot;True&quot; IsEnabled=&quot;False&quot;/&gt; &lt;CheckBox Margin=&quot;0,16,0,0&quot; Content=&quot;CheckBox&quot;/&gt; &lt;CheckBox Margin=&quot;0,16,0,0&quot; Content=&quot;CheckBox&quot; IsEnabled=&quot;False&quot;/&gt; &lt;CheckBox Margin=&quot;0,16,0,0&quot; Content=&quot;CheckBox&quot; IsChecked=&quot;&#123;x:Null&#125;&quot;/&gt; &lt;CheckBox Margin=&quot;0,16,0,0&quot; Content=&quot;CheckBox&quot; IsChecked=&quot;&#123;x:Null&#125;&quot; IsEnabled=&quot;False&quot;/&gt;&lt;/StackPanel&gt;]]></content>
   </entry>
   <entry>
     <title><![CDATA[Calendar 日历]]></title>
@@ -476,19 +476,14 @@
     <content type="text"><![CDATA[所有的ContentControl默认无法获得焦点]]></content>
   </entry>
   <entry>
-    <title><![CDATA[DataGrid 数据表格]]></title>
-    <url>%2Fhandycontrol%2Fnative_controls%2FdataGrid%2Findex.html</url>
-    <content type="text"><![CDATA[相关样式 style名称 所属类型 用途描述 RowHeaderGripperStyle Thumb 行标题拖拽条样式 ColumnHeaderGripperStyle Thumb 列标题拖拽条样式 DataGridCellStyle DataGridCell 单元格样式 DataGridRowStyle DataGridRow 行样式 DataGridColumnHeaderStyle DataGridColumnHeader 列标题样式 DataGridRowHeaderStyle DataGridRowHeader 行标题样式 TextBlockComboBoxStyle ComboBox ComboBox非编辑模式样式 DataGridTextColumnStyle TextBlock 默认文本样式 用例：123456789101112131415161718192021&lt;DataGrid HeadersVisibility=&quot;All&quot; RowHeaderWidth=&quot;60&quot; AutoGenerateColumns=&quot;False&quot; ItemsSource=&quot;&#123;Binding DataList&#125;&quot;&gt; &lt;DataGrid.RowHeaderTemplate&gt; &lt;DataTemplate&gt; &lt;CheckBox IsChecked=&quot;&#123;Binding IsSelected,RelativeSource=&#123;RelativeSource AncestorType=DataGridRow&#125;&#125;&quot;/&gt; &lt;/DataTemplate&gt; &lt;/DataGrid.RowHeaderTemplate&gt; &lt;DataGrid.Columns&gt; &lt;DataGridTextColumn IsReadOnly=&quot;True&quot; Width=&quot;80&quot; CanUserResize=&quot;False&quot; Binding=&quot;&#123;Binding Index&#125;&quot; Header=&quot;&#123;x:Static langs:Lang.Index&#125;&quot;/&gt; &lt;DataGridTemplateColumn Width=&quot;60&quot; CanUserResize=&quot;False&quot;&gt; &lt;DataGridTemplateColumn.CellTemplate&gt; &lt;DataTemplate&gt; &lt;Image Source=&quot;&#123;Binding ImgPath&#125;&quot; Width=&quot;32&quot; Height=&quot;32&quot; Stretch=&quot;Uniform&quot;/&gt; &lt;/DataTemplate&gt; &lt;/DataGridTemplateColumn.CellTemplate&gt; &lt;/DataGridTemplateColumn&gt; &lt;DataGridTextColumn Width=&quot;1&quot; Binding=&quot;&#123;Binding Name&#125;&quot; Header=&quot;&#123;x:Static langs:Lang.Name&#125;&quot;/&gt; &lt;DataGridCheckBoxColumn Width=&quot;100&quot; CanUserResize=&quot;False&quot; Binding=&quot;&#123;Binding IsSelected&#125;&quot; Header=&quot;&#123;x:Static langs:Lang.Selected&#125;&quot;/&gt; &lt;DataGridComboBoxColumn ItemsSource=&quot;&#123;Binding Source=&#123;StaticResource DemoTypes&#125;&#125;&quot; Width=&quot;100&quot; CanUserResize=&quot;False&quot; SelectedValueBinding=&quot;&#123;Binding Type&#125;&quot; Header=&quot;&#123;x:Static langs:Lang.Type&#125;&quot;/&gt; &lt;DataGridTextColumn Width=&quot;1&quot; Binding=&quot;&#123;Binding Remark&#125;&quot; Header=&quot;&#123;x:Static langs:Lang.Remark&#125;&quot;/&gt; &lt;/DataGrid.Columns&gt;&lt;/DataGrid&gt; FAQ 对于文本显示列DataGridTextColumn需要设定文本内容水平居中或者水平居右，而不是HandyControl中设定的样式默认显示为居左时，需要继承DataGridCellStyle重写HorizontalContentAlignment 属性为Center 或Right 需要注意的是，此方式仅仅适用于引入了HandControl资源样式的项目，普通原生DataGrid使用该方式无效。 用例如下： 12345678910111213141516样式：&lt;Style x:Key=&quot;DataGridTextCenterColumnStyle&quot; TargetType=&quot;DataGridCell&quot; BasedOn=&quot;&#123;StaticResource DataGridCellStyle&#125;&quot;&gt; &lt;Setter Property=&quot;HorizontalContentAlignment&quot; Value=&quot;Center&quot;/&gt;&lt;/Style&gt;xaml中的使用：&lt;DataGrid ItemsSource=&quot;&#123;Binding Datas&#125;&quot; AutoGenerateColumns=&quot;False&quot;&gt; &lt;DataGrid.Columns&gt; &lt;DataGridTextColumn Header=&quot;居左&quot; Binding=&quot;&#123;Binding Name&#125;&quot; Width=&quot;*&quot;/&gt; &lt;DataGridTextColumn Header=&quot;居中&quot; CellStyle=&quot;&#123;StaticResource DataGridTextCenterColumnStyle&#125;&quot; Width=&quot;*&quot; Binding=&quot;&#123;Binding Name&#125;&quot;/&gt;​ &lt;/DataGrid.Columns&gt;&lt;/DataGrid&gt; 效果如下：]]></content>
-  </entry>
-  <entry>
     <title><![CDATA[ComboBox 组合框]]></title>
     <url>%2Fhandycontrol%2Fnative_controls%2FcomboBox%2Findex.html</url>
     <content type="text"><![CDATA[ComboBoxBaseStyle原生组合框默认样式，不推荐直接使用，应该始终被其它样式以BasedOn的方式使用。原生组合框如果未设置任何样式，则默认使用该样式： 默认样式&lt;ComboBox ItemsSource=&quot;{Binding DataList}&quot; SelectedIndex=&quot;0&quot;/&gt; ComboBoxExtendBaseStyle : ComboBoxBaseStyle原生组合框扩展默认样式，不推荐直接使用，应该始终被其它样式以BasedOn的方式使用。 ComboBoxExtend : ComboBoxExtendBaseStyle相对于原生组合框默认样式，它借助于附加属性可以实现标题、水印的功能。 标题在上&lt;ComboBox ItemsSource=&quot;{Binding DataList}&quot; SelectedIndex=&quot;0&quot; hc:InfoElement.Title=&quot;这是标题&quot; Style=&quot;{StaticResource ComboBoxExtend}&quot; Text=&quot;正文1&quot;/&gt; 标题在左&lt;ComboBox ItemsSource=&quot;{Binding DataList}&quot; Width=&quot;380&quot; hc:InfoElement.TitleWidth=&quot;140&quot; hc:InfoElement.TitleAlignment=&quot;Left&quot; hc:InfoElement.Title=&quot;标题在左侧&quot; Style=&quot;{StaticResource ComboBoxExtend}&quot; Text=&quot;正文1&quot;/&gt; 标题在左时，为了多个输入框左侧对齐，需要设置标题宽度，标题宽度无需逐个设置，可在外部容器上统一设置。 常见问题：Combobox的字体比原有默认字体大，同时设定标题在左，标题因字体过大显示不全解决方案：在该Combobox中添加附加属性hc:InfoElement.ContentHeight，默认值为30，默认字体号为12，变更后可根据新的字体大小设定该附加属性的数值，如上图，字体大小为18，则设定hc:InfoElement.ContentHeight为38，结果如下： 标题在上，带有水印&lt;ComboBox ItemsSource=&quot;{Binding DataList}&quot; hc:InfoElement.Placeholder=&quot;请输入内容&quot; hc:InfoElement.Title=&quot;此项必填&quot; Style=&quot;{StaticResource ComboBoxExtend}&quot;/&gt; 标题在上，带有水印，且为必填&lt;ComboBox ItemsSource=&quot;{Binding DataList}&quot; hc:InfoElement.Placeholder=&quot;请输入内容&quot; hc:InfoElement.Title=&quot;此项必填&quot; Style=&quot;{StaticResource ComboBoxExtend}&quot; hc:InfoElement.Necessary=&quot;True&quot;/&gt; 标题在上，带有水印，且为必填，同时自定义必填提示符&lt;ComboBox ItemsSource=&quot;{Binding DataList}&quot; hc:InfoElement.Placeholder=&quot;请输入内容&quot; hc:InfoElement.Title=&quot;此项必填&quot; Style=&quot;{StaticResource ComboBoxExtend}&quot; hc:InfoElement.Necessary=&quot;True&quot; hc:InfoElement.Symbol=&quot;*&quot;/&gt;]]></content>
   </entry>
   <entry>
-    <title><![CDATA[ContextMenu 上下文菜单]]></title>
-    <url>%2Fhandycontrol%2Fnative_controls%2FcontextMenu%2Findex.html</url>
-    <content type="text"><![CDATA[ContextMenuBaseStyle上下文菜单默认样式，不推荐直接使用，应该始终被其它样式以BasedOn的方式使用。 用例：1234567&lt;ContextMenu ItemsSource=&quot;&#123;Binding DataList&#125;&quot;&gt; &lt;ContextMenu.ItemTemplate&gt; &lt;HierarchicalDataTemplate ItemsSource=&quot;&#123;Binding DataList&#125;&quot;&gt; &lt;TextBlock Text=&quot;&#123;Binding Name&#125;&quot;/&gt; &lt;/HierarchicalDataTemplate&gt; &lt;/ContextMenu.ItemTemplate&gt;&lt;/ContextMenu&gt;]]></content>
+    <title><![CDATA[DataGrid 数据表格]]></title>
+    <url>%2Fhandycontrol%2Fnative_controls%2FdataGrid%2Findex.html</url>
+    <content type="text"><![CDATA[相关样式 style名称 所属类型 用途描述 RowHeaderGripperStyle Thumb 行标题拖拽条样式 ColumnHeaderGripperStyle Thumb 列标题拖拽条样式 DataGridCellStyle DataGridCell 单元格样式 DataGridRowStyle DataGridRow 行样式 DataGridColumnHeaderStyle DataGridColumnHeader 列标题样式 DataGridRowHeaderStyle DataGridRowHeader 行标题样式 TextBlockComboBoxStyle ComboBox ComboBox非编辑模式样式 DataGridTextColumnStyle TextBlock 默认文本样式 用例：123456789101112131415161718192021&lt;DataGrid HeadersVisibility=&quot;All&quot; RowHeaderWidth=&quot;60&quot; AutoGenerateColumns=&quot;False&quot; ItemsSource=&quot;&#123;Binding DataList&#125;&quot;&gt; &lt;DataGrid.RowHeaderTemplate&gt; &lt;DataTemplate&gt; &lt;CheckBox IsChecked=&quot;&#123;Binding IsSelected,RelativeSource=&#123;RelativeSource AncestorType=DataGridRow&#125;&#125;&quot;/&gt; &lt;/DataTemplate&gt; &lt;/DataGrid.RowHeaderTemplate&gt; &lt;DataGrid.Columns&gt; &lt;DataGridTextColumn IsReadOnly=&quot;True&quot; Width=&quot;80&quot; CanUserResize=&quot;False&quot; Binding=&quot;&#123;Binding Index&#125;&quot; Header=&quot;&#123;x:Static langs:Lang.Index&#125;&quot;/&gt; &lt;DataGridTemplateColumn Width=&quot;60&quot; CanUserResize=&quot;False&quot;&gt; &lt;DataGridTemplateColumn.CellTemplate&gt; &lt;DataTemplate&gt; &lt;Image Source=&quot;&#123;Binding ImgPath&#125;&quot; Width=&quot;32&quot; Height=&quot;32&quot; Stretch=&quot;Uniform&quot;/&gt; &lt;/DataTemplate&gt; &lt;/DataGridTemplateColumn.CellTemplate&gt; &lt;/DataGridTemplateColumn&gt; &lt;DataGridTextColumn Width=&quot;1&quot; Binding=&quot;&#123;Binding Name&#125;&quot; Header=&quot;&#123;x:Static langs:Lang.Name&#125;&quot;/&gt; &lt;DataGridCheckBoxColumn Width=&quot;100&quot; CanUserResize=&quot;False&quot; Binding=&quot;&#123;Binding IsSelected&#125;&quot; Header=&quot;&#123;x:Static langs:Lang.Selected&#125;&quot;/&gt; &lt;DataGridComboBoxColumn ItemsSource=&quot;&#123;Binding Source=&#123;StaticResource DemoTypes&#125;&#125;&quot; Width=&quot;100&quot; CanUserResize=&quot;False&quot; SelectedValueBinding=&quot;&#123;Binding Type&#125;&quot; Header=&quot;&#123;x:Static langs:Lang.Type&#125;&quot;/&gt; &lt;DataGridTextColumn Width=&quot;1&quot; Binding=&quot;&#123;Binding Remark&#125;&quot; Header=&quot;&#123;x:Static langs:Lang.Remark&#125;&quot;/&gt; &lt;/DataGrid.Columns&gt;&lt;/DataGrid&gt; FAQ 对于文本显示列DataGridTextColumn需要设定文本内容水平居中或者水平居右，而不是HandyControl中设定的样式默认显示为居左时，需要继承DataGridCellStyle重写HorizontalContentAlignment 属性为Center 或Right 需要注意的是，此方式仅仅适用于引入了HandControl资源样式的项目，普通原生DataGrid使用该方式无效。 用例如下： 12345678910111213141516样式：&lt;Style x:Key=&quot;DataGridTextCenterColumnStyle&quot; TargetType=&quot;DataGridCell&quot; BasedOn=&quot;&#123;StaticResource DataGridCellStyle&#125;&quot;&gt; &lt;Setter Property=&quot;HorizontalContentAlignment&quot; Value=&quot;Center&quot;/&gt;&lt;/Style&gt;xaml中的使用：&lt;DataGrid ItemsSource=&quot;&#123;Binding Datas&#125;&quot; AutoGenerateColumns=&quot;False&quot;&gt; &lt;DataGrid.Columns&gt; &lt;DataGridTextColumn Header=&quot;居左&quot; Binding=&quot;&#123;Binding Name&#125;&quot; Width=&quot;*&quot;/&gt; &lt;DataGridTextColumn Header=&quot;居中&quot; CellStyle=&quot;&#123;StaticResource DataGridTextCenterColumnStyle&#125;&quot; Width=&quot;*&quot; Binding=&quot;&#123;Binding Name&#125;&quot;/&gt;​ &lt;/DataGrid.Columns&gt;&lt;/DataGrid&gt; 效果如下：]]></content>
   </entry>
   <entry>
     <title><![CDATA[DatePicker 日期选择器]]></title>
@@ -496,9 +491,9 @@
     <content type="text"><![CDATA[DatePickerBaseStyle原生日期选择器默认样式，不推荐直接使用，应该始终被其它样式以BasedOn的方式使用。原生日期选择器如果未设置任何样式，则默认使用该样式： 默认样式&lt;DatePicker SelectedDate=&quot;{x:Static system:DateTime.Now}&quot;/&gt; DatePickerExtendBaseStyle : DatePickerBaseStyle原生日期选择器扩展默认样式，不推荐直接使用，应该始终被其它样式以BasedOn的方式使用。 DatePickerExtend : DatePickerExtendBaseStyle 标题在上&lt;DatePicker SelectedDate=&quot;{x:Static system:DateTime.Now}&quot; Style=&quot;{StaticResource DatePickerExtend}&quot; hc:InfoElement.Title=&quot;这是标题&quot;/&gt; 标题在左&lt;DatePicker SelectedDate=&quot;{x:Static system:DateTime.Now}&quot; Width=&quot;380&quot; hc:InfoElement.TitleWidth=&quot;140&quot; hc:InfoElement.TitleAlignment=&quot;Left&quot; Style=&quot;{StaticResource DatePickerExtend}&quot; hc:InfoElement.Title=&quot;标题在左侧&quot;/&gt; 标题在左时，为了多个输入框左侧对齐，需要设置标题宽度，标题宽度无需逐个设置，可在外部容器上统一设置。 标题在上，带有水印参见Combobox 标题在上，带有水印，且为必填参见Combobox 标题在上，带有水印，且为必填，同时自定义必填提示符参见Combobox]]></content>
   </entry>
   <entry>
-    <title><![CDATA[建设中]]></title>
-    <url>%2Fhandycontrol%2Fnative_controls%2FgroupBox%2Findex.html</url>
-    <content type="text"><![CDATA[建设中]]></content>
+    <title><![CDATA[ContextMenu 上下文菜单]]></title>
+    <url>%2Fhandycontrol%2Fnative_controls%2FcontextMenu%2Findex.html</url>
+    <content type="text"><![CDATA[ContextMenuBaseStyle上下文菜单默认样式，不推荐直接使用，应该始终被其它样式以BasedOn的方式使用。 用例：1234567&lt;ContextMenu ItemsSource=&quot;&#123;Binding DataList&#125;&quot;&gt; &lt;ContextMenu.ItemTemplate&gt; &lt;HierarchicalDataTemplate ItemsSource=&quot;&#123;Binding DataList&#125;&quot;&gt; &lt;TextBlock Text=&quot;&#123;Binding Name&#125;&quot;/&gt; &lt;/HierarchicalDataTemplate&gt; &lt;/ContextMenu.ItemTemplate&gt;&lt;/ContextMenu&gt;]]></content>
   </entry>
   <entry>
     <title><![CDATA[建设中]]></title>
@@ -507,12 +502,12 @@
   </entry>
   <entry>
     <title><![CDATA[建设中]]></title>
-    <url>%2Fhandycontrol%2Fnative_controls%2Fimage%2Findex.html</url>
+    <url>%2Fhandycontrol%2Fnative_controls%2FgroupBox%2Findex.html</url>
     <content type="text"><![CDATA[建设中]]></content>
   </entry>
   <entry>
     <title><![CDATA[建设中]]></title>
-    <url>%2Fhandycontrol%2Fnative_controls%2FlistBox%2Findex.html</url>
+    <url>%2Fhandycontrol%2Fnative_controls%2Fimage%2Findex.html</url>
     <content type="text"><![CDATA[建设中]]></content>
   </entry>
   <entry>
@@ -527,7 +522,7 @@
   </entry>
   <entry>
     <title><![CDATA[建设中]]></title>
-    <url>%2Fhandycontrol%2Fnative_controls%2FpasswordBox%2Findex.html</url>
+    <url>%2Fhandycontrol%2Fnative_controls%2FlistBox%2Findex.html</url>
     <content type="text"><![CDATA[建设中]]></content>
   </entry>
   <entry>
@@ -537,7 +532,12 @@
   </entry>
   <entry>
     <title><![CDATA[建设中]]></title>
-    <url>%2Fhandycontrol%2Fnative_controls%2FrichTextBox%2Findex.html</url>
+    <url>%2Fhandycontrol%2Fnative_controls%2FpasswordBox%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fnative_controls%2FprogressBar%2Findex.html</url>
     <content type="text"><![CDATA[建设中]]></content>
   </entry>
   <entry>
@@ -552,17 +552,7 @@
   </entry>
   <entry>
     <title><![CDATA[建设中]]></title>
-    <url>%2Fhandycontrol%2Fnative_controls%2FprogressBar%2Findex.html</url>
-    <content type="text"><![CDATA[建设中]]></content>
-  </entry>
-  <entry>
-    <title><![CDATA[建设中]]></title>
-    <url>%2Fhandycontrol%2Fnative_controls%2FtextBlock%2Findex.html</url>
-    <content type="text"><![CDATA[建设中]]></content>
-  </entry>
-  <entry>
-    <title><![CDATA[建设中]]></title>
-    <url>%2Fhandycontrol%2Fnative_controls%2FtabControl%2Findex.html</url>
+    <url>%2Fhandycontrol%2Fnative_controls%2FrichTextBox%2Findex.html</url>
     <content type="text"><![CDATA[建设中]]></content>
   </entry>
   <entry>
@@ -572,7 +562,22 @@
   </entry>
   <entry>
     <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fnative_controls%2FtabControl%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fnative_controls%2FtextBlock%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
     <url>%2Fhandycontrol%2Fnative_controls%2FtextBox%2Findex.html</url>
+    <content type="text"><![CDATA[建设中]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[建设中]]></title>
+    <url>%2Fhandycontrol%2Fnative_controls%2FtoolBar%2Findex.html</url>
     <content type="text"><![CDATA[建设中]]></content>
   </entry>
   <entry>
@@ -588,11 +593,6 @@
   <entry>
     <title><![CDATA[建设中]]></title>
     <url>%2Fhandycontrol%2Fnative_controls%2FtreeView%2Findex.html</url>
-    <content type="text"><![CDATA[建设中]]></content>
-  </entry>
-  <entry>
-    <title><![CDATA[建设中]]></title>
-    <url>%2Fhandycontrol%2Fnative_controls%2FtoolBar%2Findex.html</url>
     <content type="text"><![CDATA[建设中]]></content>
   </entry>
   <entry>
