@@ -94,17 +94,20 @@
 
 
 
-  <meta name="description" content="建设中">
+  <meta name="description" content="属性   名称 用途     CheckedElement 选中时展示的元素   HideUncheckedElement 是否隐藏元素    使用案例CheckedElement 选中时展示的元素此附加属性适用于ToggleButton以及子类控件，用于控制选择类控件选中时需要显示的内容，默认值为False，不显示。 123456789101112&amp;lt;ToggleButton Style=&quot;">
 <meta property="og:type" content="website">
-<meta property="og:title" content="建设中">
+<meta property="og:title" content="StatusSwitchElement 可切换状态的元素">
 <meta property="og:url" content="http://yoursite.com/handycontrol/attach/statusSwitchElement/index.html">
 <meta property="og:site_name" content="HandyOrg">
-<meta property="og:description" content="建设中">
+<meta property="og:description" content="属性   名称 用途     CheckedElement 选中时展示的元素   HideUncheckedElement 是否隐藏元素    使用案例CheckedElement 选中时展示的元素此附加属性适用于ToggleButton以及子类控件，用于控制选择类控件选中时需要显示的内容，默认值为False，不显示。 123456789101112&amp;lt;ToggleButton Style=&quot;">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-11T16:16:13.645Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/attach/StatusSwitchElement.CheckedElement.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/attach/StatusSwitchElement.HideUncheckedElement.png">
+<meta property="og:updated_time" content="2019-11-11T14:36:09.825Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="建设中">
-<meta name="twitter:description" content="建设中">
+<meta name="twitter:title" content="StatusSwitchElement 可切换状态的元素">
+<meta name="twitter:description" content="属性   名称 用途     CheckedElement 选中时展示的元素   HideUncheckedElement 是否隐藏元素    使用案例CheckedElement 选中时展示的元素此附加属性适用于ToggleButton以及子类控件，用于控制选择类控件选中时需要显示的内容，默认值为False，不显示。 123456789101112&amp;lt;ToggleButton Style=&quot;">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/attach/StatusSwitchElement.CheckedElement.png">
 
 
 
@@ -122,7 +125,7 @@
   };
 </script>
 
-  <title>建设中 | HandyOrg</title>
+  <title>StatusSwitchElement 可切换状态的元素 | HandyOrg</title>
   
 
 
@@ -1443,7 +1446,7 @@
     <div class="post-block page">
       <header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">建设中
+<h1 class="post-title" itemprop="name headline">StatusSwitchElement 可切换状态的元素
 
 </h1>
 
@@ -1503,7 +1506,35 @@
       <div class="post-body">
         
         
-          <p>建设中</p>
+          <h1 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h1><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CheckedElement</td>
+<td>选中时展示的元素</td>
+</tr>
+<tr>
+<td>HideUncheckedElement</td>
+<td>是否隐藏元素</td>
+</tr>
+</tbody>
+</table>
+<h1 id="使用案例"><a href="#使用案例" class="headerlink" title="使用案例"></a>使用案例</h1><h2 id="CheckedElement-选中时展示的元素"><a href="#CheckedElement-选中时展示的元素" class="headerlink" title="CheckedElement 选中时展示的元素"></a>CheckedElement 选中时展示的元素</h2><p>此附加属性适用于<code>ToggleButton</code>以及子类控件，用于控制选择类控件选中时需要显示的内容，默认值为<code>False</code>，不显示。</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ToggleButton</span> <span class="attr">Style</span>=<span class="string">"&#123;DynamicResource ToggleButtonCustom&#125;"</span> <span class="attr">Margin</span>=<span class="string">"5"</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--Checked--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:StatusSwitchElement.CheckedElement</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">Border</span> <span class="attr">Width</span>=<span class="string">"60"</span> <span class="attr">Height</span>=<span class="string">"20"</span> <span class="attr">CornerRadius</span>=<span class="string">"4"</span> <span class="attr">BorderThickness</span>=<span class="string">"1"</span> <span class="attr">BorderBrush</span>=<span class="string">"&#123;DynamicResource BorderBrush&#125;"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">Ellipse</span> <span class="attr">Width</span>=<span class="string">"20"</span> <span class="attr">Height</span>=<span class="string">"20"</span> <span class="attr">Fill</span>=<span class="string">"&#123;DynamicResource PrimaryBrush&#125;"</span> <span class="attr">StrokeThickness</span>=<span class="string">"1"</span> <span class="attr">Stroke</span>=<span class="string">"&#123;DynamicResource BorderBrush&#125;"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">Border</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">hc:StatusSwitchElement.CheckedElement</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--Default--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Border</span> <span class="attr">Width</span>=<span class="string">"80"</span> <span class="attr">Height</span>=<span class="string">"30"</span> <span class="attr">CornerRadius</span>=<span class="string">"0"</span> <span class="attr">BorderThickness</span>=<span class="string">"1"</span> <span class="attr">BorderBrush</span>=<span class="string">"&#123;DynamicResource BorderBrush&#125;"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">Ellipse</span> <span class="attr">Width</span>=<span class="string">"20"</span> <span class="attr">Height</span>=<span class="string">"20"</span> <span class="attr">Fill</span>=<span class="string">"&#123;DynamicResource BorderBrush&#125;"</span> <span class="attr">StrokeThickness</span>=<span class="string">"1"</span> <span class="attr">Stroke</span>=<span class="string">"&#123;DynamicResource BorderBrush&#125;"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">Border</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ToggleButton</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>默认状态（非选中时）和选中状态</p>
+<p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/attach/StatusSwitchElement.CheckedElement.png" alt="StatusSwitchElement.CheckedElement"></p>
+<h2 id="HideUncheckedElement-是否隐藏元素"><a href="#HideUncheckedElement-是否隐藏元素" class="headerlink" title="HideUncheckedElement 是否隐藏元素"></a>HideUncheckedElement 是否隐藏元素</h2><p>当控制在选中状态时，是否隐藏默认内容，默认值为<code>False</code>，不隐藏</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">VerticalAlignment</span>=<span class="string">"Center"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Center"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ToggleButton</span> <span class="attr">IsChecked</span>=<span class="string">"True"</span> <span class="attr">Style</span>=<span class="string">"&#123;DynamicResource ToggleButtonCustom&#125;"</span> <span class="attr">Margin</span>=<span class="string">"5"</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!--Checked--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:StatusSwitchElement.CheckedElement</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">Border</span> <span class="attr">Width</span>=<span class="string">"60"</span> <span class="attr">Height</span>=<span class="string">"20"</span> <span class="attr">CornerRadius</span>=<span class="string">"0"</span> <span class="attr">BorderThickness</span>=<span class="string">"1"</span> <span class="attr">BorderBrush</span>=<span class="string">"&#123;DynamicResource BorderBrush&#125;"</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">Ellipse</span> <span class="attr">Width</span>=<span class="string">"18"</span> <span class="attr">Height</span>=<span class="string">"18"</span> <span class="attr">Fill</span>=<span class="string">"&#123;DynamicResource PrimaryBrush&#125;"</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">Border</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">hc:StatusSwitchElement.CheckedElement</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!--Default--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">Border</span> <span class="attr">Width</span>=<span class="string">"80"</span> <span class="attr">Height</span>=<span class="string">"30"</span> <span class="attr">CornerRadius</span>=<span class="string">"0"</span> <span class="attr">BorderThickness</span>=<span class="string">"1"</span> <span class="attr">BorderBrush</span>=<span class="string">"&#123;DynamicResource BorderBrush&#125;"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">Ellipse</span> <span class="attr">Width</span>=<span class="string">"18"</span> <span class="attr">Height</span>=<span class="string">"18"</span> <span class="attr">Fill</span>=<span class="string">"&#123;DynamicResource BorderBrush&#125;"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">Border</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">ToggleButton</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!--显式设定选中状态下隐藏默认内容元素--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ToggleButton</span> <span class="attr">IsChecked</span>=<span class="string">"True"</span> <span class="attr">Style</span>=<span class="string">"&#123;DynamicResource ToggleButtonCustom&#125;"</span> <span class="attr">hc:StatusSwitchElement.HideUncheckedElement</span>=<span class="string">"True"</span> <span class="attr">Margin</span>=<span class="string">"5"</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!--Checked--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:StatusSwitchElement.CheckedElement</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">Border</span> <span class="attr">Width</span>=<span class="string">"60"</span> <span class="attr">Height</span>=<span class="string">"20"</span> <span class="attr">CornerRadius</span>=<span class="string">"0"</span> <span class="attr">BorderThickness</span>=<span class="string">"1"</span> <span class="attr">BorderBrush</span>=<span class="string">"&#123;DynamicResource BorderBrush&#125;"</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">Ellipse</span> <span class="attr">Width</span>=<span class="string">"18"</span> <span class="attr">Height</span>=<span class="string">"18"</span> <span class="attr">Fill</span>=<span class="string">"&#123;DynamicResource PrimaryBrush&#125;"</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">Border</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">hc:StatusSwitchElement.CheckedElement</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!--Default--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">Border</span> <span class="attr">Width</span>=<span class="string">"80"</span> <span class="attr">Height</span>=<span class="string">"30"</span> <span class="attr">CornerRadius</span>=<span class="string">"0"</span> <span class="attr">BorderThickness</span>=<span class="string">"1"</span> <span class="attr">BorderBrush</span>=<span class="string">"&#123;DynamicResource BorderBrush&#125;"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">Ellipse</span> <span class="attr">Width</span>=<span class="string">"18"</span> <span class="attr">Height</span>=<span class="string">"18"</span> <span class="attr">Fill</span>=<span class="string">"&#123;DynamicResource BorderBrush&#125;"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">Border</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">ToggleButton</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>效果：</p>
+<p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/attach/StatusSwitchElement.HideUncheckedElement.png" alt="StatusSwitchElement.HideUncheckedElement"></p>
+<div class="note info no-icon">
+            <p>以上两个属性，组合使用，能够简单的控制选择类控件状态的展示功能，可根据以上案例进行合理调整</p>
+          </div>
 
         
       </div>
@@ -1586,8 +1617,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -1710,6 +1750,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#属性"><span class="nav-number">1.</span> <span class="nav-text">属性</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#使用案例"><span class="nav-number">2.</span> <span class="nav-text">使用案例</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#CheckedElement-选中时展示的元素"><span class="nav-number">2.1.</span> <span class="nav-text">CheckedElement 选中时展示的元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HideUncheckedElement-是否隐藏元素"><span class="nav-number">2.2.</span> <span class="nav-text">HideUncheckedElement 是否隐藏元素</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
