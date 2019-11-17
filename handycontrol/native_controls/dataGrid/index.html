@@ -102,8 +102,8 @@
 <meta property="og:description" content="相关样式   style名称 所属类型 用途描述     RowHeaderGripperStyle Thumb 行标题拖拽条样式   ColumnHeaderGripperStyle Thumb 列标题拖拽条样式   DataGridCellStyle DataGridCell 单元格样式   DataGridRowStyle DataGridRow 行样式   DataGridColumnHe">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/DataGrid.png">
-<meta property="og:image" content="http://yoursite.com/handycontrol/native_controls/images/DataGrid-Warning01.png">
-<meta property="og:updated_time" content="2019-10-28T17:11:23.418Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/native_controls/DataGrid-Warning01.png">
+<meta property="og:updated_time" content="2019-11-17T12:42:11.810Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="DataGrid 数据表格">
 <meta name="twitter:description" content="相关样式   style名称 所属类型 用途描述     RowHeaderGripperStyle Thumb 行标题拖拽条样式   ColumnHeaderGripperStyle Thumb 列标题拖拽条样式   DataGridCellStyle DataGridCell 单元格样式   DataGridRowStyle DataGridRow 行样式   DataGridColumnHe">
@@ -2030,7 +2030,7 @@
 <p>用例如下：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">样式：</span><br><span class="line"></span><br><span class="line">&lt;Style x:Key=&quot;DataGridTextCenterColumnStyle&quot; TargetType=&quot;DataGridCell&quot; BasedOn=&quot;&#123;StaticResource DataGridCellStyle&#125;&quot;&gt;</span><br><span class="line">    &lt;Setter Property=&quot;HorizontalContentAlignment&quot; Value=&quot;Center&quot;/&gt;</span><br><span class="line">&lt;/Style&gt;</span><br><span class="line"></span><br><span class="line">xaml中的使用：</span><br><span class="line"></span><br><span class="line">&lt;DataGrid ItemsSource=&quot;&#123;Binding Datas&#125;&quot; AutoGenerateColumns=&quot;False&quot;&gt;</span><br><span class="line">    &lt;DataGrid.Columns&gt;</span><br><span class="line">        &lt;DataGridTextColumn Header=&quot;居左&quot; Binding=&quot;&#123;Binding Name&#125;&quot; Width=&quot;*&quot;/&gt;</span><br><span class="line">        &lt;DataGridTextColumn Header=&quot;居中&quot; CellStyle=&quot;&#123;StaticResource DataGridTextCenterColumnStyle&#125;&quot; Width=&quot;*&quot; Binding=&quot;&#123;Binding Name&#125;&quot;/&gt;</span><br><span class="line">​    &lt;/DataGrid.Columns&gt;</span><br><span class="line">&lt;/DataGrid&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p>效果如下：</p>
-<p><img src="../images/DataGrid-Warning01.png" alt="DataGridWarning01"></p>
+<p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/native_controls/DataGrid-Warning01.png" alt="DataGridWarning01"></p>
 
         
       </div>
