@@ -94,17 +94,24 @@
 
 
 
-  <meta name="description" content="建设中">
+  <meta name="description" content="GroupBoxBaseStyleGroupBox 分组框 默认样式，不推荐直接使用，应该始终被其它样式以BasedOn的方式使用。              用例：1234567&amp;lt;GroupBox Grid.Row=&amp;quot;0&amp;quot; Grid.Column=&amp;quot;0&amp;quot; Width=&amp;quot;300&amp;quot; Height=&amp;quot;200&amp;quot; Hea">
 <meta property="og:type" content="website">
-<meta property="og:title" content="建设中">
+<meta property="og:title" content="GroupBox 分组框">
 <meta property="og:url" content="http://yoursite.com/handycontrol/native_controls/groupBox/index.html">
 <meta property="og:site_name" content="HandyOrg">
-<meta property="og:description" content="建设中">
+<meta property="og:description" content="GroupBoxBaseStyleGroupBox 分组框 默认样式，不推荐直接使用，应该始终被其它样式以BasedOn的方式使用。              用例：1234567&amp;lt;GroupBox Grid.Row=&amp;quot;0&amp;quot; Grid.Column=&amp;quot;0&amp;quot; Width=&amp;quot;300&amp;quot; Height=&amp;quot;200&amp;quot; Hea">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-11T16:16:13.675Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/native_controls/GroupBox_Base.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/native_controls/GroupBox_Base_left.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/native_controls/GroupBox_Tab.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/native_controls/GroupBox_Tab_left.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/native_controls/GroupBox_Origin.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/native_controls/GroupBox_Origin_left.png">
+<meta property="og:updated_time" content="2019-11-28T14:19:56.353Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="建设中">
-<meta name="twitter:description" content="建设中">
+<meta name="twitter:title" content="GroupBox 分组框">
+<meta name="twitter:description" content="GroupBoxBaseStyleGroupBox 分组框 默认样式，不推荐直接使用，应该始终被其它样式以BasedOn的方式使用。              用例：1234567&amp;lt;GroupBox Grid.Row=&amp;quot;0&amp;quot; Grid.Column=&amp;quot;0&amp;quot; Width=&amp;quot;300&amp;quot; Height=&amp;quot;200&amp;quot; Hea">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/native_controls/GroupBox_Base.png">
 
 
 
@@ -122,7 +129,7 @@
   };
 </script>
 
-  <title>建设中 | HandyOrg</title>
+  <title>GroupBox 分组框 | HandyOrg</title>
   
 
 
@@ -1907,7 +1914,7 @@
     <div class="post-block page">
       <header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">建设中
+<h1 class="post-title" itemprop="name headline">GroupBox 分组框
 
 </h1>
 
@@ -1967,8 +1974,22 @@
       <div class="post-body">
         
         
-          <p>建设中</p>
-
+          <h1 id="GroupBoxBaseStyle"><a href="#GroupBoxBaseStyle" class="headerlink" title="GroupBoxBaseStyle"></a>GroupBoxBaseStyle</h1><p>GroupBox 分组框 默认样式，不推荐直接使用，应该始终被其它样式以BasedOn的方式使用。</p>
+<div class="note info no-icon">
+            <p>用例：</p><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;GroupBox Grid.Row=&quot;0&quot; Grid.Column=&quot;0&quot; Width=&quot;300&quot; Height=&quot;200&quot; Header=&quot;&#123;x:Static langs:Lang.TitleDemoStr1&#125;&quot; </span><br><span class="line">    Padding=&quot;10&quot; Margin=&quot;16&quot;&gt;</span><br><span class="line">    &lt;Border Background=&quot;&#123;DynamicResource PrimaryBrush&#125;&quot; CornerRadius=&quot;4&quot;&gt;</span><br><span class="line">        &lt;TextBlock Text=&quot;&#123;x:Static langs:Lang.ContentDemoStr&#125;&quot; VerticalAlignment=&quot;Center&quot; HorizontalAlignment=&quot;Center&quot; </span><br><span class="line">        Foreground=&quot;White&quot;/&gt;</span><br><span class="line">    &lt;/Border&gt;</span><br><span class="line">&lt;/GroupBox&gt;</span><br></pre></td></tr></table></figure><br><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/native_controls/GroupBox_Base.png" alt="GroupBoxBaseStyle"></p>
+          </div>
+<p>这里提供另外一种样式,供开发者选择</p>
+<div class="note info no-icon">
+            <p>只需要添加扩展属性即可</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hc:TitleElement.TitleAlignment=&quot;Left&quot;</span><br></pre></td></tr></table></figure><br>用例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;GroupBox Grid.Row=&quot;0&quot; Grid.Column=&quot;1&quot; Width=&quot;300&quot; Height=&quot;200&quot; Header=&quot;&#123;x:Static langs:Lang.TitleDemoStr1&#125;&quot; Padding=&quot;10&quot; </span><br><span class="line">    Margin=&quot;16&quot;  hc:TitleElement.TitleAlignment=&quot;Left&quot;&gt;</span><br><span class="line">    &lt;Border Background=&quot;&#123;DynamicResource PrimaryBrush&#125;&quot; CornerRadius=&quot;4&quot;&gt;</span><br><span class="line">        &lt;TextBlock Text=&quot;&#123;x:Static langs:Lang.ContentDemoStr&#125;&quot; VerticalAlignment=&quot;Center&quot; HorizontalAlignment=&quot;Center&quot; </span><br><span class="line">        Foreground=&quot;White&quot;/&gt;</span><br><span class="line">    &lt;/Border&gt;</span><br><span class="line">&lt;/GroupBox&gt;</span><br></pre></td></tr></table></figure><p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/native_controls/GroupBox_Base_left.png" alt="GroupBox_Base_left"></p>
+          </div>
+<h1 id="GroupBoxTab-GroupBoxTabBaseStyle-GroupBoxBaseStyle"><a href="#GroupBoxTab-GroupBoxTabBaseStyle-GroupBoxBaseStyle" class="headerlink" title="GroupBoxTab : GroupBoxTabBaseStyle : GroupBoxBaseStyle"></a>GroupBoxTab : GroupBoxTabBaseStyle : GroupBoxBaseStyle</h1><p>GroupBox 分组框 的另一种样式  GroupBoxTabBaseStyle 不推荐直接使用，应该始终被其它样式以BasedOn的方式使用。</p>
+<div class="note info no-icon">
+            <p>用例：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;GroupBox Grid.Row=&quot;1&quot; Grid.Column=&quot;0&quot; Width=&quot;300&quot; Height=&quot;200&quot; Header=&quot;&#123;x:Static langs:Lang.TitleDemoStr1&#125;&quot; Padding=&quot;10&quot; </span><br><span class="line">    Margin=&quot;16&quot; Style=&quot;&#123;StaticResource GroupBoxTab&#125;&quot;&gt;</span><br><span class="line">    &lt;Border Background=&quot;&#123;DynamicResource PrimaryBrush&#125;&quot; CornerRadius=&quot;4&quot;&gt;</span><br><span class="line">        &lt;TextBlock Text=&quot;&#123;x:Static langs:Lang.ContentDemoStr&#125;&quot; VerticalAlignment=&quot;Center&quot; HorizontalAlignment=&quot;Center&quot; </span><br><span class="line">        Foreground=&quot;White&quot;/&gt;</span><br><span class="line">    &lt;/Border&gt;</span><br><span class="line">&lt;/GroupBox&gt;</span><br></pre></td></tr></table></figure><ul><li>同样可以 使用扩展属性  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hc:TitleElement.TitleAlignment=&quot;Left&quot; </span><br></pre></td></tr></table></figure></li></ul><p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/native_controls/GroupBox_Tab.png" alt="GroupBox_Tab"> <img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/native_controls/GroupBox_Tab_left.png" alt="GroupBox_Tab_left"></p>
+          </div>
+<h1 id="GroupBoxOriginal-GroupBoxOriginalBaseStyle-GroupBoxBaseStyle"><a href="#GroupBoxOriginal-GroupBoxOriginalBaseStyle-GroupBoxBaseStyle" class="headerlink" title="GroupBoxOriginal : GroupBoxOriginalBaseStyle : GroupBoxBaseStyle"></a>GroupBoxOriginal : GroupBoxOriginalBaseStyle : GroupBoxBaseStyle</h1><p>GroupBox 分组框 的另一种样式 GroupBoxOriginalBaseStyle 不推荐直接使用，应该始终被其它样式以BasedOn的方式使用。</p>
+<div class="note info no-icon">
+            <p>用例：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;GroupBox Grid.Row=&quot;2&quot; Grid.Column=&quot;0&quot; Width=&quot;300&quot; Header=&quot;&#123;x:Static langs:Lang.TitleDemoStr1&#125;&quot; Margin=&quot;16&quot; </span><br><span class="line">    Style=&quot;&#123;StaticResource GroupBoxOriginal&#125;&quot; HorizontalContentAlignment=&quot;Left&quot;&gt;</span><br><span class="line">    &lt;TextBox/&gt;</span><br><span class="line">&lt;/GroupBox&gt;</span><br><span class="line">&lt;GroupBox Grid.Row=&quot;2&quot; VerticalAlignment=&quot;Bottom&quot; Grid.Column=&quot;1&quot; Width=&quot;300&quot; hc:TitleElement.TitleWidth=&quot;100&quot;</span><br><span class="line">    Header=&quot;&#123;x:Static langs:Lang.TitleDemoStr1&#125;&quot; Margin=&quot;16&quot; Style=&quot;&#123;StaticResource GroupBoxOriginal&#125;&quot;</span><br><span class="line">    HorizontalContentAlignment=&quot;Left&quot; hc:TitleElement.TitleAlignment=&quot;Left&quot;&gt;</span><br><span class="line">    &lt;ComboBox DataContext=&quot;&#123;Binding ComboBoxDemo,Source=&#123;StaticResource Locator&#125;&#125;&quot; ItemsSource=&quot;&#123;Binding DataList&#125;&quot;/&gt;</span><br><span class="line">&lt;/GroupBox&gt;</span><br></pre></td></tr></table></figure><p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/native_controls/GroupBox_Origin.png" alt="GroupBox_Origin"> <img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/native_controls/GroupBox_Origin_left.png" alt="GroupBox_Origin_left"></p>
+          </div>
         
       </div>
       
@@ -2050,8 +2071,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -2174,6 +2204,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#GroupBoxBaseStyle"><span class="nav-number">1.</span> <span class="nav-text">GroupBoxBaseStyle</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#GroupBoxTab-GroupBoxTabBaseStyle-GroupBoxBaseStyle"><span class="nav-number">2.</span> <span class="nav-text">GroupBoxTab : GroupBoxTabBaseStyle : GroupBoxBaseStyle</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#GroupBoxOriginal-GroupBoxOriginalBaseStyle-GroupBoxBaseStyle"><span class="nav-number">3.</span> <span class="nav-text">GroupBoxOriginal : GroupBoxOriginalBaseStyle : GroupBoxBaseStyle</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
