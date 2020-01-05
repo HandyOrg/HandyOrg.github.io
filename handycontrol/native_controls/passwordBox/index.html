@@ -94,17 +94,20 @@
 
 
 
-  <meta name="description" content="建设中">
+  <meta name="description" content="PasswordBoxBaseStyle原生密码框默认样式，不推荐直接使用，应该始终被其它样式以BasedOn的方式使用。              用例：1&amp;lt;PasswordBox PasswordChar=&amp;quot;*&amp;quot; VerticalAlignment=&amp;quot;Center&amp;quot; Width=&amp;quot;120&amp;quot;&amp;gt;&amp;lt;/PasswordBox">
 <meta property="og:type" content="website">
-<meta property="og:title" content="建设中">
+<meta property="og:title" content="PasswordBox 密码框">
 <meta property="og:url" content="http://yoursite.com/handycontrol/native_controls/passwordBox/index.html">
 <meta property="og:site_name" content="HandyOrg">
-<meta property="og:description" content="建设中">
+<meta property="og:description" content="PasswordBoxBaseStyle原生密码框默认样式，不推荐直接使用，应该始终被其它样式以BasedOn的方式使用。              用例：1&amp;lt;PasswordBox PasswordChar=&amp;quot;*&amp;quot; VerticalAlignment=&amp;quot;Center&amp;quot; Width=&amp;quot;120&amp;quot;&amp;gt;&amp;lt;/PasswordBox">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-11T16:16:13.680Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/native_controls/PasswordBox.BaseStyle.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/native_controls/PasswordBox.ExtendStyle.png">
+<meta property="og:updated_time" content="2020-01-05T14:22:21.514Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="建设中">
-<meta name="twitter:description" content="建设中">
+<meta name="twitter:title" content="PasswordBox 密码框">
+<meta name="twitter:description" content="PasswordBoxBaseStyle原生密码框默认样式，不推荐直接使用，应该始终被其它样式以BasedOn的方式使用。              用例：1&amp;lt;PasswordBox PasswordChar=&amp;quot;*&amp;quot; VerticalAlignment=&amp;quot;Center&amp;quot; Width=&amp;quot;120&amp;quot;&amp;gt;&amp;lt;/PasswordBox">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/native_controls/PasswordBox.BaseStyle.png">
 
 
 
@@ -122,7 +125,7 @@
   };
 </script>
 
-  <title>建设中 | HandyOrg</title>
+  <title>PasswordBox 密码框 | HandyOrg</title>
   
 
 
@@ -1907,7 +1910,7 @@
     <div class="post-block page">
       <header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">建设中
+<h1 class="post-title" itemprop="name headline">PasswordBox 密码框
 
 </h1>
 
@@ -1967,8 +1970,15 @@
       <div class="post-body">
         
         
-          <p>建设中</p>
-
+          <h1 id="PasswordBoxBaseStyle"><a href="#PasswordBoxBaseStyle" class="headerlink" title="PasswordBoxBaseStyle"></a>PasswordBoxBaseStyle</h1><p>原生密码框默认样式，不推荐直接使用，应该始终被其它样式以BasedOn的方式使用。</p>
+<div class="note info no-icon">
+            <p>用例：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;PasswordBox PasswordChar=&quot;*&quot; VerticalAlignment=&quot;Center&quot; Width=&quot;120&quot;&gt;&lt;/PasswordBox&gt;</span><br></pre></td></tr></table></figure><p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/native_controls/PasswordBox.BaseStyle.png" alt="PasswordBox.BaseStyle"></p>
+          </div>
+<h1 id="PasswordBoxExtendBaseStyle-PasswordBoxBaseStyle"><a href="#PasswordBoxExtendBaseStyle-PasswordBoxBaseStyle" class="headerlink" title="PasswordBoxExtendBaseStyle : PasswordBoxBaseStyle"></a>PasswordBoxExtendBaseStyle : PasswordBoxBaseStyle</h1><p>原生密码框扩展默认样式，不推荐直接使用，应该始终被其它样式以BasedOn的方式使用。</p>
+<h1 id="PasswordBoxExtend-PasswordBoxExtendBaseStyle"><a href="#PasswordBoxExtend-PasswordBoxExtendBaseStyle" class="headerlink" title="PasswordBoxExtend : PasswordBoxExtendBaseStyle"></a>PasswordBoxExtend : PasswordBoxExtendBaseStyle</h1><p>相对于原生密码框默认样式，它借助于附加属性可以实现标题、水印的功能。</p>
+<div class="note info no-icon">
+            <p>用例：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;!–为使普通密码输入文本框显示水印,需要设定PasswordBoxAttach.PasswordLength=&quot;0&quot;–&gt;</span><br><span class="line">&lt;PasswordBox Style=&quot;&#123;DynamicResource PasswordBoxExtend&#125;&quot; PasswordChar=&quot;<em>&quot; </em></span><br><span class="line">             hc:PasswordBoxAttach.PasswordLength=&quot;0&quot;</span><br><span class="line">             hc:InfoElement.Placeholder=&quot;请输入密码&quot; </span><br><span class="line">             VerticalAlignment=&quot;Center&quot;</span><br><span class="line">             Width=&quot;120&quot;&gt;&lt;/PasswordBox&gt;</span><br><span class="line">&lt;PasswordBox Style=&quot;&#123;DynamicResource PasswordBoxExtend&#125;&quot; PasswordChar=&quot;&quot; </span><br><span class="line">             hc:TitleElement.Title=&quot;用户密码：&quot;</span><br><span class="line">             hc:TitleElement.TitleAlignment=&quot;Top&quot;</span><br><span class="line">             VerticalAlignment=&quot;Center&quot;</span><br><span class="line">             Width=&quot;120&quot;&gt;&lt;/PasswordBox&gt;</span><br></pre></td></tr></table></figure><p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/native_controls/PasswordBox.ExtendStyle.png" alt="PasswordBox.ExtendStyle"></p>
+          </div>
         
       </div>
       
@@ -2050,8 +2060,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -2175,6 +2194,23 @@
       </div>
 
       
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#PasswordBoxBaseStyle"><span class="nav-number">1.</span> <span class="nav-text">PasswordBoxBaseStyle</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#PasswordBoxExtendBaseStyle-PasswordBoxBaseStyle"><span class="nav-number">2.</span> <span class="nav-text">PasswordBoxExtendBaseStyle : PasswordBoxBaseStyle</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#PasswordBoxExtend-PasswordBoxExtendBaseStyle"><span class="nav-number">3.</span> <span class="nav-text">PasswordBoxExtend : PasswordBoxExtendBaseStyle</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
 
       
         <div class="back-to-top">
@@ -2196,7 +2232,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
   <span class="with-love" id="animate">
     <i class="fa fa-HandyOrg"></i>
   </span>
