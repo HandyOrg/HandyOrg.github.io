@@ -94,17 +94,19 @@
 
 
 
-  <meta name="description" content="建设中">
+  <meta name="description" content="CalendarWithClock 控件由日历和时钟组成，允许用户通过鼠标选择日期和时间。 1234[TemplatePart(Name = ElementButtonConfirm, Type = typeof(Button))][TemplatePart(Name = ElementClockPresenter, Type = typeof(ContentPresenter))][Templa">
 <meta property="og:type" content="website">
-<meta property="og:title" content="建设中">
+<meta property="og:title" content="CalendarWithClock">
 <meta property="og:url" content="http://yoursite.com/handycontrol/extend_controls/calendarWithClock/index.html">
 <meta property="og:site_name" content="HandyOrg">
-<meta property="og:description" content="建设中">
+<meta property="og:description" content="CalendarWithClock 控件由日历和时钟组成，允许用户通过鼠标选择日期和时间。 1234[TemplatePart(Name = ElementButtonConfirm, Type = typeof(Button))][TemplatePart(Name = ElementClockPresenter, Type = typeof(ContentPresenter))][Templa">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-11T16:16:13.653Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/extend_controls/CalendarWithClock_1.png">
+<meta property="og:updated_time" content="2020-01-12T12:47:57.329Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="建设中">
-<meta name="twitter:description" content="建设中">
+<meta name="twitter:title" content="CalendarWithClock">
+<meta name="twitter:description" content="CalendarWithClock 控件由日历和时钟组成，允许用户通过鼠标选择日期和时间。 1234[TemplatePart(Name = ElementButtonConfirm, Type = typeof(Button))][TemplatePart(Name = ElementClockPresenter, Type = typeof(ContentPresenter))][Templa">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/extend_controls/CalendarWithClock_1.png">
 
 
 
@@ -122,7 +124,7 @@
   };
 </script>
 
-  <title>建设中 | HandyOrg</title>
+  <title>CalendarWithClock | HandyOrg</title>
   
 
 
@@ -2545,7 +2547,7 @@
     <div class="post-block page">
       <header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">建设中
+<h1 class="post-title" itemprop="name headline">CalendarWithClock
 
 </h1>
 
@@ -2605,7 +2607,76 @@
       <div class="post-body">
         
         
-          <p>建设中</p>
+          <p>CalendarWithClock 控件由日历和时钟组成，允许用户通过鼠标选择日期和时间。</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[<span class="meta">TemplatePart(Name = ElementButtonConfirm, Type = typeof(Button))</span>]</span><br><span class="line">[<span class="meta">TemplatePart(Name = ElementClockPresenter, Type = typeof(ContentPresenter))</span>]</span><br><span class="line">[<span class="meta">TemplatePart(Name = ElementCalendarPresenter, Type = typeof(ContentPresenter))</span>]</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">CalendarWithClock</span> : <span class="title">Control</span></span><br></pre></td></tr></table></figure>
+<h1 id="创建日期选取器"><a href="#创建日期选取器" class="headerlink" title="创建日期选取器"></a>创建日期选取器</h1><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:CalendarWithClock</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> dateTimePicker = <span class="keyword">new</span> CalendarWithClock();</span><br></pre></td></tr></table></figure>
+<p>生成的CalendarWithClock如下图所示：</p>
+<p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/extend_controls/CalendarWithClock_1.png" alt="DateTimePicker"></p>
+<h1 id="选择日期和时间"><a href="#选择日期和时间" class="headerlink" title="选择日期和时间"></a>选择日期和时间</h1><p>通过鼠标分别在日历和时钟上选择日期和时间，然后点击 <strong>确定</strong> 按钮即可更新CalendarWithClock控件的日期和时间。</p>
+<p>也可以在XAML钟或代码中这样设置日期。</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:CalendarWithClock</span> <span class="attr">SelectedDateTime</span>=<span class="string">"&#123;x:Static system:DateTime.Now&#125;"</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">calendarWithClock.SelectedDateTime = DateTime.Now;</span><br></pre></td></tr></table></figure>
+<h1 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h1><table>
+<thead>
+<tr>
+<th>属性</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SelectedDateTime</td>
+<td>获取或设置当前选中的日期和时间</td>
+</tr>
+<tr>
+<td>DateTimeFormat</td>
+<td>获取或设置用于显示选定日期和时间的格式</td>
+</tr>
+<tr>
+<td>DisplayDateTime</td>
+<td>获取或设置要显示的日期</td>
+</tr>
+<tr>
+<td>ShowConfirmButton</td>
+<td>获取或设置一个值，该值指示是是否显示 <strong>确定</strong> 按钮</td>
+</tr>
+<tr>
+<td>VerifyFunc</td>
+<td>获取或设置数据验证委托</td>
+</tr>
+<tr>
+<td>IsError</td>
+<td>获取或设置数据是否错误</td>
+</tr>
+<tr>
+<td>ErrorStr</td>
+<td>获取或设置错误提示</td>
+</tr>
+<tr>
+<td>TextType</td>
+<td>获取或设置文本类型</td>
+</tr>
+<tr>
+<td>ShowClearButton</td>
+<td>获取或设置是否显示清除按钮</td>
+</tr>
+</tbody>
+</table>
+<h1 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h1><table>
+<thead>
+<tr>
+<th>方法</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VerifyData()</td>
+<td>验证数据</td>
+</tr>
+</tbody>
+</table>
 
         
       </div>
@@ -2688,8 +2759,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -2812,6 +2892,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#创建日期选取器"><span class="nav-number">1.</span> <span class="nav-text">创建日期选取器</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#选择日期和时间"><span class="nav-number">2.</span> <span class="nav-text">选择日期和时间</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#属性"><span class="nav-number">3.</span> <span class="nav-text">属性</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#方法"><span class="nav-number">4.</span> <span class="nav-text">方法</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
