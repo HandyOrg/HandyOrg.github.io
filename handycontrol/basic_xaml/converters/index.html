@@ -101,7 +101,7 @@
 <meta property="og:site_name" content="HandyOrg">
 <meta property="og:description" content="Boolean2BooleanReConverter该转换器用于反转布尔类型 Boolean2StrConverter该转换器需要提供一个字符串作为参数，该字符串的一般形式为：[字符串0];[字符串1]，当转换器获取的值为true时，会返回[字符串0]，否则返回[字符串1]。 Boolean2VisibilityConverter该转换器会将true转换为Visible，会将false转换为Col">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-11-29T16:45:18.199Z">
+<meta property="og:updated_time" content="2020-02-18T07:01:18.805Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="转换器">
 <meta name="twitter:description" content="Boolean2BooleanReConverter该转换器用于反转布尔类型 Boolean2StrConverter该转换器需要提供一个字符串作为参数，该字符串的一般形式为：[字符串0];[字符串1]，当转换器获取的值为true时，会返回[字符串0]，否则返回[字符串1]。 Boolean2VisibilityConverter该转换器会将true转换为Visible，会将false转换为Col">
@@ -239,7 +239,7 @@
   
     
   
-  <li class="menu-item menu-item-handycontrol menu-item-active">
+  <li class="menu-item menu-item-handycontrol---2.4.0 menu-item-active">
 
     
     
@@ -249,7 +249,7 @@
       
     
 
-    <a href="/handycontrol/" rel="section">HandyControl</a>
+    <a href="/handycontrol/" rel="section">HandyControl - 2.4.0</a>
 
   </li>
 
@@ -550,6 +550,10 @@
               
                 
               
+                
+              
+                
+              
             
           
             
@@ -580,6 +584,14 @@
   </li>
 
 
+                
+              
+                
+              
+                
+              
+                
+              
                 
               
                 
@@ -778,6 +790,42 @@
               
                 
               
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
             
           
             
@@ -844,6 +892,12 @@
   </li>
 
 
+                
+              
+                
+              
+                
+              
                 
               
             
@@ -1370,6 +1424,8 @@
 <h1 id="Color2ChannelAConverter（内部使用）"><a href="#Color2ChannelAConverter（内部使用）" class="headerlink" title="Color2ChannelAConverter（内部使用）"></a>Color2ChannelAConverter（内部使用）</h1><p>该转换器会提取<code>SolidColorBrush.Color</code>的透明通道（A）的值。</p>
 <h1 id="Color2HexStrConverter"><a href="#Color2HexStrConverter" class="headerlink" title="Color2HexStrConverter"></a>Color2HexStrConverter</h1><p>该转换器会将<code>SolidColorBrush</code>转换为16进制字符串形式（带“#”）。</p>
 <h1 id="CornerRadiusSplitConverter"><a href="#CornerRadiusSplitConverter" class="headerlink" title="CornerRadiusSplitConverter"></a>CornerRadiusSplitConverter</h1><p>该转换器需要提供一个字符串作为参数，该字符串的一般形式为：<code>[0/1],[0/1],[0/1],[0/1]</code>，4个以逗号分隔的值分别对应<code>CornerRadius</code>的<code>Left</code>、<code>Top</code>，<code>Right</code>，<code>Bottom</code>属性，当值为1则返回对应属性的值，否则返回0。</p>
+<h1 id="Double2GridLengthConverter"><a href="#Double2GridLengthConverter" class="headerlink" title="Double2GridLengthConverter"></a>Double2GridLengthConverter</h1><p>该转换器会将<code>double</code>值转换为<code>GridLength</code>。</p>
+<h1 id="DoubleMinConverter（内部使用）"><a href="#DoubleMinConverter（内部使用）" class="headerlink" title="DoubleMinConverter（内部使用）"></a>DoubleMinConverter（内部使用）</h1><p>可以向该转换器提供一个字符串作为最小值（如果不提供，则最小值默认为0），当传入的值小于最小值时，返回最小值，否则返回传入的值。</p>
 <h1 id="Int2StrConverter"><a href="#Int2StrConverter" class="headerlink" title="Int2StrConverter"></a>Int2StrConverter</h1><p>该转换器需要提供一个字符串作为参数，该字符串的一般形式为：<code>[字符串0];[字符串1];...[字符串n]</code>，转换器会将一个整型的值作为索引，来获取指定位置的字符串并返回。</p>
 <h1 id="Long2FileSizeConverter"><a href="#Long2FileSizeConverter" class="headerlink" title="Long2FileSizeConverter"></a>Long2FileSizeConverter</h1><p>该转换器会将长整型转换为文件大小的字符串。</p>
 <h1 id="Number2PercentageConverter"><a href="#Number2PercentageConverter" class="headerlink" title="Number2PercentageConverter"></a>Number2PercentageConverter</h1><p>该转换器接受一个长度为2的数字数组，返回两数的百分比值。</p>
@@ -1608,7 +1664,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Boolean2BooleanReConverter"><span class="nav-number">1.</span> <span class="nav-text">Boolean2BooleanReConverter</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Boolean2StrConverter"><span class="nav-number">2.</span> <span class="nav-text">Boolean2StrConverter</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Boolean2VisibilityConverter"><span class="nav-number">3.</span> <span class="nav-text">Boolean2VisibilityConverter</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Boolean2VisibilityReConverter"><span class="nav-number">4.</span> <span class="nav-text">Boolean2VisibilityReConverter</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#BooleanArr2VisibilityConverter"><span class="nav-number">5.</span> <span class="nav-text">BooleanArr2VisibilityConverter</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#BorderCircularClipConverter"><span class="nav-number">6.</span> <span class="nav-text">BorderCircularClipConverter</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#BorderCircularConverter"><span class="nav-number">7.</span> <span class="nav-text">BorderCircularConverter</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#BorderClipConverter"><span class="nav-number">8.</span> <span class="nav-text">BorderClipConverter</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ColLayoutConverter"><span class="nav-number">9.</span> <span class="nav-text">ColLayoutConverter</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Color2ChannelAConverter（内部使用）"><span class="nav-number">10.</span> <span class="nav-text">Color2ChannelAConverter（内部使用）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Color2HexStrConverter"><span class="nav-number">11.</span> <span class="nav-text">Color2HexStrConverter</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#CornerRadiusSplitConverter"><span class="nav-number">12.</span> <span class="nav-text">CornerRadiusSplitConverter</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Int2StrConverter"><span class="nav-number">13.</span> <span class="nav-text">Int2StrConverter</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Long2FileSizeConverter"><span class="nav-number">14.</span> <span class="nav-text">Long2FileSizeConverter</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Number2PercentageConverter"><span class="nav-number">15.</span> <span class="nav-text">Number2PercentageConverter</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Object2BooleanConverter"><span class="nav-number">16.</span> <span class="nav-text">Object2BooleanConverter</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Object2VisibilityConverter"><span class="nav-number">17.</span> <span class="nav-text">Object2VisibilityConverter</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#RectangleCircularConverter"><span class="nav-number">18.</span> <span class="nav-text">RectangleCircularConverter</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#String2VisibilityConverter"><span class="nav-number">19.</span> <span class="nav-text">String2VisibilityConverter</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#String2VisibilityReConverter"><span class="nav-number">20.</span> <span class="nav-text">String2VisibilityReConverter</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ThicknessSplitConverter"><span class="nav-number">21.</span> <span class="nav-text">ThicknessSplitConverter</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#TreeViewItemMarginConverter（内部使用）"><span class="nav-number">22.</span> <span class="nav-text">TreeViewItemMarginConverter（内部使用）</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Boolean2BooleanReConverter"><span class="nav-number">1.</span> <span class="nav-text">Boolean2BooleanReConverter</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Boolean2StrConverter"><span class="nav-number">2.</span> <span class="nav-text">Boolean2StrConverter</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Boolean2VisibilityConverter"><span class="nav-number">3.</span> <span class="nav-text">Boolean2VisibilityConverter</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Boolean2VisibilityReConverter"><span class="nav-number">4.</span> <span class="nav-text">Boolean2VisibilityReConverter</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#BooleanArr2VisibilityConverter"><span class="nav-number">5.</span> <span class="nav-text">BooleanArr2VisibilityConverter</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#BorderCircularClipConverter"><span class="nav-number">6.</span> <span class="nav-text">BorderCircularClipConverter</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#BorderCircularConverter"><span class="nav-number">7.</span> <span class="nav-text">BorderCircularConverter</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#BorderClipConverter"><span class="nav-number">8.</span> <span class="nav-text">BorderClipConverter</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ColLayoutConverter"><span class="nav-number">9.</span> <span class="nav-text">ColLayoutConverter</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Color2ChannelAConverter（内部使用）"><span class="nav-number">10.</span> <span class="nav-text">Color2ChannelAConverter（内部使用）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Color2HexStrConverter"><span class="nav-number">11.</span> <span class="nav-text">Color2HexStrConverter</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#CornerRadiusSplitConverter"><span class="nav-number">12.</span> <span class="nav-text">CornerRadiusSplitConverter</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Double2GridLengthConverter"><span class="nav-number">13.</span> <span class="nav-text">Double2GridLengthConverter</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#DoubleMinConverter（内部使用）"><span class="nav-number">14.</span> <span class="nav-text">DoubleMinConverter（内部使用）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Int2StrConverter"><span class="nav-number">15.</span> <span class="nav-text">Int2StrConverter</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Long2FileSizeConverter"><span class="nav-number">16.</span> <span class="nav-text">Long2FileSizeConverter</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Number2PercentageConverter"><span class="nav-number">17.</span> <span class="nav-text">Number2PercentageConverter</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Object2BooleanConverter"><span class="nav-number">18.</span> <span class="nav-text">Object2BooleanConverter</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Object2VisibilityConverter"><span class="nav-number">19.</span> <span class="nav-text">Object2VisibilityConverter</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#RectangleCircularConverter"><span class="nav-number">20.</span> <span class="nav-text">RectangleCircularConverter</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#String2VisibilityConverter"><span class="nav-number">21.</span> <span class="nav-text">String2VisibilityConverter</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#String2VisibilityReConverter"><span class="nav-number">22.</span> <span class="nav-text">String2VisibilityReConverter</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ThicknessSplitConverter"><span class="nav-number">23.</span> <span class="nav-text">ThicknessSplitConverter</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#TreeViewItemMarginConverter（内部使用）"><span class="nav-number">24.</span> <span class="nav-text">TreeViewItemMarginConverter（内部使用）</span></a></li></ol></div>
             
 
           </div>
@@ -1663,6 +1719,8 @@
 
 
 
+
+  <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1278600916'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278600916%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));</script>
 
 
 

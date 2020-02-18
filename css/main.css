@@ -1859,7 +1859,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #74ffc3;
+  background: #41953c;
 }
 .feed-link,
 .chat {
@@ -3008,6 +3008,7 @@ ul.breadcrumb li+li:last-child {
   margin: 3px;
   display: inline;
   padding: 3px !important;
+  border: 0;
 }
 .post-body h2 {
   font-size: 1.45em;
