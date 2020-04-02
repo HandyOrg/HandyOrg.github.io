@@ -102,7 +102,7 @@
 <meta property="og:description" content="当需要在窗口的右侧区域，以从上到下排列通知信息时可以使用本控件。 控件效果 准备工作在指定的窗口右侧区域添加StackPanel容器123&amp;lt;ScrollViewer VerticalScrollBarVisibility=&quot;Hidden&quot; HorizontalAlignment=&quot;Right&quot;&amp;gt;    &amp;lt;StackPanel VerticalAlignment=&quot;Top&quot; Mar">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Growl.gif">
-<meta property="og:updated_time" content="2019-11-29T16:45:18.201Z">
+<meta property="og:updated_time" content="2020-04-02T14:09:17.185Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Growl 信息通知">
 <meta name="twitter:description" content="当需要在窗口的右侧区域，以从上到下排列通知信息时可以使用本控件。 控件效果 准备工作在指定的窗口右侧区域添加StackPanel容器123&amp;lt;ScrollViewer VerticalScrollBarVisibility=&quot;Hidden&quot; HorizontalAlignment=&quot;Right&quot;&amp;gt;    &amp;lt;StackPanel VerticalAlignment=&quot;Top&quot; Mar">
@@ -3270,6 +3270,14 @@
 <td>使用完整的消息初始化模型显示一则成功通知</td>
 </tr>
 <tr>
+<td>SuccessGlobal(string)</td>
+<td>显示一则全局成功通知</td>
+</tr>
+<tr>
+<td>SuccessGlobal(GrowlInfo)</td>
+<td>使用完整的消息初始化模型显示一则全局成功通知</td>
+</tr>
+<tr>
 <td>Info(string)</td>
 <td>显示一则消息通知</td>
 </tr>
@@ -3280,6 +3288,14 @@
 <tr>
 <td>Info(GrowlInfo)</td>
 <td>使用完整的消息初始化模型显示一则消息通知</td>
+</tr>
+<tr>
+<td>InfoGlobal(string)</td>
+<td>显示一则全局消息通知</td>
+</tr>
+<tr>
+<td>InfoGlobal(GrowlInfo)</td>
+<td>使用完整的消息初始化模型显示一则全局消息通知</td>
 </tr>
 <tr>
 <td>Warning(string)</td>
@@ -3294,6 +3310,14 @@
 <td>使用完整的消息初始化模型显示一则警告通知</td>
 </tr>
 <tr>
+<td>WarningGlobal(string)</td>
+<td>显示一则全局警告通知</td>
+</tr>
+<tr>
+<td>WarningGlobal(GrowlInfo)</td>
+<td>使用完整的消息初始化模型显示一则全局警告通知</td>
+</tr>
+<tr>
 <td>Error(string)</td>
 <td>显示一则错误通知</td>
 </tr>
@@ -3304,6 +3328,14 @@
 <tr>
 <td>Error(GrowlInfo)</td>
 <td>使用完整的消息初始化模型显示一则错误通知</td>
+</tr>
+<tr>
+<td>ErrorGlobal(string)</td>
+<td>显示一则全局错误通知</td>
+</tr>
+<tr>
+<td>ErrorGlobal(GrowlInfo)</td>
+<td>使用完整的消息初始化模型显示一则全局错误通知</td>
 </tr>
 <tr>
 <td>Fatal(string)</td>
@@ -3318,6 +3350,14 @@
 <td>使用完整的消息初始化模型显示一则严重通知</td>
 </tr>
 <tr>
+<td>FatalGlobal(string)</td>
+<td>显示一则全局严重通知</td>
+</tr>
+<tr>
+<td>FatalGlobal(GrowlInfo)</td>
+<td>使用完整的消息初始化模型显示一则全局严重通知</td>
+</tr>
+<tr>
 <td>Ask(string, Func&lt;bool, bool&gt;)</td>
 <td>显示一则询问通知</td>
 </tr>
@@ -3328,6 +3368,14 @@
 <tr>
 <td>Ask(GrowlInfo)</td>
 <td>使用完整的消息初始化模型显示一则询问通知</td>
+</tr>
+<tr>
+<td>AskGlobal(string, Func&lt;bool, bool&gt;)</td>
+<td>显示一则全局询问通知</td>
+</tr>
+<tr>
+<td>AskGlobal(GrowlInfo)</td>
+<td>使用完整的消息初始化模型显示一则全局询问通知</td>
 </tr>
 <tr>
 <td>Register(string, Panel)</td>
@@ -3342,6 +3390,10 @@
 <td>如果该容器注册了消息标记则取消注册</td>
 </tr>
 <tr>
+<td>Unregister(string)</td>
+<td>如果该消息标记有对应的容器则取消注册</td>
+</tr>
+<tr>
 <td>Clear( )</td>
 <td>清空当前使用的消息容器中的消息</td>
 </tr>
@@ -3349,8 +3401,17 @@
 <td>Clear(string)</td>
 <td>清空含有指定消息标记的消息容器中的消息</td>
 </tr>
+<tr>
+<td>Clear(Panel)</td>
+<td>清空指定容器中的消息</td>
+</tr>
+<tr>
+<td>ClearGlobal( )</td>
+<td>清空全局容器中的消息</td>
+</tr>
 </tbody>
 </table>
+<h1 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h1><p><code>Error</code> 和 <code>Fatal</code>模式不会自动关闭。</p>
 <h1 id="FAQ"><a href="#FAQ" class="headerlink" title="FAQ"></a>FAQ</h1><div class="note info no-icon">
             <p>Ask比较特殊，咋用？</p>
           </div>
@@ -3582,7 +3643,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#控件效果"><span class="nav-number">1.</span> <span class="nav-text">控件效果</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#准备工作"><span class="nav-number">2.</span> <span class="nav-text">准备工作</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#基础用法"><span class="nav-number">3.</span> <span class="nav-text">基础用法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#只在激活中的窗口显示信息通知"><span class="nav-number">4.</span> <span class="nav-text">只在激活中的窗口显示信息通知</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#在任意的StackPanel容器中显示信息通知"><span class="nav-number">5.</span> <span class="nav-text">在任意的StackPanel容器中显示信息通知</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#属性"><span class="nav-number">6.</span> <span class="nav-text">属性</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#附加属性"><span class="nav-number">7.</span> <span class="nav-text">附加属性</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#方法"><span class="nav-number">8.</span> <span class="nav-text">方法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#FAQ"><span class="nav-number">9.</span> <span class="nav-text">FAQ</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#控件效果"><span class="nav-number">1.</span> <span class="nav-text">控件效果</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#准备工作"><span class="nav-number">2.</span> <span class="nav-text">准备工作</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#基础用法"><span class="nav-number">3.</span> <span class="nav-text">基础用法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#只在激活中的窗口显示信息通知"><span class="nav-number">4.</span> <span class="nav-text">只在激活中的窗口显示信息通知</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#在任意的StackPanel容器中显示信息通知"><span class="nav-number">5.</span> <span class="nav-text">在任意的StackPanel容器中显示信息通知</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#属性"><span class="nav-number">6.</span> <span class="nav-text">属性</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#附加属性"><span class="nav-number">7.</span> <span class="nav-text">附加属性</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#方法"><span class="nav-number">8.</span> <span class="nav-text">方法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#注意"><span class="nav-number">9.</span> <span class="nav-text">注意</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#FAQ"><span class="nav-number">10.</span> <span class="nav-text">FAQ</span></a></li></ol></div>
             
 
           </div>

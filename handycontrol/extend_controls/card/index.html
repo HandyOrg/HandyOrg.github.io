@@ -94,17 +94,20 @@
 
 
 
-  <meta name="description" content="everything can be handy">
+  <meta name="description" content="用于卡片化展示数据，为ContentControl的派生类 1public class Card : ContentControl 基础属性   属性 用途     Header 卡片头部内容，用于显示同步文本   HeaderTemplate 卡片头部模板   HeaderTemplateSelector 卡片模板样式选择器   HeaderStringFormat 卡片头部模板内容显示格式">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Card">
+<meta property="og:title" content="Card 卡片">
 <meta property="og:url" content="http://yoursite.com/handycontrol/extend_controls/card/index.html">
 <meta property="og:site_name" content="HandyOrg">
-<meta property="og:description" content="everything can be handy">
+<meta property="og:description" content="用于卡片化展示数据，为ContentControl的派生类 1public class Card : ContentControl 基础属性   属性 用途     Header 卡片头部内容，用于显示同步文本   HeaderTemplate 卡片头部模板   HeaderTemplateSelector 卡片模板样式选择器   HeaderStringFormat 卡片头部模板内容显示格式">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-02-18T07:01:18.807Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/extend_controls/Card-SampleCase.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/extend_controls/Card-Case01.png">
+<meta property="og:updated_time" content="2020-04-02T13:03:36.425Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Card">
-<meta name="twitter:description" content="everything can be handy">
+<meta name="twitter:title" content="Card 卡片">
+<meta name="twitter:description" content="用于卡片化展示数据，为ContentControl的派生类 1public class Card : ContentControl 基础属性   属性 用途     Header 卡片头部内容，用于显示同步文本   HeaderTemplate 卡片头部模板   HeaderTemplateSelector 卡片模板样式选择器   HeaderStringFormat 卡片头部模板内容显示格式">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/extend_controls/Card-SampleCase.png">
 
 
 
@@ -122,7 +125,7 @@
   };
 </script>
 
-  <title>Card | HandyOrg</title>
+  <title>Card 卡片 | HandyOrg</title>
   
 
 
@@ -3121,7 +3124,7 @@
     <div class="post-block page">
       <header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">Card
+<h1 class="post-title" itemprop="name headline">Card 卡片
 
 </h1>
 
@@ -3181,7 +3184,61 @@
       <div class="post-body">
         
         
-          
+          <p>用于卡片化展示数据，为<code>ContentControl</code>的派生类</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">public class Card : ContentControl</span><br></pre></td></tr></table></figure>
+<h1 id="基础属性"><a href="#基础属性" class="headerlink" title="基础属性"></a>基础属性</h1><table>
+<thead>
+<tr>
+<th>属性</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Header</td>
+<td>卡片头部内容，用于显示同步文本</td>
+</tr>
+<tr>
+<td>HeaderTemplate</td>
+<td>卡片头部模板</td>
+</tr>
+<tr>
+<td>HeaderTemplateSelector</td>
+<td>卡片模板样式选择器</td>
+</tr>
+<tr>
+<td>HeaderStringFormat</td>
+<td>卡片头部模板内容显示格式</td>
+</tr>
+<tr>
+<td>Footer</td>
+<td>卡片尾部内容</td>
+</tr>
+<tr>
+<td>FooterTemplate</td>
+<td>卡片尾部模板</td>
+</tr>
+<tr>
+<td>FooterTemplateSelector</td>
+<td>卡片尾部样式选择器</td>
+</tr>
+<tr>
+<td>FooterStringFormat</td>
+<td>卡片尾部内容显示格式</td>
+</tr>
+</tbody>
+</table>
+<h1 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h1><h2 id="单卡片使用"><a href="#单卡片使用" class="headerlink" title="单卡片使用"></a>单卡片使用</h2><h3 id="xaml中使用"><a href="#xaml中使用" class="headerlink" title="xaml中使用"></a><code>xaml</code>中使用</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:Card</span> <span class="attr">MaxWidth</span>=<span class="string">"240"</span> <span class="attr">BorderThickness</span>=<span class="string">"0"</span> <span class="attr">Effect</span>=<span class="string">"&#123;DynamicResource EffectShadow2&#125;"</span> <span class="attr">Margin</span>=<span class="string">"8"</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--Card 的内容部分--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Border</span> <span class="attr">CornerRadius</span>=<span class="string">"4,4,0,0"</span> <span class="attr">Width</span>=<span class="string">"160"</span> <span class="attr">Height</span>=<span class="string">"160"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">TextWrapping</span>=<span class="string">"Wrap"</span> <span class="attr">VerticalAlignment</span>=<span class="string">"Center"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Center"</span> <span class="attr">Text</span>=<span class="string">"测试"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">Border</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--Card 的尾部部分--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:Card.Footer</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">Margin</span>=<span class="string">"10"</span> <span class="attr">Width</span>=<span class="string">"160"</span>&gt;</span></span><br><span class="line">            <span class="comment">&lt;!--Card 的一级内容--&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">TextWrapping</span>=<span class="string">"NoWrap"</span>  <span class="attr">Style</span>=<span class="string">"&#123;DynamicResource TextBlockLargeBold&#125;"</span> <span class="attr">TextTrimming</span>=<span class="string">"CharacterEllipsis"</span> </span></span><br><span class="line"><span class="tag">                                       <span class="attr">Text</span>=<span class="string">"大标题"</span> </span></span><br><span class="line"><span class="tag">                                       <span class="attr">HorizontalAlignment</span>=<span class="string">"Left"</span>/&gt;</span></span><br><span class="line">            <span class="comment">&lt;!--Card 的二级内容--&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">TextWrapping</span>=<span class="string">"NoWrap"</span> <span class="attr">Style</span>=<span class="string">"&#123;DynamicResource TextBlockDefault&#125;"</span> <span class="attr">TextTrimming</span>=<span class="string">"CharacterEllipsis"</span> </span></span><br><span class="line"><span class="tag">                                       <span class="attr">Text</span>=<span class="string">"描述信息"</span> <span class="attr">Margin</span>=<span class="string">"0,6,0,0"</span></span></span><br><span class="line"><span class="tag">                                       <span class="attr">HorizontalAlignment</span>=<span class="string">"Left"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">hc:Card.Footer</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:Card</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h3><p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/extend_controls/Card-SampleCase.png" alt="Card-SampleCase"></p>
+<h2 id="作为数据模板"><a href="#作为数据模板" class="headerlink" title="作为数据模板"></a>作为数据模板</h2><h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">public class CardModel</span><br><span class="line">&#123;</span><br><span class="line">    public string Header &#123; get; set; &#125;</span><br><span class="line"></span><br><span class="line">    public string Content &#123; get; set; &#125;</span><br><span class="line"></span><br><span class="line">    public string Footer &#123; get; set; &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="视图实体"><a href="#视图实体" class="headerlink" title="视图实体"></a>视图实体</h3><p>此实体并没有按照规范的<code>mvvm</code>方式进行设计，仅仅是作为普通数据源做展示使用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br></pre></td><td class="code"><pre><span class="line">public class CardDemoViewModel</span><br><span class="line">&#123;</span><br><span class="line">    private IList&lt;CardModel&gt; _dataList;</span><br><span class="line">    public CardDemoViewModel()</span><br><span class="line">    &#123;</span><br><span class="line">        DataList = GetCardDataList();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    internal ObservableCollection&lt;CardModel&gt; GetCardDataList()</span><br><span class="line">    &#123;</span><br><span class="line">        return new ObservableCollection&lt;CardModel&gt;</span><br><span class="line">        &#123;</span><br><span class="line">            new CardModel</span><br><span class="line">            &#123;</span><br><span class="line">                Header = &quot;Atomic&quot;,</span><br><span class="line">                Content = &quot;1.jpg&quot;,</span><br><span class="line">                Footer = &quot;Stive Morgan&quot;</span><br><span class="line">            &#125;,</span><br><span class="line">            new CardModel</span><br><span class="line">            &#123;</span><br><span class="line">                Header = &quot;Zinderlong&quot;,</span><br><span class="line">                Content = &quot;2.jpg&quot;,</span><br><span class="line">                Footer = &quot;Zonderling&quot;</span><br><span class="line">            &#125;,</span><br><span class="line">            new CardModel</span><br><span class="line">            &#123;</span><br><span class="line">                Header = &quot;Busy Doin&apos; Nothin&apos;&quot;,</span><br><span class="line">                Content = &quot;3.jpg&quot;,</span><br><span class="line">                Footer = &quot;Ace Wilder&quot;</span><br><span class="line">            &#125;,</span><br><span class="line">            new CardModel</span><br><span class="line">            &#123;</span><br><span class="line">                Header = &quot;Wrong&quot;,</span><br><span class="line">                Content = &quot;4.jpg&quot;,</span><br><span class="line">                Footer = &quot;Blaxy Girls&quot;</span><br><span class="line">            &#125;,</span><br><span class="line">            new CardModel</span><br><span class="line">            &#123;</span><br><span class="line">                Header = &quot;The Lights&quot;,</span><br><span class="line">                Content = &quot;5.jpg&quot;,</span><br><span class="line">                Footer = &quot;Panda Eyes&quot;</span><br><span class="line">            &#125;,</span><br><span class="line">            new CardModel</span><br><span class="line">            &#123;</span><br><span class="line">                Header = &quot;EA7-50-Cent Disco&quot;,</span><br><span class="line">                Content = &quot;6.jpg&quot;,</span><br><span class="line">                Footer = &quot;еяхат музыка&quot;</span><br><span class="line">            &#125;,</span><br><span class="line">            new CardModel</span><br><span class="line">            &#123;</span><br><span class="line">                Header = &quot;Monsters&quot;,</span><br><span class="line">                Content = &quot;7.jpg&quot;,</span><br><span class="line">                Footer = &quot;Different Heaven&quot;</span><br><span class="line">            &#125;,</span><br><span class="line">            new CardModel</span><br><span class="line">            &#123;</span><br><span class="line">                Header = &quot;Gangsta Walk&quot;,</span><br><span class="line">                Content = &quot;8.jpg&quot;,</span><br><span class="line">                Footer = &quot;Illusionize&quot;</span><br><span class="line">            &#125;,</span><br><span class="line">            new CardModel</span><br><span class="line">            &#123;</span><br><span class="line">                Header = &quot;Won&apos;t Back Down&quot;,</span><br><span class="line">                Content = &quot;9.jpg&quot;,</span><br><span class="line">                Footer = &quot;Boehm&quot;</span><br><span class="line">            &#125;,</span><br><span class="line">            new CardModel</span><br><span class="line">            &#123;</span><br><span class="line">                Header = &quot;Katchi&quot;,</span><br><span class="line">                Content = &quot;10.jpg&quot;,</span><br><span class="line">                Footer = &quot;Ofenbach&quot;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;;</span><br><span class="line">    &#125;</span><br><span class="line">    public IList&lt;CardModel&gt; DataList &#123; get =&gt; _dataList; set =&gt; _dataList = value; &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="xaml中的使用方式"><a href="#xaml中的使用方式" class="headerlink" title="xaml中的使用方式"></a><code>xaml</code>中的使用方式</h3><p><code>handycontrol</code>的命名空间和<code>DataContext</code>上下文需要自行引入</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">xmlns:hc="https://handyorg.github.io/handycontrol"</span><br><span class="line">xmlns:data="CardModel所在命名空间"</span><br><span class="line">xmlns:vm="CardDemoViewModel所在命名空间"</span><br><span class="line">........</span><br></pre></td></tr></table></figure>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--在listbox的父级中使用--&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">listbox的父级.Resources</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">vm:CardDemoViewModel</span> <span class="attr">x:Key</span>=<span class="string">"Card"</span>&gt;</span><span class="tag">&lt;/<span class="name">vm:CardDemoViewModel</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">listbox的父级.Resources</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">listbox的父级.DataContext</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">Binding</span> <span class="attr">Source</span>=<span class="string">"&#123;StaticResource Card&#125;"</span>/&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">listbox的父级.DataContext</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ListBox</span> <span class="attr">Margin</span>=<span class="string">"32"</span> <span class="attr">BorderThickness</span>=<span class="string">"0"</span> <span class="attr">Style</span>=<span class="string">"&#123;DynamicResource WrapPanelHorizontalListBox&#125;"</span> <span class="attr">ItemsSource</span>=<span class="string">"&#123;Binding DataList&#125;"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">ListBox.ItemTemplate</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">DataTemplate</span> <span class="attr">DataType</span>=<span class="string">"data:CardModel"</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">hc:Card</span> <span class="attr">MaxWidth</span>=<span class="string">"240"</span> <span class="attr">BorderThickness</span>=<span class="string">"0"</span> <span class="attr">Effect</span>=<span class="string">"&#123;DynamicResource EffectShadow2&#125;"</span> <span class="attr">Margin</span>=<span class="string">"8"</span> <span class="attr">Footer</span>=<span class="string">"&#123;Binding Footer&#125;"</span>&gt;</span></span><br><span class="line">                    <span class="comment">&lt;!--Card 的内容部分模板--&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">Border</span> <span class="attr">CornerRadius</span>=<span class="string">"4,4,0,0"</span> <span class="attr">Width</span>=<span class="string">"160"</span> <span class="attr">Height</span>=<span class="string">"160"</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">TextWrapping</span>=<span class="string">"Wrap"</span> <span class="attr">VerticalAlignment</span>=<span class="string">"Center"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Center"</span> <span class="attr">Text</span>=<span class="string">"&#123;Binding Content&#125;"</span>/&gt;</span></span><br><span class="line">                    <span class="tag">&lt;/<span class="name">Border</span>&gt;</span></span><br><span class="line">                    <span class="comment">&lt;!--Card 的尾部部分模板--&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">hc:Card.FooterTemplate</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;<span class="name">DataTemplate</span>&gt;</span></span><br><span class="line">                            <span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">Margin</span>=<span class="string">"10"</span> <span class="attr">Width</span>=<span class="string">"160"</span>&gt;</span></span><br><span class="line">                                <span class="comment">&lt;!--Card 的一级内容--&gt;</span></span><br><span class="line">                                <span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">TextWrapping</span>=<span class="string">"NoWrap"</span>  <span class="attr">Style</span>=<span class="string">"&#123;DynamicResource TextBlockLargeBold&#125;"</span> <span class="attr">TextTrimming</span>=<span class="string">"CharacterEllipsis"</span> </span></span><br><span class="line"><span class="tag">                                           <span class="attr">Text</span>=<span class="string">"&#123;Binding DataContext.Header,RelativeSource=&#123;RelativeSource AncestorType=hc:Card&#125;&#125;"</span> </span></span><br><span class="line"><span class="tag">                                           <span class="attr">HorizontalAlignment</span>=<span class="string">"Left"</span>/&gt;</span></span><br><span class="line">                                <span class="comment">&lt;!--Card 的二级内容--&gt;</span></span><br><span class="line">                                <span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">TextWrapping</span>=<span class="string">"NoWrap"</span> <span class="attr">Style</span>=<span class="string">"&#123;DynamicResource TextBlockDefault&#125;"</span> <span class="attr">TextTrimming</span>=<span class="string">"CharacterEllipsis"</span> </span></span><br><span class="line"><span class="tag">                                           <span class="attr">Text</span>=<span class="string">"&#123;Binding&#125;"</span> <span class="attr">Margin</span>=<span class="string">"0,6,0,0"</span></span></span><br><span class="line"><span class="tag">                                           <span class="attr">HorizontalAlignment</span>=<span class="string">"Left"</span>/&gt;</span></span><br><span class="line">                            <span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;/<span class="name">DataTemplate</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;/<span class="name">hc:Card.FooterTemplate</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">hc:Card</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">DataTemplate</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">ListBox.ItemTemplate</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">ListBox</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="效果-1"><a href="#效果-1" class="headerlink" title="效果"></a>效果</h3><p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/extend_controls/Card-Case01.png" alt="Card-Case01"></p>
+
         
       </div>
       
@@ -3263,8 +3320,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -3387,6 +3453,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#基础属性"><span class="nav-number">1.</span> <span class="nav-text">基础属性</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#案例"><span class="nav-number">2.</span> <span class="nav-text">案例</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#单卡片使用"><span class="nav-number">2.1.</span> <span class="nav-text">单卡片使用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#xaml中使用"><span class="nav-number">2.1.1.</span> <span class="nav-text">xaml中使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#效果"><span class="nav-number">2.1.2.</span> <span class="nav-text">效果</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#作为数据模板"><span class="nav-number">2.2.</span> <span class="nav-text">作为数据模板</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#数据类型"><span class="nav-number">2.2.1.</span> <span class="nav-text">数据类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#视图实体"><span class="nav-number">2.2.2.</span> <span class="nav-text">视图实体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#xaml中的使用方式"><span class="nav-number">2.2.3.</span> <span class="nav-text">xaml中的使用方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#效果-1"><span class="nav-number">2.2.4.</span> <span class="nav-text">效果</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       

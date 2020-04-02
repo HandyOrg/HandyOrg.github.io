@@ -94,17 +94,25 @@
 
 
 
-  <meta name="description" content="建设中">
+  <meta name="description" content="标记控件作为其他控件的特定状态内容标记，能够做到最小程度的侵入原有控件，可以看作是一种内容控件，内部Content就是对应需要显示标记的被修饰控件，继承关系如下： 1public class Badge : ContentControl 基础属性   属性名称 用途     Text 获取或设置标记显示内容   Value 获取或设置显示数值，支持数值动态变更   Status 获取或设置标记状态">
 <meta property="og:type" content="website">
-<meta property="og:title" content="建设中">
+<meta property="og:title" content="Badge 标记">
 <meta property="og:url" content="http://yoursite.com/handycontrol/extend_controls/badge/index.html">
 <meta property="og:site_name" content="HandyOrg">
-<meta property="og:description" content="建设中">
+<meta property="og:description" content="标记控件作为其他控件的特定状态内容标记，能够做到最小程度的侵入原有控件，可以看作是一种内容控件，内部Content就是对应需要显示标记的被修饰控件，继承关系如下： 1public class Badge : ContentControl 基础属性   属性名称 用途     Text 获取或设置标记显示内容   Value 获取或设置显示数值，支持数值动态变更   Status 获取或设置标记状态">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-11T16:16:13.652Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/extend_controls/Badge-TextValue.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/extend_controls/Badge-Maximum.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/extend_controls/Badge-Status.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/extend_controls/Badge-BadgeMargin.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/extend_controls/Badge-Styles.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/extend_controls/Badge-Error01.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/extend_controls/Badge-ErrorCorrection01.png">
+<meta property="og:updated_time" content="2020-04-02T13:03:36.424Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="建设中">
-<meta name="twitter:description" content="建设中">
+<meta name="twitter:title" content="Badge 标记">
+<meta name="twitter:description" content="标记控件作为其他控件的特定状态内容标记，能够做到最小程度的侵入原有控件，可以看作是一种内容控件，内部Content就是对应需要显示标记的被修饰控件，继承关系如下： 1public class Badge : ContentControl 基础属性   属性名称 用途     Text 获取或设置标记显示内容   Value 获取或设置显示数值，支持数值动态变更   Status 获取或设置标记状态">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/extend_controls/Badge-TextValue.png">
 
 
 
@@ -122,7 +130,7 @@
   };
 </script>
 
-  <title>建设中 | HandyOrg</title>
+  <title>Badge 标记 | HandyOrg</title>
   
 
 
@@ -3121,7 +3129,7 @@
     <div class="post-block page">
       <header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">建设中
+<h1 class="post-title" itemprop="name headline">Badge 标记
 
 </h1>
 
@@ -3181,7 +3189,119 @@
       <div class="post-body">
         
         
-          <p>建设中</p>
+          <p>标记控件作为其他控件的特定状态内容标记，能够做到最小程度的侵入原有控件，可以看作是一种内容控件，内部<code>Content</code>就是对应需要显示标记的被修饰控件，继承关系如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">public class Badge : ContentControl</span><br></pre></td></tr></table></figure>
+<h1 id="基础属性"><a href="#基础属性" class="headerlink" title="基础属性"></a>基础属性</h1><table>
+<thead>
+<tr>
+<th>属性名称</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Text</td>
+<td>获取或设置标记显示内容</td>
+</tr>
+<tr>
+<td>Value</td>
+<td>获取或设置显示数值，支持数值动态变更</td>
+</tr>
+<tr>
+<td>Status</td>
+<td>获取或设置标记状态类型，Text（文本），Dot（圆点标记），Processing（动态标记）默认为文本显示</td>
+</tr>
+<tr>
+<td>Maximum</td>
+<td>获取或设置最大显示数值。数值显示时，最大显示数值</td>
+</tr>
+<tr>
+<td>BadgeMargin</td>
+<td>获取或设置标记相对于被修饰控件的外边距</td>
+</tr>
+<tr>
+<td>ShowBadge</td>
+<td>获取或设置是否显示标记，默认为True</td>
+</tr>
+</tbody>
+</table>
+<p><code>xaml</code>中，记得引入<code>handycontrol</code>的命名空间。</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xmlns:hc="https://handyorg.github.io/handycontrol"</span><br></pre></td></tr></table></figure>
+<h2 id="Text和Value"><a href="#Text和Value" class="headerlink" title="Text和Value"></a><code>Text</code>和<code>Value</code></h2><p>可能看到属性解释，会比较疑惑，<code>Text</code>和<code>Value</code>在效果和数值上是一样的，这有什么区别？在标记控件中，将文本和数值类型进行区分，数值类型能够进行动态的变更以及数据统计显示效果，当两者同时存在时，默认显示<code>Text</code>。</p>
+<h3 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:Badge</span> <span class="attr">Value</span>=<span class="string">"12"</span> <span class="attr">Text</span>=<span class="string">"New"</span> <span class="attr">BadgeMargin</span>=<span class="string">"0,-14,-20,0"</span> <span class="attr">Height</span>=<span class="string">"30"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">"默认样式"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:Badge</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">hc:Badge</span> <span class="attr">Value</span>=<span class="string">"12"</span> <span class="attr">BadgeMargin</span>=<span class="string">"0,-14,-20,0"</span> <span class="attr">Height</span>=<span class="string">"30"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">"默认样式"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:Badge</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h3><p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/extend_controls/Badge-TextValue.png" alt="Badge-TextValue"></p>
+<h2 id="Maximum最大显示数值"><a href="#Maximum最大显示数值" class="headerlink" title="Maximum最大显示数值"></a><code>Maximum</code>最大显示数值</h2><p>使用<code>Value</code>属性，添加最大显示数值限定标记显示的最大值显示效果</p>
+<h3 id="案例-1"><a href="#案例-1" class="headerlink" title="案例"></a>案例</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:Badge</span> <span class="attr">Value</span>=<span class="string">"100"</span> <span class="attr">Maximum</span>=<span class="string">"99"</span> <span class="attr">BadgeMargin</span>=<span class="string">"0,-14,-20,0"</span> <span class="attr">Height</span>=<span class="string">"30"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">"Maximum"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:Badge</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">hc:Badge</span> <span class="attr">Value</span>=<span class="string">"2"</span> <span class="attr">Maximum</span>=<span class="string">"99"</span> <span class="attr">BadgeMargin</span>=<span class="string">"0,-14,-20,0"</span> <span class="attr">Height</span>=<span class="string">"30"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">"Maximum"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:Badge</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="效果-1"><a href="#效果-1" class="headerlink" title="效果"></a>效果</h3><p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/extend_controls/Badge-Maximum.png" alt="Badge-Maximum"></p>
+<h2 id="Status标记状态类型"><a href="#Status标记状态类型" class="headerlink" title="Status标记状态类型"></a><code>Status</code>标记状态类型</h2><p>标记状态类型，分为三种类型，默认为文本显示</p>
+<h3 id="案例-2"><a href="#案例-2" class="headerlink" title="案例"></a>案例</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:Badge</span> <span class="attr">Status</span>=<span class="string">"Text"</span> <span class="attr">Text</span>=<span class="string">"text"</span> <span class="attr">Height</span>=<span class="string">"30"</span> <span class="attr">Margin</span>=<span class="string">"32,0,0,0"</span> <span class="attr">Style</span>=<span class="string">"&#123;DynamicResource BadgeSuccess&#125;"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">"Text"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:Badge</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">hc:Badge</span> <span class="attr">Status</span>=<span class="string">"Dot"</span> <span class="attr">Height</span>=<span class="string">"30"</span> <span class="attr">Margin</span>=<span class="string">"32,0,0,0"</span> <span class="attr">Style</span>=<span class="string">"&#123;DynamicResource BadgeSuccess&#125;"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">"Dot"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:Badge</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">hc:Badge</span> <span class="attr">Status</span>=<span class="string">"Processing"</span> <span class="attr">Height</span>=<span class="string">"30"</span> <span class="attr">Margin</span>=<span class="string">"32,0,0,0"</span> <span class="attr">Style</span>=<span class="string">"&#123;DynamicResource BadgeSuccess&#125;"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">"Processing"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:Badge</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="效果-2"><a href="#效果-2" class="headerlink" title="效果"></a>效果</h3><p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/extend_controls/Badge-Status.png" alt="Badge-Status"></p>
+<h2 id="BadgeMargin相对外边距"><a href="#BadgeMargin相对外边距" class="headerlink" title="BadgeMargin相对外边距"></a><code>BadgeMargin</code>相对外边距</h2><p><code>BadgeMargin</code>用于设定相对于被修饰控件的外边距，一般情况下该属性不做修改，建议使用<code>0,-14,-20,0</code></p>
+<h3 id="案例-3"><a href="#案例-3" class="headerlink" title="案例"></a>案例</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:Badge</span> <span class="attr">Height</span>=<span class="string">"30"</span> <span class="attr">Value</span>=<span class="string">"11"</span> <span class="attr">Style</span>=<span class="string">"&#123;DynamicResource BadgeSuccess&#125;"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">"BadgeMargin"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:Badge</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">hc:Badge</span> <span class="attr">Height</span>=<span class="string">"30"</span> <span class="attr">Value</span>=<span class="string">"11"</span> <span class="attr">BadgeMargin</span>=<span class="string">"30,0,0,0"</span> <span class="attr">Style</span>=<span class="string">"&#123;DynamicResource BadgeSuccess&#125;"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">"BadgeMargin"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:Badge</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="效果-3"><a href="#效果-3" class="headerlink" title="效果"></a>效果</h3><p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/extend_controls/Badge-BadgeMargin.png" alt="Badge-BadgeMargin"></p>
+<h1 id="事件"><a href="#事件" class="headerlink" title="事件"></a>事件</h1><table>
+<thead>
+<tr>
+<th>事件</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ValueChanged</code></td>
+<td>数值变更后触发事件</td>
+</tr>
+</tbody>
+</table>
+<h1 id="相关样式"><a href="#相关样式" class="headerlink" title="相关样式"></a>相关样式</h1><table>
+<thead>
+<tr>
+<th>样式名称</th>
+<th>用途</th>
+<th>继承样式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BadgeBaseStyle</td>
+<td>默认样式，作为BaseOn继承使用</td>
+<td>-</td>
+</tr>
+<tr>
+<td>BadgePrimary</td>
+<td>主题色标记样式</td>
+<td>BadgeBaseStyle</td>
+</tr>
+<tr>
+<td>BadgeSuccess</td>
+<td>成功色标记样式</td>
+<td>BadgeBaseStyle</td>
+</tr>
+<tr>
+<td>BadgeInfo</td>
+<td>信息色标记样式</td>
+<td>BadgeBaseStyle</td>
+</tr>
+<tr>
+<td>BadgeWarning</td>
+<td>警告色标记样式</td>
+<td>BadgeBaseStyle</td>
+</tr>
+<tr>
+<td>BadgeDanger</td>
+<td>异常色标记样式</td>
+<td>BadgeBaseStyle</td>
+</tr>
+</tbody>
+</table>
+<h2 id="案例-4"><a href="#案例-4" class="headerlink" title="案例"></a>案例</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:Badge</span> <span class="attr">Height</span>=<span class="string">"30"</span>  <span class="attr">BadgeMargin</span>=<span class="string">"0,-14,-20,0"</span> <span class="attr">Value</span>=<span class="string">"11"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">"Default"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:Badge</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">hc:Badge</span> <span class="attr">Height</span>=<span class="string">"30"</span>  <span class="attr">BadgeMargin</span>=<span class="string">"0,-14,-20,0"</span> <span class="attr">Value</span>=<span class="string">"11"</span> <span class="attr">Style</span>=<span class="string">"&#123;DynamicResource BadgePrimary&#125;"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">"Primary"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:Badge</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">hc:Badge</span> <span class="attr">Height</span>=<span class="string">"30"</span>  <span class="attr">BadgeMargin</span>=<span class="string">"0,-14,-20,0"</span> <span class="attr">Value</span>=<span class="string">"11"</span> <span class="attr">Style</span>=<span class="string">"&#123;DynamicResource BadgeInfo&#125;"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">"Info"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:Badge</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">hc:Badge</span> <span class="attr">Height</span>=<span class="string">"30"</span>  <span class="attr">BadgeMargin</span>=<span class="string">"0,-14,-20,0"</span> <span class="attr">Value</span>=<span class="string">"11"</span> <span class="attr">Style</span>=<span class="string">"&#123;DynamicResource BadgeSuccess&#125;"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">"Success"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:Badge</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">hc:Badge</span> <span class="attr">Height</span>=<span class="string">"30"</span>  <span class="attr">BadgeMargin</span>=<span class="string">"0,-14,-20,0"</span> <span class="attr">Value</span>=<span class="string">"11"</span> <span class="attr">Style</span>=<span class="string">"&#123;DynamicResource BadgeWarning&#125;"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">"Warning"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:Badge</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">hc:Badge</span> <span class="attr">Height</span>=<span class="string">"30"</span>  <span class="attr">BadgeMargin</span>=<span class="string">"0,-14,-20,0"</span> <span class="attr">Value</span>=<span class="string">"11"</span> <span class="attr">Style</span>=<span class="string">"&#123;DynamicResource BadgeDanger&#125;"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">"Danger"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:Badge</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="效果-4"><a href="#效果-4" class="headerlink" title="效果"></a>效果</h2><p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/extend_controls/Badge-Styles.png" alt="Badge-Styles"></p>
+<h1 id="FAQ"><a href="#FAQ" class="headerlink" title="FAQ"></a>FAQ</h1><h2 id="坐标偏移问题-版本-小于等于-2-4"><a href="#坐标偏移问题-版本-小于等于-2-4" class="headerlink" title="坐标偏移问题[版本 小于等于 2.4]"></a>坐标偏移问题[版本 小于等于 2.4]</h2><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>当父级容器不是<code>stackpanel</code>默认排列方式时，标记和被修饰控件出现偏移</p>
+<h3 id="现状"><a href="#现状" class="headerlink" title="现状"></a>现状</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:Badge</span> <span class="attr">Height</span>=<span class="string">"30"</span>  <span class="attr">BadgeMargin</span>=<span class="string">"0,-14,-20,0"</span> <span class="attr">Value</span>=<span class="string">"11"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">"Default"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:Badge</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">hc:Badge</span> <span class="attr">Height</span>=<span class="string">"30"</span>  <span class="attr">BadgeMargin</span>=<span class="string">"0,-14,-20,0"</span> <span class="attr">Value</span>=<span class="string">"11"</span> <span class="attr">Style</span>=<span class="string">"&#123;DynamicResource BadgePrimary&#125;"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">"Primary"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:Badge</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/extend_controls/Badge-Error01.png" alt="Badge-Error01"></p>
+<h3 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h3><p>将属性<code>Badge</code>中的属性<code>VerticalAlignment</code>和<code>HorizontalAlignment</code>设置为<code>Center</code>即可</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:Badge</span> <span class="attr">Height</span>=<span class="string">"30"</span> <span class="attr">VerticalAlignment</span>=<span class="string">"Center"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Center"</span>  <span class="attr">BadgeMargin</span>=<span class="string">"0,-14,-20,0"</span> <span class="attr">Value</span>=<span class="string">"11"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">"Default"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:Badge</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">hc:Badge</span> <span class="attr">Height</span>=<span class="string">"30"</span> <span class="attr">VerticalAlignment</span>=<span class="string">"Center"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Center"</span>  <span class="attr">BadgeMargin</span>=<span class="string">"0,-14,-20,0"</span> <span class="attr">Value</span>=<span class="string">"11"</span> <span class="attr">Style</span>=<span class="string">"&#123;DynamicResource BadgePrimary&#125;"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">"Primary"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:Badge</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/extend_controls/Badge-ErrorCorrection01.png" alt="Badge-ErrorCorrection01"></p>
 
         
       </div>
@@ -3264,8 +3384,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -3388,6 +3517,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#基础属性"><span class="nav-number">1.</span> <span class="nav-text">基础属性</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Text和Value"><span class="nav-number">1.1.</span> <span class="nav-text">Text和Value</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#案例"><span class="nav-number">1.1.1.</span> <span class="nav-text">案例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#效果"><span class="nav-number">1.1.2.</span> <span class="nav-text">效果</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Maximum最大显示数值"><span class="nav-number">1.2.</span> <span class="nav-text">Maximum最大显示数值</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#案例-1"><span class="nav-number">1.2.1.</span> <span class="nav-text">案例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#效果-1"><span class="nav-number">1.2.2.</span> <span class="nav-text">效果</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Status标记状态类型"><span class="nav-number">1.3.</span> <span class="nav-text">Status标记状态类型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#案例-2"><span class="nav-number">1.3.1.</span> <span class="nav-text">案例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#效果-2"><span class="nav-number">1.3.2.</span> <span class="nav-text">效果</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#BadgeMargin相对外边距"><span class="nav-number">1.4.</span> <span class="nav-text">BadgeMargin相对外边距</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#案例-3"><span class="nav-number">1.4.1.</span> <span class="nav-text">案例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#效果-3"><span class="nav-number">1.4.2.</span> <span class="nav-text">效果</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#事件"><span class="nav-number">2.</span> <span class="nav-text">事件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#相关样式"><span class="nav-number">3.</span> <span class="nav-text">相关样式</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#案例-4"><span class="nav-number">3.1.</span> <span class="nav-text">案例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#效果-4"><span class="nav-number">3.2.</span> <span class="nav-text">效果</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#FAQ"><span class="nav-number">4.</span> <span class="nav-text">FAQ</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#坐标偏移问题-版本-小于等于-2-4"><span class="nav-number">4.1.</span> <span class="nav-text">坐标偏移问题[版本 小于等于 2.4]</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#问题描述"><span class="nav-number">4.1.1.</span> <span class="nav-text">问题描述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#现状"><span class="nav-number">4.1.2.</span> <span class="nav-text">现状</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解决方案"><span class="nav-number">4.1.3.</span> <span class="nav-text">解决方案</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
