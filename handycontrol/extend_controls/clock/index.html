@@ -94,17 +94,19 @@
 
 
 
-  <meta name="description" content="建设中">
+  <meta name="description" content="Clock 控件展示一个虚拟的时钟，允许用户在这个时钟上选择时间。 12345678[TemplatePart(Name = ElementButtonAm, Type = typeof(RadioButton))][TemplatePart(Name = ElementButtonPm, Type = typeof(RadioButton))][TemplatePart(Name = Eleme">
 <meta property="og:type" content="website">
-<meta property="og:title" content="建设中">
+<meta property="og:title" content="Clock 时钟">
 <meta property="og:url" content="http://yoursite.com/handycontrol/extend_controls/clock/index.html">
 <meta property="og:site_name" content="HandyOrg">
-<meta property="og:description" content="建设中">
+<meta property="og:description" content="Clock 控件展示一个虚拟的时钟，允许用户在这个时钟上选择时间。 12345678[TemplatePart(Name = ElementButtonAm, Type = typeof(RadioButton))][TemplatePart(Name = ElementButtonPm, Type = typeof(RadioButton))][TemplatePart(Name = Eleme">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-11T16:16:13.654Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/extend_controls/Clock_1.png">
+<meta property="og:updated_time" content="2020-04-04T07:30:20.394Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="建设中">
-<meta name="twitter:description" content="建设中">
+<meta name="twitter:title" content="Clock 时钟">
+<meta name="twitter:description" content="Clock 控件展示一个虚拟的时钟，允许用户在这个时钟上选择时间。 12345678[TemplatePart(Name = ElementButtonAm, Type = typeof(RadioButton))][TemplatePart(Name = ElementButtonPm, Type = typeof(RadioButton))][TemplatePart(Name = Eleme">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/extend_controls/Clock_1.png">
 
 
 
@@ -122,7 +124,7 @@
   };
 </script>
 
-  <title>建设中 | HandyOrg</title>
+  <title>Clock 时钟 | HandyOrg</title>
   
 
 
@@ -822,10 +824,6 @@
               
                 
               
-                
-              
-                
-              
             
           
             
@@ -1087,7 +1085,7 @@
   
     
   
-  <li class="menu-item menu-item-buttongroup">
+  <li class="menu-item menu-item-buttongroup-按钮组">
 
     
     
@@ -1097,36 +1095,7 @@
       
     
 
-    <a href="/handycontrol/extend_controls/buttonGroup/" rel="section">ButtonGroup</a>
-
-  </li>
-
-
-                        
-                      
-                        
-                        
-                        
-                          
-                            
-                          
-                          
-
-  
-  
-    
-  
-  <li class="menu-item menu-item-blurwindow-背景模糊窗口">
-
-    
-    
-    
-
-    
-      
-    
-
-    <a href="/handycontrol/extend_controls/blurWindow/" rel="section">BlurWindow 背景模糊窗口</a>
+    <a href="/handycontrol/extend_controls/buttonGroup/" rel="section">ButtonGroup 按钮组</a>
 
   </li>
 
@@ -2392,35 +2361,6 @@
   
     
   
-  <li class="menu-item menu-item-radiogroup-单选按钮组">
-
-    
-    
-    
-
-    
-      
-    
-
-    <a href="/handycontrol/extend_controls/radioGroup/" rel="section">RadioGroup 单选按钮组</a>
-
-  </li>
-
-
-                        
-                      
-                        
-                        
-                        
-                          
-                            
-                          
-                          
-
-  
-  
-    
-  
   <li class="menu-item menu-item-rate-评分">
 
     
@@ -3121,7 +3061,7 @@
     <div class="post-block page">
       <header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">建设中
+<h1 class="post-title" itemprop="name headline">Clock 时钟
 
 </h1>
 
@@ -3181,7 +3121,55 @@
       <div class="post-body">
         
         
-          <p>建设中</p>
+          <p>Clock 控件展示一个虚拟的时钟，允许用户在这个时钟上选择时间。</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">[<span class="meta">TemplatePart(Name = ElementButtonAm, Type = typeof(RadioButton))</span>]</span><br><span class="line">[<span class="meta">TemplatePart(Name = ElementButtonPm, Type = typeof(RadioButton))</span>]</span><br><span class="line">[<span class="meta">TemplatePart(Name = ElementCanvas, Type = typeof(Canvas))</span>]</span><br><span class="line">[<span class="meta">TemplatePart(Name = ElementBorderTitle, Type = typeof(Border))</span>]</span><br><span class="line">[<span class="meta">TemplatePart(Name = ElementBorderClock, Type = typeof(Border))</span>]</span><br><span class="line">[<span class="meta">TemplatePart(Name = ElementPanelNum, Type = typeof(CirclePanel))</span>]</span><br><span class="line">[<span class="meta">TemplatePart(Name = ElementTimeStr, Type = typeof(TextBlock))</span>]</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Clock</span> : <span class="title">ClockBase</span></span><br></pre></td></tr></table></figure>
+<h1 id="创建Clock"><a href="#创建Clock" class="headerlink" title="创建Clock"></a>创建Clock</h1><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:Clock</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> clock = <span class="keyword">new</span> Clock();</span><br></pre></td></tr></table></figure>
+<p>生成的Clock如下图所示：</p>
+<p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/extend_controls/Clock_1.png" alt="Clock"></p>
+<h1 id="选择时间"><a href="#选择时间" class="headerlink" title="选择时间"></a>选择时间</h1><p>可以通过点击左边的时钟，或者点击右边的时分秒列表选择时间。也可以在XAML钟或代码中这样设置日期。</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:Clock</span> <span class="attr">SelectedTime</span>=<span class="string">"&#123;x:Static system:DateTime.Now&#125;"</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">clock.SelectedTime = DateTime.Now;</span><br></pre></td></tr></table></figure>
+<h1 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h1><table>
+<thead>
+<tr>
+<th>属性</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SelectedTime</td>
+<td>获取或设置当前选中的时间。</td>
+</tr>
+<tr>
+<td>DisplayTime</td>
+<td>获取或设置当前的显示时间。</td>
+</tr>
+<tr>
+<td>TimeFormat</td>
+<td>获取或设置用于显示选定的时间的格式</td>
+</tr>
+<tr>
+<td>ClockRadioButtonStyle</td>
+<td>获取或设置Clock控件中RadioButton的样式</td>
+</tr>
+</tbody>
+</table>
+<h1 id="事件"><a href="#事件" class="headerlink" title="事件"></a>事件</h1><table>
+<thead>
+<tr>
+<th>事件</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DisplayTimeChanged</td>
+<td>当显示的时间改变时发生。</td>
+</tr>
+</tbody>
+</table>
 
         
       </div>
@@ -3264,8 +3252,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -3388,6 +3385,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#创建Clock"><span class="nav-number">1.</span> <span class="nav-text">创建Clock</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#选择时间"><span class="nav-number">2.</span> <span class="nav-text">选择时间</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#属性"><span class="nav-number">3.</span> <span class="nav-text">属性</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#事件"><span class="nav-number">4.</span> <span class="nav-text">事件</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       

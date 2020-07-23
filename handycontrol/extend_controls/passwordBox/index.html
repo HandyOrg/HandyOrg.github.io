@@ -94,17 +94,19 @@
 
 
 
-  <meta name="description" content="建设中">
+  <meta name="description" content="表示用于输入和处理密码的控件。 123[TemplatePart(Name = ElementPasswordBox, Type = typeof(System.Windows.Controls.PasswordBox))][TemplatePart(Name = ElementTextBox, Type = typeof(System.Windows.Controls.TextBox))]pub">
 <meta property="og:type" content="website">
-<meta property="og:title" content="建设中">
+<meta property="og:title" content="PasswordBox 密码框">
 <meta property="og:url" content="http://yoursite.com/handycontrol/extend_controls/passwordBox/index.html">
 <meta property="og:site_name" content="HandyOrg">
-<meta property="og:description" content="建设中">
+<meta property="og:description" content="表示用于输入和处理密码的控件。 123[TemplatePart(Name = ElementPasswordBox, Type = typeof(System.Windows.Controls.PasswordBox))][TemplatePart(Name = ElementTextBox, Type = typeof(System.Windows.Controls.TextBox))]pub">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-11T16:16:13.662Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/extend_controls/PasswordBox_2.gif">
+<meta property="og:updated_time" content="2020-04-04T07:30:20.395Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="建设中">
-<meta name="twitter:description" content="建设中">
+<meta name="twitter:title" content="PasswordBox 密码框">
+<meta name="twitter:description" content="表示用于输入和处理密码的控件。 123[TemplatePart(Name = ElementPasswordBox, Type = typeof(System.Windows.Controls.PasswordBox))][TemplatePart(Name = ElementTextBox, Type = typeof(System.Windows.Controls.TextBox))]pub">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/extend_controls/PasswordBox_2.gif">
 
 
 
@@ -122,7 +124,7 @@
   };
 </script>
 
-  <title>建设中 | HandyOrg</title>
+  <title>PasswordBox 密码框 | HandyOrg</title>
   
 
 
@@ -822,10 +824,6 @@
               
                 
               
-                
-              
-                
-              
             
           
             
@@ -1087,7 +1085,7 @@
   
     
   
-  <li class="menu-item menu-item-buttongroup">
+  <li class="menu-item menu-item-buttongroup-按钮组">
 
     
     
@@ -1097,36 +1095,7 @@
       
     
 
-    <a href="/handycontrol/extend_controls/buttonGroup/" rel="section">ButtonGroup</a>
-
-  </li>
-
-
-                        
-                      
-                        
-                        
-                        
-                          
-                            
-                          
-                          
-
-  
-  
-    
-  
-  <li class="menu-item menu-item-blurwindow-背景模糊窗口">
-
-    
-    
-    
-
-    
-      
-    
-
-    <a href="/handycontrol/extend_controls/blurWindow/" rel="section">BlurWindow 背景模糊窗口</a>
+    <a href="/handycontrol/extend_controls/buttonGroup/" rel="section">ButtonGroup 按钮组</a>
 
   </li>
 
@@ -2392,35 +2361,6 @@
   
     
   
-  <li class="menu-item menu-item-radiogroup-单选按钮组">
-
-    
-    
-    
-
-    
-      
-    
-
-    <a href="/handycontrol/extend_controls/radioGroup/" rel="section">RadioGroup 单选按钮组</a>
-
-  </li>
-
-
-                        
-                      
-                        
-                        
-                        
-                          
-                            
-                          
-                          
-
-  
-  
-    
-  
   <li class="menu-item menu-item-rate-评分">
 
     
@@ -3121,7 +3061,7 @@
     <div class="post-block page">
       <header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">建设中
+<h1 class="post-title" itemprop="name headline">PasswordBox 密码框
 
 </h1>
 
@@ -3181,7 +3121,94 @@
       <div class="post-body">
         
         
-          <p>建设中</p>
+          <p>表示用于输入和处理密码的控件。</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[<span class="meta">TemplatePart(Name = ElementPasswordBox, Type = typeof(System.Windows.Controls.PasswordBox))</span>]</span><br><span class="line">[<span class="meta">TemplatePart(Name = ElementTextBox, Type = typeof(System.Windows.Controls.TextBox))</span>]</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">PasswordBox</span> : <span class="title">Control</span>, <span class="title">IDataInput</span></span><br></pre></td></tr></table></figure>
+<h1 id="创建PasswordBox"><a href="#创建PasswordBox" class="headerlink" title="创建PasswordBox"></a>创建PasswordBox</h1><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:PasswordBox</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> passwordBox = <span class="keyword">new</span> PasswordBox();</span><br></pre></td></tr></table></figure>
+<h1 id="输入密码"><a href="#输入密码" class="headerlink" title="输入密码"></a>输入密码</h1><p>可以通过文本框输入密码，也可以在XAML钟或代码中这样设置日期。</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:PasswordBox</span> <span class="attr">Password</span>=<span class="string">"123456"</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">passwordBox.Password = <span class="string">"123456"</span>;</span><br></pre></td></tr></table></figure>
+<h1 id="显示密码"><a href="#显示密码" class="headerlink" title="显示密码"></a>显示密码</h1><p>PasswordBox控件可以主动显示已输入的密码。将<code>ShowEyeButton</code>设置为<code>true</code>，PasswordBox将显示一个“眼睛”的按钮，点击这个按钮即可显示已输入的密码。</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:PasswordBox</span> <span class="attr">ShowClearButton</span>=<span class="string">"True"</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/extend_controls/PasswordBox_2.gif" alt="PasswordBox"></p>
+<h1 id="设置标题和占位符文本"><a href="#设置标题和占位符文本" class="headerlink" title="设置标题和占位符文本"></a>设置标题和占位符文本</h1><p>你可以将 Header（标题）和 Placeholder（占位符）添加到PasswordBox，以向用户指示其用途。</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:PasswordBox</span> <span class="attr">hc:InfoElement.Placeholder</span>=<span class="string">"&#123;x:Static langs:Lang.PlsEnterContent&#125;"</span></span></span><br><span class="line"><span class="tag">               <span class="attr">hc:InfoElement.Title</span>=<span class="string">"&#123;x:Static langs:Lang.TitleDemoStr2&#125;"</span></span></span><br></pre></td></tr></table></figure>
+<h1 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h1><table>
+<thead>
+<tr>
+<th>属性</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Password</td>
+<td>获取或设置 PasswordBox 当前保留的密码。</td>
+</tr>
+<tr>
+<td>PasswordChar</td>
+<td>获取或设置 PasswordBox 的掩码字符。</td>
+</tr>
+<tr>
+<td>ShowEyeButton</td>
+<td>获取或设置是否显示一个“眼睛”的按钮，点击可以显示密码。</td>
+</tr>
+<tr>
+<td>ShowPassword</td>
+<td>获取或设置是否显示密码。</td>
+</tr>
+<tr>
+<td>Text</td>
+<td>获取由 <strong>TimePicker</strong> 显示的文本，或设置选定的时间</td>
+</tr>
+<tr>
+<td>VerifyFunc</td>
+<td>获取或设置数据验证委托</td>
+</tr>
+<tr>
+<td>IsError</td>
+<td>获取或设置数据是否错误</td>
+</tr>
+<tr>
+<td>ErrorStr</td>
+<td>获取或设置错误提示</td>
+</tr>
+<tr>
+<td>TextType</td>
+<td>获取或设置文本类型</td>
+</tr>
+<tr>
+<td>ShowClearButton</td>
+<td>获取或设置是否显示清除按钮</td>
+</tr>
+</tbody>
+</table>
+<h1 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h1><table>
+<thead>
+<tr>
+<th>方法</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Clear()</td>
+<td>清除 Password 属性的值。</td>
+</tr>
+<tr>
+<td>Paste()</td>
+<td>用剪贴板中的内容替换 PasswordBox 中的当前选定内容。</td>
+</tr>
+<tr>
+<td>SelectAll()</td>
+<td>选择 PasswordBox 中的全部内容。</td>
+</tr>
+<tr>
+<td>VerifyData()</td>
+<td>验证数据。</td>
+</tr>
+</tbody>
+</table>
 
         
       </div>
@@ -3264,8 +3291,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -3388,6 +3424,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#创建PasswordBox"><span class="nav-number">1.</span> <span class="nav-text">创建PasswordBox</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#输入密码"><span class="nav-number">2.</span> <span class="nav-text">输入密码</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#显示密码"><span class="nav-number">3.</span> <span class="nav-text">显示密码</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#设置标题和占位符文本"><span class="nav-number">4.</span> <span class="nav-text">设置标题和占位符文本</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#属性"><span class="nav-number">5.</span> <span class="nav-text">属性</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#方法"><span class="nav-number">6.</span> <span class="nav-text">方法</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
