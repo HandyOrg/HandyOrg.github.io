@@ -94,17 +94,19 @@
 
 
 
-  <meta name="description" content="建设中">
+  <meta name="description" content="仿制Chrome的颜色拾取器，相关博文：《WPF 控件库——仿制Chrome的ColorPicker》 123456789[TemplatePart(Name = ElementBorderColor, Type = typeof(Border))][TemplatePart(Name = ElementBorderPicker, Type = typeof(Border))][TemplateP">
 <meta property="og:type" content="website">
-<meta property="og:title" content="建设中">
+<meta property="og:title" content="ColorPicker 颜色拾取器">
 <meta property="og:url" content="http://yoursite.com/handycontrol/extend_controls/colorPicker/index.html">
 <meta property="og:site_name" content="HandyOrg">
-<meta property="og:description" content="建设中">
+<meta property="og:description" content="仿制Chrome的颜色拾取器，相关博文：《WPF 控件库——仿制Chrome的ColorPicker》 123456789[TemplatePart(Name = ElementBorderColor, Type = typeof(Border))][TemplatePart(Name = ElementBorderPicker, Type = typeof(Border))][TemplateP">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-11T16:16:13.655Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/ColorPicker.gif">
+<meta property="og:updated_time" content="2020-07-25T09:23:08.372Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="建设中">
-<meta name="twitter:description" content="建设中">
+<meta name="twitter:title" content="ColorPicker 颜色拾取器">
+<meta name="twitter:description" content="仿制Chrome的颜色拾取器，相关博文：《WPF 控件库——仿制Chrome的ColorPicker》 123456789[TemplatePart(Name = ElementBorderColor, Type = typeof(Border))][TemplatePart(Name = ElementBorderPicker, Type = typeof(Border))][TemplateP">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/ColorPicker.gif">
 
 
 
@@ -122,7 +124,7 @@
   };
 </script>
 
-  <title>建设中 | HandyOrg</title>
+  <title>ColorPicker 颜色拾取器 | HandyOrg</title>
   
 
 
@@ -3059,7 +3061,7 @@
     <div class="post-block page">
       <header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">建设中
+<h1 class="post-title" itemprop="name headline">ColorPicker 颜色拾取器
 
 </h1>
 
@@ -3119,7 +3121,49 @@
       <div class="post-body">
         
         
-          <p>建设中</p>
+          <p>仿制Chrome的颜色拾取器，相关博文：<a href="https://www.cnblogs.com/nabian/p/9267646.html" target="_blank" rel="noopener">《WPF 控件库——仿制Chrome的ColorPicker》</a></p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">[<span class="meta">TemplatePart(Name = ElementBorderColor, Type = typeof(Border))</span>]</span><br><span class="line">[<span class="meta">TemplatePart(Name = ElementBorderPicker, Type = typeof(Border))</span>]</span><br><span class="line">[<span class="meta">TemplatePart(Name = ElementBorderDrag, Type = typeof(Border))</span>]</span><br><span class="line">[<span class="meta">TemplatePart(Name = ElementPanelColor, Type = typeof(Panel))</span>]</span><br><span class="line">[<span class="meta">TemplatePart(Name = ElementSliderColor, Type = typeof(Panel))</span>]</span><br><span class="line">[<span class="meta">TemplatePart(Name = ElementSliderOpacity, Type = typeof(Panel))</span>]</span><br><span class="line">[<span class="meta">TemplatePart(Name = ElementPanelRgb, Type = typeof(Panel))</span>]</span><br><span class="line">[<span class="meta">TemplatePart(Name = ElementButtonDropper, Type = typeof(ToggleButton))</span>]</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">ColorPicker</span> : <span class="title">Control</span>, <span class="title">ISingleOpen</span></span><br></pre></td></tr></table></figure>
+<h1 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h1><table>
+<thead>
+<tr>
+<th>属性</th>
+<th>描述</th>
+<th>默认值</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SelectedBrush</td>
+<td>选中色</td>
+<td>Brushes.White</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="事件"><a href="#事件" class="headerlink" title="事件"></a>事件</h1><table>
+<thead>
+<tr>
+<th>事件</th>
+<th>描述</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SelectedColorChanged</td>
+<td>颜色改变事件</td>
+<td></td>
+</tr>
+<tr>
+<td>Canceled</td>
+<td>取消事件</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h1><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:ColorPicker</span> <span class="attr">Name</span>=<span class="string">"ColorPicker"</span> <span class="attr">Margin</span>=<span class="string">"32"</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/ColorPicker.gif" alt="ColorPicker"></p>
 
         
       </div>
@@ -3202,8 +3246,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -3326,6 +3379,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#属性"><span class="nav-number">1.</span> <span class="nav-text">属性</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#事件"><span class="nav-number">2.</span> <span class="nav-text">事件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#案例"><span class="nav-number">3.</span> <span class="nav-text">案例</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       

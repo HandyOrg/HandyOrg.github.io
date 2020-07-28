@@ -94,17 +94,19 @@
 
 
 
-  <meta name="description" content="建设中">
+  <meta name="description" content="在宽高存在一定限制的区域可以使用圆形进度条节省空间。 12[TemplatePart(Name = IndicatorTemplateName, Type = typeof(Arc))]public class CircleProgressBar : RangeBase 属性   属性 描述 默认值 备注     ArcThickness 圆形粗细 4 该默认值由主题提供   ShowText 是">
 <meta property="og:type" content="website">
-<meta property="og:title" content="建设中">
+<meta property="og:title" content="CircleProgressBar 圆形进度条">
 <meta property="og:url" content="http://yoursite.com/handycontrol/extend_controls/circleProgressBar/index.html">
 <meta property="og:site_name" content="HandyOrg">
-<meta property="og:description" content="建设中">
+<meta property="og:description" content="在宽高存在一定限制的区域可以使用圆形进度条节省空间。 12[TemplatePart(Name = IndicatorTemplateName, Type = typeof(Arc))]public class CircleProgressBar : RangeBase 属性   属性 描述 默认值 备注     ArcThickness 圆形粗细 4 该默认值由主题提供   ShowText 是">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-11T16:16:13.654Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/CircleProgressBar.png">
+<meta property="og:updated_time" content="2020-07-25T08:07:44.151Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="建设中">
-<meta name="twitter:description" content="建设中">
+<meta name="twitter:title" content="CircleProgressBar 圆形进度条">
+<meta name="twitter:description" content="在宽高存在一定限制的区域可以使用圆形进度条节省空间。 12[TemplatePart(Name = IndicatorTemplateName, Type = typeof(Arc))]public class CircleProgressBar : RangeBase 属性   属性 描述 默认值 备注     ArcThickness 圆形粗细 4 该默认值由主题提供   ShowText 是">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/CircleProgressBar.png">
 
 
 
@@ -122,7 +124,7 @@
   };
 </script>
 
-  <title>建设中 | HandyOrg</title>
+  <title>CircleProgressBar 圆形进度条 | HandyOrg</title>
   
 
 
@@ -3059,7 +3061,7 @@
     <div class="post-block page">
       <header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">建设中
+<h1 class="post-title" itemprop="name headline">CircleProgressBar 圆形进度条
 
 </h1>
 
@@ -3119,7 +3121,70 @@
       <div class="post-body">
         
         
-          <p>建设中</p>
+          <p>在宽高存在一定限制的区域可以使用圆形进度条节省空间。</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[<span class="meta">TemplatePart(Name = IndicatorTemplateName, Type = typeof(Arc))</span>]</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">CircleProgressBar</span> : <span class="title">RangeBase</span></span><br></pre></td></tr></table></figure>
+<h1 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h1><table>
+<thead>
+<tr>
+<th>属性</th>
+<th>描述</th>
+<th>默认值</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ArcThickness</td>
+<td>圆形粗细</td>
+<td>4</td>
+<td>该默认值由主题提供</td>
+</tr>
+<tr>
+<td>ShowText</td>
+<td>是否显示文本</td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>Text</td>
+<td>文本内容</td>
+<td>&lt;空&gt;</td>
+<td>进度文本</td>
+</tr>
+</tbody>
+</table>
+<h1 id="样式"><a href="#样式" class="headerlink" title="样式"></a>样式</h1><table>
+<thead>
+<tr>
+<th>样式</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ProgressBarCircleBaseStyle</td>
+<td>默认样式</td>
+</tr>
+<tr>
+<td>ProgressBarSuccessCircle</td>
+<td>成功</td>
+</tr>
+<tr>
+<td>ProgressBarInfoCircle</td>
+<td>信息</td>
+</tr>
+<tr>
+<td>ProgressBarWarningCircle</td>
+<td>警告</td>
+</tr>
+<tr>
+<td>ProgressBarDangerCircle</td>
+<td>危险</td>
+</tr>
+</tbody>
+</table>
+<h1 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h1><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">Orientation</span>=<span class="string">"Horizontal"</span> <span class="attr">Margin</span>=<span class="string">"0,32,0,0"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:CircleProgressBar</span> <span class="attr">Value</span>=<span class="string">"&#123;Binding Value,ElementName=SliderDemo&#125;"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:CircleProgressBar</span> <span class="attr">Value</span>=<span class="string">"&#123;Binding Value,ElementName=SliderDemo&#125;"</span> <span class="attr">FontSize</span>=<span class="string">"30"</span> <span class="attr">Margin</span>=<span class="string">"16,0,0,0"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:CircleProgressBar</span> <span class="attr">Value</span>=<span class="string">"&#123;Binding Value,ElementName=SliderDemo&#125;"</span> <span class="attr">Margin</span>=<span class="string">"16,0,0,0"</span> <span class="attr">ShowText</span>=<span class="string">"False"</span> <span class="attr">Width</span>=<span class="string">"20"</span> <span class="attr">Height</span>=<span class="string">"20"</span> <span class="attr">ArcThickness</span>=<span class="string">"2"</span> <span class="attr">Style</span>=<span class="string">"&#123;StaticResource ProgressBarSuccessCircle&#125;"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:CircleProgressBar</span> <span class="attr">Value</span>=<span class="string">"&#123;Binding Value,ElementName=SliderDemo&#125;"</span> <span class="attr">Margin</span>=<span class="string">"16,0,0,0"</span> <span class="attr">ShowText</span>=<span class="string">"False"</span> <span class="attr">Width</span>=<span class="string">"30"</span> <span class="attr">Height</span>=<span class="string">"30"</span> <span class="attr">ArcThickness</span>=<span class="string">"6"</span> <span class="attr">Style</span>=<span class="string">"&#123;StaticResource ProgressBarInfoCircle&#125;"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:CircleProgressBar</span> <span class="attr">Value</span>=<span class="string">"&#123;Binding Value,ElementName=SliderDemo&#125;"</span> <span class="attr">Margin</span>=<span class="string">"16,0,0,0"</span> <span class="attr">ShowText</span>=<span class="string">"False"</span> <span class="attr">Width</span>=<span class="string">"40"</span> <span class="attr">Height</span>=<span class="string">"40"</span> <span class="attr">ArcThickness</span>=<span class="string">"10"</span> <span class="attr">Style</span>=<span class="string">"&#123;StaticResource ProgressBarWarningCircle&#125;"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:CircleProgressBar</span> <span class="attr">Value</span>=<span class="string">"&#123;Binding Value,ElementName=SliderDemo&#125;"</span> <span class="attr">Margin</span>=<span class="string">"16,0,0,0"</span> <span class="attr">Width</span>=<span class="string">"50"</span> <span class="attr">Height</span>=<span class="string">"50"</span> <span class="attr">Style</span>=<span class="string">"&#123;StaticResource ProgressBarDangerCircle&#125;"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/CircleProgressBar.png" alt="CircleProgressBar"></p>
 
         
       </div>
@@ -3202,8 +3267,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -3326,6 +3400,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#属性"><span class="nav-number">1.</span> <span class="nav-text">属性</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#样式"><span class="nav-number">2.</span> <span class="nav-text">样式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#案例"><span class="nav-number">3.</span> <span class="nav-text">案例</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
