@@ -94,17 +94,19 @@
 
 
 
-  <meta name="description" content="建设中">
+  <meta name="description" content="在保留当前页面状态的情况下，告知用户并承载相关操作。 1public class Dialog : ContentControl 属性   属性 描述 默认值 备注     IsClosed 是否关闭      附加属性   名称 说明     Token 用于设置消息标记    方法   名称 说明     Show(object, string) 显示承载内容   Show(string) 显">
 <meta property="og:type" content="website">
-<meta property="og:title" content="建设中">
+<meta property="og:title" content="Dialog 对话框">
 <meta property="og:url" content="http://yoursite.com/handycontrol/extend_controls/dialog/index.html">
 <meta property="og:site_name" content="HandyOrg">
-<meta property="og:description" content="建设中">
+<meta property="og:description" content="在保留当前页面状态的情况下，告知用户并承载相关操作。 1public class Dialog : ContentControl 属性   属性 描述 默认值 备注     IsClosed 是否关闭      附加属性   名称 说明     Token 用于设置消息标记    方法   名称 说明     Show(object, string) 显示承载内容   Show(string) 显">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-11T16:16:13.657Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Dialog.png">
+<meta property="og:updated_time" content="2020-08-03T14:19:34.527Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="建设中">
-<meta name="twitter:description" content="建设中">
+<meta name="twitter:title" content="Dialog 对话框">
+<meta name="twitter:description" content="在保留当前页面状态的情况下，告知用户并承载相关操作。 1public class Dialog : ContentControl 属性   属性 描述 默认值 备注     IsClosed 是否关闭      附加属性   名称 说明     Token 用于设置消息标记    方法   名称 说明     Show(object, string) 显示承载内容   Show(string) 显">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Dialog.png">
 
 
 
@@ -122,7 +124,7 @@
   };
 </script>
 
-  <title>建设中 | HandyOrg</title>
+  <title>Dialog 对话框 | HandyOrg</title>
   
 
 
@@ -3059,7 +3061,7 @@
     <div class="post-block page">
       <header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">建设中
+<h1 class="post-title" itemprop="name headline">Dialog 对话框
 
 </h1>
 
@@ -3119,8 +3121,87 @@
       <div class="post-body">
         
         
-          <p>建设中</p>
-
+          <p>在保留当前页面状态的情况下，告知用户并承载相关操作。</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Dialog</span> : <span class="title">ContentControl</span></span><br></pre></td></tr></table></figure>
+<h1 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h1><table>
+<thead>
+<tr>
+<th>属性</th>
+<th>描述</th>
+<th>默认值</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IsClosed</td>
+<td>是否关闭</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="附加属性"><a href="#附加属性" class="headerlink" title="附加属性"></a>附加属性</h1><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Token</td>
+<td>用于设置消息标记</td>
+</tr>
+</tbody>
+</table>
+<h1 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h1><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Show(object, string)</td>
+<td>显示承载内容</td>
+</tr>
+<tr>
+<td>Show<t>(string)</t></td>
+<td>显示承载内容（自动实例化承载内容）</td>
+</tr>
+<tr>
+<td>Close( )</td>
+<td>关闭</td>
+</tr>
+<tr>
+<td>Register(string, FrameworkElement)</td>
+<td>为指定的元素注册消息标记</td>
+</tr>
+<tr>
+<td>Unregister(string, Panel)</td>
+<td>为指定的元素取消消息标记的注册</td>
+</tr>
+<tr>
+<td>Unregister(Panel)</td>
+<td>如果该元素注册了消息标记则取消注册</td>
+</tr>
+<tr>
+<td>Unregister(string)</td>
+<td>如果该消息标记有对应的元素则取消注册</td>
+</tr>
+</tbody>
+</table>
+<h1 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h1><h2 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Border</span> <span class="attr">x:Class</span>=<span class="string">"HandyControlDemo.UserControl.TextDialog"</span></span></span><br><span class="line"><span class="tag">        <span class="attr">xmlns</span>=<span class="string">"http://schemas.microsoft.com/winfx/2006/xaml/presentation"</span></span></span><br><span class="line"><span class="tag">        <span class="attr">xmlns:x</span>=<span class="string">"http://schemas.microsoft.com/winfx/2006/xaml"</span></span></span><br><span class="line"><span class="tag">        <span class="attr">xmlns:langs</span>=<span class="string">"clr-namespace:HandyControlDemo.Properties.Langs"</span></span></span><br><span class="line"><span class="tag">        <span class="attr">xmlns:ex</span>=<span class="string">"clr-namespace:HandyControlDemo.Tools.Extension"</span></span></span><br><span class="line"><span class="tag">        <span class="attr">xmlns:hc</span>=<span class="string">"https://handyorg.github.io/handycontrol"</span></span></span><br><span class="line"><span class="tag">        <span class="attr">CornerRadius</span>=<span class="string">"10"</span></span></span><br><span class="line"><span class="tag">        <span class="attr">Width</span>=<span class="string">"400"</span></span></span><br><span class="line"><span class="tag">        <span class="attr">Height</span>=<span class="string">"247"</span></span></span><br><span class="line"><span class="tag">        <span class="attr">Background</span>=<span class="string">"&#123;DynamicResource RegionBrush&#125;"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:SimplePanel</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">Style</span>=<span class="string">"&#123;StaticResource TextBlockLargeBold&#125;"</span> <span class="attr">Text</span>=<span class="string">"&#123;ex:Lang Key=&#123;x:Static langs:LangKeys.PleaseWait&#125;&#125;"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Width</span>=<span class="string">"22"</span> <span class="attr">Height</span>=<span class="string">"22"</span> <span class="attr">Command</span>=<span class="string">"hc:ControlCommands.Close"</span> <span class="attr">Style</span>=<span class="string">"&#123;StaticResource ButtonIcon&#125;"</span> <span class="attr">Foreground</span>=<span class="string">"&#123;DynamicResource PrimaryBrush&#125;"</span> <span class="attr">hc:IconElement.Geometry</span>=<span class="string">"&#123;StaticResource ErrorGeometry&#125;"</span> <span class="attr">Padding</span>=<span class="string">"0"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Right"</span> <span class="attr">VerticalAlignment</span>=<span class="string">"Top"</span> <span class="attr">Margin</span>=<span class="string">"0,4,4,0"</span>/&gt;</span>    </span><br><span class="line">    <span class="tag">&lt;/<span class="name">hc:SimplePanel</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">Border</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">namespace</span> <span class="title">HandyControlDemo.UserControl</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">partial</span> <span class="keyword">class</span> <span class="title">TextDialog</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="title">TextDialog</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>        &#123;</span><br><span class="line">            InitializeComponent();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Dialog.Show(<span class="keyword">new</span> TextDialog());</span><br></pre></td></tr></table></figure>
+<p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Dialog.png" alt="Dialog"></p>
+<h2 id="异步等待结果返回"><a href="#异步等待结果返回" class="headerlink" title="异步等待结果返回"></a>异步等待结果返回</h2><p>通过<code>Initialize</code>扩展方法初始化vm后，可在此基础上使用<code>GetResultAsync</code>方法实现异步等待：</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Dialog.Show&lt;InteractiveDialog&gt;()</span><br><span class="line">    .Initialize&lt;InteractiveDialogViewModel&gt;(vm =&gt; vm.Message = DialogResult)</span><br><span class="line">    .GetResultAsync&lt;<span class="keyword">string</span>&gt;()</span><br><span class="line">    .ContinueWith(str =&gt; DialogResult = str.Result);</span><br></pre></td></tr></table></figure>
+<h2 id="更简单的异步方式"><a href="#更简单的异步方式" class="headerlink" title="更简单的异步方式"></a>更简单的异步方式</h2><figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> d = Dialog.Show&lt;ProgressDialog&gt;();</span><br><span class="line"><span class="keyword">await</span> Task.Delay(<span class="number">5</span> * <span class="number">1000</span>);</span><br><span class="line">d.Close();</span><br></pre></td></tr></table></figure>
+<h1 id="弹框行为"><a href="#弹框行为" class="headerlink" title="弹框行为"></a>弹框行为</h1><p>如果在调用<code>Show</code>方法时，没有给定<code>token</code>参数，则默认会在当前激活的窗口弹框。如果<code>token</code>给定了值，内部会判断目标元素的类型，如果类型是窗口，则会在该窗口下的装饰层中弹出，否则会寻找目标元素的子元素，直到找到类型为<code>DialogContainer</code>的子元素，最后会在该子元素内部弹出。</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;UserControl hc:Dialog.Token=<span class="string">"DialogContainer"</span>&gt;</span><br><span class="line">    &lt;hc:DialogContainer&gt;</span><br><span class="line">        <span class="comment">// 内部控件</span></span><br><span class="line">    &lt;/hc:DialogContainer&gt;</span><br><span class="line">&lt;/UserControl&gt;</span><br></pre></td></tr></table></figure>
         
       </div>
       
@@ -3202,8 +3283,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -3326,6 +3416,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#属性"><span class="nav-number">1.</span> <span class="nav-text">属性</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#附加属性"><span class="nav-number">2.</span> <span class="nav-text">附加属性</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#方法"><span class="nav-number">3.</span> <span class="nav-text">方法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#案例"><span class="nav-number">4.</span> <span class="nav-text">案例</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#基本用法"><span class="nav-number">4.1.</span> <span class="nav-text">基本用法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#异步等待结果返回"><span class="nav-number">4.2.</span> <span class="nav-text">异步等待结果返回</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#更简单的异步方式"><span class="nav-number">4.3.</span> <span class="nav-text">更简单的异步方式</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#弹框行为"><span class="nav-number">5.</span> <span class="nav-text">弹框行为</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       

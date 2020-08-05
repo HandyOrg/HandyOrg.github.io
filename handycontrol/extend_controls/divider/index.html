@@ -94,17 +94,19 @@
 
 
 
-  <meta name="description" content="everything can be handy">
+  <meta name="description" content="区隔内容的分割线。 1public class Divider : Control 属性   属性 描述 默认值 备注     Content 内容     Orientation 方向     ContentTemplate 内容模板     ContentStringFormat 内容字符串格式     ContentTemplateSelector 内容模板     LineStroke 分">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Divider">
+<meta property="og:title" content="Divider 分割线">
 <meta property="og:url" content="http://yoursite.com/handycontrol/extend_controls/divider/index.html">
 <meta property="og:site_name" content="HandyOrg">
-<meta property="og:description" content="everything can be handy">
+<meta property="og:description" content="区隔内容的分割线。 1public class Divider : Control 属性   属性 描述 默认值 备注     Content 内容     Orientation 方向     ContentTemplate 内容模板     ContentStringFormat 内容字符串格式     ContentTemplateSelector 内容模板     LineStroke 分">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-02-18T07:01:18.808Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Divider.png">
+<meta property="og:updated_time" content="2020-08-05T13:44:25.651Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Divider">
-<meta name="twitter:description" content="everything can be handy">
+<meta name="twitter:title" content="Divider 分割线">
+<meta name="twitter:description" content="区隔内容的分割线。 1public class Divider : Control 属性   属性 描述 默认值 备注     Content 内容     Orientation 方向     ContentTemplate 内容模板     ContentStringFormat 内容字符串格式     ContentTemplateSelector 内容模板     LineStroke 分">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Divider.png">
 
 
 
@@ -122,7 +124,7 @@
   };
 </script>
 
-  <title>Divider | HandyOrg</title>
+  <title>Divider 分割线 | HandyOrg</title>
   
 
 
@@ -3059,7 +3061,7 @@
     <div class="post-block page">
       <header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">Divider
+<h1 class="post-title" itemprop="name headline">Divider 分割线
 
 </h1>
 
@@ -3119,7 +3121,71 @@
       <div class="post-body">
         
         
-          
+          <p>区隔内容的分割线。</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Divider</span> : <span class="title">Control</span></span><br></pre></td></tr></table></figure>
+<h1 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h1><table>
+<thead>
+<tr>
+<th>属性</th>
+<th>描述</th>
+<th>默认值</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Content</td>
+<td>内容</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Orientation</td>
+<td>方向</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>ContentTemplate</td>
+<td>内容模板</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>ContentStringFormat</td>
+<td>内容字符串格式</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>ContentTemplateSelector</td>
+<td>内容模板</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>LineStroke</td>
+<td>分割线颜色</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>LineStrokeThickness</td>
+<td>分割线粗细</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>LineStrokeDashArray</td>
+<td>分割线间隙</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h1><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">WrapPanel</span> <span class="attr">Margin</span>=<span class="string">"16"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">Margin</span>=<span class="string">"16"</span> <span class="attr">Width</span>=<span class="string">"300"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:Divider</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:Divider</span> <span class="attr">Content</span>=<span class="string">"&#123;ex:Lang Key=&#123;x:Static langs:LangKeys.Title&#125;&#125;"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:Divider</span> <span class="attr">Content</span>=<span class="string">"&#123;ex:Lang Key=&#123;x:Static langs:LangKeys.Title&#125;&#125;"</span> <span class="attr">Padding</span>=<span class="string">"10,0"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:Divider</span> <span class="attr">LineStrokeThickness</span>=<span class="string">"2"</span> <span class="attr">LineStroke</span>=<span class="string">"&#123;DynamicResource DarkPrimaryBrush&#125;"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:Divider</span> <span class="attr">LineStrokeDashArray</span>=<span class="string">"2,2"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">Margin</span>=<span class="string">"16"</span> <span class="attr">Width</span>=<span class="string">"300"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:Divider</span> <span class="attr">Content</span>=<span class="string">"&#123;ex:Lang Key=&#123;x:Static langs:LangKeys.Title&#125;&#125;"</span> <span class="attr">HorizontalContentAlignment</span>=<span class="string">"Left"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:Divider</span> <span class="attr">Content</span>=<span class="string">"&#123;ex:Lang Key=&#123;x:Static langs:LangKeys.Title&#125;&#125;"</span> <span class="attr">Padding</span>=<span class="string">"10,0"</span>  <span class="attr">HorizontalContentAlignment</span>=<span class="string">"Right"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">Orientation</span>=<span class="string">"Horizontal"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">"&#123;ex:Lang Key=&#123;x:Static langs:LangKeys.Button&#125;&#125;"</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">hc:Divider</span> <span class="attr">Orientation</span>=<span class="string">"Vertical"</span> <span class="attr">MaxHeight</span>=<span class="string">"16"</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">"&#123;ex:Lang Key=&#123;x:Static langs:LangKeys.Button&#125;&#125;"</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">hc:Divider</span> <span class="attr">Orientation</span>=<span class="string">"Vertical"</span> <span class="attr">MaxHeight</span>=<span class="string">"16"</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">"&#123;ex:Lang Key=&#123;x:Static langs:LangKeys.Button&#125;&#125;"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">Orientation</span>=<span class="string">"Horizontal"</span> <span class="attr">Margin</span>=<span class="string">"0,16,0,0"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">"&#123;ex:Lang Key=&#123;x:Static langs:LangKeys.Button&#125;&#125;"</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">hc:Divider</span> <span class="attr">LineStrokeThickness</span>=<span class="string">"2"</span> <span class="attr">Orientation</span>=<span class="string">"Vertical"</span> <span class="attr">MaxHeight</span>=<span class="string">"16"</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">"&#123;ex:Lang Key=&#123;x:Static langs:LangKeys.Button&#125;&#125;"</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">hc:Divider</span> <span class="attr">LineStrokeThickness</span>=<span class="string">"2"</span> <span class="attr">Orientation</span>=<span class="string">"Vertical"</span> <span class="attr">MaxHeight</span>=<span class="string">"16"</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">"&#123;ex:Lang Key=&#123;x:Static langs:LangKeys.Button&#125;&#125;"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">Orientation</span>=<span class="string">"Horizontal"</span> <span class="attr">Margin</span>=<span class="string">"0,16,0,0"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">"&#123;ex:Lang Key=&#123;x:Static langs:LangKeys.Button&#125;&#125;"</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">hc:Divider</span> <span class="attr">LineStrokeThickness</span>=<span class="string">"2"</span> <span class="attr">LineStroke</span>=<span class="string">"&#123;DynamicResource DarkPrimaryBrush&#125;"</span> <span class="attr">Orientation</span>=<span class="string">"Vertical"</span> <span class="attr">MaxHeight</span>=<span class="string">"16"</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">"&#123;ex:Lang Key=&#123;x:Static langs:LangKeys.Button&#125;&#125;"</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">hc:Divider</span> <span class="attr">LineStrokeThickness</span>=<span class="string">"2"</span> <span class="attr">LineStroke</span>=<span class="string">"&#123;DynamicResource DarkPrimaryBrush&#125;"</span> <span class="attr">Orientation</span>=<span class="string">"Vertical"</span> <span class="attr">MaxHeight</span>=<span class="string">"16"</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">"&#123;ex:Lang Key=&#123;x:Static langs:LangKeys.Button&#125;&#125;"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">WrapPanel</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Divider.png" alt="Divider"></p>
+
         
       </div>
       
@@ -3201,8 +3267,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -3325,6 +3400,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#属性"><span class="nav-number">1.</span> <span class="nav-text">属性</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#案例"><span class="nav-number">2.</span> <span class="nav-text">案例</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       

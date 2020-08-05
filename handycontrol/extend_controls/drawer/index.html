@@ -94,17 +94,19 @@
 
 
 
-  <meta name="description" content="everything can be handy">
+  <meta name="description" content="当 Dialog 组件不能满足我们的需求时（例如展示一些文档），可以使用 Drawer. 12[ContentProperty(&quot;Content&quot;)]public class Drawer : FrameworkElement 属性   属性 描述 默认值 备注     IsOpen 是否关闭     MaskCanClose 点击遮罩层是否可以关闭 Drawer true    ShowMask">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Drawer">
+<meta property="og:title" content="Drawer 抽屉">
 <meta property="og:url" content="http://yoursite.com/handycontrol/extend_controls/drawer/index.html">
 <meta property="og:site_name" content="HandyOrg">
-<meta property="og:description" content="everything can be handy">
+<meta property="og:description" content="当 Dialog 组件不能满足我们的需求时（例如展示一些文档），可以使用 Drawer. 12[ContentProperty(&quot;Content&quot;)]public class Drawer : FrameworkElement 属性   属性 描述 默认值 备注     IsOpen 是否关闭     MaskCanClose 点击遮罩层是否可以关闭 Drawer true    ShowMask">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-02-18T07:01:18.808Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Drawer.gif">
+<meta property="og:updated_time" content="2020-08-05T14:05:40.595Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Drawer">
-<meta name="twitter:description" content="everything can be handy">
+<meta name="twitter:title" content="Drawer 抽屉">
+<meta name="twitter:description" content="当 Dialog 组件不能满足我们的需求时（例如展示一些文档），可以使用 Drawer. 12[ContentProperty(&quot;Content&quot;)]public class Drawer : FrameworkElement 属性   属性 描述 默认值 备注     IsOpen 是否关闭     MaskCanClose 点击遮罩层是否可以关闭 Drawer true    ShowMask">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Drawer.gif">
 
 
 
@@ -122,7 +124,7 @@
   };
 </script>
 
-  <title>Drawer | HandyOrg</title>
+  <title>Drawer 抽屉 | HandyOrg</title>
   
 
 
@@ -3059,7 +3061,7 @@
     <div class="post-block page">
       <header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">Drawer
+<h1 class="post-title" itemprop="name headline">Drawer 抽屉
 
 </h1>
 
@@ -3119,7 +3121,83 @@
       <div class="post-body">
         
         
-          
+          <p>当 <code>Dialog</code> 组件不能满足我们的需求时（例如展示一些文档），可以使用 <code>Drawer</code>.</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[<span class="meta">ContentProperty(<span class="meta-string">"Content"</span>)</span>]</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Drawer</span> : <span class="title">FrameworkElement</span></span><br></pre></td></tr></table></figure>
+<h1 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h1><table>
+<thead>
+<tr>
+<th>属性</th>
+<th>描述</th>
+<th>默认值</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IsOpen</td>
+<td>是否关闭</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>MaskCanClose</td>
+<td>点击遮罩层是否可以关闭 Drawer</td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>ShowMask</td>
+<td>是否显示遮罩层</td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>Dock</td>
+<td>位置</td>
+<td>Dock.Left</td>
+<td></td>
+</tr>
+<tr>
+<td>ShowMode</td>
+<td>显示模式</td>
+<td>DrawerShowMode.Cover</td>
+<td></td>
+</tr>
+<tr>
+<td>MaskBrush</td>
+<td>遮罩层颜色</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Content</td>
+<td>内容</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="事件"><a href="#事件" class="headerlink" title="事件"></a>事件</h1><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Opened</td>
+<td>抽屉打开时触发</td>
+</tr>
+<tr>
+<td>Closed</td>
+<td>抽屉关闭时触发</td>
+</tr>
+</tbody>
+</table>
+<h1 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h1><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:SimplePanel</span> <span class="attr">Margin</span>=<span class="string">"22"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Grid</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">Grid.RowDefinitions</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">RowDefinition</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">RowDefinition</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">RowDefinition</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">Grid.RowDefinitions</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">Grid.ColumnDefinitions</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">ColumnDefinition</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">ColumnDefinition</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">ColumnDefinition</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">Grid.ColumnDefinitions</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">ToggleButton</span> <span class="attr">Margin</span>=<span class="string">"10"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Stretch"</span> <span class="attr">Grid.Row</span>=<span class="string">"1"</span> <span class="attr">Grid.Column</span>=<span class="string">"0"</span> <span class="attr">Content</span>=<span class="string">"Left"</span> <span class="attr">IsChecked</span>=<span class="string">"&#123;Binding IsOpen,ElementName=DrawerLeft&#125;"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">ToggleButton</span> <span class="attr">Margin</span>=<span class="string">"10"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Stretch"</span> <span class="attr">Grid.Row</span>=<span class="string">"0"</span> <span class="attr">Grid.Column</span>=<span class="string">"1"</span> <span class="attr">Content</span>=<span class="string">"Top"</span> <span class="attr">IsChecked</span>=<span class="string">"&#123;Binding IsOpen,ElementName=DrawerTop&#125;"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">ToggleButton</span> <span class="attr">Margin</span>=<span class="string">"10"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Stretch"</span> <span class="attr">Grid.Row</span>=<span class="string">"1"</span> <span class="attr">Grid.Column</span>=<span class="string">"2"</span> <span class="attr">Content</span>=<span class="string">"Right"</span> <span class="attr">IsChecked</span>=<span class="string">"&#123;Binding IsOpen,ElementName=DrawerRight&#125;"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">ToggleButton</span> <span class="attr">Margin</span>=<span class="string">"10"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Stretch"</span> <span class="attr">Grid.Row</span>=<span class="string">"2"</span> <span class="attr">Grid.Column</span>=<span class="string">"1"</span> <span class="attr">Content</span>=<span class="string">"Bottom"</span> <span class="attr">IsChecked</span>=<span class="string">"&#123;Binding IsOpen,ElementName=DrawerBottom&#125;"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">Grid</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:Drawer</span> <span class="attr">Name</span>=<span class="string">"DrawerLeft"</span> <span class="attr">Dock</span>=<span class="string">"Left"</span> <span class="attr">ShowMode</span>=<span class="string">"Push"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">Border</span> <span class="attr">Background</span>=<span class="string">"&#123;DynamicResource RegionBrush&#125;"</span> <span class="attr">Width</span>=<span class="string">"300"</span> <span class="attr">BorderThickness</span>=<span class="string">"0,1,0,0"</span> <span class="attr">BorderBrush</span>=<span class="string">"&#123;DynamicResource BorderBrush&#125;"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">Grid</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">Grid.RowDefinitions</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">RowDefinition</span> <span class="attr">Height</span>=<span class="string">"Auto"</span>/&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">RowDefinition</span>/&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">Grid.RowDefinitions</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">Margin</span>=<span class="string">"10,0,0,0"</span> <span class="attr">Text</span>=<span class="string">"Header"</span> <span class="attr">Style</span>=<span class="string">"&#123;StaticResource TextBlockTitle&#125;"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Left"</span>/&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Command</span>=<span class="string">"hc:ControlCommands.Close"</span> <span class="attr">Grid.Row</span>=<span class="string">"0"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Right"</span> <span class="attr">Foreground</span>=<span class="string">"&#123;DynamicResource PrimaryTextBrush&#125;"</span> <span class="attr">Style</span>=<span class="string">"&#123;StaticResource ButtonIcon&#125;"</span> <span class="attr">hc:IconElement.Geometry</span>=<span class="string">"&#123;StaticResource DeleteFillCircleGeometry&#125;"</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">Grid</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">Border</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">hc:Drawer</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:Drawer</span> <span class="attr">Name</span>=<span class="string">"DrawerTop"</span> <span class="attr">Dock</span>=<span class="string">"Top"</span> <span class="attr">ShowMode</span>=<span class="string">"Press"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">Border</span> <span class="attr">Background</span>=<span class="string">"&#123;DynamicResource RegionBrush&#125;"</span> <span class="attr">Height</span>=<span class="string">"300"</span> <span class="attr">BorderThickness</span>=<span class="string">"0,1,0,0"</span> <span class="attr">BorderBrush</span>=<span class="string">"&#123;DynamicResource BorderBrush&#125;"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">Grid</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">Grid.RowDefinitions</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">RowDefinition</span> <span class="attr">Height</span>=<span class="string">"Auto"</span>/&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">RowDefinition</span>/&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">Grid.RowDefinitions</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">Margin</span>=<span class="string">"10,0,0,0"</span> <span class="attr">Text</span>=<span class="string">"Header"</span> <span class="attr">Style</span>=<span class="string">"&#123;StaticResource TextBlockTitle&#125;"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Left"</span>/&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Command</span>=<span class="string">"hc:ControlCommands.Close"</span> <span class="attr">Grid.Row</span>=<span class="string">"0"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Right"</span> <span class="attr">Foreground</span>=<span class="string">"&#123;DynamicResource PrimaryTextBrush&#125;"</span> <span class="attr">Style</span>=<span class="string">"&#123;StaticResource ButtonIcon&#125;"</span> <span class="attr">hc:IconElement.Geometry</span>=<span class="string">"&#123;StaticResource DeleteFillCircleGeometry&#125;"</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">Grid</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">Border</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">hc:Drawer</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:Drawer</span> <span class="attr">Name</span>=<span class="string">"DrawerRight"</span> <span class="attr">MaskCanClose</span>=<span class="string">"False"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">Border</span> <span class="attr">Background</span>=<span class="string">"&#123;DynamicResource RegionBrush&#125;"</span> <span class="attr">Width</span>=<span class="string">"300"</span> <span class="attr">BorderThickness</span>=<span class="string">"0,1,0,0"</span> <span class="attr">BorderBrush</span>=<span class="string">"&#123;DynamicResource BorderBrush&#125;"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">Grid</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">Grid.RowDefinitions</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">RowDefinition</span> <span class="attr">Height</span>=<span class="string">"Auto"</span>/&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">RowDefinition</span>/&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">Grid.RowDefinitions</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">Margin</span>=<span class="string">"10,0,0,0"</span> <span class="attr">Text</span>=<span class="string">"Header"</span> <span class="attr">Style</span>=<span class="string">"&#123;StaticResource TextBlockTitle&#125;"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Left"</span>/&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Command</span>=<span class="string">"hc:ControlCommands.Close"</span> <span class="attr">Grid.Row</span>=<span class="string">"0"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Right"</span> <span class="attr">Foreground</span>=<span class="string">"&#123;DynamicResource PrimaryTextBrush&#125;"</span> <span class="attr">Style</span>=<span class="string">"&#123;StaticResource ButtonIcon&#125;"</span> <span class="attr">hc:IconElement.Geometry</span>=<span class="string">"&#123;StaticResource DeleteFillCircleGeometry&#125;"</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">Grid</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">Border</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">hc:Drawer</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:Drawer</span> <span class="attr">Name</span>=<span class="string">"DrawerBottom"</span> <span class="attr">Dock</span>=<span class="string">"Bottom"</span> <span class="attr">ShowMask</span>=<span class="string">"False"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">Border</span> <span class="attr">Background</span>=<span class="string">"&#123;DynamicResource RegionBrush&#125;"</span> <span class="attr">Height</span>=<span class="string">"300"</span> <span class="attr">BorderThickness</span>=<span class="string">"0,1,0,0"</span> <span class="attr">BorderBrush</span>=<span class="string">"&#123;DynamicResource BorderBrush&#125;"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">Grid</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">Grid.RowDefinitions</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">RowDefinition</span> <span class="attr">Height</span>=<span class="string">"Auto"</span>/&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">RowDefinition</span>/&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">Grid.RowDefinitions</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">Margin</span>=<span class="string">"10,0,0,0"</span> <span class="attr">Text</span>=<span class="string">"Header"</span> <span class="attr">Style</span>=<span class="string">"&#123;StaticResource TextBlockTitle&#125;"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Left"</span>/&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Command</span>=<span class="string">"hc:ControlCommands.Close"</span> <span class="attr">Grid.Row</span>=<span class="string">"0"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Right"</span> <span class="attr">Foreground</span>=<span class="string">"&#123;DynamicResource PrimaryTextBrush&#125;"</span> <span class="attr">Style</span>=<span class="string">"&#123;StaticResource ButtonIcon&#125;"</span> <span class="attr">hc:IconElement.Geometry</span>=<span class="string">"&#123;StaticResource DeleteFillCircleGeometry&#125;"</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">Grid</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">Border</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">hc:Drawer</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:SimplePanel</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Drawer.gif" alt="Drawer"></p>
+
         
       </div>
       
@@ -3201,8 +3279,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -3325,6 +3412,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#属性"><span class="nav-number">1.</span> <span class="nav-text">属性</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#事件"><span class="nav-number">2.</span> <span class="nav-text">事件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#案例"><span class="nav-number">3.</span> <span class="nav-text">案例</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
