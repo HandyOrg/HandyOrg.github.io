@@ -94,17 +94,19 @@
 
 
 
-  <meta name="description" content="建设中">
+  <meta name="description" content="耗时操作时显示动效，目前包含圆形和直线两种加载条。相关博文：《WPF 控件库——仿制Windows10的进度条》 1public abstract class LoadingBase : ContentControl 1public class LoadingLine : LoadingBase 1public class LoadingCircle : LoadingBase LoadingBa">
 <meta property="og:type" content="website">
-<meta property="og:title" content="建设中">
+<meta property="og:title" content="Loading 加载条">
 <meta property="og:url" content="http://yoursite.com/handycontrol/extend_controls/loading/index.html">
 <meta property="og:site_name" content="HandyOrg">
-<meta property="og:description" content="建设中">
+<meta property="og:description" content="耗时操作时显示动效，目前包含圆形和直线两种加载条。相关博文：《WPF 控件库——仿制Windows10的进度条》 1public abstract class LoadingBase : ContentControl 1public class LoadingLine : LoadingBase 1public class LoadingCircle : LoadingBase LoadingBa">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-11T16:16:13.660Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Loading.gif">
+<meta property="og:updated_time" content="2020-08-09T08:30:58.023Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="建设中">
-<meta name="twitter:description" content="建设中">
+<meta name="twitter:title" content="Loading 加载条">
+<meta name="twitter:description" content="耗时操作时显示动效，目前包含圆形和直线两种加载条。相关博文：《WPF 控件库——仿制Windows10的进度条》 1public abstract class LoadingBase : ContentControl 1public class LoadingLine : LoadingBase 1public class LoadingCircle : LoadingBase LoadingBa">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Loading.gif">
 
 
 
@@ -122,7 +124,7 @@
   };
 </script>
 
-  <title>建设中 | HandyOrg</title>
+  <title>Loading 加载条 | HandyOrg</title>
   
 
 
@@ -684,6 +686,8 @@
   </li>
 
 
+                
+              
                 
               
                 
@@ -1674,6 +1678,35 @@
     
 
     <a href="/handycontrol/extend_controls/gifImage/" rel="section">GifImage Gif图片</a>
+
+  </li>
+
+
+                        
+                      
+                        
+                        
+                        
+                          
+                            
+                          
+                          
+
+  
+  
+    
+  
+  <li class="menu-item menu-item-glowwindow-辉光窗口">
+
+    
+    
+    
+
+    
+      
+    
+
+    <a href="/handycontrol/extend_controls/glowWindow/" rel="section">GlowWindow 辉光窗口</a>
 
   </li>
 
@@ -3059,7 +3092,7 @@
     <div class="post-block page">
       <header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">建设中
+<h1 class="post-title" itemprop="name headline">Loading 加载条
 
 </h1>
 
@@ -3119,7 +3152,96 @@
       <div class="post-body">
         
         
-          <p>建设中</p>
+          <p>耗时操作时显示动效，目前包含圆形和直线两种加载条。相关博文：<a href="https://www.cnblogs.com/nabian/p/9288576.html" target="_blank" rel="noopener">《WPF 控件库——仿制Windows10的进度条》</a></p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">class</span> <span class="title">LoadingBase</span> : <span class="title">ContentControl</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">LoadingLine</span> : <span class="title">LoadingBase</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">LoadingCircle</span> : <span class="title">LoadingBase</span></span><br></pre></td></tr></table></figure>
+<h1 id="LoadingBase-属性"><a href="#LoadingBase-属性" class="headerlink" title="LoadingBase 属性"></a>LoadingBase 属性</h1><table>
+<thead>
+<tr>
+<th>属性</th>
+<th>描述</th>
+<th>默认值</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IsRunning</td>
+<td>是否处于加载</td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>DotCount</td>
+<td>圆点数目</td>
+<td>5</td>
+<td></td>
+</tr>
+<tr>
+<td>DotInterval</td>
+<td>圆点间隙</td>
+<td>10</td>
+<td></td>
+</tr>
+<tr>
+<td>DotBorderBrush</td>
+<td>圆点边框颜色</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>DotBorderThickness</td>
+<td>圆点边框粗细</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>DotDiameter</td>
+<td>圆点半径</td>
+<td>6</td>
+<td></td>
+</tr>
+<tr>
+<td>DotSpeed</td>
+<td>一遍循环所用时间</td>
+<td>4s</td>
+<td></td>
+</tr>
+<tr>
+<td>DotDelayTime</td>
+<td>各点的动画延迟</td>
+<td>80ms</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="LoadingCircle-属性"><a href="#LoadingCircle-属性" class="headerlink" title="LoadingCircle 属性"></a>LoadingCircle 属性</h1><table>
+<thead>
+<tr>
+<th>属性</th>
+<th>描述</th>
+<th>默认值</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DotOffSet</td>
+<td>圆点偏移</td>
+<td>20</td>
+<td></td>
+</tr>
+<tr>
+<td>NeedHidden</td>
+<td>圆点运动中途是否需要隐藏</td>
+<td>true</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h1><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">Width</span>=<span class="string">"600"</span> <span class="attr">Margin</span>=<span class="string">"32"</span> <span class="attr">VerticalAlignment</span>=<span class="string">"Center"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:LoadingLine</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:LoadingLine</span> <span class="attr">Margin</span>=<span class="string">"0,30"</span> <span class="attr">Foreground</span>=<span class="string">"BlueViolet"</span> <span class="attr">Style</span>=<span class="string">"&#123;StaticResource LoadingLineLarge&#125;"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">Orientation</span>=<span class="string">"Horizontal"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Center"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:LoadingCircle</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">Border</span> <span class="attr">VerticalAlignment</span>=<span class="string">"Center"</span> <span class="attr">Margin</span>=<span class="string">"32,0,0,0"</span> <span class="attr">Background</span>=<span class="string">"&#123;DynamicResource PrimaryBrush&#125;"</span> <span class="attr">CornerRadius</span>=<span class="string">"10"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">hc:LoadingCircle</span> <span class="attr">Style</span>=<span class="string">"&#123;StaticResource LoadingCircleLight&#125;"</span> <span class="attr">Margin</span>=<span class="string">"10"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">Border</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Loading.gif" alt="Loading"></p>
 
         
       </div>
@@ -3202,8 +3324,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -3326,6 +3457,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#LoadingBase-属性"><span class="nav-number">1.</span> <span class="nav-text">LoadingBase 属性</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#LoadingCircle-属性"><span class="nav-number">2.</span> <span class="nav-text">LoadingCircle 属性</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#案例"><span class="nav-number">3.</span> <span class="nav-text">案例</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       

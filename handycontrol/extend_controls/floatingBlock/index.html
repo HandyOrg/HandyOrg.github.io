@@ -94,17 +94,19 @@
 
 
 
-  <meta name="description" content="everything can be handy">
+  <meta name="description" content="可借助漂浮块实现特殊的点击效果。 1public class FloatingBlock : Control 依赖属性   属性 描述 默认值 备注     ToX X轴消失位置 0    ToY y轴消失位置 -100    Duration 动画持续时间 2s    HorizontalOffset 横向偏移 0    VerticalOffset 纵向偏移 0    ContentTempl">
 <meta property="og:type" content="website">
-<meta property="og:title" content="FloatingBlock">
+<meta property="og:title" content="FloatingBlock 漂浮块">
 <meta property="og:url" content="http://yoursite.com/handycontrol/extend_controls/floatingBlock/index.html">
 <meta property="og:site_name" content="HandyOrg">
-<meta property="og:description" content="everything can be handy">
+<meta property="og:description" content="可借助漂浮块实现特殊的点击效果。 1public class FloatingBlock : Control 依赖属性   属性 描述 默认值 备注     ToX X轴消失位置 0    ToY y轴消失位置 -100    Duration 动画持续时间 2s    HorizontalOffset 横向偏移 0    VerticalOffset 纵向偏移 0    ContentTempl">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-02-18T07:01:18.810Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/FloatingBlock.gif">
+<meta property="og:updated_time" content="2020-08-06T13:44:25.176Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="FloatingBlock">
-<meta name="twitter:description" content="everything can be handy">
+<meta name="twitter:title" content="FloatingBlock 漂浮块">
+<meta name="twitter:description" content="可借助漂浮块实现特殊的点击效果。 1public class FloatingBlock : Control 依赖属性   属性 描述 默认值 备注     ToX X轴消失位置 0    ToY y轴消失位置 -100    Duration 动画持续时间 2s    HorizontalOffset 横向偏移 0    VerticalOffset 纵向偏移 0    ContentTempl">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/FloatingBlock.gif">
 
 
 
@@ -122,7 +124,7 @@
   };
 </script>
 
-  <title>FloatingBlock | HandyOrg</title>
+  <title>FloatingBlock 漂浮块 | HandyOrg</title>
   
 
 
@@ -684,6 +686,8 @@
   </li>
 
 
+                
+              
                 
               
                 
@@ -1674,6 +1678,35 @@
     
 
     <a href="/handycontrol/extend_controls/gifImage/" rel="section">GifImage Gif图片</a>
+
+  </li>
+
+
+                        
+                      
+                        
+                        
+                        
+                          
+                            
+                          
+                          
+
+  
+  
+    
+  
+  <li class="menu-item menu-item-glowwindow-辉光窗口">
+
+    
+    
+    
+
+    
+      
+    
+
+    <a href="/handycontrol/extend_controls/glowWindow/" rel="section">GlowWindow 辉光窗口</a>
 
   </li>
 
@@ -3059,7 +3092,7 @@
     <div class="post-block page">
       <header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">FloatingBlock
+<h1 class="post-title" itemprop="name headline">FloatingBlock 漂浮块
 
 </h1>
 
@@ -3119,7 +3152,65 @@
       <div class="post-body">
         
         
-          
+          <p>可借助漂浮块实现特殊的点击效果。</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">FloatingBlock</span> : <span class="title">Control</span></span><br></pre></td></tr></table></figure>
+<h1 id="依赖属性"><a href="#依赖属性" class="headerlink" title="依赖属性"></a>依赖属性</h1><table>
+<thead>
+<tr>
+<th>属性</th>
+<th>描述</th>
+<th>默认值</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ToX</td>
+<td>X轴消失位置</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>ToY</td>
+<td>y轴消失位置</td>
+<td>-100</td>
+<td></td>
+</tr>
+<tr>
+<td>Duration</td>
+<td>动画持续时间</td>
+<td>2s</td>
+<td></td>
+</tr>
+<tr>
+<td>HorizontalOffset</td>
+<td>横向偏移</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>VerticalOffset</td>
+<td>纵向偏移</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>ContentTemplate</td>
+<td>漂浮内容模板</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Content</td>
+<td>漂浮内容</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h1><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">Margin</span>=<span class="string">"32"</span> <span class="attr">VerticalAlignment</span>=<span class="string">"Center"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Button</span> <span class="attr">hc:IconElement.Geometry</span>=<span class="string">"&#123;StaticResource ThumbsUpGeometry&#125;"</span> <span class="attr">Width</span>=<span class="string">"180"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:FloatingBlock.ContentTemplate</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">DataTemplate</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">Path</span> <span class="attr">Data</span>=<span class="string">"&#123;StaticResource ThumbsUpGeometry&#125;"</span> <span class="attr">Fill</span>=<span class="string">"&#123;DynamicResource DangerBrush&#125;"</span> <span class="attr">Width</span>=<span class="string">"16"</span> <span class="attr">Height</span>=<span class="string">"16"</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">DataTemplate</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">hc:FloatingBlock.ContentTemplate</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">Button</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Content</span>=<span class="string">"Good"</span> <span class="attr">hc:FloatingBlock.Content</span>=<span class="string">"Good"</span> <span class="attr">Width</span>=<span class="string">"180"</span> <span class="attr">Margin</span>=<span class="string">"0,10,0,0"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Button</span> <span class="attr">hc:IconElement.Geometry</span>=<span class="string">"&#123;StaticResource ThumbsUpGeometry&#125;"</span> <span class="attr">Width</span>=<span class="string">"180"</span> <span class="attr">Margin</span>=<span class="string">"0,10,0,0"</span> <span class="attr">hc:FloatingBlock.Duration</span>=<span class="string">"0:0:1"</span> <span class="attr">hc:FloatingBlock.VerticalOffset</span>=<span class="string">"-20"</span> <span class="attr">hc:FloatingBlock.ToX</span>=<span class="string">"50"</span> <span class="attr">hc:FloatingBlock.ToY</span>=<span class="string">"-80"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:FloatingBlock.ContentTemplate</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">DataTemplate</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">Path</span> <span class="attr">Data</span>=<span class="string">"&#123;StaticResource ThumbsUpGeometry&#125;"</span> <span class="attr">Fill</span>=<span class="string">"&#123;DynamicResource DangerBrush&#125;"</span> <span class="attr">Width</span>=<span class="string">"16"</span> <span class="attr">Height</span>=<span class="string">"16"</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">DataTemplate</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">hc:FloatingBlock.ContentTemplate</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">Button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/FloatingBlock.gif" alt="FloatingBlock"></p>
+
         
       </div>
       
@@ -3201,8 +3292,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -3325,6 +3425,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#依赖属性"><span class="nav-number">1.</span> <span class="nav-text">依赖属性</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#案例"><span class="nav-number">2.</span> <span class="nav-text">案例</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       

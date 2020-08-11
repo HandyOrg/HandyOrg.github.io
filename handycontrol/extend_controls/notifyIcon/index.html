@@ -94,17 +94,19 @@
 
 
 
-  <meta name="description" content="建设中">
+  <meta name="description" content="系统托盘图标的wpf实现方式. 1public class NotifyIcon : FrameworkElement, IDisposable 属性   属性 描述 默认值 备注     Token 用于设置消息标记  用于在指定的托盘图标上显示气泡提示   Text 鼠标提示文本     Icon 图标     ContextContent 右键弹出内容     BlinkInterval 闪">
 <meta property="og:type" content="website">
-<meta property="og:title" content="建设中">
+<meta property="og:title" content="NotifyIcon 托盘图标">
 <meta property="og:url" content="http://yoursite.com/handycontrol/extend_controls/notifyIcon/index.html">
 <meta property="og:site_name" content="HandyOrg">
-<meta property="og:description" content="建设中">
+<meta property="og:description" content="系统托盘图标的wpf实现方式. 1public class NotifyIcon : FrameworkElement, IDisposable 属性   属性 描述 默认值 备注     Token 用于设置消息标记  用于在指定的托盘图标上显示气泡提示   Text 鼠标提示文本     Icon 图标     ContextContent 右键弹出内容     BlinkInterval 闪">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-11T16:16:13.661Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/NotifyIcon.gif">
+<meta property="og:updated_time" content="2020-08-11T15:22:03.447Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="建设中">
-<meta name="twitter:description" content="建设中">
+<meta name="twitter:title" content="NotifyIcon 托盘图标">
+<meta name="twitter:description" content="系统托盘图标的wpf实现方式. 1public class NotifyIcon : FrameworkElement, IDisposable 属性   属性 描述 默认值 备注     Token 用于设置消息标记  用于在指定的托盘图标上显示气泡提示   Text 鼠标提示文本     Icon 图标     ContextContent 右键弹出内容     BlinkInterval 闪">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/NotifyIcon.gif">
 
 
 
@@ -122,7 +124,7 @@
   };
 </script>
 
-  <title>建设中 | HandyOrg</title>
+  <title>NotifyIcon 托盘图标 | HandyOrg</title>
   
 
 
@@ -684,6 +686,8 @@
   </li>
 
 
+                
+              
                 
               
                 
@@ -1674,6 +1678,35 @@
     
 
     <a href="/handycontrol/extend_controls/gifImage/" rel="section">GifImage Gif图片</a>
+
+  </li>
+
+
+                        
+                      
+                        
+                        
+                        
+                          
+                            
+                          
+                          
+
+  
+  
+    
+  
+  <li class="menu-item menu-item-glowwindow-辉光窗口">
+
+    
+    
+    
+
+    
+      
+    
+
+    <a href="/handycontrol/extend_controls/glowWindow/" rel="section">GlowWindow 辉光窗口</a>
 
   </li>
 
@@ -3059,7 +3092,7 @@
     <div class="post-block page">
       <header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">建设中
+<h1 class="post-title" itemprop="name headline">NotifyIcon 托盘图标
 
 </h1>
 
@@ -3119,7 +3152,118 @@
       <div class="post-body">
         
         
-          <p>建设中</p>
+          <p>系统托盘图标的wpf实现方式.</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">NotifyIcon</span> : <span class="title">FrameworkElement</span>, <span class="title">IDisposable</span></span><br></pre></td></tr></table></figure>
+<h1 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h1><table>
+<thead>
+<tr>
+<th>属性</th>
+<th>描述</th>
+<th>默认值</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Token</td>
+<td>用于设置消息标记</td>
+<td></td>
+<td>用于在指定的托盘图标上显示气泡提示</td>
+</tr>
+<tr>
+<td>Text</td>
+<td>鼠标提示文本</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Icon</td>
+<td>图标</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>ContextContent</td>
+<td>右键弹出内容</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>BlinkInterval</td>
+<td>闪烁间隔</td>
+<td>500ms</td>
+<td></td>
+</tr>
+<tr>
+<td>IsBlink</td>
+<td>是否闪烁</td>
+<td>false</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h1><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Init()</td>
+<td>初始化</td>
+</tr>
+<tr>
+<td>Register(string, NotifyIcon)</td>
+<td>为指定的托盘图标注册消息标记</td>
+</tr>
+<tr>
+<td>Unregister(string, NotifyIcon)</td>
+<td>为指定的托盘图标取消消息标记的注册</td>
+</tr>
+<tr>
+<td>Unregister(NotifyIcon)</td>
+<td>如果该托盘图标注册了消息标记则取消注册</td>
+</tr>
+<tr>
+<td>Unregister(string)</td>
+<td>如果该消息标记有对应的托盘图标则取消注册</td>
+</tr>
+<tr>
+<td>ShowBalloonTip(string, string, NotifyIconInfoType, string)</td>
+<td>显示气泡提示</td>
+</tr>
+<tr>
+<td>ShowBalloonTip(string, string, NotifyIconInfoType)</td>
+<td>显示气泡提示</td>
+</tr>
+<tr>
+<td>CloseContextControl()</td>
+<td>关闭上下文控件</td>
+</tr>
+</tbody>
+</table>
+<h1 id="事件"><a href="#事件" class="headerlink" title="事件"></a>事件</h1><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Click</td>
+<td>单击时触发</td>
+</tr>
+<tr>
+<td>MouseDoubleClick</td>
+<td>双击时触发</td>
+</tr>
+</tbody>
+</table>
+<h1 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h1><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:NotifyIcon</span> <span class="attr">Text</span>=<span class="string">"HandyControl"</span> <span class="attr">IsBlink</span>=<span class="string">"true"</span> <span class="attr">Visibility</span>=<span class="string">"Visible"</span> <span class="attr">Icon</span>=<span class="string">"/HandyControlDemo;component/Resources/Img/icon-white.ico"</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/NotifyIcon.gif" alt="NotifyIcon"></p>
 
         
       </div>
@@ -3202,8 +3346,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -3326,6 +3479,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#属性"><span class="nav-number">1.</span> <span class="nav-text">属性</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#方法"><span class="nav-number">2.</span> <span class="nav-text">方法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#事件"><span class="nav-number">3.</span> <span class="nav-text">事件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#案例"><span class="nav-number">4.</span> <span class="nav-text">案例</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       

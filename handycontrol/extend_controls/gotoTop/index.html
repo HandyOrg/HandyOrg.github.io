@@ -94,17 +94,19 @@
 
 
 
-  <meta name="description" content="建设中">
+  <meta name="description" content="通过点击 GotoTop 可以让 ScrollView 或带有 ScrollView 的控件滚动到顶部位置. 1public class GotoTop : Button 属性   属性 描述 默认值 备注     Target ScrollView 或带有 ScrollView 的控件     Animated 是否使用动画 true    AnimationTime 动画持续时间 0.2s">
 <meta property="og:type" content="website">
-<meta property="og:title" content="建设中">
+<meta property="og:title" content="GotoTop 回到顶部">
 <meta property="og:url" content="http://yoursite.com/handycontrol/extend_controls/gotoTop/index.html">
 <meta property="og:site_name" content="HandyOrg">
-<meta property="og:description" content="建设中">
+<meta property="og:description" content="通过点击 GotoTop 可以让 ScrollView 或带有 ScrollView 的控件滚动到顶部位置. 1public class GotoTop : Button 属性   属性 描述 默认值 备注     Target ScrollView 或带有 ScrollView 的控件     Animated 是否使用动画 true    AnimationTime 动画持续时间 0.2s">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-11T16:16:13.658Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/GoToTop.gif">
+<meta property="og:updated_time" content="2020-08-09T04:23:58.870Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="建设中">
-<meta name="twitter:description" content="建设中">
+<meta name="twitter:title" content="GotoTop 回到顶部">
+<meta name="twitter:description" content="通过点击 GotoTop 可以让 ScrollView 或带有 ScrollView 的控件滚动到顶部位置. 1public class GotoTop : Button 属性   属性 描述 默认值 备注     Target ScrollView 或带有 ScrollView 的控件     Animated 是否使用动画 true    AnimationTime 动画持续时间 0.2s">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/GoToTop.gif">
 
 
 
@@ -122,7 +124,7 @@
   };
 </script>
 
-  <title>建设中 | HandyOrg</title>
+  <title>GotoTop 回到顶部 | HandyOrg</title>
   
 
 
@@ -684,6 +686,8 @@
   </li>
 
 
+                
+              
                 
               
                 
@@ -1674,6 +1678,35 @@
     
 
     <a href="/handycontrol/extend_controls/gifImage/" rel="section">GifImage Gif图片</a>
+
+  </li>
+
+
+                        
+                      
+                        
+                        
+                        
+                          
+                            
+                          
+                          
+
+  
+  
+    
+  
+  <li class="menu-item menu-item-glowwindow-辉光窗口">
+
+    
+    
+    
+
+    
+      
+    
+
+    <a href="/handycontrol/extend_controls/glowWindow/" rel="section">GlowWindow 辉光窗口</a>
 
   </li>
 
@@ -3059,7 +3092,7 @@
     <div class="post-block page">
       <header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">建设中
+<h1 class="post-title" itemprop="name headline">GotoTop 回到顶部
 
 </h1>
 
@@ -3119,7 +3152,52 @@
       <div class="post-body">
         
         
-          <p>建设中</p>
+          <p>通过点击 <code>GotoTop</code> 可以让 <code>ScrollView</code> 或带有 <code>ScrollView</code> 的控件滚动到顶部位置.</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">GotoTop</span> : <span class="title">Button</span></span><br></pre></td></tr></table></figure>
+<h1 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h1><table>
+<thead>
+<tr>
+<th>属性</th>
+<th>描述</th>
+<th>默认值</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Target</td>
+<td><code>ScrollView</code> 或带有 <code>ScrollView</code> 的控件</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Animated</td>
+<td>是否使用动画</td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>AnimationTime</td>
+<td>动画持续时间</td>
+<td>0.2s</td>
+<td></td>
+</tr>
+<tr>
+<td>HidingHeight</td>
+<td>当 <code>ScrollView</code> 滚动该高度后 <code>GotoTop</code> 会被隐藏</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>AutoHiding</td>
+<td>是否自动隐藏</td>
+<td>true</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h1><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:SimplePanel</span> <span class="attr">Width</span>=<span class="string">"500"</span> <span class="attr">Height</span>=<span class="string">"400"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:ScrollViewer</span> <span class="attr">Name</span>=<span class="string">"ScrollViewerDemo"</span> <span class="attr">IsInertiaEnabled</span>=<span class="string">"True"</span> <span class="attr">Margin</span>=<span class="string">"0,10,0,0"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">Border</span> <span class="attr">Height</span>=<span class="string">"2000"</span> <span class="attr">Margin</span>=<span class="string">"8,0"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">Border.Background</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">LinearGradientBrush</span> <span class="attr">EndPoint</span>=<span class="string">"0.5,1"</span> <span class="attr">StartPoint</span>=<span class="string">"0.5,0"</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">GradientStop</span> <span class="attr">Color</span>=<span class="string">"White"</span> <span class="attr">Offset</span>=<span class="string">"0"</span>/&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">GradientStop</span> <span class="attr">Color</span>=<span class="string">"Black"</span> <span class="attr">Offset</span>=<span class="string">"1"</span>/&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">LinearGradientBrush</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">Border.Background</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">Border</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">hc:ScrollViewer</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:GotoTop</span> <span class="attr">Animated</span>=<span class="string">"True"</span> <span class="attr">AutoHiding</span>=<span class="string">"True"</span> <span class="attr">AnimationTime</span>=<span class="string">"500"</span> <span class="attr">Target</span>=<span class="string">"&#123;Binding ElementName=ScrollViewerDemo&#125;"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Right"</span> <span class="attr">VerticalAlignment</span>=<span class="string">"Bottom"</span> <span class="attr">Margin</span>=<span class="string">"0,0,20,20"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:SimplePanel</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/GoToTop.gif" alt="GotoTop"></p>
 
         
       </div>
@@ -3202,8 +3280,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -3326,6 +3413,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#属性"><span class="nav-number">1.</span> <span class="nav-text">属性</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#案例"><span class="nav-number">2.</span> <span class="nav-text">案例</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       

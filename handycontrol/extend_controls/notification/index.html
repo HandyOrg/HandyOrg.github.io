@@ -94,17 +94,19 @@
 
 
 
-  <meta name="description" content="everything can be handy">
+  <meta name="description" content="用于在桌面显示一则富内容消息. 1public sealed class Notification : System.Windows.Window 方法   名称 说明     Show(object, ShowAnimation, bool) 显示桌面通知(消息内容, 动画效果类型, 是否保持打开)    案例123456789101112131415&amp;lt;Border x:Class=&quot;Ha">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Notification">
+<meta property="og:title" content="Notification 桌面通知">
 <meta property="og:url" content="http://yoursite.com/handycontrol/extend_controls/notification/index.html">
 <meta property="og:site_name" content="HandyOrg">
-<meta property="og:description" content="everything can be handy">
+<meta property="og:description" content="用于在桌面显示一则富内容消息. 1public sealed class Notification : System.Windows.Window 方法   名称 说明     Show(object, ShowAnimation, bool) 显示桌面通知(消息内容, 动画效果类型, 是否保持打开)    案例123456789101112131415&amp;lt;Border x:Class=&quot;Ha">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-02-18T07:01:18.815Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Notification.png">
+<meta property="og:updated_time" content="2020-08-11T15:08:34.648Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Notification">
-<meta name="twitter:description" content="everything can be handy">
+<meta name="twitter:title" content="Notification 桌面通知">
+<meta name="twitter:description" content="用于在桌面显示一则富内容消息. 1public sealed class Notification : System.Windows.Window 方法   名称 说明     Show(object, ShowAnimation, bool) 显示桌面通知(消息内容, 动画效果类型, 是否保持打开)    案例123456789101112131415&amp;lt;Border x:Class=&quot;Ha">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Notification.png">
 
 
 
@@ -122,7 +124,7 @@
   };
 </script>
 
-  <title>Notification | HandyOrg</title>
+  <title>Notification 桌面通知 | HandyOrg</title>
   
 
 
@@ -684,6 +686,8 @@
   </li>
 
 
+                
+              
                 
               
                 
@@ -1674,6 +1678,35 @@
     
 
     <a href="/handycontrol/extend_controls/gifImage/" rel="section">GifImage Gif图片</a>
+
+  </li>
+
+
+                        
+                      
+                        
+                        
+                        
+                          
+                            
+                          
+                          
+
+  
+  
+    
+  
+  <li class="menu-item menu-item-glowwindow-辉光窗口">
+
+    
+    
+    
+
+    
+      
+    
+
+    <a href="/handycontrol/extend_controls/glowWindow/" rel="section">GlowWindow 辉光窗口</a>
 
   </li>
 
@@ -3059,7 +3092,7 @@
     <div class="post-block page">
       <header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">Notification
+<h1 class="post-title" itemprop="name headline">Notification 桌面通知
 
 </h1>
 
@@ -3119,7 +3152,27 @@
       <div class="post-body">
         
         
-          
+          <p>用于在桌面显示一则富内容消息.</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">public sealed class Notification : System.Windows.Window</span><br></pre></td></tr></table></figure>
+<h1 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h1><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Show(object, ShowAnimation, bool)</td>
+<td>显示桌面通知(消息内容, 动画效果类型, 是否保持打开)</td>
+</tr>
+</tbody>
+</table>
+<h1 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h1><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Border</span> <span class="attr">x:Class</span>=<span class="string">"HandyControlDemo.UserControl.AppNotification"</span></span></span><br><span class="line"><span class="tag">        <span class="attr">xmlns</span>=<span class="string">"http://schemas.microsoft.com/winfx/2006/xaml/presentation"</span></span></span><br><span class="line"><span class="tag">        <span class="attr">xmlns:x</span>=<span class="string">"http://schemas.microsoft.com/winfx/2006/xaml"</span></span></span><br><span class="line"><span class="tag">        <span class="attr">xmlns:hc</span>=<span class="string">"https://handyorg.github.io/handycontrol"</span></span></span><br><span class="line"><span class="tag">        <span class="attr">Background</span>=<span class="string">"White"</span></span></span><br><span class="line"><span class="tag">        <span class="attr">BorderThickness</span>=<span class="string">"1"</span></span></span><br><span class="line"><span class="tag">        <span class="attr">BorderBrush</span>=<span class="string">"&#123;DynamicResource BorderBrush&#125;"</span></span></span><br><span class="line"><span class="tag">        <span class="attr">Width</span>=<span class="string">"320"</span></span></span><br><span class="line"><span class="tag">        <span class="attr">Height</span>=<span class="string">"518"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:SimplePanel</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">Path</span> <span class="attr">Margin</span>=<span class="string">"0,36,0,0"</span> <span class="attr">VerticalAlignment</span>=<span class="string">"Top"</span> <span class="attr">Width</span>=<span class="string">"70"</span> <span class="attr">Height</span>=<span class="string">"70"</span> <span class="attr">Data</span>=<span class="string">"&#123;StaticResource LogoGeometry&#125;"</span> <span class="attr">Fill</span>=<span class="string">"#f06632"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">Text</span>=<span class="string">"HandyControl"</span> <span class="attr">FontSize</span>=<span class="string">"30"</span> <span class="attr">Foreground</span>=<span class="string">"&#123;StaticResource PrimaryBrush&#125;"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Center"</span> <span class="attr">Margin</span>=<span class="string">"0,122,0,0"</span> <span class="attr">VerticalAlignment</span>=<span class="string">"Top"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">Button</span> <span class="attr">Command</span>=<span class="string">"hc:ControlCommands.CloseWindow"</span> <span class="attr">CommandParameter</span>=<span class="string">"&#123;Binding RelativeSource=&#123;RelativeSource Self&#125;&#125;"</span> <span class="attr">Content</span>=<span class="string">"&#123;hc:Lang Key=&#123;x:Static hc:LangKeys.Close&#125;&#125;"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Stretch"</span> <span class="attr">VerticalAlignment</span>=<span class="string">"Bottom"</span> <span class="attr">Margin</span>=<span class="string">"10,0,10,10"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">hc:SimplePanel</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">Border</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">namespace</span> <span class="title">HandyControlDemo.UserControl</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">partial</span> <span class="keyword">class</span> <span class="title">AppNotification</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="title">AppNotification</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>        &#123;</span><br><span class="line">            InitializeComponent();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Notification.Show(<span class="keyword">new</span> AppNotification(), ShowAnimation.Fade, <span class="literal">true</span>)</span><br></pre></td></tr></table></figure>
+<p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Notification.png" alt="Notification"></p>
+
         
       </div>
       
@@ -3201,8 +3254,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -3325,6 +3387,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#方法"><span class="nav-number">1.</span> <span class="nav-text">方法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#案例"><span class="nav-number">2.</span> <span class="nav-text">案例</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       

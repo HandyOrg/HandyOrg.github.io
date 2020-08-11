@@ -94,17 +94,19 @@
 
 
 
-  <meta name="description" content="everything can be handy">
+  <meta name="description" content="图片块可用于将一张大图片分割成宽高一致的小图片，并按序播放形成类似于gif图片的效果. 1public class ImageBlock : FrameworkElement 属性   属性 描述 默认值 备注     StartColumn 播放开始列 0    StartRow 播放开始行 0    EndColumn 播放结束列 0    EndRow 播放结束行 0    IsPlayin">
 <meta property="og:type" content="website">
-<meta property="og:title" content="ImageBlock">
+<meta property="og:title" content="ImageBlock 图片块">
 <meta property="og:url" content="http://yoursite.com/handycontrol/extend_controls/imageBlock/index.html">
 <meta property="og:site_name" content="HandyOrg">
-<meta property="og:description" content="everything can be handy">
+<meta property="og:description" content="图片块可用于将一张大图片分割成宽高一致的小图片，并按序播放形成类似于gif图片的效果. 1public class ImageBlock : FrameworkElement 属性   属性 描述 默认值 备注     StartColumn 播放开始列 0    StartRow 播放开始行 0    EndColumn 播放结束列 0    EndRow 播放结束行 0    IsPlayin">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-02-18T07:01:18.813Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/ImageBlock.gif">
+<meta property="og:updated_time" content="2020-08-09T06:41:30.203Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ImageBlock">
-<meta name="twitter:description" content="everything can be handy">
+<meta name="twitter:title" content="ImageBlock 图片块">
+<meta name="twitter:description" content="图片块可用于将一张大图片分割成宽高一致的小图片，并按序播放形成类似于gif图片的效果. 1public class ImageBlock : FrameworkElement 属性   属性 描述 默认值 备注     StartColumn 播放开始列 0    StartRow 播放开始行 0    EndColumn 播放结束列 0    EndRow 播放结束行 0    IsPlayin">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/ImageBlock.gif">
 
 
 
@@ -122,7 +124,7 @@
   };
 </script>
 
-  <title>ImageBlock | HandyOrg</title>
+  <title>ImageBlock 图片块 | HandyOrg</title>
   
 
 
@@ -684,6 +686,8 @@
   </li>
 
 
+                
+              
                 
               
                 
@@ -1674,6 +1678,35 @@
     
 
     <a href="/handycontrol/extend_controls/gifImage/" rel="section">GifImage Gif图片</a>
+
+  </li>
+
+
+                        
+                      
+                        
+                        
+                        
+                          
+                            
+                          
+                          
+
+  
+  
+    
+  
+  <li class="menu-item menu-item-glowwindow-辉光窗口">
+
+    
+    
+    
+
+    
+      
+    
+
+    <a href="/handycontrol/extend_controls/glowWindow/" rel="section">GlowWindow 辉光窗口</a>
 
   </li>
 
@@ -3059,7 +3092,7 @@
     <div class="post-block page">
       <header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">ImageBlock
+<h1 class="post-title" itemprop="name headline">ImageBlock 图片块
 
 </h1>
 
@@ -3119,7 +3152,79 @@
       <div class="post-body">
         
         
-          
+          <p>图片块可用于将一张大图片分割成宽高一致的小图片，并按序播放形成类似于gif图片的效果.</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">ImageBlock</span> : <span class="title">FrameworkElement</span></span><br></pre></td></tr></table></figure>
+<h1 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h1><table>
+<thead>
+<tr>
+<th>属性</th>
+<th>描述</th>
+<th>默认值</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>StartColumn</td>
+<td>播放开始列</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>StartRow</td>
+<td>播放开始行</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>EndColumn</td>
+<td>播放结束列</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>EndRow</td>
+<td>播放结束行</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>IsPlaying</td>
+<td>是否在播放</td>
+<td>false</td>
+<td></td>
+</tr>
+<tr>
+<td>Columns</td>
+<td>需要分割后的列数</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>Rows</td>
+<td>需要分割后的行数</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>Interval</td>
+<td>小图片的播放间隔</td>
+<td>1s</td>
+<td></td>
+</tr>
+<tr>
+<td>Source</td>
+<td>大图资源</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h1><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">UniformGrid</span> <span class="attr">Rows</span>=<span class="string">"3"</span> <span class="attr">Columns</span>=<span class="string">"4"</span> <span class="attr">Margin</span>=<span class="string">"32"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:ImageBlock</span> <span class="attr">Source</span>=<span class="string">"/HandyControlDemo;component/Resources/Img/Dance.png"</span> <span class="attr">Interval</span>=<span class="string">"0:0:0.125"</span> <span class="attr">Columns</span>=<span class="string">"8"</span> <span class="attr">Rows</span>=<span class="string">"10"</span> <span class="attr">StartColumn</span>=<span class="string">"0"</span> <span class="attr">StartRow</span>=<span class="string">"0"</span> <span class="attr">EndColumn</span>=<span class="string">"7"</span> <span class="attr">EndRow</span>=<span class="string">"0"</span> <span class="attr">Width</span>=<span class="string">"110"</span> <span class="attr">Height</span>=<span class="string">"128"</span> <span class="attr">IsPlaying</span>=<span class="string">"True"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:ImageBlock</span> <span class="attr">Source</span>=<span class="string">"/HandyControlDemo;component/Resources/Img/Dance.png"</span> <span class="attr">Interval</span>=<span class="string">"0:0:0.125"</span> <span class="attr">Columns</span>=<span class="string">"8"</span> <span class="attr">Rows</span>=<span class="string">"10"</span> <span class="attr">StartColumn</span>=<span class="string">"0"</span> <span class="attr">StartRow</span>=<span class="string">"1"</span> <span class="attr">EndColumn</span>=<span class="string">"7"</span> <span class="attr">EndRow</span>=<span class="string">"1"</span> <span class="attr">Width</span>=<span class="string">"110"</span> <span class="attr">Height</span>=<span class="string">"128"</span> <span class="attr">IsPlaying</span>=<span class="string">"True"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:ImageBlock</span> <span class="attr">Source</span>=<span class="string">"/HandyControlDemo;component/Resources/Img/Dance.png"</span> <span class="attr">Interval</span>=<span class="string">"0:0:0.125"</span> <span class="attr">Columns</span>=<span class="string">"8"</span> <span class="attr">Rows</span>=<span class="string">"10"</span> <span class="attr">StartColumn</span>=<span class="string">"0"</span> <span class="attr">StartRow</span>=<span class="string">"2"</span> <span class="attr">EndColumn</span>=<span class="string">"7"</span> <span class="attr">EndRow</span>=<span class="string">"2"</span> <span class="attr">Width</span>=<span class="string">"110"</span> <span class="attr">Height</span>=<span class="string">"128"</span> <span class="attr">IsPlaying</span>=<span class="string">"&#123;Binding IsMouseOver,RelativeSource=&#123;RelativeSource Self&#125;&#125;"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:ImageBlock</span> <span class="attr">Source</span>=<span class="string">"/HandyControlDemo;component/Resources/Img/Dance.png"</span> <span class="attr">Interval</span>=<span class="string">"0:0:0.125"</span> <span class="attr">Columns</span>=<span class="string">"8"</span> <span class="attr">Rows</span>=<span class="string">"10"</span> <span class="attr">StartColumn</span>=<span class="string">"0"</span> <span class="attr">StartRow</span>=<span class="string">"3"</span> <span class="attr">EndColumn</span>=<span class="string">"7"</span> <span class="attr">EndRow</span>=<span class="string">"3"</span> <span class="attr">Width</span>=<span class="string">"110"</span> <span class="attr">Height</span>=<span class="string">"128"</span> <span class="attr">IsPlaying</span>=<span class="string">"&#123;Binding IsMouseOver,RelativeSource=&#123;RelativeSource Self&#125;&#125;"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:ImageBlock</span> <span class="attr">Source</span>=<span class="string">"/HandyControlDemo;component/Resources/Img/Dance.png"</span> <span class="attr">Interval</span>=<span class="string">"0:0:0.1"</span> <span class="attr">Columns</span>=<span class="string">"8"</span> <span class="attr">Rows</span>=<span class="string">"10"</span> <span class="attr">StartColumn</span>=<span class="string">"0"</span> <span class="attr">StartRow</span>=<span class="string">"4"</span> <span class="attr">EndColumn</span>=<span class="string">"7"</span> <span class="attr">EndRow</span>=<span class="string">"4"</span> <span class="attr">Width</span>=<span class="string">"110"</span> <span class="attr">Height</span>=<span class="string">"128"</span> <span class="attr">IsPlaying</span>=<span class="string">"True"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:ImageBlock</span> <span class="attr">Source</span>=<span class="string">"/HandyControlDemo;component/Resources/Img/Dance.png"</span> <span class="attr">Interval</span>=<span class="string">"0:0:0.125"</span> <span class="attr">Columns</span>=<span class="string">"8"</span> <span class="attr">Rows</span>=<span class="string">"10"</span> <span class="attr">StartColumn</span>=<span class="string">"0"</span> <span class="attr">StartRow</span>=<span class="string">"5"</span> <span class="attr">EndColumn</span>=<span class="string">"7"</span> <span class="attr">EndRow</span>=<span class="string">"5"</span> <span class="attr">Width</span>=<span class="string">"110"</span> <span class="attr">Height</span>=<span class="string">"128"</span> <span class="attr">IsPlaying</span>=<span class="string">"True"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:ImageBlock</span> <span class="attr">Source</span>=<span class="string">"/HandyControlDemo;component/Resources/Img/Dance.png"</span> <span class="attr">Interval</span>=<span class="string">"0:0:0.125"</span> <span class="attr">Columns</span>=<span class="string">"8"</span> <span class="attr">Rows</span>=<span class="string">"10"</span> <span class="attr">StartColumn</span>=<span class="string">"0"</span> <span class="attr">StartRow</span>=<span class="string">"6"</span> <span class="attr">EndColumn</span>=<span class="string">"7"</span> <span class="attr">EndRow</span>=<span class="string">"6"</span> <span class="attr">Width</span>=<span class="string">"110"</span> <span class="attr">Height</span>=<span class="string">"128"</span> <span class="attr">IsPlaying</span>=<span class="string">"&#123;Binding IsMouseOver,RelativeSource=&#123;RelativeSource Self&#125;&#125;"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:ImageBlock</span> <span class="attr">Source</span>=<span class="string">"/HandyControlDemo;component/Resources/Img/Dance.png"</span> <span class="attr">Interval</span>=<span class="string">"0:0:0.1"</span> <span class="attr">Columns</span>=<span class="string">"8"</span> <span class="attr">Rows</span>=<span class="string">"10"</span> <span class="attr">StartColumn</span>=<span class="string">"0"</span> <span class="attr">StartRow</span>=<span class="string">"7"</span> <span class="attr">EndColumn</span>=<span class="string">"7"</span> <span class="attr">EndRow</span>=<span class="string">"7"</span> <span class="attr">Width</span>=<span class="string">"110"</span> <span class="attr">Height</span>=<span class="string">"128"</span> <span class="attr">IsPlaying</span>=<span class="string">"True"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:ImageBlock</span> <span class="attr">Source</span>=<span class="string">"/HandyControlDemo;component/Resources/Img/Dance.png"</span> <span class="attr">Interval</span>=<span class="string">"0:0:0.125"</span> <span class="attr">Columns</span>=<span class="string">"8"</span> <span class="attr">Rows</span>=<span class="string">"10"</span> <span class="attr">StartColumn</span>=<span class="string">"0"</span> <span class="attr">StartRow</span>=<span class="string">"8"</span> <span class="attr">EndColumn</span>=<span class="string">"7"</span> <span class="attr">EndRow</span>=<span class="string">"8"</span> <span class="attr">Width</span>=<span class="string">"110"</span> <span class="attr">Height</span>=<span class="string">"128"</span> <span class="attr">IsPlaying</span>=<span class="string">"&#123;Binding IsMouseOver,RelativeSource=&#123;RelativeSource Self&#125;&#125;"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:ImageBlock</span> <span class="attr">Source</span>=<span class="string">"/HandyControlDemo;component/Resources/Img/Dance.png"</span> <span class="attr">Interval</span>=<span class="string">"0:0:0.125"</span> <span class="attr">Columns</span>=<span class="string">"8"</span> <span class="attr">Rows</span>=<span class="string">"10"</span> <span class="attr">StartColumn</span>=<span class="string">"0"</span> <span class="attr">StartRow</span>=<span class="string">"9"</span> <span class="attr">EndColumn</span>=<span class="string">"7"</span> <span class="attr">EndRow</span>=<span class="string">"9"</span> <span class="attr">Width</span>=<span class="string">"110"</span> <span class="attr">Height</span>=<span class="string">"128"</span> <span class="attr">IsPlaying</span>=<span class="string">"&#123;Binding IsMouseOver,RelativeSource=&#123;RelativeSource Self&#125;&#125;"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">UniformGrid</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/ImageBlock.gif" alt="ImageBlock"></p>
+<div class="note warning">
+            <p>不再使用 <code>ImageBlock</code> 时记得调用 <code>Dispose</code> 方法清理资源。</p>
+          </div>
         
       </div>
       
@@ -3201,8 +3306,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -3325,6 +3439,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#属性"><span class="nav-number">1.</span> <span class="nav-text">属性</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#案例"><span class="nav-number">2.</span> <span class="nav-text">案例</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       

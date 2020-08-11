@@ -94,17 +94,19 @@
 
 
 
-  <meta name="description" content="everything can be handy">
+  <meta name="description" content="边框具有辉光效果的窗口，代码提取自Visual Studio 1public class GlowWindow : Window 属性   属性 描述 默认值 备注     ActiveGlowColor 窗口激活时辉光颜色     InactiveGlowColor 窗口非激活时辉光颜色      案例12345678910111213141516171819&amp;lt;hc:GlowWindow">
 <meta property="og:type" content="website">
-<meta property="og:title" content="GlowWindow">
+<meta property="og:title" content="GlowWindow 辉光窗口">
 <meta property="og:url" content="http://yoursite.com/handycontrol/extend_controls/glowWindow/index.html">
 <meta property="og:site_name" content="HandyOrg">
-<meta property="og:description" content="everything can be handy">
+<meta property="og:description" content="边框具有辉光效果的窗口，代码提取自Visual Studio 1public class GlowWindow : Window 属性   属性 描述 默认值 备注     ActiveGlowColor 窗口激活时辉光颜色     InactiveGlowColor 窗口非激活时辉光颜色      案例12345678910111213141516171819&amp;lt;hc:GlowWindow">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-02-18T07:01:18.811Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/GlowWindow.png">
+<meta property="og:updated_time" content="2020-08-08T14:55:15.566Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="GlowWindow">
-<meta name="twitter:description" content="everything can be handy">
+<meta name="twitter:title" content="GlowWindow 辉光窗口">
+<meta name="twitter:description" content="边框具有辉光效果的窗口，代码提取自Visual Studio 1public class GlowWindow : Window 属性   属性 描述 默认值 备注     ActiveGlowColor 窗口激活时辉光颜色     InactiveGlowColor 窗口非激活时辉光颜色      案例12345678910111213141516171819&amp;lt;hc:GlowWindow">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/GlowWindow.png">
 
 
 
@@ -122,7 +124,7 @@
   };
 </script>
 
-  <title>GlowWindow | HandyOrg</title>
+  <title>GlowWindow 辉光窗口 | HandyOrg</title>
   
 
 
@@ -684,6 +686,8 @@
   </li>
 
 
+                
+              
                 
               
                 
@@ -1674,6 +1678,35 @@
     
 
     <a href="/handycontrol/extend_controls/gifImage/" rel="section">GifImage Gif图片</a>
+
+  </li>
+
+
+                        
+                      
+                        
+                        
+                        
+                          
+                            
+                          
+                          
+
+  
+  
+    
+  
+  <li class="menu-item menu-item-glowwindow-辉光窗口 menu-item-active">
+
+    
+    
+    
+
+    
+      
+    
+
+    <a href="/handycontrol/extend_controls/glowWindow/" rel="section">GlowWindow 辉光窗口</a>
 
   </li>
 
@@ -3059,7 +3092,7 @@
     <div class="post-block page">
       <header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">GlowWindow
+<h1 class="post-title" itemprop="name headline">GlowWindow 辉光窗口
 
 </h1>
 
@@ -3119,7 +3152,35 @@
       <div class="post-body">
         
         
-          
+          <p>边框具有辉光效果的窗口，代码提取自Visual Studio</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">GlowWindow</span> : <span class="title">Window</span></span><br></pre></td></tr></table></figure>
+<h1 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h1><table>
+<thead>
+<tr>
+<th>属性</th>
+<th>描述</th>
+<th>默认值</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ActiveGlowColor</td>
+<td>窗口激活时辉光颜色</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>InactiveGlowColor</td>
+<td>窗口非激活时辉光颜色</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h1><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:GlowWindow</span> <span class="attr">x:Class</span>=<span class="string">"HandyControlDemo.Window.GlowWindow"</span></span></span><br><span class="line"><span class="tag">               <span class="attr">xmlns</span>=<span class="string">"http://schemas.microsoft.com/winfx/2006/xaml/presentation"</span></span></span><br><span class="line"><span class="tag">               <span class="attr">xmlns:x</span>=<span class="string">"http://schemas.microsoft.com/winfx/2006/xaml"</span></span></span><br><span class="line"><span class="tag">               <span class="attr">xmlns:d</span>=<span class="string">"http://schemas.microsoft.com/expression/blend/2008"</span></span></span><br><span class="line"><span class="tag">               <span class="attr">xmlns:mc</span>=<span class="string">"http://schemas.openxmlformats.org/markup-compatibility/2006"</span></span></span><br><span class="line"><span class="tag">               <span class="attr">xmlns:hc</span>=<span class="string">"https://handyorg.github.io/handycontrol"</span></span></span><br><span class="line"><span class="tag">               <span class="attr">xmlns:langs</span>=<span class="string">"clr-namespace:HandyControlDemo.Properties.Langs"</span></span></span><br><span class="line"><span class="tag">               <span class="attr">xmlns:ex</span>=<span class="string">"clr-namespace:HandyControlDemo.Tools.Extension"</span></span></span><br><span class="line"><span class="tag">               <span class="attr">mc:Ignorable</span>=<span class="string">"d"</span></span></span><br><span class="line"><span class="tag">               <span class="attr">Style</span>=<span class="string">"&#123;StaticResource WindowGlow&#125;"</span></span></span><br><span class="line"><span class="tag">               <span class="attr">Background</span>=<span class="string">"&#123;DynamicResource MainContentBackgroundBrush&#125;"</span></span></span><br><span class="line"><span class="tag">               <span class="attr">WindowStartupLocation</span>=<span class="string">"CenterScreen"</span></span></span><br><span class="line"><span class="tag">               <span class="attr">Title</span>=<span class="string">"&#123;ex:Lang Key=&#123;x:Static langs:LangKeys.Title&#125;&#125;"</span></span></span><br><span class="line"><span class="tag">               <span class="attr">ActiveGlowColor</span>=<span class="string">"&#123;DynamicResource PrimaryColor&#125;"</span></span></span><br><span class="line"><span class="tag">               <span class="attr">Height</span>=<span class="string">"450"</span> </span></span><br><span class="line"><span class="tag">               <span class="attr">Width</span>=<span class="string">"800"</span> </span></span><br><span class="line"><span class="tag">               <span class="attr">Icon</span>=<span class="string">"/HandyControlDemo;component/Resources/Img/icon.ico"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Border</span> <span class="attr">Background</span>=<span class="string">"&#123;DynamicResource MainContentForegroundDrawingBrush&#125;"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:GlowWindow</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/GlowWindow.png" alt="GlowWindow"></p>
+
         
       </div>
       
@@ -3201,8 +3262,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -3325,6 +3395,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#属性"><span class="nav-number">1.</span> <span class="nav-text">属性</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#案例"><span class="nav-number">2.</span> <span class="nav-text">案例</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       

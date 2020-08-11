@@ -94,17 +94,19 @@
 
 
 
-  <meta name="description" content="everything can be handy">
+  <meta name="description" content="一种可以让子元素呈现蜂窝状布局的容器. 1public class HoneycombPanel : Panel 蜂窝布局方式其它元素将以第一个元素为起点，环绕式布局： 1234567891011         ●       ●        (7)     (8)     ●       ●       ●    (6)     (1)     (9) ●       ●       ●">
 <meta property="og:type" content="website">
-<meta property="og:title" content="HoneycombPanel">
+<meta property="og:title" content="HoneycombPanel 蜂窝布局">
 <meta property="og:url" content="http://yoursite.com/handycontrol/extend_controls/honeycombPanel/index.html">
 <meta property="og:site_name" content="HandyOrg">
-<meta property="og:description" content="everything can be handy">
+<meta property="og:description" content="一种可以让子元素呈现蜂窝状布局的容器. 1public class HoneycombPanel : Panel 蜂窝布局方式其它元素将以第一个元素为起点，环绕式布局： 1234567891011         ●       ●        (7)     (8)     ●       ●       ●    (6)     (1)     (9) ●       ●       ●">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-02-18T07:01:18.813Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/HoneycombPanel.png">
+<meta property="og:updated_time" content="2020-08-09T06:29:47.368Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="HoneycombPanel">
-<meta name="twitter:description" content="everything can be handy">
+<meta name="twitter:title" content="HoneycombPanel 蜂窝布局">
+<meta name="twitter:description" content="一种可以让子元素呈现蜂窝状布局的容器. 1public class HoneycombPanel : Panel 蜂窝布局方式其它元素将以第一个元素为起点，环绕式布局： 1234567891011         ●       ●        (7)     (8)     ●       ●       ●    (6)     (1)     (9) ●       ●       ●">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/HoneycombPanel.png">
 
 
 
@@ -122,7 +124,7 @@
   };
 </script>
 
-  <title>HoneycombPanel | HandyOrg</title>
+  <title>HoneycombPanel 蜂窝布局 | HandyOrg</title>
   
 
 
@@ -684,6 +686,8 @@
   </li>
 
 
+                
+              
                 
               
                 
@@ -1674,6 +1678,35 @@
     
 
     <a href="/handycontrol/extend_controls/gifImage/" rel="section">GifImage Gif图片</a>
+
+  </li>
+
+
+                        
+                      
+                        
+                        
+                        
+                          
+                            
+                          
+                          
+
+  
+  
+    
+  
+  <li class="menu-item menu-item-glowwindow-辉光窗口">
+
+    
+    
+    
+
+    
+      
+    
+
+    <a href="/handycontrol/extend_controls/glowWindow/" rel="section">GlowWindow 辉光窗口</a>
 
   </li>
 
@@ -3059,7 +3092,7 @@
     <div class="post-block page">
       <header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">HoneycombPanel
+<h1 class="post-title" itemprop="name headline">HoneycombPanel 蜂窝布局
 
 </h1>
 
@@ -3119,7 +3152,13 @@
       <div class="post-body">
         
         
-          
+          <p>一种可以让子元素呈现蜂窝状布局的容器.</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">HoneycombPanel</span> : <span class="title">Panel</span></span><br></pre></td></tr></table></figure>
+<h1 id="蜂窝布局方式"><a href="#蜂窝布局方式" class="headerlink" title="蜂窝布局方式"></a>蜂窝布局方式</h1><p>其它元素将以第一个元素为起点，环绕式布局：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">         ●       ●</span><br><span class="line">        (7)     (8)</span><br><span class="line"></span><br><span class="line">     ●       ●       ●</span><br><span class="line">    (6)     (1)     (9)</span><br><span class="line"></span><br><span class="line"> ●       ●       ●       ...</span><br><span class="line">(5)     (0)     (2)</span><br><span class="line"></span><br><span class="line">     ●       ●       ...</span><br><span class="line">    (4)     (3)</span><br></pre></td></tr></table></figure>
+<h1 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h1><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ListBox</span> <span class="attr">Background</span>=<span class="string">"Transparent"</span> <span class="attr">BorderThickness</span>=<span class="string">"0"</span> <span class="attr">Style</span>=<span class="string">"&#123;StaticResource ListBoxCustom&#125;"</span> <span class="attr">ItemsSource</span>=<span class="string">"&#123;Binding DataList&#125;"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ListBox.ItemsPanel</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">ItemsPanelTemplate</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">hc:HoneycombPanel</span> <span class="attr">hc:PanelElement.FluidMoveBehavior</span>=<span class="string">"&#123;StaticResource BehaviorXY200&#125;"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">ItemsPanelTemplate</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">ListBox.ItemsPanel</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ListBox.ItemTemplate</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">DataTemplate</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">hc:Gravatar</span> <span class="attr">Style</span>=<span class="string">"&#123;StaticResource GravatarCircle&#125;"</span> <span class="attr">Margin</span>=<span class="string">"10"</span> <span class="attr">Source</span>=<span class="string">"&#123;Binding Content&#125;"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">DataTemplate</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">ListBox.ItemTemplate</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ListBox</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/HoneycombPanel.png" alt="HoneycombPanel"></p>
+
         
       </div>
       
@@ -3201,8 +3240,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -3325,6 +3373,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#蜂窝布局方式"><span class="nav-number">1.</span> <span class="nav-text">蜂窝布局方式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#案例"><span class="nav-number">2.</span> <span class="nav-text">案例</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
