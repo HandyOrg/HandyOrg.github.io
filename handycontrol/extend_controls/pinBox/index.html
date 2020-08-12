@@ -94,17 +94,19 @@
 
 
 
-  <meta name="description" content="everything can be handy">
+  <meta name="description" content="密码框的另一种形式. 12[TemplatePart(Name = ElementPanel, Type = typeof(Panel))]public class PinBox : Control 属性   属性 描述 默认值 备注     Password 密码  出于安全考虑，无法绑定   PasswordChar 掩码字符 ●    Length 密码长度 4 最小值为4   ItemMa">
 <meta property="og:type" content="website">
-<meta property="og:title" content="PinBox">
+<meta property="og:title" content="PinBox PIN码框">
 <meta property="og:url" content="http://yoursite.com/handycontrol/extend_controls/pinBox/index.html">
 <meta property="og:site_name" content="HandyOrg">
-<meta property="og:description" content="everything can be handy">
+<meta property="og:description" content="密码框的另一种形式. 12[TemplatePart(Name = ElementPanel, Type = typeof(Panel))]public class PinBox : Control 属性   属性 描述 默认值 备注     Password 密码  出于安全考虑，无法绑定   PasswordChar 掩码字符 ●    Length 密码长度 4 最小值为4   ItemMa">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-02-18T07:01:18.816Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/PinBox.png">
+<meta property="og:updated_time" content="2020-08-12T14:40:43.067Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="PinBox">
-<meta name="twitter:description" content="everything can be handy">
+<meta name="twitter:title" content="PinBox PIN码框">
+<meta name="twitter:description" content="密码框的另一种形式. 12[TemplatePart(Name = ElementPanel, Type = typeof(Panel))]public class PinBox : Control 属性   属性 描述 默认值 备注     Password 密码  出于安全考虑，无法绑定   PasswordChar 掩码字符 ●    Length 密码长度 4 最小值为4   ItemMa">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/PinBox.png">
 
 
 
@@ -122,7 +124,7 @@
   };
 </script>
 
-  <title>PinBox | HandyOrg</title>
+  <title>PinBox PIN码框 | HandyOrg</title>
   
 
 
@@ -3090,7 +3092,7 @@
     <div class="post-block page">
       <header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">PinBox
+<h1 class="post-title" itemprop="name headline">PinBox PIN码框
 
 </h1>
 
@@ -3150,7 +3152,73 @@
       <div class="post-body">
         
         
-          
+          <p>密码框的另一种形式.</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[<span class="meta">TemplatePart(Name = ElementPanel, Type = typeof(Panel))</span>]</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">PinBox</span> : <span class="title">Control</span></span><br></pre></td></tr></table></figure>
+<h1 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h1><table>
+<thead>
+<tr>
+<th>属性</th>
+<th>描述</th>
+<th>默认值</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Password</td>
+<td>密码</td>
+<td></td>
+<td>出于安全考虑，无法绑定</td>
+</tr>
+<tr>
+<td>PasswordChar</td>
+<td>掩码字符</td>
+<td>●</td>
+<td></td>
+</tr>
+<tr>
+<td>Length</td>
+<td>密码长度</td>
+<td>4</td>
+<td>最小值为4</td>
+</tr>
+<tr>
+<td>ItemMargin</td>
+<td>单元框间隔</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>ItemWidth</td>
+<td>单元框宽度</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>ItemHeight</td>
+<td>单元框高度</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="事件"><a href="#事件" class="headerlink" title="事件"></a>事件</h1><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Completed</td>
+<td>输入完成时触发</td>
+</tr>
+</tbody>
+</table>
+<h1 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h1><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">Margin</span>=<span class="string">"32"</span> <span class="attr">VerticalAlignment</span>=<span class="string">"Center"</span> <span class="attr">hc:PinBox.Completed</span>=<span class="string">"PinBox_OnCompleted"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:PinBox</span> <span class="attr">Length</span>=<span class="string">"4"</span> <span class="attr">Password</span>=<span class="string">"1234"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:PinBox</span> <span class="attr">Length</span>=<span class="string">"6"</span> <span class="attr">Password</span>=<span class="string">"123456"</span> <span class="attr">Margin</span>=<span class="string">"0,16,0,0"</span> <span class="attr">PasswordChar</span>=<span class="string">"❤"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/PinBox.png" alt="PinBox"></p>
+
         
       </div>
       
@@ -3232,8 +3300,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -3356,6 +3433,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#属性"><span class="nav-number">1.</span> <span class="nav-text">属性</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#事件"><span class="nav-number">2.</span> <span class="nav-text">事件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#案例"><span class="nav-number">3.</span> <span class="nav-text">案例</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       

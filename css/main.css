@@ -1859,7 +1859,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #e31d54;
+  background: #04ffff;
 }
 .feed-link,
 .chat {
@@ -3003,6 +3003,25 @@ ul.breadcrumb li+li:last-child {
   .pagination {
     margin: 8px 0 0;
   }
+}
+.header-inner {
+  box-shadow: 0 4px 8px 1.5px rgba(0,0,0,0.15);
+  border-radius: 0 0 10px 10px;
+}
+.sub-menu {
+  box-shadow: 0 4px 8px 1.5px rgba(0,0,0,0.15);
+  border-radius: 0 0 10px 10px;
+}
+#sub-menu-2 {
+  margin-top: -10px;
+}
+.post-block,
+.sidebar-inner {
+  box-shadow: 0 4px 8px 1.5px rgba(0,0,0,0.15) !important;
+  border-radius: 10px;
+}
+.back-to-top {
+  border-radius: 0 0 10px 10px;
 }
 .container {
   min-height: 100%;
