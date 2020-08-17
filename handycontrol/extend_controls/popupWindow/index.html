@@ -94,17 +94,17 @@
 
 
 
-  <meta name="description" content="建设中">
+  <meta name="description" content="PopupWindow 相对于 PopTip 能更灵活地控制弹出元素的位置.              PopupWindow 在未来版本中可能会作废.            123[TemplatePart(Name = ElementMainBorder, Type = typeof(Border))][TemplatePart(Name = ElementTitleBlock, Type =">
 <meta property="og:type" content="website">
-<meta property="og:title" content="建设中">
+<meta property="og:title" content="PopupWindow 弹出窗口">
 <meta property="og:url" content="http://yoursite.com/handycontrol/extend_controls/popupWindow/index.html">
 <meta property="og:site_name" content="HandyOrg">
-<meta property="og:description" content="建设中">
+<meta property="og:description" content="PopupWindow 相对于 PopTip 能更灵活地控制弹出元素的位置.              PopupWindow 在未来版本中可能会作废.            123[TemplatePart(Name = ElementMainBorder, Type = typeof(Border))][TemplatePart(Name = ElementTitleBlock, Type =">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-11T16:16:13.662Z">
+<meta property="og:updated_time" content="2020-08-17T14:27:34.206Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="建设中">
-<meta name="twitter:description" content="建设中">
+<meta name="twitter:title" content="PopupWindow 弹出窗口">
+<meta name="twitter:description" content="PopupWindow 相对于 PopTip 能更灵活地控制弹出元素的位置.              PopupWindow 在未来版本中可能会作废.            123[TemplatePart(Name = ElementMainBorder, Type = typeof(Border))][TemplatePart(Name = ElementTitleBlock, Type =">
 
 
 
@@ -122,7 +122,7 @@
   };
 </script>
 
-  <title>建设中 | HandyOrg</title>
+  <title>PopupWindow 弹出窗口 | HandyOrg</title>
   
 
 
@@ -3090,7 +3090,7 @@
     <div class="post-block page">
       <header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">建设中
+<h1 class="post-title" itemprop="name headline">PopupWindow 弹出窗口
 
 </h1>
 
@@ -3150,7 +3150,77 @@
       <div class="post-body">
         
         
-          <p>建设中</p>
+          <p><code>PopupWindow</code> 相对于 <code>PopTip</code> 能更灵活地控制弹出元素的位置.</p>
+<div class="note warning">
+            <p>PopupWindow 在未来版本中可能会作废.</p>
+          </div>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[<span class="meta">TemplatePart(Name = ElementMainBorder, Type = typeof(Border))</span>]</span><br><span class="line">[<span class="meta">TemplatePart(Name = ElementTitleBlock, Type = typeof(TextBlock))</span>]</span><br><span class="line">public class PopupWindow : System.Windows.Window</span><br></pre></td></tr></table></figure>
+<h1 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h1><table>
+<thead>
+<tr>
+<th>属性</th>
+<th>描述</th>
+<th>默认值</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PopupElement</td>
+<td>弹出元素</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>ShowTitle</td>
+<td>是否显示标题</td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>ShowCancel</td>
+<td>是否显示取消按钮</td>
+<td>false</td>
+<td></td>
+</tr>
+<tr>
+<td>ShowBorder</td>
+<td>是否显示边框</td>
+<td>false</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h1><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Show(FrameworkElement, bool)</td>
+<td>显示窗口(弹出元素, 是否带有背景)</td>
+</tr>
+<tr>
+<td>Show(System.Windows.Window, Point)</td>
+<td>显示窗口(相对窗口, 偏移坐标)</td>
+</tr>
+<tr>
+<td>Show(string)</td>
+<td>显示窗口(弹出信息)</td>
+</tr>
+<tr>
+<td>ShowDialog(FrameworkElement, bool)</td>
+<td>模态化显示窗口(弹出元素, 是否带有背景)</td>
+</tr>
+<tr>
+<td>ShowDialog(string, string title, bool)</td>
+<td>模态化显示窗口(弹出信息, 标题, 是否显示取消按钮)</td>
+</tr>
+</tbody>
+</table>
 
         
       </div>
@@ -3233,8 +3303,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -3357,6 +3436,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#属性"><span class="nav-number">1.</span> <span class="nav-text">属性</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#方法"><span class="nav-number">2.</span> <span class="nav-text">方法</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       

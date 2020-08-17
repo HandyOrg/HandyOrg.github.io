@@ -94,17 +94,19 @@
 
 
 
-  <meta name="description" content="建设中">
+  <meta name="description" content="在切换按钮的基础上附带了进度显示. 1public class ProgressButton : ToggleButton 属性   属性 描述 默认值 备注     ProgressStyle 进度条样式     Progress 进度 0     案例12345678&amp;lt;StackPanel&amp;gt;    &amp;lt;hc:ProgressButton IsChecked=&quot;&amp;#123;Bin">
 <meta property="og:type" content="website">
-<meta property="og:title" content="建设中">
+<meta property="og:title" content="ProgressButton 进度按钮">
 <meta property="og:url" content="http://yoursite.com/handycontrol/extend_controls/progressButton/index.html">
 <meta property="og:site_name" content="HandyOrg">
-<meta property="og:description" content="建设中">
+<meta property="og:description" content="在切换按钮的基础上附带了进度显示. 1public class ProgressButton : ToggleButton 属性   属性 描述 默认值 备注     ProgressStyle 进度条样式     Progress 进度 0     案例12345678&amp;lt;StackPanel&amp;gt;    &amp;lt;hc:ProgressButton IsChecked=&quot;&amp;#123;Bin">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-11T16:16:13.663Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/ProgressButton.png">
+<meta property="og:updated_time" content="2020-08-17T14:57:22.973Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="建设中">
-<meta name="twitter:description" content="建设中">
+<meta name="twitter:title" content="ProgressButton 进度按钮">
+<meta name="twitter:description" content="在切换按钮的基础上附带了进度显示. 1public class ProgressButton : ToggleButton 属性   属性 描述 默认值 备注     ProgressStyle 进度条样式     Progress 进度 0     案例12345678&amp;lt;StackPanel&amp;gt;    &amp;lt;hc:ProgressButton IsChecked=&quot;&amp;#123;Bin">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/ProgressButton.png">
 
 
 
@@ -122,7 +124,7 @@
   };
 </script>
 
-  <title>建设中 | HandyOrg</title>
+  <title>ProgressButton 进度按钮 | HandyOrg</title>
   
 
 
@@ -3090,7 +3092,7 @@
     <div class="post-block page">
       <header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">建设中
+<h1 class="post-title" itemprop="name headline">ProgressButton 进度按钮
 
 </h1>
 
@@ -3150,7 +3152,34 @@
       <div class="post-body">
         
         
-          <p>建设中</p>
+          <p>在切换按钮的基础上附带了进度显示.</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">ProgressButton</span> : <span class="title">ToggleButton</span></span><br></pre></td></tr></table></figure>
+<h1 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h1><table>
+<thead>
+<tr>
+<th>属性</th>
+<th>描述</th>
+<th>默认值</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ProgressStyle</td>
+<td>进度条样式</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Progress</td>
+<td>进度</td>
+<td>0</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h1><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">StackPanel</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:ProgressButton</span> <span class="attr">IsChecked</span>=<span class="string">"&#123;Binding IsUploading,Mode=TwoWay&#125;"</span> <span class="attr">Progress</span>=<span class="string">"&#123;Binding Progress&#125;"</span> <span class="attr">Content</span>=<span class="string">"&#123;Binding IsChecked,RelativeSource=&#123;RelativeSource Self&#125;,Converter=&#123;StaticResource Boolean2StringConverter&#125;,ConverterParameter=&#123;x:Static langs:Lang.UploadStr&#125;&#125;"</span> <span class="attr">Width</span>=<span class="string">"180"</span> <span class="attr">Margin</span>=<span class="string">"5"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:ProgressButton</span> <span class="attr">Style</span>=<span class="string">"&#123;StaticResource ProgressButtonPrimary&#125;"</span> <span class="attr">IsChecked</span>=<span class="string">"&#123;Binding IsUploading,Mode=TwoWay&#125;"</span> <span class="attr">Progress</span>=<span class="string">"&#123;Binding Progress&#125;"</span> <span class="attr">Content</span>=<span class="string">"&#123;Binding IsChecked,RelativeSource=&#123;RelativeSource Self&#125;,Converter=&#123;StaticResource Boolean2StringConverter&#125;,ConverterParameter=&#123;x:Static langs:Lang.UploadStr&#125;&#125;"</span> <span class="attr">Width</span>=<span class="string">"180"</span> <span class="attr">Margin</span>=<span class="string">"5"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:ProgressButton</span> <span class="attr">Style</span>=<span class="string">"&#123;StaticResource ProgressButtonSuccess&#125;"</span> <span class="attr">IsChecked</span>=<span class="string">"&#123;Binding IsUploading,Mode=TwoWay&#125;"</span> <span class="attr">Progress</span>=<span class="string">"&#123;Binding Progress&#125;"</span> <span class="attr">Content</span>=<span class="string">"&#123;Binding IsChecked,RelativeSource=&#123;RelativeSource Self&#125;,Converter=&#123;StaticResource Boolean2StringConverter&#125;,ConverterParameter=&#123;x:Static langs:Lang.UploadStr&#125;&#125;"</span> <span class="attr">Width</span>=<span class="string">"180"</span> <span class="attr">Margin</span>=<span class="string">"5"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:ProgressButton</span> <span class="attr">Style</span>=<span class="string">"&#123;StaticResource ProgressButtonInfo&#125;"</span> <span class="attr">IsChecked</span>=<span class="string">"&#123;Binding IsUploading,Mode=TwoWay&#125;"</span> <span class="attr">Progress</span>=<span class="string">"&#123;Binding Progress&#125;"</span> <span class="attr">Content</span>=<span class="string">"&#123;Binding IsChecked,RelativeSource=&#123;RelativeSource Self&#125;,Converter=&#123;StaticResource Boolean2StringConverter&#125;,ConverterParameter=&#123;x:Static langs:Lang.UploadStr&#125;&#125;"</span> <span class="attr">Width</span>=<span class="string">"180"</span> <span class="attr">Margin</span>=<span class="string">"5"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:ProgressButton</span> <span class="attr">Style</span>=<span class="string">"&#123;StaticResource ProgressButtonWarning&#125;"</span> <span class="attr">IsChecked</span>=<span class="string">"&#123;Binding IsUploading,Mode=TwoWay&#125;"</span> <span class="attr">Progress</span>=<span class="string">"&#123;Binding Progress&#125;"</span> <span class="attr">Content</span>=<span class="string">"&#123;Binding IsChecked,RelativeSource=&#123;RelativeSource Self&#125;,Converter=&#123;StaticResource Boolean2StringConverter&#125;,ConverterParameter=&#123;x:Static langs:Lang.UploadStr&#125;&#125;"</span> <span class="attr">Width</span>=<span class="string">"180"</span> <span class="attr">Margin</span>=<span class="string">"5"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:ProgressButton</span> <span class="attr">Style</span>=<span class="string">"&#123;StaticResource ProgressButtonDanger&#125;"</span> <span class="attr">IsChecked</span>=<span class="string">"&#123;Binding IsUploading,Mode=TwoWay&#125;"</span> <span class="attr">Progress</span>=<span class="string">"&#123;Binding Progress&#125;"</span> <span class="attr">Content</span>=<span class="string">"&#123;Binding IsChecked,RelativeSource=&#123;RelativeSource Self&#125;,Converter=&#123;StaticResource Boolean2StringConverter&#125;,ConverterParameter=&#123;x:Static langs:Lang.UploadStr&#125;&#125;"</span> <span class="attr">Width</span>=<span class="string">"180"</span> <span class="attr">Margin</span>=<span class="string">"5"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/ProgressButton.png" alt="ProgressButton"></p>
 
         
       </div>
@@ -3233,8 +3262,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -3357,6 +3395,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#属性"><span class="nav-number">1.</span> <span class="nav-text">属性</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#案例"><span class="nav-number">2.</span> <span class="nav-text">案例</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
