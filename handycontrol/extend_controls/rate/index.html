@@ -94,17 +94,19 @@
 
 
 
-  <meta name="description" content="建设中">
+  <meta name="description" content="当对评价进行展示或对事物进行快速的评级操作时，可使用评分控件. 1234[DefaultProperty(&quot;Items&quot;)][ContentProperty(&quot;Items&quot;)][TemplatePart(Name = ElementPanel, Type = typeof(Panel))]public class SimpleItemsControl : Control 1public class">
 <meta property="og:type" content="website">
-<meta property="og:title" content="建设中">
+<meta property="og:title" content="Rate 评分">
 <meta property="og:url" content="http://yoursite.com/handycontrol/extend_controls/rate/index.html">
 <meta property="og:site_name" content="HandyOrg">
-<meta property="og:description" content="建设中">
+<meta property="og:description" content="当对评价进行展示或对事物进行快速的评级操作时，可使用评分控件. 1234[DefaultProperty(&quot;Items&quot;)][ContentProperty(&quot;Items&quot;)][TemplatePart(Name = ElementPanel, Type = typeof(Panel))]public class SimpleItemsControl : Control 1public class">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-11T16:16:13.664Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Rate.png">
+<meta property="og:updated_time" content="2020-08-18T14:06:37.870Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="建设中">
-<meta name="twitter:description" content="建设中">
+<meta name="twitter:title" content="Rate 评分">
+<meta name="twitter:description" content="当对评价进行展示或对事物进行快速的评级操作时，可使用评分控件. 1234[DefaultProperty(&quot;Items&quot;)][ContentProperty(&quot;Items&quot;)][TemplatePart(Name = ElementPanel, Type = typeof(Panel))]public class SimpleItemsControl : Control 1public class">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Rate.png">
 
 
 
@@ -122,7 +124,7 @@
   };
 </script>
 
-  <title>建设中 | HandyOrg</title>
+  <title>Rate 评分 | HandyOrg</title>
   
 
 
@@ -3090,7 +3092,7 @@
     <div class="post-block page">
       <header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">建设中
+<h1 class="post-title" itemprop="name headline">Rate 评分
 
 </h1>
 
@@ -3150,7 +3152,98 @@
       <div class="post-body">
         
         
-          <p>建设中</p>
+          <p>当对评价进行展示或对事物进行快速的评级操作时，可使用评分控件.</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[<span class="meta">DefaultProperty(<span class="meta-string">"Items"</span>)</span>]</span><br><span class="line">[<span class="meta">ContentProperty(<span class="meta-string">"Items"</span>)</span>]</span><br><span class="line">[<span class="meta">TemplatePart(Name = ElementPanel, Type = typeof(Panel))</span>]</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">SimpleItemsControl</span> : <span class="title">Control</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">RegularItemsControl</span> : <span class="title">SimpleItemsControl</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Rate</span> : <span class="title">RegularItemsControl</span></span><br></pre></td></tr></table></figure>
+<h1 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h1><table>
+<thead>
+<tr>
+<th>属性</th>
+<th>描述</th>
+<th>默认值</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AllowHalf</td>
+<td>是否允许半选</td>
+<td>false</td>
+<td></td>
+</tr>
+<tr>
+<td>AllowClear</td>
+<td>是否允许再次点击后清除</td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>Icon</td>
+<td>图标</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Count</td>
+<td>star 总数</td>
+<td>5</td>
+<td></td>
+</tr>
+<tr>
+<td>DefaultValue</td>
+<td>默认值</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>Value</td>
+<td>当前评分</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>Text</td>
+<td>评分文字</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>ShowText</td>
+<td>是否显示评分文字</td>
+<td>false</td>
+<td></td>
+</tr>
+<tr>
+<td>IsReadOnly</td>
+<td>是否只读</td>
+<td>false</td>
+<td></td>
+</tr>
+<tr>
+<td>Value</td>
+<td>当前评分</td>
+<td>0</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="事件"><a href="#事件" class="headerlink" title="事件"></a>事件</h1><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ValueChanged</td>
+<td>评分改变时触发</td>
+</tr>
+</tbody>
+</table>
+<h1 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h1><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">Width</span>=<span class="string">"170"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:Rate</span> <span class="attr">Value</span>=<span class="string">"2"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:Rate</span> <span class="attr">Value</span>=<span class="string">"5"</span> <span class="attr">Count</span>=<span class="string">"6"</span> <span class="attr">Margin</span>=<span class="string">"0,16,0,0"</span> <span class="attr">Foreground</span>=<span class="string">"&#123;DynamicResource SuccessBrush&#125;"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:Rate</span> <span class="attr">DefaultValue</span>=<span class="string">"3"</span> <span class="attr">IsReadOnly</span>=<span class="string">"True"</span> <span class="attr">AllowHalf</span>=<span class="string">"True"</span> <span class="attr">Margin</span>=<span class="string">"0,16,0,0"</span> <span class="attr">Foreground</span>=<span class="string">"&#123;DynamicResource WarningBrush&#125;"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:Rate</span> <span class="attr">DefaultValue</span>=<span class="string">"1"</span> <span class="attr">AllowClear</span>=<span class="string">"False"</span> <span class="attr">AllowHalf</span>=<span class="string">"True"</span> <span class="attr">Margin</span>=<span class="string">"0,16,0,0"</span> <span class="attr">Foreground</span>=<span class="string">"&#123;DynamicResource DangerBrush&#125;"</span> <span class="attr">Icon</span>=<span class="string">"&#123;StaticResource LoveGeometry&#125;"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hc:Rate</span> <span class="attr">Value</span>=<span class="string">"4.5"</span> <span class="attr">AllowHalf</span>=<span class="string">"True"</span> <span class="attr">ShowText</span>=<span class="string">"True"</span> <span class="attr">Margin</span>=<span class="string">"0,16,0,0"</span> <span class="attr">Foreground</span>=<span class="string">"&#123;DynamicResource DangerBrush&#125;"</span> <span class="attr">Icon</span>=<span class="string">"&#123;StaticResource LoveGeometry&#125;"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Rate.png" alt="Rate"></p>
 
         
       </div>
@@ -3233,8 +3326,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -3357,6 +3459,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#属性"><span class="nav-number">1.</span> <span class="nav-text">属性</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#事件"><span class="nav-number">2.</span> <span class="nav-text">事件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#案例"><span class="nav-number">3.</span> <span class="nav-text">案例</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       

@@ -94,17 +94,19 @@
 
 
 
-  <meta name="description" content="everything can be handy">
+  <meta name="description" content="可以使用 RelativePanel 的附加属性对其内容进行相对布局.详见：RelativePanel Class 1public class RelativePanel : Panel 属性   属性 描述 默认值 备注     Above 使此元素位于目标元素的上方     AlignBottomWith 使此元素与目标元素底部对齐     AlignBottomWithPanel 使此元素与">
 <meta property="og:type" content="website">
-<meta property="og:title" content="RelativePanel">
+<meta property="og:title" content="RelativePanel 相对布局">
 <meta property="og:url" content="http://yoursite.com/handycontrol/extend_controls/relativePanel/index.html">
 <meta property="og:site_name" content="HandyOrg">
-<meta property="og:description" content="everything can be handy">
+<meta property="og:description" content="可以使用 RelativePanel 的附加属性对其内容进行相对布局.详见：RelativePanel Class 1public class RelativePanel : Panel 属性   属性 描述 默认值 备注     Above 使此元素位于目标元素的上方     AlignBottomWith 使此元素与目标元素底部对齐     AlignBottomWithPanel 使此元素与">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-02-18T07:01:18.818Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/RelativePanel.png">
+<meta property="og:updated_time" content="2020-08-18T14:58:08.057Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="RelativePanel">
-<meta name="twitter:description" content="everything can be handy">
+<meta name="twitter:title" content="RelativePanel 相对布局">
+<meta name="twitter:description" content="可以使用 RelativePanel 的附加属性对其内容进行相对布局.详见：RelativePanel Class 1public class RelativePanel : Panel 属性   属性 描述 默认值 备注     Above 使此元素位于目标元素的上方     AlignBottomWith 使此元素与目标元素底部对齐     AlignBottomWithPanel 使此元素与">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/RelativePanel.png">
 
 
 
@@ -122,7 +124,7 @@
   };
 </script>
 
-  <title>RelativePanel | HandyOrg</title>
+  <title>RelativePanel 相对布局 | HandyOrg</title>
   
 
 
@@ -3090,7 +3092,7 @@
     <div class="post-block page">
       <header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">RelativePanel
+<h1 class="post-title" itemprop="name headline">RelativePanel 相对布局
 
 </h1>
 
@@ -3150,7 +3152,119 @@
       <div class="post-body">
         
         
-          
+          <p>可以使用 <code>RelativePanel</code> 的附加属性对其内容进行相对布局.<br>详见：<a href="https://docs.microsoft.com/zh-cn/uwp/api/Windows.UI.Xaml.Controls.RelativePanel" target="_blank" rel="noopener">RelativePanel Class</a></p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">RelativePanel</span> : <span class="title">Panel</span></span><br></pre></td></tr></table></figure>
+<h1 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h1><table>
+<thead>
+<tr>
+<th>属性</th>
+<th>描述</th>
+<th>默认值</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Above</td>
+<td>使此元素位于目标元素的上方</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>AlignBottomWith</td>
+<td>使此元素与目标元素底部对齐</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>AlignBottomWithPanel</td>
+<td>使此元素与Panel底部对齐</td>
+<td>false</td>
+<td></td>
+</tr>
+<tr>
+<td>AlignHorizontalCenterWith</td>
+<td>使此元素与目标元素水平居中对齐</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>AlignHorizontalCenterWithPanel</td>
+<td>使此元素与Panel水平居中对齐</td>
+<td>false</td>
+<td></td>
+</tr>
+<tr>
+<td>AlignLeftWith</td>
+<td>使此元素与目标元素左侧对齐</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>AlignLeftWithPanel</td>
+<td>使此元素与Panel左侧对齐</td>
+<td>false</td>
+<td></td>
+</tr>
+<tr>
+<td>AlignRightWith</td>
+<td>使此元素与目标元素右侧对齐</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>AlignRightWithPanel</td>
+<td>使此元素与Panel右侧对齐</td>
+<td>false</td>
+<td></td>
+</tr>
+<tr>
+<td>AlignTopWith</td>
+<td>使此元素与目标元素顶部对齐</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>AlignTopWithPanel</td>
+<td>使此元素与Panel顶侧对齐</td>
+<td>false</td>
+<td></td>
+</tr>
+<tr>
+<td>AlignVerticalCenterWith</td>
+<td>使此元素与目标元素垂直居中对齐</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>AlignVerticalCenterWithPanel</td>
+<td>使此元素与Panel垂直居中对齐</td>
+<td>false</td>
+<td></td>
+</tr>
+<tr>
+<td>Below</td>
+<td>使此元素位于目标元素的下方</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>LeftOf</td>
+<td>使此元素位于目标元素的左侧</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>RightOf</td>
+<td>使此元素位于目标元素的右侧</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h1><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hc:RelativePanel</span> <span class="attr">Width</span>=<span class="string">"620"</span> <span class="attr">Height</span>=<span class="string">"700"</span> <span class="attr">Margin</span>=<span class="string">"32"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Border</span> <span class="attr">Name</span>=<span class="string">"Rect1"</span> <span class="attr">Background</span>=<span class="string">"&#123;DynamicResource DangerBrush&#125;"</span> <span class="attr">Height</span>=<span class="string">"50"</span> <span class="attr">Width</span>=<span class="string">"50"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">Text</span>=<span class="string">"Rect1"</span> <span class="attr">Foreground</span>=<span class="string">"White"</span> <span class="attr">FontWeight</span>=<span class="string">"Bold"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Center"</span> <span class="attr">VerticalAlignment</span>=<span class="string">"Center"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">Border</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Border</span> <span class="attr">Name</span>=<span class="string">"Rect2"</span> <span class="attr">Background</span>=<span class="string">"&#123;DynamicResource PrimaryBrush&#125;"</span> <span class="attr">Height</span>=<span class="string">"50"</span> <span class="attr">Width</span>=<span class="string">"50"</span> <span class="attr">hc:RelativePanel.AlignHorizontalCenterWithPanel</span>=<span class="string">"True"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">Text</span>=<span class="string">"Rect2"</span> <span class="attr">Foreground</span>=<span class="string">"White"</span> <span class="attr">FontWeight</span>=<span class="string">"Bold"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Center"</span> <span class="attr">VerticalAlignment</span>=<span class="string">"Center"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">Border</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Border</span> <span class="attr">Name</span>=<span class="string">"Rect3"</span> <span class="attr">Background</span>=<span class="string">"&#123;DynamicResource SuccessBrush&#125;"</span> <span class="attr">Height</span>=<span class="string">"50"</span> <span class="attr">Width</span>=<span class="string">"50"</span> <span class="attr">hc:RelativePanel.AlignRightWithPanel</span>=<span class="string">"True"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">Text</span>=<span class="string">"Rect3"</span> <span class="attr">Foreground</span>=<span class="string">"White"</span> <span class="attr">FontWeight</span>=<span class="string">"Bold"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Center"</span> <span class="attr">VerticalAlignment</span>=<span class="string">"Center"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">Border</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Border</span> <span class="attr">Name</span>=<span class="string">"Rect4"</span> <span class="attr">Background</span>=<span class="string">"&#123;DynamicResource DangerBrush&#125;"</span> <span class="attr">Height</span>=<span class="string">"50"</span> <span class="attr">Width</span>=<span class="string">"50"</span> <span class="attr">hc:RelativePanel.AlignBottomWithPanel</span>=<span class="string">"True"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">Text</span>=<span class="string">"Rect4"</span> <span class="attr">Foreground</span>=<span class="string">"White"</span> <span class="attr">FontWeight</span>=<span class="string">"Bold"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Center"</span> <span class="attr">VerticalAlignment</span>=<span class="string">"Center"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">Border</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Border</span> <span class="attr">Name</span>=<span class="string">"Rect5"</span> <span class="attr">Background</span>=<span class="string">"&#123;DynamicResource PrimaryBrush&#125;"</span> <span class="attr">Height</span>=<span class="string">"50"</span> <span class="attr">Width</span>=<span class="string">"50"</span> <span class="attr">hc:RelativePanel.AlignBottomWithPanel</span>=<span class="string">"True"</span> <span class="attr">hc:RelativePanel.AlignHorizontalCenterWithPanel</span>=<span class="string">"True"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">Text</span>=<span class="string">"Rect5"</span> <span class="attr">Foreground</span>=<span class="string">"White"</span> <span class="attr">FontWeight</span>=<span class="string">"Bold"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Center"</span> <span class="attr">VerticalAlignment</span>=<span class="string">"Center"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">Border</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Border</span> <span class="attr">Name</span>=<span class="string">"Rect6"</span> <span class="attr">Background</span>=<span class="string">"&#123;DynamicResource SuccessBrush&#125;"</span> <span class="attr">Height</span>=<span class="string">"50"</span> <span class="attr">Width</span>=<span class="string">"50"</span> <span class="attr">hc:RelativePanel.AlignBottomWithPanel</span>=<span class="string">"True"</span> <span class="attr">hc:RelativePanel.AlignRightWithPanel</span>=<span class="string">"True"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">Text</span>=<span class="string">"Rect6"</span> <span class="attr">Foreground</span>=<span class="string">"White"</span> <span class="attr">FontWeight</span>=<span class="string">"Bold"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Center"</span> <span class="attr">VerticalAlignment</span>=<span class="string">"Center"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">Border</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Border</span> <span class="attr">Name</span>=<span class="string">"Rect7"</span> <span class="attr">Background</span>=<span class="string">"&#123;DynamicResource PrimaryBrush&#125;"</span> <span class="attr">Height</span>=<span class="string">"50"</span> <span class="attr">hc:RelativePanel.RightOf</span>=<span class="string">"&#123;Binding ElementName=Rect1&#125;"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">Text</span>=<span class="string">"Rect7 (RightOf Rect1)"</span> <span class="attr">Padding</span>=<span class="string">"10,0"</span> <span class="attr">Foreground</span>=<span class="string">"White"</span> <span class="attr">FontWeight</span>=<span class="string">"Bold"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Center"</span> <span class="attr">VerticalAlignment</span>=<span class="string">"Center"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">Border</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Border</span> <span class="attr">Name</span>=<span class="string">"Rect8"</span> <span class="attr">Background</span>=<span class="string">"&#123;DynamicResource SuccessBrush&#125;"</span> <span class="attr">Height</span>=<span class="string">"50"</span> <span class="attr">hc:RelativePanel.Below</span>=<span class="string">"&#123;Binding ElementName=Rect7&#125;"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">Text</span>=<span class="string">"Rect8 (Below Rect7)"</span> <span class="attr">Padding</span>=<span class="string">"10,0"</span> <span class="attr">Foreground</span>=<span class="string">"White"</span> <span class="attr">FontWeight</span>=<span class="string">"Bold"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Center"</span> <span class="attr">VerticalAlignment</span>=<span class="string">"Center"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">Border</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Border</span> <span class="attr">Name</span>=<span class="string">"Rect9"</span> <span class="attr">Background</span>=<span class="string">"&#123;DynamicResource PrimaryBrush&#125;"</span> <span class="attr">Height</span>=<span class="string">"140"</span> <span class="attr">Width</span>=<span class="string">"460"</span> <span class="attr">hc:RelativePanel.AlignHorizontalCenterWithPanel</span>=<span class="string">"True"</span> <span class="attr">hc:RelativePanel.AlignVerticalCenterWithPanel</span>=<span class="string">"True"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">Text</span>=<span class="string">"Rect9"</span> <span class="attr">Padding</span>=<span class="string">"10"</span> <span class="attr">Foreground</span>=<span class="string">"White"</span> <span class="attr">FontWeight</span>=<span class="string">"Bold"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Center"</span> <span class="attr">VerticalAlignment</span>=<span class="string">"Top"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">Border</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Border</span> <span class="attr">Name</span>=<span class="string">"Rect10"</span> <span class="attr">Background</span>=<span class="string">"&#123;DynamicResource DangerBrush&#125;"</span> <span class="attr">Width</span>=<span class="string">"50"</span> <span class="attr">hc:RelativePanel.RightOf</span>=<span class="string">"&#123;Binding ElementName=Rect9&#125;"</span> <span class="attr">hc:RelativePanel.AlignVerticalCenterWith</span>=<span class="string">"&#123;Binding ElementName=Rect9&#125;"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">Text</span>=<span class="string">"Rect14 (RightOf Rect9, AlignVerticalCenterWith Rect9)"</span> <span class="attr">Padding</span>=<span class="string">"10,0"</span> <span class="attr">Foreground</span>=<span class="string">"White"</span> <span class="attr">FontWeight</span>=<span class="string">"Bold"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Center"</span> <span class="attr">VerticalAlignment</span>=<span class="string">"Center"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">TextBlock.LayoutTransform</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">TransformGroup</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">RotateTransform</span> <span class="attr">Angle</span>=<span class="string">"-90"</span>/&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">TransformGroup</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">TextBlock.LayoutTransform</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">TextBlock</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">Border</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Border</span> <span class="attr">Name</span>=<span class="string">"Rect11"</span> <span class="attr">Background</span>=<span class="string">"&#123;DynamicResource DangerBrush&#125;"</span> <span class="attr">Height</span>=<span class="string">"50"</span> <span class="attr">hc:RelativePanel.AlignBottomWith</span>=<span class="string">"&#123;Binding ElementName=Rect9&#125;"</span> <span class="attr">hc:RelativePanel.AlignHorizontalCenterWith</span>=<span class="string">"&#123;Binding ElementName=Rect9&#125;"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">Text</span>=<span class="string">"Rect11 (AlignBottomWith Rect9, AlignHorizontalCenterWith Rect9)"</span> <span class="attr">Padding</span>=<span class="string">"10,0"</span> <span class="attr">Foreground</span>=<span class="string">"White"</span> <span class="attr">FontWeight</span>=<span class="string">"Bold"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Center"</span> <span class="attr">VerticalAlignment</span>=<span class="string">"Center"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">Border</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Border</span> <span class="attr">Name</span>=<span class="string">"Rect12"</span> <span class="attr">Background</span>=<span class="string">"&#123;DynamicResource DangerBrush&#125;"</span> <span class="attr">Height</span>=<span class="string">"50"</span> <span class="attr">hc:RelativePanel.Below</span>=<span class="string">"&#123;Binding ElementName=Rect8&#125;"</span> <span class="attr">hc:RelativePanel.AlignLeftWith</span>=<span class="string">"&#123;Binding ElementName=Rect7&#125;"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">Text</span>=<span class="string">"Rect12 (Below Rect8, AlignLeftWith Rect7)"</span> <span class="attr">Padding</span>=<span class="string">"10,0"</span> <span class="attr">Foreground</span>=<span class="string">"White"</span> <span class="attr">FontWeight</span>=<span class="string">"Bold"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Center"</span> <span class="attr">VerticalAlignment</span>=<span class="string">"Center"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">Border</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Border</span> <span class="attr">Name</span>=<span class="string">"Rect13"</span> <span class="attr">Background</span>=<span class="string">"&#123;DynamicResource PrimaryBrush&#125;"</span> <span class="attr">Height</span>=<span class="string">"50"</span> <span class="attr">hc:RelativePanel.Below</span>=<span class="string">"&#123;Binding ElementName=Rect12&#125;"</span> <span class="attr">hc:RelativePanel.AlignRightWith</span>=<span class="string">"&#123;Binding ElementName=Rect12&#125;"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">Text</span>=<span class="string">"Rect13 (Below Rect12, AlignRightWith Rect12)"</span> <span class="attr">Padding</span>=<span class="string">"10,0"</span> <span class="attr">Foreground</span>=<span class="string">"White"</span> <span class="attr">FontWeight</span>=<span class="string">"Bold"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Center"</span> <span class="attr">VerticalAlignment</span>=<span class="string">"Center"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">Border</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Border</span> <span class="attr">Name</span>=<span class="string">"Rect14"</span> <span class="attr">Background</span>=<span class="string">"&#123;DynamicResource SuccessBrush&#125;"</span> <span class="attr">Height</span>=<span class="string">"50"</span> <span class="attr">hc:RelativePanel.Above</span>=<span class="string">"&#123;Binding ElementName=Rect9&#125;"</span> <span class="attr">hc:RelativePanel.AlignRightWith</span>=<span class="string">"&#123;Binding ElementName=Rect9&#125;"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">Text</span>=<span class="string">"Rect14 (Above Rect9, AlignRightWith Rect9)"</span> <span class="attr">Padding</span>=<span class="string">"10,0"</span> <span class="attr">Foreground</span>=<span class="string">"White"</span> <span class="attr">FontWeight</span>=<span class="string">"Bold"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Center"</span> <span class="attr">VerticalAlignment</span>=<span class="string">"Center"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">Border</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Border</span> <span class="attr">Name</span>=<span class="string">"Rect15"</span> <span class="attr">Background</span>=<span class="string">"&#123;DynamicResource DangerBrush&#125;"</span> <span class="attr">Height</span>=<span class="string">"50"</span> <span class="attr">hc:RelativePanel.LeftOf</span>=<span class="string">"&#123;Binding ElementName=Rect2&#125;"</span> <span class="attr">hc:RelativePanel.AlignTopWith</span>=<span class="string">"&#123;Binding ElementName=Rect9&#125;"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">TextBlock</span> <span class="attr">Text</span>=<span class="string">"Rect15 (LeftOf Rect2, AlignTopWith Rect9)"</span> <span class="attr">Padding</span>=<span class="string">"10,0"</span> <span class="attr">Foreground</span>=<span class="string">"White"</span> <span class="attr">FontWeight</span>=<span class="string">"Bold"</span> <span class="attr">HorizontalAlignment</span>=<span class="string">"Center"</span> <span class="attr">VerticalAlignment</span>=<span class="string">"Center"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">Border</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hc:RelativePanel</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/RelativePanel.png" alt="RelativePanel"></p>
+
         
       </div>
       
@@ -3232,8 +3346,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -3356,6 +3479,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#属性"><span class="nav-number">1.</span> <span class="nav-text">属性</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#案例"><span class="nav-number">2.</span> <span class="nav-text">案例</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
