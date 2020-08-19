@@ -14,6 +14,7 @@
 
 <html class="theme-next gemini" lang="zh-CN">
 <head><meta name="generator" content="Hexo 3.8.0">
+  <script data-ad-client="ca-pub-8129276259146154" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
@@ -94,17 +95,19 @@
 
 
 
-  <meta name="description" content="建设中">
+  <meta name="description" content="通过键入关键字触发搜索. 1public class SearchBar : TextBox, ICommandSource 属性   属性 描述 默认值 备注     IsRealTime 是否实时搜索 false 如果为true则每次输入都会自动触发搜索开始事件   Command 命令     CommandParameter 命令参数     CommandTarget 命令目标元素">
 <meta property="og:type" content="website">
-<meta property="og:title" content="建设中">
+<meta property="og:title" content="SearchBar 搜索栏">
 <meta property="og:url" content="http://yoursite.com/handycontrol/extend_controls/searchBar/index.html">
 <meta property="og:site_name" content="HandyOrg">
-<meta property="og:description" content="建设中">
+<meta property="og:description" content="通过键入关键字触发搜索. 1public class SearchBar : TextBox, ICommandSource 属性   属性 描述 默认值 备注     IsRealTime 是否实时搜索 false 如果为true则每次输入都会自动触发搜索开始事件   Command 命令     CommandParameter 命令参数     CommandTarget 命令目标元素">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-11T16:16:13.664Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/SearchBar.png">
+<meta property="og:updated_time" content="2020-08-19T13:54:26.466Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="建设中">
-<meta name="twitter:description" content="建设中">
+<meta name="twitter:title" content="SearchBar 搜索栏">
+<meta name="twitter:description" content="通过键入关键字触发搜索. 1public class SearchBar : TextBox, ICommandSource 属性   属性 描述 默认值 备注     IsRealTime 是否实时搜索 false 如果为true则每次输入都会自动触发搜索开始事件   Command 命令     CommandParameter 命令参数     CommandTarget 命令目标元素">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/SearchBar.png">
 
 
 
@@ -122,7 +125,7 @@
   };
 </script>
 
-  <title>建设中 | HandyOrg</title>
+  <title>SearchBar 搜索栏 | HandyOrg</title>
   
 
 
@@ -3090,7 +3093,7 @@
     <div class="post-block page">
       <header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">建设中
+<h1 class="post-title" itemprop="name headline">SearchBar 搜索栏
 
 </h1>
 
@@ -3150,7 +3153,150 @@
       <div class="post-body">
         
         
-          <p>建设中</p>
+          <p>通过键入关键字触发搜索.</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">SearchBar</span> : <span class="title">TextBox</span>, <span class="title">ICommandSource</span></span><br></pre></td></tr></table></figure>
+<h1 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h1><table>
+<thead>
+<tr>
+<th>属性</th>
+<th>描述</th>
+<th>默认值</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IsRealTime</td>
+<td>是否实时搜索</td>
+<td>false</td>
+<td>如果为<code>true</code>则每次输入都会自动触发搜索开始事件</td>
+</tr>
+<tr>
+<td>Command</td>
+<td>命令</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>CommandParameter</td>
+<td>命令参数</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>CommandTarget</td>
+<td>命令目标元素</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="附加属性"><a href="#附加属性" class="headerlink" title="附加属性"></a>附加属性</h1><table>
+<thead>
+<tr>
+<th>属性</th>
+<th>描述</th>
+<th>默认值</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>InfoElement.Placeholder</td>
+<td>占位符</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>InfoElement.Necessary</td>
+<td>是否必填</td>
+<td>false</td>
+<td></td>
+</tr>
+<tr>
+<td>InfoElement.Symbol</td>
+<td>必填标记</td>
+<td>●</td>
+<td></td>
+</tr>
+<tr>
+<td>InfoElement.ContentHeight</td>
+<td>内容高度</td>
+<td>30</td>
+<td>标题在上时可用</td>
+</tr>
+<tr>
+<td>InfoElement.MinContentHeight</td>
+<td>最小内容高度</td>
+<td>30</td>
+<td>标题在上时可用</td>
+</tr>
+<tr>
+<td>TitleElement.Title</td>
+<td>标题</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>TitleElement.TitlePlacement</td>
+<td>标题对齐方式</td>
+<td>TitlePlacementType.Top</td>
+<td></td>
+</tr>
+<tr>
+<td>TitleElement.TitleWidth</td>
+<td>标题宽度</td>
+<td>120</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="事件"><a href="#事件" class="headerlink" title="事件"></a>事件</h1><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SearchStarted</td>
+<td>搜索开始时触发</td>
+</tr>
+</tbody>
+</table>
+<h1 id="样式"><a href="#样式" class="headerlink" title="样式"></a>样式</h1><table>
+<thead>
+<tr>
+<th>样式</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SearchBarBaseStyle</td>
+<td>默认样式</td>
+</tr>
+<tr>
+<td>SearchBarExtendBaseStyle</td>
+<td>默认扩展样式</td>
+</tr>
+<tr>
+<td>SearchBarPlusBaseStyle</td>
+<td>默认加强样式</td>
+</tr>
+<tr>
+<td>SearchBarExtend</td>
+<td>扩展样式</td>
+</tr>
+<tr>
+<td>SearchBarPlus</td>
+<td>加强样式</td>
+</tr>
+</tbody>
+</table>
+<h1 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h1><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">Margin</span>=<span class="string">"32"</span> <span class="attr">Orientation</span>=<span class="string">"Horizontal"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">StackPanel</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:SearchBar</span> <span class="attr">Command</span>=<span class="string">"&#123;Binding SearchCmd&#125;"</span> <span class="attr">CommandParameter</span>=<span class="string">"&#123;Binding Text,RelativeSource=&#123;RelativeSource Self&#125;&#125;"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:SearchBar</span> <span class="attr">Margin</span>=<span class="string">"0,32,0,0"</span> <span class="attr">IsEnabled</span>=<span class="string">"False"</span>/&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:SearchBar</span> <span class="attr">hc:InfoElement.Title</span>=<span class="string">"&#123;ex:Lang Key=&#123;x:Static langs:LangKeys.TitleDemoStr1&#125;&#125;"</span> <span class="attr">Margin</span>=<span class="string">"0,32,0,0"</span> <span class="attr">Style</span>=<span class="string">"&#123;StaticResource SearchBarExtend&#125;"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:SearchBar</span> <span class="attr">hc:InfoElement.Placeholder</span>=<span class="string">"&#123;ex:Lang Key=&#123;x:Static langs:LangKeys.PlsEnterContent&#125;&#125;"</span> <span class="attr">hc:InfoElement.Title</span>=<span class="string">"&#123;ex:Lang Key=&#123;x:Static langs:LangKeys.TitleDemoStr1&#125;&#125;"</span> <span class="attr">Margin</span>=<span class="string">"0,32,0,0"</span> <span class="attr">hc:InfoElement.Necessary</span>=<span class="string">"True"</span> <span class="attr">Style</span>=<span class="string">"&#123;StaticResource SearchBarExtend&#125;"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:SearchBar</span> <span class="attr">Width</span>=<span class="string">"380"</span> <span class="attr">hc:InfoElement.TitleWidth</span>=<span class="string">"140"</span> <span class="attr">hc:InfoElement.Placeholder</span>=<span class="string">"&#123;ex:Lang Key=&#123;x:Static langs:LangKeys.PlsEnterContent&#125;&#125;"</span> <span class="attr">hc:InfoElement.TitlePlacement</span>=<span class="string">"Left"</span> <span class="attr">hc:InfoElement.Title</span>=<span class="string">"&#123;ex:Lang Key=&#123;x:Static langs:LangKeys.TitleDemoStr3&#125;&#125;"</span> <span class="attr">Style</span>=<span class="string">"&#123;StaticResource SearchBarExtend&#125;"</span> <span class="attr">Margin</span>=<span class="string">"0,32,0,0"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:SearchBar</span> <span class="attr">Width</span>=<span class="string">"380"</span> <span class="attr">hc:InfoElement.TitleWidth</span>=<span class="string">"140"</span> <span class="attr">hc:InfoElement.Placeholder</span>=<span class="string">"&#123;ex:Lang Key=&#123;x:Static langs:LangKeys.PlsEnterContent&#125;&#125;"</span> <span class="attr">hc:InfoElement.TitlePlacement</span>=<span class="string">"Left"</span> <span class="attr">hc:InfoElement.Title</span>=<span class="string">"&#123;ex:Lang Key=&#123;x:Static langs:LangKeys.TitleDemoStr3&#125;&#125;"</span> <span class="attr">Style</span>=<span class="string">"&#123;StaticResource SearchBarExtend&#125;"</span> <span class="attr">hc:InfoElement.Necessary</span>=<span class="string">"True"</span> <span class="attr">Margin</span>=<span class="string">"0,32,0,0"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">StackPanel</span> <span class="attr">Margin</span>=<span class="string">"32,0,0,0"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:SearchBar</span> <span class="attr">Name</span>=<span class="string">"SearchBarCustomVerify"</span> <span class="attr">ShowClearButton</span>=<span class="string">"True"</span> <span class="attr">Style</span>=<span class="string">"&#123;StaticResource SearchBarPlus&#125;"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:SearchBar</span> <span class="attr">Margin</span>=<span class="string">"0,32,0,0"</span> <span class="attr">IsEnabled</span>=<span class="string">"False"</span> <span class="attr">Style</span>=<span class="string">"&#123;StaticResource SearchBarPlus&#125;"</span>/&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:SearchBar</span> <span class="attr">ShowClearButton</span>=<span class="string">"True"</span> <span class="attr">hc:InfoElement.Title</span>=<span class="string">"&#123;ex:Lang Key=&#123;x:Static langs:LangKeys.TitleDemoStr1&#125;&#125;"</span> <span class="attr">Margin</span>=<span class="string">"0,32,0,0"</span> <span class="attr">Style</span>=<span class="string">"&#123;StaticResource SearchBarPlus&#125;"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:SearchBar</span> <span class="attr">TextType</span>=<span class="string">"Mail"</span> <span class="attr">hc:InfoElement.Placeholder</span>=<span class="string">"&#123;ex:Lang Key=&#123;x:Static langs:LangKeys.PlsEnterEmail&#125;&#125;"</span> <span class="attr">hc:InfoElement.Title</span>=<span class="string">"&#123;ex:Lang Key=&#123;x:Static langs:LangKeys.TitleDemoStr1&#125;&#125;"</span> <span class="attr">Margin</span>=<span class="string">"0,32,0,0"</span> <span class="attr">hc:InfoElement.Necessary</span>=<span class="string">"True"</span> <span class="attr">Style</span>=<span class="string">"&#123;StaticResource SearchBarPlus&#125;"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:SearchBar</span> <span class="attr">Width</span>=<span class="string">"380"</span> <span class="attr">hc:InfoElement.TitleWidth</span>=<span class="string">"140"</span> <span class="attr">hc:InfoElement.TitlePlacement</span>=<span class="string">"Left"</span> <span class="attr">hc:InfoElement.Title</span>=<span class="string">"&#123;ex:Lang Key=&#123;x:Static langs:LangKeys.TitleDemoStr3&#125;&#125;"</span> <span class="attr">Style</span>=<span class="string">"&#123;StaticResource SearchBarPlus&#125;"</span> <span class="attr">Margin</span>=<span class="string">"0,32,0,0"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">hc:SearchBar</span> <span class="attr">ShowClearButton</span>=<span class="string">"True"</span> <span class="attr">Width</span>=<span class="string">"380"</span> <span class="attr">hc:InfoElement.TitleWidth</span>=<span class="string">"140"</span> <span class="attr">hc:InfoElement.Placeholder</span>=<span class="string">"&#123;ex:Lang Key=&#123;x:Static langs:LangKeys.PlsEnterContent&#125;&#125;"</span> <span class="attr">hc:InfoElement.TitlePlacement</span>=<span class="string">"Left"</span> <span class="attr">hc:InfoElement.Title</span>=<span class="string">"&#123;ex:Lang Key=&#123;x:Static langs:LangKeys.TitleDemoStr3&#125;&#125;"</span> <span class="attr">Style</span>=<span class="string">"&#123;StaticResource SearchBarPlus&#125;"</span> <span class="attr">hc:InfoElement.Necessary</span>=<span class="string">"True"</span> <span class="attr">Margin</span>=<span class="string">"0,32,0,0"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">StackPanel</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/SearchBar.png" alt="SearchBar"></p>
 
         
       </div>
@@ -3233,8 +3379,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -3357,6 +3512,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#属性"><span class="nav-number">1.</span> <span class="nav-text">属性</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#附加属性"><span class="nav-number">2.</span> <span class="nav-text">附加属性</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#事件"><span class="nav-number">3.</span> <span class="nav-text">事件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#样式"><span class="nav-number">4.</span> <span class="nav-text">样式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#案例"><span class="nav-number">5.</span> <span class="nav-text">案例</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
