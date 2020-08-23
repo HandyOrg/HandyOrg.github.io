@@ -14,7 +14,6 @@
 
 <html class="theme-next gemini" lang="zh-CN">
 <head><meta name="generator" content="Hexo 3.8.0">
-  <script data-ad-client="ca-pub-8129276259146154" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
@@ -104,7 +103,7 @@
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/native_controls/PasswordBox.BaseStyle.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/native_controls/PasswordBox.ExtendStyle.png">
-<meta property="og:updated_time" content="2020-01-05T14:47:54.411Z">
+<meta property="og:updated_time" content="2020-08-22T03:33:45.386Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="PasswordBox 密码框">
 <meta name="twitter:description" content="PasswordBoxBaseStyle原生密码框默认样式，不推荐直接使用，应该始终被其它样式以BasedOn的方式使用。              用例：1&amp;lt;PasswordBox PasswordChar=&amp;quot;*&amp;quot; VerticalAlignment=&amp;quot;Center&amp;quot; Width=&amp;quot;120&amp;quot;&amp;gt;&amp;lt;/PasswordBox">
@@ -243,7 +242,7 @@
   
     
   
-  <li class="menu-item menu-item-handycontrol---2.4.0 menu-item-active">
+  <li class="menu-item menu-item-handycontrol---3.0.0 menu-item-active">
 
     
     
@@ -253,7 +252,7 @@
       
     
 
-    <a href="/handycontrol/" rel="section">HandyControl - 2.4.0</a>
+    <a href="/handycontrol/" rel="section">HandyControl - 3.0.0</a>
 
   </li>
 
@@ -558,6 +557,10 @@
               
                 
               
+                
+              
+                
+              
             
           
             
@@ -688,6 +691,26 @@
   </li>
 
 
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
                 
               
                 
@@ -2146,7 +2169,7 @@
 <h1 id="PasswordBoxExtendBaseStyle-PasswordBoxBaseStyle"><a href="#PasswordBoxExtendBaseStyle-PasswordBoxBaseStyle" class="headerlink" title="PasswordBoxExtendBaseStyle : PasswordBoxBaseStyle"></a>PasswordBoxExtendBaseStyle : PasswordBoxBaseStyle</h1><p>原生密码框扩展默认样式，不推荐直接使用，应该始终被其它样式以BasedOn的方式使用。</p>
 <h1 id="PasswordBoxExtend-PasswordBoxExtendBaseStyle"><a href="#PasswordBoxExtend-PasswordBoxExtendBaseStyle" class="headerlink" title="PasswordBoxExtend : PasswordBoxExtendBaseStyle"></a>PasswordBoxExtend : PasswordBoxExtendBaseStyle</h1><p>相对于原生密码框默认样式，它借助于附加属性可以实现标题、水印的功能。</p>
 <div class="note info no-icon">
-            <p>用例：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;!–为使普通密码输入文本框显示水印,需要设定PasswordBoxAttach.PasswordLength=&quot;0&quot;–&gt;</span><br><span class="line">&lt;PasswordBox Style=&quot;&#123;DynamicResource PasswordBoxExtend&#125;&quot; PasswordChar=&quot;<em>&quot; </em></span><br><span class="line">             hc:PasswordBoxAttach.PasswordLength=&quot;0&quot;</span><br><span class="line">             hc:InfoElement.Placeholder=&quot;请输入密码&quot; </span><br><span class="line">             VerticalAlignment=&quot;Center&quot;</span><br><span class="line">             Width=&quot;120&quot;&gt;&lt;/PasswordBox&gt;</span><br><span class="line">&lt;PasswordBox Style=&quot;&#123;DynamicResource PasswordBoxExtend&#125;&quot; PasswordChar=&quot;&quot; </span><br><span class="line">             hc:TitleElement.Title=&quot;用户密码：&quot;</span><br><span class="line">             hc:TitleElement.TitleAlignment=&quot;Top&quot;</span><br><span class="line">             VerticalAlignment=&quot;Center&quot;</span><br><span class="line">             Width=&quot;120&quot;&gt;&lt;/PasswordBox&gt;</span><br></pre></td></tr></table></figure><p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/native_controls/PasswordBox.ExtendStyle.png" alt="PasswordBox.ExtendStyle"></p>
+            <p>用例：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;!–为使普通密码输入文本框显示水印,需要设定PasswordBoxAttach.PasswordLength=&quot;0&quot;–&gt;</span><br><span class="line">&lt;PasswordBox Style=&quot;&#123;DynamicResource PasswordBoxExtend&#125;&quot; PasswordChar=&quot;<em>&quot; </em></span><br><span class="line">             hc:PasswordBoxAttach.PasswordLength=&quot;0&quot;</span><br><span class="line">             hc:InfoElement.Placeholder=&quot;请输入密码&quot; </span><br><span class="line">             VerticalAlignment=&quot;Center&quot;</span><br><span class="line">             Width=&quot;120&quot;&gt;&lt;/PasswordBox&gt;</span><br><span class="line">&lt;PasswordBox Style=&quot;&#123;DynamicResource PasswordBoxExtend&#125;&quot; PasswordChar=&quot;&quot; </span><br><span class="line">             hc:TitleElement.Title=&quot;用户密码：&quot;</span><br><span class="line">             hc:TitleElement.TitlePlacement=&quot;Top&quot;</span><br><span class="line">             VerticalAlignment=&quot;Center&quot;</span><br><span class="line">             Width=&quot;120&quot;&gt;&lt;/PasswordBox&gt;</span><br></pre></td></tr></table></figure><p><img src="https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Doc/native_controls/PasswordBox.ExtendStyle.png" alt="PasswordBox.ExtendStyle"></p>
           </div>
         
       </div>
